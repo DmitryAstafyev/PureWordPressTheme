@@ -72,28 +72,28 @@ namespace Pure\Templates\Layout\Special\Top\Posts{
                         'label'     =>__('Total posts','pure'),
                         'button'    =>__('show','pure'),
                         'label_id'  =>$labelsIDs->all,
-                        'icon'      =>Initialization::instance()->configuration->urls->images.'/A/posts.png',
+                        'icon'      =>Initialization::instance()->configuration->urls->images.'/a/posts.png',
                     ),
                     (object)array(
                         'value'     =>$PostsProvider->get_posts_count_of_type(-1, 'galleries', true),
                         'label'     =>__('Images and photos','pure'),
                         'button'    =>__('show','pure'),
                         'label_id'  =>$labelsIDs->galleries,
-                        'icon'      =>Initialization::instance()->configuration->urls->images.'/A/images.png',
+                        'icon'      =>Initialization::instance()->configuration->urls->images.'/a/images.png',
                     ),
                     (object)array(
                         'value'     =>$PostsProvider->get_posts_count_of_type(-1, 'audio', true),
                         'label'     =>__('Audio and music','pure'),
                         'button'    =>__('show','pure'),
                         'label_id'  =>$labelsIDs->audio,
-                        'icon'      =>Initialization::instance()->configuration->urls->images.'/A/audio.png',
+                        'icon'      =>Initialization::instance()->configuration->urls->images.'/a/audio.png',
                     ),
                     (object)array(
                         'value'     =>$PostsProvider->get_posts_count_of_type(-1, 'media', true),
                         'label'     =>__('All media','pure'),
                         'button'    =>__('show','pure'),
                         'label_id'  =>$labelsIDs->media,
-                        'icon'      =>Initialization::instance()->configuration->urls->images.'/A/media.png',
+                        'icon'      =>Initialization::instance()->configuration->urls->images.'/a/media.png',
                     ),
                 )
             );

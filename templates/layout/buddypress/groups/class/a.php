@@ -150,28 +150,28 @@ namespace Pure\Templates\Layout\BuddyPress\Groups{
                                 'label'     =>__('Posts','pure'),
                                 'button'    =>__('show','pure'),
                                 'label_id'  =>$labelsIDs->post,
-                                'icon'      =>Initialization::instance()->configuration->urls->images.'/A/posts.png',
+                                'icon'      =>Initialization::instance()->configuration->urls->images.'/a/posts.png',
                             ),
                             (object)array(
                                 'value'     =>$counts->event->count,
                                 'label'     =>__('Events','pure'),
                                 'button'    =>__('show','pure'),
                                 'label_id'  =>$labelsIDs->event,
-                                'icon'      =>Initialization::instance()->configuration->urls->images.'/A/events.png',
+                                'icon'      =>Initialization::instance()->configuration->urls->images.'/a/events.png',
                             ),
                             (object)array(
                                 'value'     =>$counts->report->count,
                                 'label'     =>__('Reports','pure'),
                                 'button'    =>__('show','pure'),
                                 'label_id'  =>$labelsIDs->report,
-                                'icon'      =>Initialization::instance()->configuration->urls->images.'/A/reports.png',
+                                'icon'      =>Initialization::instance()->configuration->urls->images.'/a/reports.png',
                             ),
                             (object)array(
                                 'value'     =>$counts->question->count,
                                 'label'     =>__('Q&A','pure'),
                                 'button'    =>__('show','pure'),
                                 'label_id'  =>$labelsIDs->question,
-                                'icon'      =>Initialization::instance()->configuration->urls->images.'/A/questions.png',
+                                'icon'      =>Initialization::instance()->configuration->urls->images.'/a/questions.png',
                             ),
                         )
                     );

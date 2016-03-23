@@ -296,7 +296,7 @@ namespace Pure\Templates\Groups{
                                                             '<div data-element-type="Pure.Social.Groups.A.Item.Details.Controls.GroupAvatar.Container">'.
                                                                 '<div data-element-type="Pure.Social.Groups.A.Item.Details.Controls.GroupAvatar.SubContainer">'.
                                                                     '<div data-element-type="Pure.Social.Groups.A.Item.Details.Controls.GroupAvatar">'.
-                                                                        '<img alt="" data-element-type="Pure.Social.Groups.Item.Details.Controls.GroupAvatar" data-engine-id="'.$id.'" src="'.($group->avatar !== false ? $group->avatar : \Pure\Templates\Groups\Initialization::instance()->configuration->urls->images.'/F.group_icon.png').'"/>'.
+                                                                        '<img alt="" data-element-type="Pure.Social.Groups.Item.Details.Controls.GroupAvatar" data-engine-id="'.$id.'" src="'.($group->avatar !== false ? $group->avatar : \Pure\Templates\Groups\Initialization::instance()->configuration->urls->images.'/f.group_icon.png').'"/>'.
                                                                     '</div>'.
                                                                 '</div>'.
                                                             '</div>'.
@@ -557,7 +557,7 @@ namespace Pure\Templates\Groups{
                     }
                     break;
             }
-            $innerHTML .=                   '<div data-element-type="Pure.Social.Groups.A.Item.Icon" data-engine-group_avatar="'.$id.'_manage'.'" style="background-image:url('.($group->avatar !== false ? $group->avatar : \Pure\Templates\Groups\Initialization::instance()->configuration->urls->images.'/F.group_icon.png').');">'.
+            $innerHTML .=                   '<div data-element-type="Pure.Social.Groups.A.Item.Icon" data-engine-group_avatar="'.$id.'_manage'.'" style="background-image:url('.($group->avatar !== false ? $group->avatar : \Pure\Templates\Groups\Initialization::instance()->configuration->urls->images.'/f.group_icon.png').');">'.
                                             '</div>'.
                                             '<p data-element-type="Pure.Social.Groups.A.Item.Icon.Label">'.$group->count.'</p>'.
                                         '</div>'.

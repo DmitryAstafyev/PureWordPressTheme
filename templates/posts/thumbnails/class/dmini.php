@@ -170,7 +170,7 @@ namespace Pure\Templates\Posts\Thumbnails{
                 $innerHTML =    '<!--BEGIN: Thumbnail.D : EVENT -->'.
                                 '<article data-custom-element="Pure.Posts.Thumbnail.DMini.Container" data-post-type="Event" '.$attribute_str.'>'.
                                     '<div data-custom-element="Pure.Posts.Thumbnail.DMini.Event.Image" style="background-image:url('.
-                                        ($no_miniature === false ? $data->post->miniature : \Pure\Templates\Posts\Thumbnails\Initialization::instance()->configuration->urls->images.'/A.event.jpg').')">'.
+                                        ($no_miniature === false ? $data->post->miniature : \Pure\Templates\Posts\Thumbnails\Initialization::instance()->configuration->urls->images.'/a.event.jpg').')">'.
                                     '</div>'.
                                     '<div data-custom-element="Pure.Posts.Thumbnail.DMini.Event.Info">'.
                                         '<p data-element-type="Pure.Posts.Thumbnail.DMini.Event.Date"><span data-element-type="Event.Day">'.$day.'</span><sup data-element-type="Event.Date">'.$time.'</sup></p>'.

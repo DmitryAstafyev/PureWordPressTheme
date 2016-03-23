@@ -157,7 +157,7 @@ namespace Pure\Templates\Pages\PostEditor{
                     "opened"            =>false,
                     "content_style"     =>'width:auto;padding:0.5em;')
             );
-            $no_miniature = \Pure\Templates\Pages\PostEditor\Initialization::instance()->configuration->urls->images.'/A/no_image.png';
+            $no_miniature = \Pure\Templates\Pages\PostEditor\Initialization::instance()->configuration->urls->images.'/a/no_image.png';
             $innerHTML .=   '<img alt="" data-type-element="Pure.PostEditor.A.Miniature" src="'.($this->post !== false ? ($this->post->post->miniature !== '' ? $this->post->post->miniature : $no_miniature) : $no_miniature).'" data-create-post-engine-element="miniature"/>'.
                             '<a data-element-type="Pure.CommonStyles.Button.B" data-type-direction="right" data-create-post-engine-element="miniature.select">'.__( "load", 'pure' ).'</a>'.
                             '<a data-element-type="Pure.CommonStyles.Button.B" data-type-direction="right" data-create-post-engine-element="miniature.remove" data-create-post-engine-no_miniature_src="'.$no_miniature.'">'.__( "remove", 'pure' ).'</a>'.

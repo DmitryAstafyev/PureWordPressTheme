@@ -181,7 +181,7 @@ namespace Pure\Plugins\Thumbnails\Comments {
                 <p>
                     <label for="<?php echo $this->get_field_id( 'from_date' ); ?>">Point of reference</label>
                     <input class="widefat" type="date" placeholder="<?php echo date("m.d.y"); ?>" id="<?php echo $this->get_field_id( 'from_date' ); ?>" name="<?php echo $this->get_field_name( 'from_date' ); ?>" type="text" value="<?php echo esc_attr( $from_date ); ?>"/>
-                    <img alt="" data-type="Pure.Configuration.Img" src="<?php echo Initialization::instance()->configuration->urls->images.'\datescheme.png'; ?>">
+                    <img alt="" data-type="Pure.Configuration.Img" src="<?php echo Initialization::instance()->configuration->urls->images.'/datescheme.png'; ?>">
                     <p>From this date will be considered time for posts. Empty - current date. Format: dd/mm/yyyy or dd.mm.yyyy</p>
                 </p>
                 <p>

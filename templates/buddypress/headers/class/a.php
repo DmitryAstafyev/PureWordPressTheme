@@ -97,7 +97,7 @@ namespace Pure\Templates\BuddyPress\Headers{
             $UserData                   = NULL;
             $WordPress                  = NULL;
             $background_image           = $this->getBackground($user_id);
-            $background_image           = ($background_image === '' ? Initialization::instance()->configuration->urls->images.'/A/default_background_image.jpg' : $background_image);
+            $background_image           = ($background_image === '' ? Initialization::instance()->configuration->urls->images.'/a/default_background_image.jpg' : $background_image);
             $IDs                        =(object)array(
                 'createGroup'   =>uniqid(),
                 'manageQuotes'  =>uniqid(),

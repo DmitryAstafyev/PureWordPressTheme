@@ -5,7 +5,7 @@ namespace Pure\Templates\Layout\Page\Background{
             $innerHTML      = Initialization::instance()->html(
                 'A/wrapper',
                 array(
-                    array('background_url', $background_url),
+                    array('background_url', \Pure\Configuration::instance()->url($background_url)),
                 )
             );
             if ($echo !== false){

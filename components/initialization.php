@@ -36,12 +36,12 @@ namespace Pure\Components{
             $this->paths->resources     = \Pure\Configuration::instance()->dir(__DIR__.'/'.implode('/', $namespace).'/resources');
             $this->paths->bin           = \Pure\Configuration::instance()->dir(__DIR__.'/'.implode('/', $namespace).'/bin');
             $this->urls                 = new \stdClass();
-            $this->urls->class          = \Pure\Configuration::instance()->themeURL.'/components/'.implode('/', $namespace).'/class';
-            $this->urls->css            = \Pure\Configuration::instance()->themeURL.'/components/'.implode('/', $namespace).'/css';
-            $this->urls->js             = \Pure\Configuration::instance()->themeURL.'/components/'.implode('/', $namespace).'/js';
-            $this->urls->images         = \Pure\Configuration::instance()->themeURL.'/components/'.implode('/', $namespace).'/images';
-            $this->urls->resources      = \Pure\Configuration::instance()->themeURL.'/components/'.implode('/', $namespace).'/resources';
-            $this->urls->bin            = \Pure\Configuration::instance()->themeURL.'/components/'.implode('/', $namespace).'/bin';
+            $this->urls->class          = \Pure\Configuration::instance()->url(\Pure\Configuration::instance()->themeURL.'/components/'.implode('/', $namespace).'/class');
+            $this->urls->css            = \Pure\Configuration::instance()->url(\Pure\Configuration::instance()->themeURL.'/components/'.implode('/', $namespace).'/css');
+            $this->urls->js             = \Pure\Configuration::instance()->url(\Pure\Configuration::instance()->themeURL.'/components/'.implode('/', $namespace).'/js');
+            $this->urls->images         = \Pure\Configuration::instance()->url(\Pure\Configuration::instance()->themeURL.'/components/'.implode('/', $namespace).'/images');
+            $this->urls->resources      = \Pure\Configuration::instance()->url(\Pure\Configuration::instance()->themeURL.'/components/'.implode('/', $namespace).'/resources');
+            $this->urls->bin            = \Pure\Configuration::instance()->url(\Pure\Configuration::instance()->themeURL.'/components/'.implode('/', $namespace).'/bin');
             $this->namespace            = __NAMESPACE__.'\\'.implode('\\', $namespace);
         }
     }

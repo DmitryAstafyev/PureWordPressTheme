@@ -24,17 +24,17 @@ namespace Pure\Templates{
             $this->paths->settings->css     = \Pure\Configuration::instance()->dir($this->paths->settings->base.'/css');
             $this->paths->settings->js      = \Pure\Configuration::instance()->dir($this->paths->settings->base.'/js');
             $this->urls                     = new \stdClass();
-            $this->urls->base               = \Pure\Configuration::instance()->themeURL.'/templates/'.implode('/', $namespace);
-            $this->urls->class              = $this->urls->base.'/class';
-            $this->urls->css                = $this->urls->base.'/css';
-            $this->urls->js                 = $this->urls->base.'/js';
-            $this->urls->images             = $this->urls->base.'/images';
-            $this->urls->thumbnails         = $this->urls->base.'/thumbnails';
+            $this->urls->base               = \Pure\Configuration::instance()->url(\Pure\Configuration::instance()->themeURL.'/templates/'.implode('/', $namespace));
+            $this->urls->class              = \Pure\Configuration::instance()->url($this->urls->base.'/class');
+            $this->urls->css                = \Pure\Configuration::instance()->url($this->urls->base.'/css');
+            $this->urls->js                 = \Pure\Configuration::instance()->url($this->urls->base.'/js');
+            $this->urls->images             = \Pure\Configuration::instance()->url($this->urls->base.'/images');
+            $this->urls->thumbnails         = \Pure\Configuration::instance()->url($this->urls->base.'/thumbnails');
             $this->urls->settings           = new \stdClass();
-            $this->urls->settings->base     = \Pure\Configuration::instance()->themeURL.'/templates/'.implode('/', $namespace).'/settings';
-            $this->urls->settings->js       = $this->urls->settings->base.'/js';
-            $this->urls->settings->css      = $this->urls->settings->base.'/css';
-            $this->urls->settings->images   = $this->urls->settings->base.'/images';
+            $this->urls->settings->base     = \Pure\Configuration::instance()->url(\Pure\Configuration::instance()->themeURL.'/templates/'.implode('/', $namespace).'/settings');
+            $this->urls->settings->js       = \Pure\Configuration::instance()->url($this->urls->settings->base.'/js');
+            $this->urls->settings->css      = \Pure\Configuration::instance()->url($this->urls->settings->base.'/css');
+            $this->urls->settings->images   = \Pure\Configuration::instance()->url($this->urls->settings->base.'/images');
             $this->namespace                = __NAMESPACE__.'\\'.implode('\\', $namespace);
             $this->settings                 = new \stdClass();
             $this->settings->id             = preg_replace('/\\\/',  '_',    $this->namespace);
@@ -90,7 +90,8 @@ namespace Pure\Templates{
             }
         }
         private function resources($classKey, $settings = false, $resourcesLoadMade = false){
-            if (isset($this->_templates[$classKey]) === true){
+            $classKey = isset($this->_templates[$classKey]) ? $classKey : (isset($this->_templates[strtolower($classKey)]) ? strtolower($classKey) : false);
+            if ($classKey !== false){
                 if ($resourcesLoadMade !== false){
                     \Pure\Components\Attacher\Module\Initialization::instance()->attach();
                 }
@@ -172,8 +173,9 @@ namespace Pure\Templates{
             }
         }
         public function get_resources_of($classKey){
-            $innerHTML = '';
-            if (isset($this->_templates[$classKey]) === true){
+            $innerHTML  = '';
+            $classKey   = isset($this->_templates[$classKey]) ? $classKey : (isset($this->_templates[strtolower($classKey)]) ? strtolower($classKey) : false);
+            if ($classKey !== false){
                     if (file_exists(\Pure\Configuration::instance()->dir($this->configuration->paths->css.'/'.$classKey.'.css')) === true){
                         \Pure\Resources\Compressor::instance()->CSS(\Pure\Configuration::instance()->dir($this->configuration->paths->css.'/'.$classKey.'.css'));
                     }
@@ -207,7 +209,8 @@ namespace Pure\Templates{
             }
         }
         public function get($classKey, $resourcesLoadMade = false){
-            if (isset($this->_templates[$classKey]) === true){
+            $classKey = isset($this->_templates[$classKey]) ? $classKey : (isset($this->_templates[strtolower($classKey)]) ? strtolower($classKey) : false);
+            if ($classKey !== false){
                 if (file_exists(\Pure\Configuration::instance()->dir($this->_templates[$classKey]->file)) === true){
                     $this->initCommon();
                     require_once(\Pure\Configuration::instance()->dir($this->_templates[$classKey]->file));
@@ -225,7 +228,8 @@ namespace Pure\Templates{
             return false;
         }
         public function settings($classKey){
-            if (isset($this->_templates[$classKey]) === true){
+            $classKey = isset($this->_templates[$classKey]) ? $classKey : (isset($this->_templates[strtolower($classKey)]) ? strtolower($classKey) : false);
+            if ($classKey !== false){
                 if (file_exists(\Pure\Configuration::instance()->dir($this->_templates[$classKey]->settings->file)) === true){
                     require_once(\Pure\Configuration::instance()->dir($this->_templates[$classKey]->settings->file));
                     if (class_exists($this->_templates[$classKey]->settings->class) === true){
@@ -260,7 +264,8 @@ namespace Pure\Templates{
             return $_settings;
         }
         public function description($classKey){
-            if (isset($this->_templates[$classKey]) === true){
+            $classKey = isset($this->_templates[$classKey]) ? $classKey : (isset($this->_templates[strtolower($classKey)]) ? strtolower($classKey) : false);
+            if ($classKey !== false){
                 if (file_exists(\Pure\Configuration::instance()->dir($this->_templates[$classKey]->description)) === true){
                     require($this->_templates[$classKey]->description);
                 }
@@ -268,10 +273,10 @@ namespace Pure\Templates{
             return NULL;
         }
         public function html($file_name, $properties = false){
-            $full_file_name = $this->configuration->paths->html.'/'.(strpos(strtolower($file_name), '.html') === false ? $file_name.'.html' : $file_name);
+            $full_file_name = \Pure\Configuration::instance()->dir($this->configuration->paths->html.'/'.(strpos(strtolower($file_name), '.html') === false ? $file_name.'.html' : $file_name));
             $cache          = \Pure\Components\Tools\Cache\Cache::get(__METHOD__, array($full_file_name));
             if (!$html = $cache->value){
-                if (file_exists(\Pure\Configuration::instance()->dir($full_file_name)) !== false) {
+                if (file_exists($full_file_name) !== false) {
                     $html = file_get_contents($full_file_name);
                     if ($html !== false) {
                         \Pure\Components\Tools\Cache\Cache::set($cache->key, $html);

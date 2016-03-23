@@ -195,7 +195,7 @@ namespace Pure\Templates\HeaderMenu{
                 $logo_url = wp_get_attachment_image_src( (int)$attachment, 'full', false );
                 $logo_url = (is_array($logo_url) !== false ? $logo_url[0] : '');
             }
-            $logo_url  = ($logo_url === '' ? Initialization::instance()->configuration->urls->images.'/C/logo.png' : $logo_url);
+            $logo_url  = ($logo_url === '' ? Initialization::instance()->configuration->urls->images.'/c/logo.png' : $logo_url);
             return Initialization::instance()->html(
                 'C/area.logo',
                 array(

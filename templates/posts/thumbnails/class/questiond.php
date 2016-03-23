@@ -11,7 +11,7 @@ namespace Pure\Templates\Posts\Thumbnails{
         public function get($data, $parameters = NULL){
             $this->validate($parameters);
             $attribute_str  = ($parameters->attribute->name !== '' ? $parameters->attribute->name.'="'.$parameters->attribute->value.'" ' : '');
-            $solution_icon  = ($data->question->has_answer === false ? '' : Initialization::instance()->configuration->urls->images.'/QuestionB/solved.png' );
+            $solution_icon  = ($data->question->has_answer === false ? '' : Initialization::instance()->configuration->urls->images.'/questionb/solved.png' );
             $innerHTML      = Initialization::instance()->html(
                 'QuestionD/wrapper',
                 array(

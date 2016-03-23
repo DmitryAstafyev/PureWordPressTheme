@@ -13,10 +13,10 @@ namespace Pure\Plugins{
             $this->paths->images        = \Pure\Configuration::instance()->dir(__DIR__.'/'.implode('/', $namespace).'/images');
             $this->paths->inc           = \Pure\Configuration::instance()->dir(__DIR__.'/'.implode('/', $namespace).'/inc');
             $this->urls                 = new \stdClass();
-            $this->urls->class          = \Pure\Configuration::instance()->themeURL.'/plugins/'.implode('/', $namespace).'/class';
-            $this->urls->css            = \Pure\Configuration::instance()->themeURL.'/plugins/'.implode('/', $namespace).'/css';
-            $this->urls->js             = \Pure\Configuration::instance()->themeURL.'/plugins/'.implode('/', $namespace).'/js';
-            $this->urls->images         = \Pure\Configuration::instance()->themeURL.'/plugins/'.implode('/', $namespace).'/images';
+            $this->urls->class          = \Pure\Configuration::instance()->url(\Pure\Configuration::instance()->themeURL.'/plugins/'.implode('/', $namespace).'/class');
+            $this->urls->css            = \Pure\Configuration::instance()->url(\Pure\Configuration::instance()->themeURL.'/plugins/'.implode('/', $namespace).'/css');
+            $this->urls->js             = \Pure\Configuration::instance()->url(\Pure\Configuration::instance()->themeURL.'/plugins/'.implode('/', $namespace).'/js');
+            $this->urls->images         = \Pure\Configuration::instance()->url(\Pure\Configuration::instance()->themeURL.'/plugins/'.implode('/', $namespace).'/images');
             $this->namespace            = __NAMESPACE__.'\\'.implode('\\', $namespace);
         }
     }

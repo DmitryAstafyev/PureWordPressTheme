@@ -21,25 +21,25 @@ namespace Pure\Templates\Elements\Search{
             $icons = array(
                 (object)array(
                     'title' =>__('Posts', 'pure'),
-                    'icon'  =>Initialization::instance()->configuration->urls->images.'/A/posts.png',
+                    'icon'  =>Initialization::instance()->configuration->urls->images.'/a/posts.png',
                     'count' =>$Posts->get_posts_count_of_post_type('post'),
                     'url'   =>$SpecialURLs->getURL('TOP',array('type'=>'post'))
                 ),
                 (object)array(
                     'title' =>__('Events', 'pure'),
-                    'icon'  =>Initialization::instance()->configuration->urls->images.'/A/events.png',
+                    'icon'  =>Initialization::instance()->configuration->urls->images.'/a/events.png',
                     'count' =>$Posts->get_posts_count_of_post_type('event'),
                     'url'   =>$SpecialURLs->getURL('TOP',array('type'=>'event'))
                 ),
                 (object)array(
                     'title' =>__('Reports', 'pure'),
-                    'icon'  =>Initialization::instance()->configuration->urls->images.'/A/reports.png',
+                    'icon'  =>Initialization::instance()->configuration->urls->images.'/a/reports.png',
                     'count' =>$Posts->get_posts_count_of_post_type('report'),
                     'url'   =>$SpecialURLs->getURL('TOP',array('type'=>'report'))
                 ),
                 (object)array(
                     'title' =>__('Q&A', 'pure'),
-                    'icon'  =>Initialization::instance()->configuration->urls->images.'/A/questions.png',
+                    'icon'  =>Initialization::instance()->configuration->urls->images.'/a/questions.png',
                     'count' =>$Posts->get_posts_count_of_post_type('question'),
                     'url'   =>$SpecialURLs->getURL('TOP',array('type'=>'question'))
                 ),

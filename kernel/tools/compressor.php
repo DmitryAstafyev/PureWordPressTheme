@@ -6,7 +6,8 @@ namespace Pure\Resources{
         private $ClearString;
         private $Properties;
         private function checkFolder($folder){
-            if (file_exists(\Pure\Configuration::instance()->dir($folder)) === false){
+            $folder = \Pure\Configuration::instance()->dir($folder);
+            if (file_exists($folder) === false){
                 mkdir($folder);
             }
         }
@@ -24,7 +25,7 @@ namespace Pure\Resources{
                         return (object)array(
                             'full'          =>$this->folder.'/'.$output_filename,
                             'base'          =>$output_filename,
-                            'url'           =>$this->site_url.'/wp-content/CompressorFiles/'.$output_filename,
+                            'url'           =>$this->site_url.'/wp-content/compressorfiles/'.$output_filename,
                             'source_url'    =>$sourceURL($parent_file)
                         );
                     }
@@ -51,7 +52,7 @@ namespace Pure\Resources{
             }
         }
         function __construct(){
-            $this->folder       = $_SERVER['DOCUMENT_ROOT'].'/wp-content/CompressorFiles';
+            $this->folder       = \Pure\Configuration::instance()->dir($_SERVER['DOCUMENT_ROOT'].'/wp-content/compressorfiles');
             $this->site_url     = site_url();
             $this->ClearString  = new ClearString();
             $this->Properties   = new Properties();
@@ -80,7 +81,7 @@ namespace Pure\Resources{
             return $text;
         }
         public function js($text){
-            require_once('JSMin.php');
+            require_once('jsmin.php');
             $text = JSMin::minify($text);
             //$text = $this->clearCoding($text);
             //$text = $this->clearSpaces($text);

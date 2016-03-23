@@ -23,7 +23,7 @@ namespace Pure\Templates\Sliders{
                 $title = '';
             }
             $innerHTML =    '<!--BEGIN: Slider.A -->'.
-                            '<div data-element-type="Pure.Slider.A" data-engine-element="Slider.A"'.$attribute_str.' style="background-image:url('.\Pure\Templates\Sliders\Initialization::instance()->configuration->urls->images.'/A.background.jpg);">'.
+                            '<div data-element-type="Pure.Slider.A" data-engine-element="Slider.A"'.$attribute_str.' style="background-image:url('.\Pure\Templates\Sliders\Initialization::instance()->configuration->urls->images.'/a.background.jpg);">'.
                                 $title.
                                 '<!--BEGIN: Slider.A.Content -->'.
                                 '<div data-element-type="Pure.Slider.A.Content" >'.

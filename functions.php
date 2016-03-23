@@ -36,7 +36,10 @@ namespace Pure{
             return self::$self;
         }
         public function dir($path){
-            return preg_replace('/\\\{1,}|/{1,}/', $this->LPS, $this->root.strtolower(str_replace($this->root, '', $path)));
+            return preg_replace('/\\\{1,}|\/{1,}/', $this->LPS, $this->root.strtolower(str_replace($this->root, '', $path)));
+        }
+        public function url($url){
+            return strtolower($url);
         }
         function __construct(){
             $this->root             = substr(__DIR__, 0, (stripos(__DIR__, 'wp-content') - 1));
@@ -49,17 +52,17 @@ namespace Pure{
             $this->inserts          = $this->dir($this->kernel.'/inserts');
             $this->database         = $this->dir($this->kernel.'/database');
             $this->html             = $this->dir($this->resources.'/html');
-            $this->resourcesURL     = $this->themeURL.'/resources';
-            $this->cssURL           = $this->resourcesURL.'/css';
-            $this->jsURL            = $this->resourcesURL.'/js';
-            $this->cssPath          = $this->resources.'/css';
-            $this->jsPath           = $this->resources.'/js';
-            $this->imagesURL        = $this->resourcesURL.'/images';
+            $this->resourcesURL     = $this->url($this->themeURL.'/resources');
+            $this->cssURL           = $this->url($this->resourcesURL.'/css');
+            $this->jsURL            = $this->url($this->resourcesURL.'/js');
+            $this->cssPath          = $this->url($this->resources.'/css');
+            $this->jsPath           = $this->url($this->resources.'/js');
+            $this->imagesURL        = $this->url($this->resourcesURL.'/images');
             $this->templates        = new \stdClass();
-            $this->templates->url   = $this->themeURL.'/templates';
+            $this->templates->url   = $this->url($this->themeURL.'/templates');
             $this->templates->dir   = $this->dir(__DIR__.'/templates');
             $this->components       = new \stdClass();
-            $this->components->url  = $this->themeURL.'/components';
+            $this->components->url  = $this->url($this->themeURL.'/components');
             $this->components->dir  = $this->dir(__DIR__.'/components');
             $this->providers        = new \stdClass();
             $this->providers->dir   = $this->dir($this->kernel.'/providers');

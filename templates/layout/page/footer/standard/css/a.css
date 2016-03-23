@@ -6,7 +6,7 @@ div[data-element-type="Pure.Footer.Container"]{
     left                :0;
     right               :0;
     width               : 100%;
-    background-image    : url(%site_url%/wp-content/themes/pure/templates/Layout/Page/Footer/Standard/images/A/background.jpg);
+    background-image    : url(%site_url%/wp-content/themes/pure/templates/layout/page/footer/standard/images/a/background.jpg);
     background-size     : cover;
     background-repeat   : no-repeat;
 }

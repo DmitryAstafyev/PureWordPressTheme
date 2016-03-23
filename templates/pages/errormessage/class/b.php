@@ -6,7 +6,7 @@ namespace Pure\Templates\Pages\ErrorMessage{
             $innerHTML      = Initialization::instance()->html(
                 'B/wrapper',
                 array(
-                    array('image',      Initialization::instance()->configuration->urls->images.'/B/denied.png'),
+                    array('image',      Initialization::instance()->configuration->urls->images.'/b/denied.png'),
                     array('title',      $title),
                     array('message',    $message),
                 )

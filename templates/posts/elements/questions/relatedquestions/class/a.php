@@ -58,13 +58,13 @@ namespace Pure\Templates\Posts\Elements\Questions\RelatedQuestions{
                 );
                 \Pure\Components\Attacher\Module\Attacher::instance()->addSETTING(
                     'pure.posts.elements.questions.relatedQuestions.icons.active',
-                    base64_encode(Initialization::instance()->configuration->urls->images.'/A/active.png'),
+                    base64_encode(Initialization::instance()->configuration->urls->images.'/a/active.png'),
                     false,
                     true
                 );
                 \Pure\Components\Attacher\Module\Attacher::instance()->addSETTING(
                     'pure.posts.elements.questions.relatedQuestions.icons.inactive',
-                    base64_encode(Initialization::instance()->configuration->urls->images.'/A/inactive.png'),
+                    base64_encode(Initialization::instance()->configuration->urls->images.'/a/inactive.png'),
                     false,
                     true
                 );
@@ -80,8 +80,8 @@ namespace Pure\Templates\Posts\Elements\Questions\RelatedQuestions{
                 'A/solution',
                 array(
                     array('icon', ($has_solution === false ?
-                        Initialization::instance()->configuration->urls->images.'/A/inactive.png' :
-                        Initialization::instance()->configuration->urls->images.'/A/active.png')),
+                        Initialization::instance()->configuration->urls->images.'/a/inactive.png' :
+                        Initialization::instance()->configuration->urls->images.'/a/active.png')),
                 )
             );
             return $innerHTML;

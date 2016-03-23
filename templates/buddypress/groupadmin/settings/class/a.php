@@ -105,7 +105,7 @@ namespace Pure\Templates\BuddyPress\GroupAdmin\Settings{
             );
             \Pure\Components\Attacher\Module\Attacher::instance()->addSETTING(
                 'pure.buddypress.groupsettings.configuration.noImageIcon',
-                Initialization::instance()->configuration->urls->images.'/A/no_image.png',
+                Initialization::instance()->configuration->urls->images.'/a/no_image.png',
                 false,
                 true
             );
@@ -162,7 +162,7 @@ namespace Pure\Templates\BuddyPress\GroupAdmin\Settings{
                         $Settings       = new \Pure\Components\BuddyPress\PersonalSettings\Group();
                         $settings       = $Settings->get((object)array('group_id'=>(int)$parameters->group_id));
                         $Settings       = NULL;
-                        $no_image       = Initialization::instance()->configuration->urls->images.'/A/no_image.png';
+                        $no_image       = Initialization::instance()->configuration->urls->images.'/a/no_image.png';
                         $images         = (object)array(
                             'header'        =>'',
                             'background'    =>($settings["background"       ]->attachment_id !== false ? wp_get_attachment_url($settings["background"       ]->attachment_id) : $no_image),

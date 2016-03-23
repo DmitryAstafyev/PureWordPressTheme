@@ -35,7 +35,7 @@ namespace Pure\Templates\Groups{
             $members_innerHTML  = $this->members_inner_HTML($group, 3, 'Group.Thumbnail.A.Top.Member', $parameters->only_with_avatar);
             $innerHTML  =   '<!--BEGIN: Group thumbnail (TOP) -->'.
                             '<div data-type-element="Group.Thumbnail.A.Top.Container" '.$attribute_str.'>'.
-                                '<img alt="" data-type-element="Group.Thumbnail.A.Top.Icon" src="'.\Pure\Templates\Groups\Initialization::instance()->configuration->urls->images.'/A.group_icon.png'.'" />'.
+                                '<img alt="" data-type-element="Group.Thumbnail.A.Top.Icon" src="'.\Pure\Templates\Groups\Initialization::instance()->configuration->urls->images.'/a.group_icon.png'.'" />'.
                                 '<div data-type-element="Group.Thumbnail.A.Top.Members">'.
                                     $members_innerHTML.
                                 '</div>'.

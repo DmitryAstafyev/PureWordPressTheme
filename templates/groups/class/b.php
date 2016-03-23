@@ -35,7 +35,7 @@ namespace Pure\Templates\Groups{
             $attribute_str      = ($parameters->attribute->name !== '' ? $parameters->attribute->name.'="'.$parameters->attribute->value.'" ' : '');
             $innerHTML  =   '<!--BEGIN: Group thumbnail (TOP) -->'.
                             '<div data-type-element="Group.Thumbnail.B.Top.Container" '.$attribute_str.'>'.
-                                '<img alt="" data-type-element="Group.Thumbnail.B.Top.Icon" src="'.\Pure\Templates\Groups\Initialization::instance()->configuration->urls->images.'/B.group_icon.png'.'" />'.
+                                '<img alt="" data-type-element="Group.Thumbnail.B.Top.Icon" src="'.\Pure\Templates\Groups\Initialization::instance()->configuration->urls->images.'/b.group_icon.png'.'" />'.
                                 '<div data-type-element="Group.Thumbnail.B.Top.Members">'.
                                     $members_innerHTML.
                                 '</div>'.

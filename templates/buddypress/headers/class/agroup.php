@@ -245,7 +245,7 @@ namespace Pure\Templates\BuddyPress\Headers{
         }
         public function get($group){
             $background_image   = $this->getBackground($group->id);
-            $background_image   = ($background_image === '' ? Initialization::instance()->configuration->urls->images.'/AGroup/default_background_image.jpg' : $background_image);
+            $background_image   = ($background_image === '' ? Initialization::instance()->configuration->urls->images.'/agroup/default_background_image.jpg' : $background_image);
             $IDs                        =(object)array(
                 'settings'      =>uniqid(),
                 'invitations'   =>uniqid(),

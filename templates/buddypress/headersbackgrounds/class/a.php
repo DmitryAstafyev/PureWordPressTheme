@@ -43,7 +43,7 @@ namespace Pure\Templates\BuddyPress\HeadersBackgrounds{
                 $settings   = $Settings->get((object)array('user_id'=>(int)$parameters->user_id));
                 $Settings   = NULL;
                 if ($settings !== false){
-                    $default_image      = \Pure\Templates\BuddyPress\HeadersBackgrounds\Initialization::instance()->configuration->urls->images.'/A/no_image.png';
+                    $default_image      = \Pure\Templates\BuddyPress\HeadersBackgrounds\Initialization::instance()->configuration->urls->images.'/a/no_image.png';
                     if ($settings['background']->template === 'A'){
                         $background_image   = (is_numeric($settings['background']->settings) === true ? wp_get_attachment_image_src( $settings['background']->settings, 'thumbnail', false ) : false);
                         $background_image   = ($background_image !== false ? (isset($background_image[0]) === true ? $background_image[0] : $default_image) : $default_image);

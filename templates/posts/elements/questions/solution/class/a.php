@@ -86,13 +86,13 @@ namespace Pure\Templates\Posts\Elements\Questions\Solution{
                 );
                 \Pure\Components\Attacher\Module\Attacher::instance()->addSETTING(
                     'pure.posts.elements.questions.solution.icons.active',
-                    base64_encode(Initialization::instance()->configuration->urls->images.'/A/active.png'),
+                    base64_encode(Initialization::instance()->configuration->urls->images.'/a/active.png'),
                     false,
                     true
                 );
                 \Pure\Components\Attacher\Module\Attacher::instance()->addSETTING(
                     'pure.posts.elements.questions.solution.icons.inactive',
-                    base64_encode(Initialization::instance()->configuration->urls->images.'/A/inactive.png'),
+                    base64_encode(Initialization::instance()->configuration->urls->images.'/a/inactive.png'),
                     false,
                     true
                 );
@@ -107,8 +107,8 @@ namespace Pure\Templates\Posts\Elements\Questions\Solution{
                         'A/owner',
                         array(
                             array('icon_current',   ($parameters->is_active !== false ?
-                                                    Initialization::instance()->configuration->urls->images.'/A/active.png' :
-                                                    Initialization::instance()->configuration->urls->images.'/A/inactive.png')  ),
+                                                    Initialization::instance()->configuration->urls->images.'/a/active.png' :
+                                                    Initialization::instance()->configuration->urls->images.'/a/inactive.png')  ),
                             array('object_id',      $parameters->object_id                                                      ),
                             array('question_id',    $parameters->question_id                                                    ),
                             array('object_type',    $parameters->object                                                         ),
@@ -122,8 +122,8 @@ namespace Pure\Templates\Posts\Elements\Questions\Solution{
                         'A/member',
                         array(
                             array('icon_current',   ($parameters->is_active !== false ?
-                                                    Initialization::instance()->configuration->urls->images.'/A/active.png' :
-                                                    Initialization::instance()->configuration->urls->images.'/A/inactive.png')   ),
+                                                    Initialization::instance()->configuration->urls->images.'/a/active.png' :
+                                                    Initialization::instance()->configuration->urls->images.'/a/inactive.png')   ),
                             array('object_id',      $parameters->object_id                                                      ),
                             array('object_type',    $parameters->object                                                         ),
                         )

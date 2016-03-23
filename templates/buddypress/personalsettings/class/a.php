@@ -126,7 +126,7 @@ namespace Pure\Templates\BuddyPress\PersonalSettings{
                     $Settings       = new \Pure\Components\BuddyPress\PersonalSettings\User();
                     $settings       = $Settings->get((object)array('user_id'=>(int)$parameters->user_id));
                     $Settings       = NULL;
-                    $no_image       = Initialization::instance()->configuration->urls->images.'/A/no_image.png';
+                    $no_image       = Initialization::instance()->configuration->urls->images.'/a/no_image.png';
                     $images         = (object)array(
                         'header'        =>'',
                         'background'    =>($settings["background"       ]->attachment_id !== false ? wp_get_attachment_url($settings["background"       ]->attachment_id) : $no_image),

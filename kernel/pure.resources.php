@@ -57,7 +57,8 @@ namespace Pure\Resources{
     class FileSystem{
         public function getFilesList($path){
             if (isset($path)){
-                if (is_dir(\Pure\Configuration::instance()->dir($path))){
+                $path = \Pure\Configuration::instance()->dir($path);
+                if (is_dir($path)){
                     $items = scandir($path);
                     if ($items !== false){
                         $files = Array();
@@ -438,7 +439,7 @@ namespace Pure\Resources{
             $this->saveCache();
         }
         private function attachTools(){
-            require_once(\Pure\Configuration::instance()->dir('tools/compressor.php'));
+            require_once('tools/compressor.php');
         }
         function __construct(){
             $this->resources    = array();
