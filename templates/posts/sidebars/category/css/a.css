@@ -1,0 +1,10 @@
+p[data-post-element-type="Pure.Posts.SideBar.A.Info"]{
+    position        : relative;
+    display         : block;
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 0.8em;
+    color           : rgb(140, 148, 170);
+    text-align      : center;
+    margin          : 0.5em 0 0.5em 0;
+    padding         : 0.5em 0 0.5em 0;
+}

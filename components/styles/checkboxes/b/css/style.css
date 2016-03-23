@@ -1,0 +1,82 @@
+/*
+<label data-element-type="Pure.CommonStyles.CheckBox.B">
+    <input data-element-type="Pure.CommonStyles.CheckBox.B" type="radio" name="" />
+    <div data-element-type="Pure.CommonStyles.CheckBox.B.Label">
+        <p data-element-type="Pure.CommonStyles.CheckBox.B.Label" data-addition-type="on">on</p>
+        <p data-element-type="Pure.CommonStyles.CheckBox.B.Label" data-addition-type="off">off</p>
+        <div data-element-type="Pure.CommonStyles.CheckBox.B.Slider"></div>
+    </div>
+    <div data-element-type="Pure.CommonStyles.CheckBox.B.Caption">
+        <p data-element-type="Pure.CommonStyles.CheckBox.B.Caption"></p>
+    </div>
+</label>
+*/
+input[data-element-type="Pure.CommonStyles.CheckBox.B"]{
+    display:none;
+}
+label[data-element-type="Pure.CommonStyles.CheckBox.B"]{
+    padding :0;
+    margin  :0;
+    border  :0;
+}
+div[data-element-type="Pure.CommonStyles.CheckBox.B.Label"] {
+    position            : relative;
+    width               : 4em;
+    height              : 1.5em;
+    border              : 1px dotted rgb(168, 200, 115);
+    -moz-box-sizing     : border-box;
+    -webkit-box-sizing  : border-box;
+    box-sizing          : border-box;
+    margin              : 0.5em 0;
+}
+    p[data-element-type="Pure.CommonStyles.CheckBox.B.Label"]{
+        position        :absolute;
+        width           :50%;
+        height          :100%;
+        margin          :0.5em 0 0 0;
+        padding         :0;
+        font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size       :0.6em;
+        text-align      :center;
+        text-transform  :uppercase;
+    }
+        p[data-element-type="Pure.CommonStyles.CheckBox.B.Label"][data-addition-type="on"]{
+            left:0;
+        }
+        p[data-element-type="Pure.CommonStyles.CheckBox.B.Label"][data-addition-type="off"]{
+            left:50%;
+        }
+    div[data-element-type="Pure.CommonStyles.CheckBox.B.Slider"]{
+        position                :absolute;
+        width                   :50%;
+        height                  :100%;
+        left                    :0;
+        background              :rgb(168, 200, 115);
+        -moz-transition         : all ease-in-out 300ms;
+        -o-transition           : all ease-in-out 300ms;
+        -webkit-transition      : all ease-in-out 300ms;
+        transition              : all ease-in-out 300ms;
+    }
+    input[data-element-type="Pure.CommonStyles.CheckBox.B"]:checked +div[data-element-type="Pure.CommonStyles.CheckBox.B.Label"] div[data-element-type="Pure.CommonStyles.CheckBox.B.Slider"]{
+        left:50%;
+    }
+    div[data-element-type="Pure.CommonStyles.CheckBox.B.Caption"]{
+        position        :relative;
+        width           :auto;
+        margin          :-2em 0 0 5em;
+        padding         :0;
+    }
+        div[data-element-type="Pure.CommonStyles.CheckBox.B.Caption"][data-shadow-inactive="true"]{
+            opacity:0.4;
+        }
+    p[data-element-type="Pure.CommonStyles.CheckBox.B.Caption"]{
+        margin          :0.7em 0.5em 0 0;
+        padding         :0;
+        font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size       :0.9em;
+        text-align      :left;
+        color           :rgb(50,50,50);
+    }
+    input[data-element-type="Pure.CommonStyles.CheckBox.B"]:checked ~div[data-element-type="Pure.CommonStyles.CheckBox.B.Caption"]{
+        opacity:1;
+    }

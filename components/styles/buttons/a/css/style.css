@@ -1,0 +1,70 @@
+div[data-type-element="Pure.CommonStyles.Button.A"]{
+    position        : relative;
+    display         : block;
+    margin          : 0 0.5em 0 0.5em;
+    border-radius   : 0.3em;
+    background      : rgb(220,220,220);
+    background      : -moz-linear-gradient(top,  rgba(220,220,220,1) 0%, rgba(255,255,255,1) 100%);
+    background      : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(220,220,220,1)), color-stop(100%,rgba(255,255,255,1)));
+    background      : -webkit-linear-gradient(top,  rgba(220,220,220,1) 0%,rgba(255,255,255,1) 100%);
+    background      : -o-linear-gradient(top,  rgba(220,220,220,1) 0%,rgba(255,255,255,1) 100%);
+    background      : -ms-linear-gradient(top,  rgba(220,220,220,1) 0%,rgba(255,255,255,1) 100%);
+    background      : linear-gradient(to bottom,  rgba(220,220,220,1) 0%,rgba(255,255,255,1) 100%);
+    filter          : progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcdcdc', endColorstr='#ffffff',GradientType=0 );
+}
+    div[data-type-element="Pure.CommonStyles.Button.A"][data-type-direction="right"]{
+        float: right;
+    }
+a[data-type-element="Pure.CommonStyles.Button.A"]{
+    position        : relative;
+    display         : block;
+    margin          : 3px;
+    padding         : 0.4em 1em 0.5em 1em;
+    cursor          : default;
+    text-decoration : none;
+    color           : rgb(30,30,30);
+    font-size       : 1em;
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    border-radius   : 0.3em;
+    background      : rgb(167,199,220);
+    background      : -moz-linear-gradient(top,  rgba(167,199,220,1) 0%, rgba(133,178,211,1) 100%);
+    background      : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(167,199,220,1)), color-stop(100%,rgba(133,178,211,1)));
+    background      : -webkit-linear-gradient(top,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%);
+    background      : -o-linear-gradient(top,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%);
+    background      : -ms-linear-gradient(top,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%);
+    background      : linear-gradient(to bottom,  rgba(167,199,220,1) 0%,rgba(133,178,211,1) 100%);
+    filter          : progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7c7dc', endColorstr='#85b2d3',GradientType=0 );
+    border-top      : solid 1px rgb(150, 150, 150);
+    border-left     : solid 1px rgb(150, 150, 150);
+    border-right    : solid 1px rgb(100, 100, 100);
+    border-bottom   : solid 1px rgb(100, 100, 100);
+    box-sizing      : border-box;
+    box-shadow      : 0 0 2px rgba(0,0,0,0.4);
+    text-shadow     : 0 0 2px rgba(0,0,0,0.4);
+}
+    a[data-type-element="Pure.CommonStyles.Button.A"]:before{
+        content             :"";
+        position            : absolute;
+        border-radius       : inherit;
+        opacity             : 0.1;
+        border-radius       : 0.3em;
+        background-image    : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAEBAMAAABb34NNAAAAGFBMVEUwMDCQkJDd7h7d7h7d7h7d7h6QkJBwcHAvq9PvAAAAFElEQVQImWNIZ2AoYGNgSGdgKwAACjsBuwysKbYAAAAASUVORK5CYII=);
+        background-repeat   :repeat;
+        top                 :0;
+        bottom              :0;
+        left                :0;
+        right               :0;
+        box-sizing          : border-box;
+    }
+    a[data-type-element="Pure.CommonStyles.Button.A"]:hover:after{
+        content             :"";
+        position            : absolute;
+        height              : 100%;
+        width               :100%;
+        border-radius       : inherit;
+        background          : rgba(255,255,255,0.2);
+        top                 :0;
+        bottom              :0;
+        left                :0;
+        right               :0;
+    }

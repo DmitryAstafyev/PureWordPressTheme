@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+div[data-element-type="Pure.Social.Background.A"]{
+    position            : fixed;
+    width               :100%;
+    height              :115%;
+    background-size     :cover;
+    top                 :0;
+    left                :0;
+    background-position : top 0% left 7.5%;
+    background-origin   : border-box;
+    z-index             : 0;
+    -webkit-transform   : translate3d(0,0,0);
+    display             : none;
+}
+@media only screen and (min-width : 1224px) {
+    div[data-element-type="Pure.Social.Background.A"]{
+        display             : block;
+    }
+}
+
+

@@ -1,0 +1,1 @@
+<p>This template of background supports any image as background of page and allows apply parallax effect for it.</p>

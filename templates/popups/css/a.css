@@ -1,0 +1,170 @@
+﻿/*============================================================================*/
+ul[data-element-type="Pure.PopupItem.A"]{
+    position    :relative;
+    width       :100%;
+    list-style  :none;
+    margin      : 1em 0;
+    padding     : 0;
+    text-align  :center;
+}
+    li[data-element-type="Pure.PopupItem.A"]{
+        position        :relative;
+        display         :inline-block;
+        list-style      :none;
+        margin          :0.5rem;
+        padding         :0;
+        border          :1px dashed rgba(0,0,0,0.01);
+        white-space     :normal!important;
+        vertical-align  :top;
+        width           :auto;
+        cursor          :default;
+        box-sizing      : border-box;
+    }
+        li[data-element-type="Pure.PopupItem.A"]:hover{
+            border          :1px dashed rgba(0,0,0,0.4);
+        }
+/*============================================================================*/
+div[data-element-type="Pure.PopupItem.A.Item.Container"]{
+    position    :relative;
+    margin      : 0;
+    padding     :0;
+}
+/*============================================================================*/
+p[data-element-type="Pure.PopupItem.A.Item.Title"]{
+    padding     :0.5rem 0.5rem 0 0.5rem;
+    margin      :0;
+    font-family :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size   :1rem;
+    color       :rgb(30,30,30);
+    white-space :nowrap;
+}
+p[data-element-type="Pure.PopupItem.A.Item.SubTitle"]{
+    padding     :0.5rem 0.5rem 0.5rem 0.5rem;
+    margin      :0;
+    font-family :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size   :0.8rem;
+    color       :rgb(70,70,70);
+    white-space :nowrap;
+}
+/*============================================================================*/
+div[data-element-type="Pure.PopupItem.A.Item.PopUp.Position"]{
+    position:absolute;
+    bottom  :100%;
+    left    : 50%;
+    display :none;
+    z-index : 1;
+}
+    li[data-element-type="Pure.PopupItem.A"]:hover div[data-element-type="Pure.PopupItem.A.Item.PopUp.Position"]{
+        display:block;
+    }
+    div[data-element-type="Pure.PopupItem.A.Item.PopUp"]{
+        position                :relative;
+        top                     :-1rem;
+        left                    : -50%;
+        background              :rgb(140, 148, 170);
+        width                   :15rem;
+        padding                 :0.5rem;
+        opacity                 :0;
+        animation			    : PurePopupItemAItemPopUp 350ms cubic-bezier(.44,1.38,.71,1.24) 500ms 1 normal forwards;
+        -webkit-animation	    : PurePopupItemAItemPopUp 350ms cubic-bezier(.44,1.38,.71,1.24) 500ms 1 normal forwards;
+        -moz-animation		    : PurePopupItemAItemPopUp 350ms cubic-bezier(.44,1.38,.71,1.24) 500ms 1 normal forwards;
+        -o-animation		    : PurePopupItemAItemPopUp 350ms cubic-bezier(.44,1.38,.71,1.24) 500ms 1 normal forwards;
+        text-align              :center;
+        -moz-box-shadow         : 2px 2px 3px rgba(0,0,0,0.4);
+        -webkit-box-shadow      : 2px 2px 3px rgba(0,0,0,0.4);
+        box-shadow              : 2px 2px 3px rgba(0,0,0,0.4);
+    }
+        @keyframes PurePopupItemAItemPopUp {
+            0% { top:-4rem;opacity:0;}100% { top:-1rem;opacity:1;}
+        }
+        @-moz-keyframes PurePopupItemAItemPopUp {
+            0% { top:-4rem;opacity:0;}100% { top:-1rem;opacity:1;}
+        }
+        @-webkit-keyframes PurePopupItemAItemPopUp {
+            0% { top:-4rem;opacity:0;}100% { top:-1rem;opacity:1;}
+        }
+        div[data-element-type="Pure.PopupItem.A.Item.PopUp"]:after{
+            position        :absolute;
+            content         :'';
+            top             :100%;
+            left            :50%;
+            margin-left     :-0.25rem;
+            width           : 0;
+            height          : 0;
+            border-left     : 0.25rem solid transparent;
+            border-right    : 0.25rem solid transparent;
+            border-top      : 0.5rem solid rgb(140, 148, 170);
+        }
+        div[data-element-type="Pure.PopupItem.A.Item.PopUp"]::before{
+            position        :absolute;
+            content         :'';
+            top             :100%;
+            left            :0;
+            width           : 100%;
+            height          : 2rem;
+            background      :rgba(0,0,0,0.001);
+        }
+        div[data-element-type="Pure.PopupItem.A.Item.PopUp"][data-hightlight-type="icon"]{
+            padding     : 0 0 0 6rem;
+            min-height  :6rem;
+        }
+/*============================================================================*/
+div[data-element-type="Pure.PopupItem.A.Item.PopUp.Text"]{
+    position    :relative;
+    width       :auto;
+    height      :auto;
+    text-align  :left;
+}
+    p[data-element-type="Pure.PopupItem.A.Item.PopUp.Title"]{
+        padding     :0.5rem 0.5rem 0 0.5rem;
+        margin      :0;
+        font-family :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size   :1rem;
+        color       :rgb(255,255,255);
+        white-space :normal;
+        text-align  :left;
+    }
+    p[data-element-type="Pure.PopupItem.A.Item.PopUp.SubTitle"]{
+        padding     :0.5rem 0.5rem 0.5rem 0.5rem;
+        margin      :0;
+        font-family :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size   :0.8rem;
+        color       :rgb(245,245,245);
+        white-space :normal;
+        text-align  :left;
+    }
+    a[data-element-type="Pure.PopupItem.A.Item.PopUp.Read"]{
+        display         :inline-block;
+        position        :relative;
+        padding         :0.5rem 0.5rem 0.5rem 0.5rem;
+        margin          :0;
+        font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size       :0.8rem;
+        color           :rgb(216, 234, 187);
+        white-space     :normal;
+        text-align      :left;
+        text-decoration :none;
+        cursor          :pointer;
+    }
+        a[data-element-type="Pure.PopupItem.A.Item.PopUp.Read"]:hover{
+            text-decoration:underline;
+        }
+/*============================================================================*/
+div[data-element-type="Pure.PopupItem.A.Item.Icon"]{
+    position            :absolute;
+    top                 :0;
+    left                :0;
+    width               :5rem;
+    height              :5rem;
+    margin              : 0.5rem 0.5rem 0.5rem 0.5rem;
+    background-size     :contain;
+    background-repeat   :no-repeat;
+}
+/*============================================================================*/
+img[data-element-type="Pure.PopupItem.A.Item.Icon"]{
+    position    :relative;
+    display     :inline-block;
+    max-width   :15rem;
+    max-height  :10rem;
+    margin      : 0.5rem 0;
+}

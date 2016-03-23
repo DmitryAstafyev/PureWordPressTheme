@@ -1,0 +1,127 @@
+/*REDEFINITION WORDPRESS ADMIN:: BEGIN*/
+/*===============================================================================*/
+.inactive-sidebar{
+    display: none!important;
+}
+body > div[id="wpfooter"]{
+    position: relative!important;
+}
+/*===============================================================================*/
+/*REDEFINITION WORDPRESS ADMIN:: END*/
+p[data-type="Pure.Configuration.Title"]{
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 1em;
+    margin          : 0;
+    padding         : 0.5em 0.5em 0.3em 0.5em;
+}
+p[data-type="Pure.Configuration.Info"]{
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 0.9em;
+    margin          : 0;
+    padding         : 0.5em 0.5em 0.3em 0.5em;
+    color           : rgb(100,100,100);
+    font-style      : italic;
+}
+input[data-type="Pure.Configuration.Input"]{
+    position        : relative;
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 1em;
+    margin          : 0;
+    padding         : 0.5em;
+    margin          : 0.5em;
+    width           : auto;
+}
+textarea[data-type="Pure.Configuration.TextArea"]{
+    position        : relative;
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 1em;
+    width           : 100%;
+}
+select[data-type="Pure.Configuration.Input.Fader"]{
+    position        : relative;
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 1em;
+    margin          : 0;
+    padding         : 0.1em;
+    margin          : 0.5em;
+    width           : auto;
+}
+p[data-type="Pure.Configuration.Attention"]{
+    position        : relative;
+    display         : block;
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 1em;
+    margin          : 0;
+    padding         : 0.5em 0.5em 0.5em 1em;
+    color           : rgb(50,50,50);
+    font-style      : italic;
+}
+    p[data-type="Pure.Configuration.Attention"]:after{
+        position    : absolute;
+        display     : block;
+        content     : '';
+        top         :0;
+        bottom      : 0;
+        left        :0;
+        width       : 0.5em;
+        background  : rgb(255,50,50);
+    }
+p[data-type="Pure.Configuration.Accent"]{
+    position        : relative;
+    display         : block;
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 1em;
+    margin          : 0;
+    padding         : 0.5em 0.5em 0.5em 1em;
+    color           : rgb(50,50,50);
+    font-style      : italic;
+}
+    p[data-type="Pure.Configuration.Accent"]:after{
+        position    : absolute;
+        display     : block;
+        content     : '';
+        top         :0;
+        bottom      : 0;
+        left        :0;
+        width       : 0.5em;
+        background  : rgb(50,200,50);
+    }
+img[data-type="Pure.Configuration.Img"]{
+    position: relative;
+    width   : 100%;
+    height  : auto;
+}
+img[data-type="Pure.Configuration.Input.Fader"]{
+    opacity                 : 0.4;
+    -moz-transition         : all ease-in-out 150ms;
+    -o-transition           : all ease-in-out 150ms;
+    -webkit-transition      : all ease-in-out 150ms;
+    transition              : all ease-in-out 150ms;
+}
+input[data-type="Pure.Configuration.Input.Fader"]:checked ~img[data-type="Pure.Configuration.Input.Fader"]{
+    opacity: 1;
+}
+input[data-type="Pure.Configuration.Input.Fader"]:checked +label img[data-type="Pure.Configuration.Input.Fader"]{
+    opacity: 1;
+}
+/*=================================================================================*/
+div[data-type="Pure.Configuration.Logs"]{
+    position    : relative;
+    display     : block;
+    height      : 30em;
+    margin      : 1em 2em 3em 2em;
+    width       : auto;
+    padding     : 0;
+}
+textarea[data-type="Pure.Configuration.Logs"]{
+    position    : relative;
+    display     : block;
+    height      : 100%;
+    width       : 100%;
+    background  : rgb(30,30,30);
+    color       : rgb(0,255,0);
+    box-shadow  : 0px 0px 2px rgba(0,0,0,0.4) inset;
+    resize      : none;
+    padding     : 0;
+    margin      : 0;
+}

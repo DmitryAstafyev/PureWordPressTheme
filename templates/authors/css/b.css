@@ -1,0 +1,126 @@
+﻿div[data-type-element="Author.Thumbnail.B.Top.Container"]{
+	position	:relative;
+    padding     : 0.5em 0.5em;
+}
+/*====================================================================================================================================*/
+    div[data-type-element="Author.Thumbnail.B.Top.Avatar"]{
+        position        :relative;
+        width           :7em;
+        height          :7em;
+        left            :50%;
+        margin-left     :-3.5em;
+        border-radius   :3.5em;
+        background      : rgb(240, 240, 240);
+    }
+        div[data-type-element="Author.Thumbnail.B.Top.Avatar"] img{
+            position        :relative;
+            width           :6em;
+            height          :6em;
+            border-radius   :3em;
+            top             :0.5em;
+            left            :0.5em;
+        }
+/*====================================================================================================================================*/
+div[data-type-element="Author.Thumbnail.B.Top.Info"]{
+    position:relative;
+    width   :100%;
+}
+    a[data-type-element="Author.Thumbnail.B.Top.Name"]{
+        position            :relative;
+        display             :block;
+        font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size           :1em;
+        padding             :0.5em;
+        margin              :0;
+        color               :rgb(100,100,100);
+        line-height         :1em;
+        cursor              :pointer;
+        text-align          :center;
+        text-decoration     :none;
+    }
+        a[data-type-element="Author.Thumbnail.B.Top.Name"]:hover{
+            color               :rgb(30,30,30);
+        }
+    a[data-type-element="Author.Thumbnail.B.Top.Post"], 
+    a[data-type-element="Author.Thumbnail.B.Top.Friends"]
+    {
+        position            :relative;
+        display             :block;
+        font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size           :0.7em;
+        padding             :0.5em;
+        margin              :0;
+        color               :rgb(100,100,100);
+        line-height         :1em;
+        cursor              :pointer;
+        text-align          :center;
+        text-decoration     :none;
+    }
+/*====================================================================================================================================*/
+div[data-type-element="Author.Thumbnail.B.Container"]{
+	position	    :relative;
+    padding         : 0.5em 0.5em;
+    margin-bottom   :0.5em;
+}
+/*====================================================================================================================================*/
+div[data-type-element="Author.Thumbnail.B.Avatar"]{
+    position        :relative;
+    width           :4em;
+    height          :4em;
+    border-radius   :2em;
+    background      : rgb(240, 240, 240);
+}
+    div[data-type-element="Author.Thumbnail.B.Avatar"] img{
+        position        : relative;
+        width           :3em;
+        height          :3em;
+        border-radius   :1.5em;
+        top             :0.5em;
+        left            :0.5em;
+    }
+/*====================================================================================================================================*/
+div[data-type-element="Author.Thumbnail.B.Info"]{
+    position    :absolute;
+    top         :0.5em;
+    left        :5em;
+    right       :0em;
+    height      :4em;
+    overflow    :hidden;
+}
+    a[data-type-element="Author.Thumbnail.B.Name"]{
+        position            :relative;
+        display             :block;
+        font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size           :0.8em;
+        padding             :0.5em;
+        margin              :0;
+        color               :rgb(100,100,100);
+        line-height         :1em;
+        cursor              :pointer;
+        text-decoration     :none;
+        white-space         :nowrap;
+    }
+        a[data-type-element="Author.Thumbnail.B.Name"]:hover{
+            color               :rgb(30,30,30);
+        }
+    a[data-type-element="Author.Thumbnail.B.Post"], 
+    a[data-type-element="Author.Thumbnail.B.Friends"]
+    {
+        position            :relative;
+        display             :block;
+        font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size           :0.7em;
+        padding             :0.3em;
+        margin              :0;
+        color               :rgb(100,100,100);
+        line-height         :1em;
+        cursor              :pointer;
+        text-decoration     :none;
+        white-space         :nowrap;
+    }
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/

@@ -1,0 +1,163 @@
+﻿@charset "utf-8";
+/*====================================================================================================================================*/
+div[data-element-type="Pure.Positioning.B"]{
+    position: relative;
+    width   : 100%;
+}
+/*====================================================================================================================================*/
+div[data-element-type="Pure.Positioning.B.Columns.Container"]{
+    position: relative;
+    display : table;
+    width   : 100%;
+}
+    div[data-element-type="Pure.Positioning.B.Column.Container"]{
+        position        : relative;
+        display         : table-cell;
+        vertical-align  : top;
+    }
+        div[data-element-type="Pure.Positioning.B.Column"]{
+            position: relative;
+            width   : 100%;
+        }
+/*====================================================================================================================================*/
+div[data-element-type="Pure.Positioning.B.OtherNodes.Container"]{
+    position: relative;
+    width   : 100%;
+}
+/*====================================================================================================================================*/
+div[data-element-type="Pure.Positioning.B.Columns.Loading"]{
+    position: relative;
+    width   : 100%;
+    height  : 3em;
+}
+/*====================================================================================================================================*/
+div[data-element-type="Pure.Positioning.Loading.B.Particle"]{
+    position            :absolute;
+    width               :2.5em;
+    height              :2.5em;
+    border-radius       :1.25em;
+    top                 :50%;
+    left                :50%;
+    margin              : -1.25em 0 0 -1.25em;
+    opacity             :0;
+    animation			: Pure_Positioning_Loading_B 2050ms cubic-bezier(.65,.95,.41,.13) 0ms infinite normal;
+    -webkit-animation	: Pure_Positioning_Loading_B 2050ms cubic-bezier(.65,.95,.41,.13) 0ms infinite normal;
+    -moz-animation		: Pure_Positioning_Loading_B 2050ms cubic-bezier(.65,.95,.41,.13) 0ms infinite normal;
+    -o-animation		: Pure_Positioning_Loading_B 2050ms cubic-bezier(.65,.95,.41,.13) 0ms infinite normal;
+}
+div[data-element-type="Pure.Positioning.Loading.B.Particle"]:after{
+    position        : absolute;
+    content         : '';
+    width           : 4px;
+    height          : 4px;
+    border-radius   : 2px;
+    background      : rgb(0,255,0);
+    box-shadow      : 0 0 1px rgba(0,0,0,0.4);
+    bottom          : 0;
+    left            :50%;
+}
+div[data-element-type="Pure.Positioning.Loading.B.Particle"][data-addition-type="0"] {
+    -moz-animation-delay    : 0ms;
+    -o-animation-delay      : 0ms;
+    -webkit-animation-delay : 0ms;
+    animation-delay         : 0ms;
+}
+div[data-element-type="Pure.Positioning.Loading.B.Particle"][data-addition-type="1"] {
+    -moz-animation-delay    : 200ms;
+    -o-animation-delay      : 200ms;
+    -webkit-animation-delay : 200ms;
+    animation-delay         : 200ms;
+}
+div[data-element-type="Pure.Positioning.Loading.B.Particle"][data-addition-type="2"] {
+    -moz-animation-delay    : 400ms;
+    -o-animation-delay      : 400ms;
+    -webkit-animation-delay : 400ms;
+    animation-delay         : 400ms;
+}
+div[data-element-type="Pure.Positioning.Loading.B.Particle"][data-addition-type="3"] {
+    -moz-animation-delay    : 600ms;
+    -o-animation-delay      : 600ms;
+    -webkit-animation-delay : 600ms;
+    animation-delay         : 600ms;
+}
+div[data-element-type="Pure.Positioning.Loading.B.Particle"][data-addition-type="4"] {
+    -moz-animation-delay    : 800ms;
+    -o-animation-delay      : 800ms;
+    -webkit-animation-delay : 800ms;
+    animation-delay         : 800ms;
+}
+div[data-element-type="Pure.Positioning.Loading.B.Particle"][data-addition-type="5"] {
+    -moz-animation-delay    : 1000ms;
+    -o-animation-delay      : 1000ms;
+    -webkit-animation-delay : 1000ms;
+    animation-delay         : 1000ms;
+}
+@keyframes Pure_Positioning_Loading_B {
+    0% {
+        -moz-transform      : rotateZ(0deg);
+        -ms-transform       : rotateZ(0deg);
+        -o-transform        : rotateZ(0deg);
+        -webkit-transform   : rotateZ(0deg);
+        transform           : rotateZ(0deg);
+        opacity             :0;
+    }
+    50% {
+        opacity             :1;
+    }
+    100% {
+        -moz-transform      : rotateZ(360deg);
+        -ms-transform       : rotateZ(360deg);
+        -o-transform        : rotateZ(360deg);
+        -webkit-transform   : rotateZ(360deg);
+        transform           : rotateZ(360deg);
+        opacity             :0;
+    }
+}
+@-moz-keyframes Pure_Positioning_Loading_B {
+    0% {
+        -moz-transform      : rotateZ(0deg);
+        -ms-transform       : rotateZ(0deg);
+        -o-transform        : rotateZ(0deg);
+        -webkit-transform   : rotateZ(0deg);
+        transform           : rotateZ(0deg);
+        opacity             :0;
+    }
+    50% {
+        opacity             :1;
+    }
+    100% {
+        -moz-transform      : rotateZ(360deg);
+        -ms-transform       : rotateZ(360deg);
+        -o-transform        : rotateZ(360deg);
+        -webkit-transform   : rotateZ(360deg);
+        transform           : rotateZ(360deg);
+        opacity             :0;
+    }
+}
+@-webkit-keyframes Pure_Positioning_Loading_B {
+    0% {
+        -moz-transform      : rotateZ(0deg);
+        -ms-transform       : rotateZ(0deg);
+        -o-transform        : rotateZ(0deg);
+        -webkit-transform   : rotateZ(0deg);
+        transform           : rotateZ(0deg);
+        opacity             :0;
+    }
+    50% {
+        opacity             :1;
+    }
+    100% {
+        -moz-transform      : rotateZ(360deg);
+        -ms-transform       : rotateZ(360deg);
+        -o-transform        : rotateZ(360deg);
+        -webkit-transform   : rotateZ(360deg);
+        transform           : rotateZ(360deg);
+        opacity             :0;
+    }
+}
+
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+

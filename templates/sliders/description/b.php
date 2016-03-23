@@ -1,0 +1,1 @@
+<p style="padding-left: 2em; font-size: 0.8em;color: rgb(200,0,0);">This template of slider cannot be applied "from box". This is template only for developer use. Do not use it here.</p>

@@ -1,0 +1,70 @@
+﻿div[data-type-element="Gallery.Thumbnail.G.Container"]{
+	position	:relative;
+    padding     : 0.5em 0.5em;
+}
+    div[data-type-element="Gallery.Thumbnail.G.Container"]:after{
+        position        :absolute;
+        content         :"";
+        width           :50%;
+        height          :1px;
+        border-bottom   :1px dotted rgb(100,100,100);
+        top             :100%;
+        left            :25%;
+    }
+    div[data-type-element="Gallery.Thumbnail.G.Container"]:last-child:after{
+        border-bottom   :none;
+    }
+/*====================================================================================================================================*/
+div[data-type-element="Gallery.Thumbnail.G.Thumbnail"]{
+    position                :relative;
+    width                   :100%;
+    height                  :8em;
+    -moz-background-size    : cover;
+    background-size         : cover;
+    background-position     : center center;
+    background-repeat       :no-repeat no-repeat;
+}
+/*====================================================================================================================================*/
+a[data-type-element="Gallery.Thumbnail.G.Author"]{
+    position            :absolute;
+    display             :block;
+    font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size           :0.8em;
+    padding             :0.5em;
+    margin              :0;
+    color               :rgb(230,230,230);
+    background          :rgba(0,0,0,0.5);
+    line-height         :1em;
+    cursor              :pointer;
+    text-align          :center;
+    text-decoration     :none;
+    max-width           :90%;
+    top                 :8em;
+    left                :0em;
+    white-space         :nowrap;
+    overflow            :hidden;
+}
+a[data-type-element="Gallery.Thumbnail.G.Info"]{
+    position            :absolute;
+    display             :block;
+    font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size           :0.8em;
+    padding             :0.5em;
+    margin              :0;
+    color               :rgb(230,230,230);
+    background          :rgba(0,0,0,0.5);
+    line-height         :1em;
+    cursor              :pointer;
+    text-align          :center;
+    text-decoration     :none;
+    max-width           :90%;
+    top                 :1em;
+    right               :0em;
+    white-space         :nowrap;
+    overflow            :hidden;
+}
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/

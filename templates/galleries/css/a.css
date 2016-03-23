@@ -1,0 +1,106 @@
+﻿div[data-type-element="Gallery.Thumbnail.F.Container"]{
+	position	:relative;
+    padding     : 0.5em 0.5em;
+}
+    div[data-type-element="Gallery.Thumbnail.F.Container"]:after{
+        position        :absolute;
+        content         :"";
+        width           :50%;
+        height          :1px;
+        border-bottom   :1px dotted rgb(100,100,100);
+        top             :100%;
+        left            :25%;
+    }
+    div[data-type-element="Gallery.Thumbnail.F.Container"]:last-child:after{
+        border-bottom   :none;
+    }
+        div[data-type-element="Gallery.Thumbnail.F.Container.Sub"]{
+	        position	:relative;
+            width       :100%;
+            height      :8em;
+            overflow    :hidden;
+        }
+/*====================================================================================================================================*/
+div[data-type-element="Gallery.Thumbnail.F.Thumbnail"]{
+    position                :absolute;
+    top                     :0;
+    left                    :0;
+    width                   :100%;
+    height                  :8em;
+    -moz-background-size    : cover;
+    background-size         : cover;
+    background-position     : center center;
+    background-repeat       :no-repeat no-repeat;
+    -moz-transition         : all ease-in-out 150ms; 
+    -o-transition           : all ease-in-out 150ms;
+    -webkit-transition      : all ease-in-out 150ms;
+    transition              : all ease-in-out 150ms;
+    border                  :0.2em solid rgb(255,255,255);
+}
+/*====================================================================================================================================*/
+a[data-type-element="Gallery.Thumbnail.F.Author"]{
+    position            :absolute;
+    display             :block;
+    font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size           :0.8em;
+    padding             :0.5em;
+    margin              :0;
+    color               :rgb(230,230,230);
+    background          :rgba(0,0,0,0.5);
+    line-height         :1em;
+    cursor              :pointer;
+    text-align          :center;
+    text-decoration     :none;
+    max-width           :90%;
+    top                 :8em;
+    left                :0em;
+    white-space         :nowrap;
+    overflow            :hidden;
+}
+a[data-type-element="Gallery.Thumbnail.F.Info"]{
+    position            :absolute;
+    display             :block;
+    font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size           :0.8em;
+    padding             :0.5em;
+    margin              :0;
+    color               :rgb(230,230,230);
+    background          :rgba(0,0,0,0.5);
+    line-height         :1em;
+    cursor              :pointer;
+    text-align          :center;
+    text-decoration     :none;
+    max-width           :90%;
+    top                 :1.5em;
+    right               :0em;
+    white-space         :nowrap;
+    overflow            :hidden;
+}
+/*====================================================================================================================================*/
+input[data-type-element="Gallery.Thumbnail.F.Switcher"]{
+    display:none;
+}
+input[data-type-element="Gallery.Thumbnail.F.Switcher"]:checked +div[data-type-element="Gallery.Thumbnail.F.Container.Sub"] div{
+    width       :50%;
+    height      :4em;
+}
+input[data-type-element="Gallery.Thumbnail.F.Switcher"]:checked +div[data-type-element="Gallery.Thumbnail.F.Container.Sub"] div[data-element-order="1"]{
+    top         :0;
+    left        :0;
+}
+input[data-type-element="Gallery.Thumbnail.F.Switcher"]:checked +div[data-type-element="Gallery.Thumbnail.F.Container.Sub"] div[data-element-order="2"]{
+    top         :0;
+    left        :50%;
+}
+input[data-type-element="Gallery.Thumbnail.F.Switcher"]:checked +div[data-type-element="Gallery.Thumbnail.F.Container.Sub"] div[data-element-order="3"]{
+    top         :4em;
+    left        :0;
+}
+input[data-type-element="Gallery.Thumbnail.F.Switcher"]:checked +div[data-type-element="Gallery.Thumbnail.F.Container.Sub"] div[data-element-order="4"]{
+    top         :4em;
+    left        :50%;
+}
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/

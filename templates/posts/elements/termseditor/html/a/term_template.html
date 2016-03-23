@@ -1,0 +1,12 @@
+<li data-element-type="Pure.Terms.Item"
+    data-multiitems-engine-itemID="[index]"
+    data-multiitems-engine-template="%instance_id%"
+    style="display: none;">
+    <p data-element-type="Pure.Terms.Item">__name__ <sup>__count__</sup></p>
+    <input data-element-type="Pure.Terms.Item" form="%form_id%" type="text" name="%form_field%" value="__name__" %attribute%/>
+    <a data-element-type="Pure.Terms.Item.Remove"
+       data-multiitems-engine-remove
+       data-multiitems-engine-itemID="[index]"
+       data-muliitems-engine-afterremove-handles="pure.posts.elements.terms.history.removeFromHistory"
+       data-muliitems-engine-afterremove-params="__instance_id__,__name__"></a>
+</li>

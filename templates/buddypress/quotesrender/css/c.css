@@ -1,0 +1,101 @@
+﻿/*================================================================================================*/
+div[data-element-type="Pure.AuthorQuote.A.Container"]{
+    position:relative;
+    width   :40rem;
+    margin  :0 auto;
+}
+/*================================================================================================*/
+div[data-element-type="Pure.AuthorQuote.A.Quote"]{
+    position    :relative;
+    margin      :0.5rem;
+    background  :rgb(100,100,100);
+}
+div[data-element-type="Pure.AuthorQuote.A.Quote"]:after{
+    position    :absolute;
+    content     :'';
+    width       : 0;
+    height      : 0;
+    border-top  : 1rem solid rgb(100,100,100); 
+    border-right: 1rem solid transparent;
+    top         :100%;
+    left        :5rem;
+}
+/*================================================================================================*/
+p[data-element-type="Pure.AuthorQuote.A.Text"]{
+    font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       :1rem;
+    color           :rgb(230,230,230);
+    margin          :0;
+    padding         :0.5rem 0.5rem 0.5rem 0.5rem;
+    text-align      :left;
+    cursor          :default;
+}
+    p[data-element-type="Pure.AuthorQuote.A.Date"]{
+        font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size       :0.8rem;
+        color           :rgb(200,200,200);
+        margin          :0;
+        padding         :0.5rem 0.5rem 0.5rem 0.5rem;
+        text-align      :left;
+        cursor          :default;
+    }
+/*================================================================================================*/
+img[data-element-type="Pure.AuthorQuote.A.Avatar"]{
+    position                : relative;
+    display                 : block;
+    width                   : 5rem;
+    height                  : 5rem;
+    -moz-border-radius      : 2.5rem;
+    -webkit-border-radius   : 2.5rem;
+    border-radius           : 2.5rem;
+    margin                  : 1.5rem 0.5rem 0.5rem 0.5rem;
+    -moz-box-sizing         : border-box;
+    -webkit-box-sizing      : border-box;
+    box-sizing              : border-box;
+    border                  :0.3rem solid rgb(140, 148, 170);
+}
+/*================================================================================================*/
+p[data-element-type="Pure.AuthorQuote.A.Author"]{
+    position        :relative;
+    display         :block;
+    font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       :0.9rem;
+    color           :rgb(230,230,230);
+    margin          :-2rem 0rem 0rem 6rem;
+    padding         :0.5rem 0.5rem 0.5rem 0.5rem;
+    text-align      :left;
+    cursor          :default;
+}
+    p[data-element-type="Pure.AuthorQuote.A.Author"] a{
+        font-size       :0.9rem;
+        color           :rgb(230,230,230);
+        text-decoration :none;
+        cursor          :pointer;
+    }
+        p[data-element-type="Pure.AuthorQuote.A.Author"] a:hover{
+            text-decoration :underline;
+        }
+/*================================================================================================*/
+@media screen and (max-width: 1300px){
+    div[data-element-type="Pure.AuthorQuote.A.Container"]{
+        width   :35rem;
+    }
+}
+@media screen and (max-width: 1000px){
+    div[data-element-type="Pure.AuthorQuote.A.Container"]{
+        width   :30rem;
+    }
+}
+@media screen and (max-width: 800px){
+    div[data-element-type="Pure.AuthorQuote.A.Container"]{
+        width   :90%;
+        margin :0 5%;
+    }
+}
+@media screen and (max-width: 600px){
+    div[data-element-type="Pure.AuthorQuote.A.Container"]{
+        width   :95%;
+        margin :0 2.5%;
+    }
+}
+/*================================================================================================*/

@@ -1,0 +1,155 @@
+﻿div[data-type-element="Author.Thumbnail.A.Top.Container"]{
+	position	:relative;
+    padding     : 0.5em 0.5em;
+}
+/*====================================================================================================================================*/
+    div[data-type-element="Author.Thumbnail.A.Top.Avatar"]{
+        position        :relative;
+        width           :7em;
+        height          :7em;
+        left            :50%;
+        margin-left     :-3.5em;
+        border-radius   :3.5em;
+    }
+        div[data-type-element="Author.Thumbnail.A.Top.Avatar"] img{
+            position        :relative;
+            width           :7em;
+            height          :7em;
+            border-radius   :3.5em;
+        }
+/*====================================================================================================================================*/
+div[data-type-element="Author.Thumbnail.A.Top.Info"]{
+    position:relative;
+    width   :100%;
+}
+    p[data-type-element="Author.Thumbnail.A.Top"]{
+        position            :relative;
+        display             :block;
+        font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size           :0.7em;
+        padding             :0.5em;
+        margin              :0;
+        color               :rgb(100,100,100);
+        line-height         :1em;
+        cursor              :default;
+        text-align          :center;
+    }
+    a[data-type-element="Author.Thumbnail.A.Top.Name"]{
+        position            :relative;
+        display             :block;
+        font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size           :1em;
+        padding             :0.5em;
+        margin              :0;
+        color               :rgb(100,100,100);
+        line-height         :1em;
+        cursor              :pointer;
+        text-align          :center;
+        text-decoration     :none;
+    }
+        a[data-type-element="Author.Thumbnail.A.Top.Name"]:hover{
+            color               :rgb(30,30,30);
+        }
+    a[data-type-element="Author.Thumbnail.A.Top.Post"], 
+    a[data-type-element="Author.Thumbnail.A.Top.Friends"]
+    {
+        position            :relative;
+        display             :block;
+        font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size           :0.7em;
+        padding             :0.5em;
+        margin              :0;
+        color               :rgb(100,100,100);
+        line-height         :1em;
+        cursor              :pointer;
+        text-align          :center;
+        text-decoration     :none;
+    }
+/*====================================================================================================================================*/
+div[data-type-element="Author.Thumbnail.A.Container"]{
+	position	    :relative;
+    padding         : 0.5em 0.5em;
+    margin-bottom   :1em;
+}
+    div[data-type-element="Author.Thumbnail.A.Container"]:before{
+	    position	:absolute;
+        content     :"";
+        top         :-0.5em;
+        left        :-0.5em;
+        bottom      :0;
+        right       :-0.5em;
+        background  :rgb(255,255,255);
+    }
+    div[data-type-element="Author.Thumbnail.A.Container"]:after{
+	    position	:absolute;
+        content     :"";
+        top         :100%;
+        width       :100%;
+        left        :0;
+        height      :1em;
+        background  : -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
+        background  : -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1)));
+        background  : -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,1) 100%);
+        background  : -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,1) 100%);
+        background  : -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,1) 100%);
+        background  : linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,1) 100%);
+        filter      : progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+    }
+/*====================================================================================================================================*/
+div[data-type-element="Author.Thumbnail.A.Avatar"]{
+    position        :relative;
+    width           :4em;
+    height          :4em;
+    border-radius   :2em;
+}
+    div[data-type-element="Author.Thumbnail.A.Avatar"] img{
+        width           :4em;
+        height          :4em;
+        border-radius   :2em;
+    }
+/*====================================================================================================================================*/
+div[data-type-element="Author.Thumbnail.A.Info"]{
+    position    :absolute;
+    top         :0.5em;
+    left        :5em;
+    right       :0em;
+    height      :4em;
+    overflow    :hidden;
+}
+    a[data-type-element="Author.Thumbnail.A.Name"]{
+        position            :relative;
+        display             :block;
+        font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size           :0.8em;
+        padding             :0.5em;
+        margin              :0;
+        color               :rgb(100,100,100);
+        line-height         :1em;
+        cursor              :pointer;
+        text-decoration     :none;
+        white-space         :nowrap;
+    }
+        a[data-type-element="Author.Thumbnail.A.Name"]:hover{
+            color               :rgb(30,30,30);
+        }
+    a[data-type-element="Author.Thumbnail.A.Post"], 
+    a[data-type-element="Author.Thumbnail.A.Friends"]
+    {
+        position            :relative;
+        display             :block;
+        font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size           :0.7em;
+        padding             :0.3em;
+        margin              :0;
+        color               :rgb(100,100,100);
+        line-height         :1em;
+        cursor              :pointer;
+        text-decoration     :none;
+        white-space         :nowrap;
+    }
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/

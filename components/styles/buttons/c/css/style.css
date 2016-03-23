@@ -1,0 +1,41 @@
+    a[data-element-type="Pure.CommonStyles.Button.C"]{
+        display                 :block;
+        position                :relative;
+        margin                  :0 0.5em 0 0.5em;
+        padding                 :0.5em 1.5em 0.5em 1.5em;
+        font-family             :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size               :0.9em;
+        text-align              :right;
+        color                   :rgb(43, 82, 139);
+        text-decoration         :none;
+        -moz-border-radius      : 3px;
+        -webkit-border-radius   : 3px;
+        border-radius           : 3px;
+        background              : rgb(242,245,246);
+        background              : -moz-linear-gradient(top,  rgba(242,245,246,1) 0%, rgba(227,234,237,1) 37%, rgba(200,215,220,1) 100%);
+        background              : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,245,246,1)), color-stop(37%,rgba(227,234,237,1)), color-stop(100%,rgba(200,215,220,1)));
+        background              : -webkit-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%);
+        background              : -o-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%);
+        background              : -ms-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%);
+        background              : linear-gradient(to bottom,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%);
+        filter                  : progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 );
+        cursor                  :default;
+        border-top              : solid 1px rgb(140,140,140);
+        border-left             : solid 1px rgb(140,140,140);
+        border-right            : solid 1px rgb(100,100,100);
+        border-bottom           : solid 1px rgb(100,100,100);
+        -moz-box-sizing         : border-box;
+        -webkit-box-sizing      : border-box;
+        box-sizing              : border-box;
+        -moz-box-shadow         : 0 0 3px rgba(0,0,0,0) inset;
+        -webkit-box-shadow      : 0 0 3px rgba(0,0,0,0) inset;
+        box-shadow              : 0 0 3px rgba(0,0,0,0) inset;
+    }
+        a[data-element-type="Pure.CommonStyles.Button.C"]:hover{
+            -moz-box-shadow         : 0 0 3px rgba(0,0,0,0.4) inset;
+            -webkit-box-shadow      : 0 0 3px rgba(0,0,0,0.4) inset;
+            box-shadow              : 0 0 3px rgba(0,0,0,0.4) inset;
+        }
+        a[data-element-type="Pure.CommonStyles.Button.C"][data-addition-type="right"]{
+            float :right;
+        }

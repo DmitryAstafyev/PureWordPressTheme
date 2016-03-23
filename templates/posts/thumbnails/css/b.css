@@ -1,0 +1,250 @@
+﻿/*Container*/
+div[data-type-element="Post.Thumbnail.B.Container"]{
+	position	:relative;
+    left        :0em;
+    right       :0em;
+	height		:20em;
+	box-shadow	:0em 0em 1em rgba(0,0,0,0.4);
+	margin		:1em;
+    background  : rgb(255,255,255);
+    overflow    :hidden;
+}
+    div[data-type-element="Post.Thumbnail.B.Container"][data-width-fix="true"]{
+        width       : 30em;
+    }
+/*====================================================================================================================================*/
+div[data-type-element="Post.Thumbnail.B.Image"]{
+    position                :relative;
+    top                     :0;
+    width                   :100%;
+    height                  :50%;
+    -moz-background-size    : cover;
+    background-size         : cover;
+    background-position     : center center;
+    background-repeat       :no-repeat no-repeat;
+    -moz-transition         : all ease-in-out 500ms; 
+    -o-transition           : all ease-in-out 500ms;
+    -webkit-transition      : all ease-in-out 500ms;
+    transition              : all ease-in-out 500ms;
+}
+/*====================================================================================================================================*/
+div[data-type-element="Post.Thumbnail.B.Title"]{
+    position                :absolute;
+    width                   :100%;
+    height                  :3em;
+    top                     :10em;
+    left                    :0;
+    -moz-transition         : all ease-in-out 500ms; 
+    -o-transition           : all ease-in-out 500ms;
+    -webkit-transition      : all ease-in-out 500ms;
+    transition              : all ease-in-out 500ms;
+}
+    div[data-type-element="Post.Thumbnail.B.Avatar"]{
+        position    :absolute;
+        width       :5em;
+        height      :5em;
+        top         :-2em;
+        left        :1em;
+        background  :rgba(150,150,150,0.8);
+    }
+        img[data-type-element="Post.Thumbnail.B.Avatar"]{
+            width   :4em;
+            height  :4em;
+            margin  :0.5em;
+        }
+    a[data-type-element="Post.Thumbnail.B.Title"]{
+        position            :absolute;
+        display             :block;
+        top                 :0;
+        left                :6em;
+        right               :0em;
+        margin              :0;
+        font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size           :1em;
+        padding             :0.5em 0.5em 0.5em 0.5em;
+        color               :rgb(75,75,75);
+        line-height         :1em;
+        cursor              :pointer;
+        text-decoration     :none;
+        white-space         :nowrap;
+        overflow            :hidden;
+        text-shadow         : 0 0 1px rgba(0,0,0,0.4);
+        -moz-transition     : all ease-in-out 150ms; 
+        -o-transition       : all ease-in-out 150ms;
+        -webkit-transition  : all ease-in-out 150ms;
+        transition          : all ease-in-out 150ms;
+    }
+        a[data-type-element="Post.Thumbnail.B.Title"]:after{
+            position    :absolute;
+            content     :"";
+            width       :3em;
+            height      :100%;
+            top         :0;
+            left        :100%;
+            margin-left :-3em;
+            background  : -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+            background  : -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1)));
+            background  : -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+            background  : -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+            background  : -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+            background  : linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+            filter      : progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+        }
+        a[data-type-element="Post.Thumbnail.B.Title"]:hover {
+            color               :rgb(30,30,30);
+        }
+    p[data-type-element="Post.Thumbnail.B.Author"]{
+        position            :absolute;
+        display             :block;
+        width               :20em;
+        max-width           :20em;
+        top                 :2em;
+        left                :7.6em;
+        margin              :0;
+        font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size           :0.8em;
+        padding             :0.5em 0.5em 0.5em 0.5em;
+        color               :rgb(150,150,150);
+        line-height         :1em;
+        cursor              :default;
+        overflow            :hidden;
+    }
+        p[data-type-element="Post.Thumbnail.B.Author"]:after{
+            position    :absolute;
+            content     :"";
+            width       :3em;
+            height      :100%;
+            top         :0;
+            left        :100%;
+            margin-left :-3em;
+            background  : -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+            background  : -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1)));
+            background  : -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+            background  : -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+            background  : -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+            background  : linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+            filter      : progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+        }
+        p[data-type-element="Post.Thumbnail.B.Author"] a {
+            font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+            color               :rgb(150,150,150);
+            font-style          :italic;
+            white-space         :nowrap;
+            text-decoration     :underline;
+            cursor              :pointer;
+        }
+    p[data-type-element="Post.Thumbnail.B.DataCategory"]{
+        position            :absolute;
+        font-style          :italic;
+        display             :block;
+        width               :20em;
+        max-width           :20em;
+        top                 :2em;
+        left                :100%;
+        margin              :0 0 0 -21em;
+        font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size           :0.8em;
+        padding             :0.5em 1em 0.5em 0;
+        color               :rgb(150,150,150);
+        line-height         :1em;
+        cursor              :default;
+        overflow            :hidden;
+        text-align          :right;
+        white-space         :nowrap;
+    }
+        p[data-type-element="Post.Thumbnail.B.DataCategory"] a {
+            font-style          :italic;
+            white-space         :nowrap;
+            text-decoration     :underline;
+            cursor              :pointer;
+            font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+            color               :rgb(150,150,150);
+        }
+/*====================================================================================================================================*/
+div[data-type-element="Post.Thumbnail.B.Excerpt"]{
+    position                :absolute;
+    width                   :100%;
+    height                  :7em;
+    top                     :13em;
+    left                    :0;
+    overflow                :hidden;
+    -moz-transition         : all ease-in-out 500ms; 
+    -o-transition           : all ease-in-out 500ms;
+    -webkit-transition      : all ease-in-out 500ms;
+    transition              : all ease-in-out 500ms;
+}
+    div[data-type-element="Post.Thumbnail.B.Excerpt"]:after{
+        position    :absolute;
+        content     :"";
+        width       :100%;
+        height      :1.5em;
+        top         :100%;
+        margin-top  :-1.5em;
+        background  : -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+        background  : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1)));
+        background  : -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%);
+        background  : -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%);
+        background  : -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%);
+        background  : linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%);
+        filter      : progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+    }
+    div[data-type-element="Post.Thumbnail.B.Excerpt"] p{
+        font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size           :0.8em;
+        padding             :0em 1em 0.5em 1em;
+        color               :rgb(50,50,50);
+        line-height         :1.5em;
+        cursor              :default;
+    }
+/*====================================================================================================================================*/
+div[data-type-element="Post.Thumbnail.B.Button"]{
+    position                :absolute;
+    top                     :50%;
+    right                   :0.5em;
+    margin-top              :-2em;
+    height                  :1.5em;
+    background              :rgba(50,50,50, 0.8);
+    -moz-transition         : all ease-in-out 500ms; 
+    -o-transition           : all ease-in-out 500ms;
+    -webkit-transition      : all ease-in-out 500ms;
+    transition              : all ease-in-out 500ms;
+}
+    div[data-type-element="Post.Thumbnail.B.Button"] a{
+        display             : block;
+        margin              :0;
+        font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size           :0.8em;
+        padding             :0.5em 0.5em 0.5em 0.5em;
+        color               :rgb(255,255,255);
+        line-height         :1em;
+        cursor              :pointer;
+        text-decoration     :none;
+    }
+/*====================================================================================================================================*/
+input[data-type-element="Post.Thumbnail.B.Switcher"]{
+    display:none;
+}
+    input[data-type-element="Post.Thumbnail.B.Switcher"]:checked ~div[data-type-element="Post.Thumbnail.B.Image"]{
+        opacity :0;
+        top     :-50%;
+    }
+    input[data-type-element="Post.Thumbnail.B.Switcher"]:checked ~div[data-type-element="Post.Thumbnail.B.Title"]{
+        top     :3em;
+    }
+    input[data-type-element="Post.Thumbnail.B.Switcher"]:checked ~label div[data-type-element="Post.Thumbnail.B.Excerpt"]{
+        top     :6em;
+        height  :14em;
+    }
+    input[data-type-element="Post.Thumbnail.B.Switcher"]:checked ~div[data-type-element="Post.Thumbnail.B.Button"]{
+        opacity :0;
+        top     :-50%;
+    }
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/

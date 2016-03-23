@@ -1,0 +1,1 @@
+<p style="padding-left: 2em; font-size: 0.8em;">This template like template "D" (can render images, gallery, video and audio). But this template shows less information. It's better to use in sidebars for example. </p>

@@ -1,0 +1,38 @@
+﻿div[data-page-element-type="Pure.Footer.Elements.Categories.A"]{
+    position    : relative;
+    width       : 100%;
+}
+p[data-page-element-type="Pure.Footer.Elements.Categories.A"]{
+    position        : relative;
+    display         : block;
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 1em;
+    color           : rgb(50, 50, 50);
+    text-align      : left;
+    margin          : 0.5em;
+    padding         : 0;
+    text-shadow     : 0 0 1px rgba(0,0,0,0.4);
+}
+p[data-page-element-type="Pure.Footer.Elements.Categories.A.Categories"]{
+    position        : relative;
+    display         : block;
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 1rem;
+    color           : rgb(50, 50, 50);
+    text-align      : left;
+    margin          : 0.5em;
+    padding         : 0;
+}
+a[data-page-element-type="Pure.Footer.Elements.Categories.A"]{
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 0.8rem;
+    color           : rgb(50, 50, 50);
+    text-align      : left;
+    margin          : 0;
+    padding         : 0;
+    text-decoration : none;
+    cursor          : pointer;
+}
+a[data-page-element-type="Pure.Footer.Elements.Categories.A"]:hover{
+    text-decoration : underline;
+}

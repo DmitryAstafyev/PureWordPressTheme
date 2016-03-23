@@ -1,0 +1,1 @@
+<p>Best usage: light background. Title is aligned by right . No link button.</p>

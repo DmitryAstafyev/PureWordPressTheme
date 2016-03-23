@@ -1,0 +1,122 @@
+p[data-type-element="Pure.PostEditor.A.Title"]{
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 1em;
+    color           : rgb(91, 105, 145);
+    border-bottom   : dotted 1px rgb(140, 148, 170);
+    margin          : 0 0 1em 0;
+    padding         : 0.5em 0 0.5em 0;
+    text-align      : center;
+    text-transform  : uppercase;
+    text-shadow     : 1px 1px 1px rgba(0,0,0,0.4);
+}
+/*====================================================================================================================*/
+textarea[data-type-element="Pure.PostEditor.A"]{
+    display     : block;
+    font-family : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    border      : none;
+    font-size   : 1em;
+    color       : rgb(21, 39, 94);
+    outline     : none;
+    resize      : vertical;
+    width       : 100%;
+}
+    textarea[data-type-element="Pure.PostEditor.A"][data-type-addition="Header"]{
+        height: 3em;
+    }
+    textarea[data-type-element="Pure.PostEditor.A"][data-type-addition="Quote"]{
+        height: 5em;
+    }
+/*====================================================================================================================*/
+div[data-type-element="Pure.PostEditor.A.ResetFloat"]{
+    float: none;
+    clear: both;
+}
+/*====================================================================================================================*/
+img[data-type-element="Pure.PostEditor.A.Miniature"]{
+    display             : block;
+    position            : relative;
+    width               : 10em;
+    height              : auto;
+    left                : 50%;
+    margin-left         : -5em;
+    border              : 1px dotted rgb(140, 148, 170);
+    background-size     : cover;
+    background-position : center;
+}
+/*====================================================================================================================*/
+p[data-type-element="Pure.PostEditor.A.Notice"]{
+    font-family : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size   : 0.8em;
+    color       : rgb(140, 148, 170);
+    font-style  : italic;
+}
+p[data-type-element="Pure.PostEditor.A.Attention"]{
+    display     : block;
+    position    : relative;
+    font-family : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size   : 0.8em;
+    color       : rgb(140, 148, 170);
+    font-style  : italic;
+    margin      : 0.5em 0 0.5em 1em;
+    padding     : 0.5em 0 0.5em 2em;
+}
+    p[data-type-element="Pure.PostEditor.A.Attention"]:before{
+        position    : absolute;
+        content     : '';
+        width       : 0.5em;
+        height      : 100%;
+        top         :0;
+        left        :0em;
+        background  : rgb(177, 102, 140);
+    }
+p[data-type-element="Pure.PostEditor.A.SubTitle"]{
+    display     : block;
+    position    : relative;
+    font-family : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size   : 0.9em;
+    margin      : 0.5em 0 0.5em 0em;
+    padding     : 0.5em 0 0.5em 0em;
+    color           : rgb(91, 105, 145);
+    border-bottom   : dotted 1px rgb(140, 148, 170);
+    text-shadow     : 1px 1px 1px rgba(0,0,0,0.4);
+}
+/*====================================================================================================================*/
+table[data-type-element="Pure.PostEditor.A.Visibility"]{
+    width           : 100%;
+    border-collapse : collapse;
+}
+    table[data-type-element="Pure.PostEditor.A.Visibility"] td:first-child{
+        width           : 10em;
+    }
+    table[data-type-element="Pure.PostEditor.A.Visibility"] td:last-child{
+        width           : auto;
+    }
+    p[data-type-element="Pure.PostEditor.A.Visibility"]{
+        font-family : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size   : 0.8em;
+        color       : rgb(91, 105, 145);
+    }
+    select[data-type-element="Pure.PostEditor.A.Visibility"]{
+        font-family : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size   : 0.8em;
+        color       : rgb(91, 105, 145);
+        width       : 100%;
+        border      : 1px dotted rgb(140, 148, 170);
+        outline     : none;
+        margin      : 0.5em 0 0.5em 0;
+        padding     : 0.5em 0 0.5em 0;
+    }
+/*====================================================================================================================*/
+input[data-type-element="Pure.PostEditor.A.FileInput"]{
+    display: none;
+}
+/*====================================================================================================================*/
+input[data-type-element="Pure.PostEditor.A.HiddenField"]{
+    display: none;
+}
+/*====================================================================================================================*/
+body *{
+    -webkit-transform: none !important;
+}
+/*====================================================================================================================*/
+/*====================================================================================================================*/

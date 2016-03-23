@@ -1,0 +1,89 @@
+div[data-type-element="Pure.Components.Dialogs.A.Shadow"]{
+    position            : absolute;
+    top                 :0px;
+    left                :0px;
+    width               : 100%;
+    height              : 100%;
+    background          : rgba(255,255,255,0.95);
+    overflow            : hidden;
+    animation			: Pure_Components_Dialogs_A_Shadow 300ms ease-in-out 0ms 1 normal forwards;
+    -webkit-animation	: Pure_Components_Dialogs_A_Shadow 300ms ease-in-out 0ms 1 normal forwards;
+    -moz-animation		: Pure_Components_Dialogs_A_Shadow 300ms ease-in-out 0ms 1 normal forwards;
+    -o-animation		: Pure_Components_Dialogs_A_Shadow 300ms ease-in-out 0ms 1 normal forwards;
+    opacity             : 0;
+    z-index             : 10;
+}
+    div[data-type-element="Pure.Components.Dialogs.A.Shadow"]:after{
+        position            : absolute;
+        content             : '';
+        top                 :0px;
+        left                :0px;
+        width               : 0.5em;
+        height              : 100%;
+        background          : rgba(0,0,0,0.4);
+    }
+    @keyframes Pure_Components_Dialogs_A_Shadow {
+        0% { opacity: 0;}100% { opacity: 1;}
+    }
+    @-moz-keyframes Pure_Components_Dialogs_A_Shadow {
+        0% { opacity: 0;}100% { opacity: 1;}
+    }
+    @-webkit-keyframes Pure_Components_Dialogs_A_Shadow {
+        0% { opacity: 0;}100% { opacity: 1;}
+    }
+    div[data-type-element="Pure.Components.Dialogs.A.TableContainer"]{
+        position            : relative;
+        display             : table;
+        width               : 100%;
+        height              : 100%;
+    }
+        div[data-type-element="Pure.Components.Dialogs.A.Container"]{
+            position        : relative;
+            display         : table-cell;
+            width           : 100%;
+            height          : 100%;
+            vertical-align  : middle;
+        }
+            div[data-type-element="Pure.Components.Dialogs.A.Dialog"]{
+                position    : relative;
+                left        : 25%;
+                width       : 50%;
+            }
+div[data-type-element="Pure.Components.Dialogs.A.Dialog"] p{
+    font-size   : 1em;
+    font-family : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    color       : rgba(50,50,50, 1);
+    margin      : 0;
+    padding     : 0.5em 2em 0.5em 2em;
+}
+p[data-type-element="Pure.Components.Dialogs.A.Dialog.Title"]{
+    position    : relative;
+    display     : block;
+    font-size   : 1.2em;
+    font-family : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    color       : rgba(30,30,30, 1);
+    margin      : 0 0 0.5em 0;
+    padding     : 0.2em 1em 0.2em 1em;
+    background  : rgba(0,0,0,0.2);
+}
+div[data-type-element="Pure.Components.Dialogs.A.Dialog.Buttons"]{
+    position    : relative;
+    padding     : 1em 0 1em 0;
+}
+    a[data-type-element="Pure.Components.Dialogs.A.Dialog.Button"]{
+        position        : relative;
+        display         : block;
+        margin          : 0 0.5em 0 0.5em;
+        padding         : 0.5em 1em 0.5em 1em;
+        border          : solid 1px rgba(0,0,0,0.4);
+        cursor          : default;
+        text-decoration : none;
+        color           : rgba(50,50,50, 0.4);
+        font-size       : 1em;
+        font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        border-radius   : 0.3em;
+        float           : right;
+    }
+        a[data-type-element="Pure.Components.Dialogs.A.Dialog.Button"]:hover{
+            color           : rgba(50,50,50, 1);
+        }

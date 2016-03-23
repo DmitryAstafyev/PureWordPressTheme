@@ -1,0 +1,535 @@
+﻿div[data-element-type="Pure.Social.Group.Requests.A.Shadow"]{
+    position            :fixed;
+    width               :100%;
+    height              :100%;
+    background          :rgba(0,0,0,0.8);
+    top                 :0;
+    left                :0;
+    z-index             :10000;
+    animation			: PureSocialGroupRequestsAShadow 650ms ease-in-out 0ms 1 normal;
+    -webkit-animation	: PureSocialGroupRequestsAShadow 650ms ease-in-out 0ms 1 normal;
+    -moz-animation		: PureSocialGroupRequestsAShadow 650ms ease-in-out 0ms 1 normal;
+    -o-animation		: PureSocialGroupRequestsAShadow 650ms ease-in-out 0ms 1 normal;
+}
+        @keyframes PureSocialGroupRequestsAShadow {
+            0% { opacity:0;}100% { opacity:1;}
+        }
+        @-moz-keyframes PureSocialGroupRequestsAShadow {
+            0% { opacity:0;}100% { opacity:1;}
+        }
+        @-webkit-keyframes PureSocialGroupRequestsAShadow {
+            0% { opacity:0;}100% { opacity:1;}
+        }
+/*=================================================================================================================*/
+div[data-element-type="Pure.Social.Group.Requests.A.Container"]{
+    position    :absolute;
+    width       :60%;
+    height      :90%;
+    left        :20%;
+    top         :5%;
+}
+/*=================================================================================================================*/
+div[data-element-type="Pure.Social.Group.Requests.A.Page"]{
+    position                :absolute;
+    height                  :100%;
+    top                     :0;
+    left                    :0;
+    width                   :100%;
+    -moz-box-shadow         : 0 0 0.5em rgba(0,0,0,0.4);
+    -webkit-box-shadow      : 0 0 0.5em rgba(0,0,0,0.4);
+    box-shadow              : 0 0 0.5em rgba(0,0,0,0.4);
+    -moz-border-radius      : 0.3em;
+    -webkit-border-radius   : 0.3em;
+    border-radius           : 0.3em;
+    background              : -moz-linear-gradient(top,  rgba(170,170,170,0.8) 0%, rgba(160,160,160,0.8) 100%);
+    background              : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(170,170,170,0.8)), color-stop(100%,rgba(160,160,160,0.8)));
+    background              : -webkit-linear-gradient(top,  rgba(170,170,170,0.8) 0%,rgba(160,160,160,0.8) 100%);
+    background              : -o-linear-gradient(top,  rgba(170,170,170,0.8) 0%,rgba(160,160,160,0.8) 100%);
+    background              : -ms-linear-gradient(top,  rgba(170,170,170,0.8) 0%,rgba(160,160,160,0.8) 100%);
+    background              : linear-gradient(to bottom,  rgba(170,170,170,0.8) 0%,rgba(160,160,160,0.8) 100%);
+    filter                  : progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccaaaaaa', endColorstr='#cca0a0a0',GradientType=0 );
+}
+    div[data-element-type="Pure.Social.Group.Requests.A.Page.Background"]{
+        position                :absolute;
+        height                  :100%;
+        top                     :0;
+        left                    :0;
+        width                   :100%;
+        -moz-border-radius      : 0.3em;
+        -webkit-border-radius   : 0.3em;
+        border-radius           : 0.3em;
+        overflow                :hidden;
+    }
+        div[data-element-type="Pure.Social.Group.Requests.A.Page.Background"]:before{
+            position                :absolute;
+            content                 :'';
+            width                   :100%;
+            height                  :100%;
+            left                    :0;
+            top                     :0;
+            background-image        :url(%site_url%/wp-content/themes/pure/templates/BuddyPress/GroupAdmin/Requests/images/A/background.jpg);
+            background-size         :cover;
+            background-repeat       :repeat;
+            -moz-border-radius      : 0.3em;
+            -webkit-border-radius   : 0.3em;
+            border-radius           : 0.3em;
+            opacity                 :0.2;
+        }
+/*=================================================================================================================*/
+div[data-element-type="Pure.Social.Group.Requests.A.Page.Icon"]{
+    position                :absolute;
+    width                   :4em;
+    height                  :4em;
+    left                    :-2em;
+    top                     :2em;
+    background              :rgb(168, 200, 115);
+    -moz-border-radius      : 0.3em;
+    -webkit-border-radius   : 0.3em;
+    border-radius           : 0.3em;
+    -moz-box-shadow         : 0 0 0.5em rgba(0,0,0,0.4);
+    -webkit-box-shadow      : 0 0 0.5em rgba(0,0,0,0.4);
+    box-shadow              : 0 0 0.5em rgba(0,0,0,0.4);
+    animation			    : PureSocialGroupRequestsPageIcon 850ms cubic-bezier(.44,1.38,.71,1.24) 0ms 1 normal;
+    -webkit-animation	    : PureSocialGroupRequestsPageIcon 850ms cubic-bezier(.44,1.38,.71,1.24) 0ms 1 normal;
+    -moz-animation		    : PureSocialGroupRequestsPageIcon 850ms cubic-bezier(.44,1.38,.71,1.24) 0ms 1 normal;
+    -o-animation		    : PureSocialGroupRequestsPageIcon 850ms cubic-bezier(.44,1.38,.71,1.24) 0ms 1 normal;
+}
+    div[data-element-type="Pure.Social.Group.Requests.A.Page.Icon"]:after{
+        position                :absolute;
+        content                 :'';
+        width                   :2em;
+        height                  :2em;
+        left                    :1em;
+        top                     :1em;
+        background-size         :contain;
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAKBmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIKICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgIHhtbG5zOklwdGM0eG1wQ29yZT0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcENvcmUvMS4wL3htbG5zLyIKICAgIHhtbG5zOnBsdXNfMV89Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iCiAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiCiAgIHhtcFJpZ2h0czpNYXJrZWQ9IlRydWUiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMTEtMDEtMjVUMTM6NTU6MzkrMDE6MDAiCiAgIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NkYyRTFCNjk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NkYyRTFCNjk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2RjJFMUI2OTgyMjhFMDExOTg5Q0MwQTFBRDAyQjVDMiI+CiAgIDx4bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC94bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgPGRjOmNyZWF0b3I+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpPkdlbnRsZWZhY2UgY3VzdG9tIHRvb2xiYXIgaWNvbnMgZGVzaWduPC9yZGY6bGk+CiAgICA8L3JkZjpTZXE+CiAgIDwvZGM6Y3JlYXRvcj4KICAgPGRjOmRlc2NyaXB0aW9uPgogICAgPHJkZjpBbHQ+CiAgICAgPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5XaXJlZnJhbWUgbW9ubyB0b29sYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpBbHQ+CiAgIDwvZGM6ZGVzY3JpcHRpb24+CiAgIDxkYzpzdWJqZWN0PgogICAgPHJkZjpCYWc+CiAgICAgPHJkZjpsaT5jdXN0b20gaWNvbiBkZXNpZ248L3JkZjpsaT4KICAgICA8cmRmOmxpPnRvb2xiYXIgaWNvbnM8L3JkZjpsaT4KICAgICA8cmRmOmxpPmN1c3RvbSBpY29uczwvcmRmOmxpPgogICAgIDxyZGY6bGk+aW50ZXJmYWNlIGRlc2lnbjwvcmRmOmxpPgogICAgIDxyZGY6bGk+dWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT5ndWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT50YXNrYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpCYWc+CiAgIDwvZGM6c3ViamVjdD4KICAgPGRjOnJpZ2h0cz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC9kYzpyaWdodHM+CiAgIDxJcHRjNHhtcENvcmU6Q3JlYXRvckNvbnRhY3RJbmZvCiAgICBJcHRjNHhtcENvcmU6Q2lVcmxXb3JrPSJodHRwOi8vd3d3LmdlbnRsZWZhY2UuY29tIi8+CiAgIDxwbHVzXzFfOkltYWdlQ3JlYXRvcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpJbWFnZUNyZWF0b3JOYW1lPSJnZW50bGVmYWNlLmNvbSIvPgogICAgPC9yZGY6U2VxPgogICA8L3BsdXNfMV86SW1hZ2VDcmVhdG9yPgogICA8cGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpDb3B5cmlnaHRPd25lck5hbWU9ImdlbnRsZWZhY2UuY29tIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwvcGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NkYyRTFCNjk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgICAgIHN0RXZ0OndoZW49IjIwMTEtMDEtMjVUMTM6NTU6MzkrMDE6MDAiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii9tZXRhZGF0YSIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+cC/FogAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAA8dEVYdEFMVFRhZwBUaGlzIGlzIHRoZSBpY29uIGZyb20gR2VudGxlZmFjZS5jb20gZnJlZSBpY29ucyBzZXQuINhr6MQAAABEdEVYdENvcHlyaWdodABDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIE5vbi1Db21tZXJjaWFsIE5vIERlcml2YXRpdmVze92woAAAAEVpVFh0RGVzY3JpcHRpb24AAAAAAFRoaXMgaXMgdGhlIGljb24gZnJvbSBHZW50bGVmYWNlLmNvbSBmcmVlIGljb25zIHNldC4gvBH4GgAAAEhpVFh0Q29weXJpZ2h0AAAAAABDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIE5vbi1Db21tZXJjaWFsIE5vIERlcml2YXRpdmVzWILLBQAAAtxJREFUeNrsWW2OokAQhc3EGH+xB9C0if/HuQF7gzkCc4LJ3sA9AUcYj7A3mCOMB1DBaIxG4xKNxm+2ijC7BBq7mwaFjJVUUITqel1Vr6tbRbnLXb62qFkZdl1Xg4vhf22rquoUambO5/MbqOurWSjnT6dTE9QNabMwAI7H4zuoG9L3Qjh/OByeKc57ir/lvoj3+70FBUtiCtsulUr1NMf7lqax3W7XggsBRxWa4m/+M/mLwHa7RdrE2dcY9Ip0Wi+Xy07eIoBUqcXNfiAKmv9sfiKw2WyaMPMfggvdU6VS6eQlAiZr5imRMHORQuv1+hkc0kMO/oTZVYOK90LP6PjuzQGAI7TZ71Ce61CeM28KYLVatcAJEpMiYQA0JWjjJgCWyyUyzuuFHOcBgPqKtq4OwE8dLQUAmkwqJQLgOE4TBjUYLMMLANVAm1cDEFO4MgASF7QwgMViQaPNSHFSABDGOzrazhwAz+wnBJAoCkIA5vO5121muJ0g/hjpA5jNZh5twv5W4VHKHplLcQwcK3UAfng1JXsRolUuANPpFCnOEGzWRFko+K7hj8mUB4HZl+2ZhMkCLj+kIzCZTJDadMF2+ZHi0KNgFHR/bDkAnLQZaQ9oJ3UJ7JhSAMbjcYuTv1OtgeB6gj4kAjAajS52m6wIwPskYIskjIBHq+hLkiI2aanAKcggFgycuIiDtOpvP1+4N/XD4RAd+FDyJU/VarXDFYE0aDMDodJqpAYGgwFPt8lS3P/Wa7WaioqfQX9L2tTRN2YK2bZtpdCwfSeEOCG7mMt/JO3aYLceGwHLshLTZnD2w857bSbcizmZEKJV9JEKoN/vy9DmxUVMcjGL0Cr6GgHA2qSLzFKv14ukINxrphDdyCGAVwPdblf4bJPRfthw+YU5+5lByCKsk2vRs9VGo9F5yIg20eE32Y6Up1v9XAf0NI1fSfR/Cxk431b+/6dbFGkrd7mLvPwVYACOZKwvo4hOGwAAAABJRU5ErkJggg==");
+    }
+    @keyframes PureSocialGroupRequestsPageIcon {
+        0% { margin-left:-4em;opacity:0;}100% { margin-left:0em;opacity:1;}
+    }
+    @-moz-keyframes PureSocialGroupRequestsPageIcon {
+        0% { margin-left:-4em;opacity:0;}100% { margin-left:0em;opacity:1;}
+    }
+    @-webkit-keyframes PureSocialGroupRequestsPageIcon {
+        0% { margin-left:-4em;opacity:0;}100% { margin-left:0em;opacity:1;}
+    }
+/*=================================================================================================================*/
+div[data-element-type="Pure.Social.Group.Requests.A.Page.Stages"]{
+    position    :absolute;
+    left        :0em;
+    right       :0em;
+    top         :0em;
+    height      :8em;
+    overflow    :hidden;
+}
+    p[data-element-type="Pure.Social.Group.Requests.A.Page.Title"]{
+        margin                  :3.5em 0 0 0;
+        padding                 :0;
+        font-family             :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size               :1em;
+        text-align              :center;
+        color                   :rgb(255, 255, 255);
+        opacity                 : 0;
+        animation			    : PureSocialGroupRequestsAPageTitle 650ms ease-in-out 600ms 1 normal forwards;
+        -webkit-animation	    : PureSocialGroupRequestsAPageTitle 650ms ease-in-out 600ms 1 normal forwards;
+        -moz-animation		    : PureSocialGroupRequestsAPageTitle 650ms ease-in-out 600ms 1 normal forwards;
+        -o-animation		    : PureSocialGroupRequestsAPageTitle 650ms ease-in-out 600ms 1 normal forwards;
+    }
+@keyframes PureSocialGroupRequestsAPageTitle {
+    0% { opacity:0;}100% { opacity:1;}
+}
+@-moz-keyframes PureSocialGroupRequestsAPageTitle {
+    0% { opacity:0;}100% { opacity:1;}
+}
+@-webkit-keyframes PureSocialGroupRequestsAPageTitle {
+    0% { opacity:0;}100% { opacity:1;}
+}
+/*=================================================================================================================*/
+div[data-element-type="Pure.Social.Group.Requests.A.Page.Content"]{
+    position    :absolute;
+    top         :8em;
+    left        :0em;
+    right       :0em;
+    bottom      :4em;
+    background  :rgb(255,255,255);
+    -moz-transition         : all ease-in-out 300ms;
+    -o-transition           : all ease-in-out 300ms;
+    -webkit-transition      : all ease-in-out 300ms;
+    transition              : all ease-in-out 300ms;
+}
+    div[data-element-type="Pure.Social.Group.Requests.A.Page.Content.Tab"]{
+        position            :relative;
+        width               :100%;
+        height              :100%;
+        overflow-x          :hidden;
+        overflow-y          :auto;
+        animation			: PureSocialGroupRequestsAPageContentTab 350ms ease-in-out 0ms 1 normal;
+        -webkit-animation	: PureSocialGroupRequestsAPageContentTab 350ms ease-in-out 0ms 1 normal;
+        -moz-animation		: PureSocialGroupRequestsAPageContentTab 350ms ease-in-out 0ms 1 normal;
+        -o-animation		: PureSocialGroupRequestsAPageContentTab 350ms ease-in-out 0ms 1 normal;
+    }
+        @keyframes PureSocialGroupRequestsAPageContentTab {
+            0% { opacity:0;}100% { opacity:1;}
+        }
+        @-moz-keyframes PureSocialGroupRequestsAPageContentTab {
+            0% { opacity:0;}100% { opacity:1;}
+        }
+        @-webkit-keyframes PureSocialGroupRequestsAPageContentTab {
+            0% { opacity:0;}100% { opacity:1;}
+        }
+/*=================================================================================================================*/
+div[data-element-type="Pure.Social.Group.Requests.A.Page.Controls"]{
+    position    :absolute;
+    left        :0em;
+    right       :0em;
+    bottom      :0em;
+    height      :4em;
+}
+    div[data-element-type="Pure.Social.Group.Requests.A.Page.Controls.Collection"]{
+        position:relative;
+        width   :100%;
+        height  :100%;
+    }
+/*=================================================================================================================*/
+    a[data-element-type="Pure.Social.Group.Requests.A.Page.Controls.Button"]{
+        display                 :inline-block;
+        position                :relative;
+        margin                  :1.1em 1em 0 0.5em;
+        padding                 :0.5em 1em 0.5em 1em;
+        font-family             :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size               :0.9em;
+        text-align              :right;
+        color                   :rgb(255, 255, 255);
+        text-decoration         :none;
+        -moz-border-radius      : 3px;
+        -webkit-border-radius   : 3px;
+        border-radius           : 3px;
+        background              : -moz-linear-gradient(top,  rgba(60,60,60,0.8) 0%, rgba(50,50,50,0.8) 100%);
+        background              : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(60,60,60,0.8)), color-stop(100%,rgba(50,50,50,0.8)));
+        background              : -webkit-linear-gradient(top,  rgba(60,60,60,0.8) 0%,rgba(50,50,50,0.8) 100%);
+        background              : -o-linear-gradient(top,  rgba(60,60,60,0.8) 0%,rgba(50,50,50,0.8) 100%);
+        background              : -ms-linear-gradient(top,  rgba(60,60,60,0.8) 0%,rgba(50,50,50,0.8) 100%);
+        background              : linear-gradient(to bottom,  rgba(60,60,60,0.8) 0%,rgba(50,50,50,0.8) 100%);
+        filter                  : progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc3c3c3c', endColorstr='#cc323232',GradientType=0 );
+        cursor                  :default;
+        border-top              : solid 1px rgb(140,140,140);
+        border-left             : solid 1px rgb(140,140,140);
+        border-right            : solid 1px rgb(100,100,100);
+        border-bottom           : solid 1px rgb(100,100,100);
+        -moz-box-sizing         : border-box;
+        -webkit-box-sizing      : border-box;
+        box-sizing              : border-box;
+        -moz-box-shadow         : 0 0 3px rgba(0,0,0,0) inset;
+        -webkit-box-shadow      : 0 0 3px rgba(0,0,0,0) inset;
+        box-shadow              : 0 0 3px rgba(0,0,0,0) inset;
+        float                   :right;
+    }
+        a[data-element-type="Pure.Social.Group.Requests.A.Page.Controls.Button"]:hover{
+            -moz-box-shadow         : 0 0 3px rgba(255,255,255,0.4) inset;
+            -webkit-box-shadow      : 0 0 3px rgba(255,255,255,0.4) inset;
+            box-shadow              : 0 0 3px rgba(255,255,255,0.4) inset;
+        }
+/*=================================================================================================================*/
+a[data-element-type="Pure.Social.Group.Requests.A.Page.Controls.Cancel"]{
+    position                :absolute;
+    display                 :block;
+    margin                  :0;
+    padding                 :0.5em;
+    font-family             :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size               :0.8em;
+    text-align              :right;
+    color                   :rgb(255, 255, 255);
+    text-decoration         :none;
+    top                     :1.5em;
+    left                    :1em;
+    cursor                  :default;
+}
+    a[data-element-type="Pure.Social.Group.Requests.A.Page.Controls.Cancel"]:hover{
+        text-decoration         :underline;
+    }
+/*=================================================================================================================*/
+div[data-element-type="Pure.Social.Group.Requests.A.Control.FloatReset"]{
+    position:relative;
+    float   :none;
+    clear   :both;
+}
+div[data-element-type="Pure.Social.Group.Requests.A.Control.Space"]{
+    position:relative;
+    width   :100%;
+    height  :1.5em;
+}
+/*=================================================================================================================*/
+div[data-element-type="Pure.Social.Group.Requests.A.Control.Title.Wrapper"]{
+    position    :relative;
+    background  :rgb(168, 200, 115);
+    margin      :1em;
+    float       :right;
+}
+    div[data-element-type="Pure.Social.Group.Requests.A.Control.Title.Wrapper"]:after{
+        position            :absolute;
+        content             :'';
+        width               : 0;
+        height              : 0;
+        border-left         : 0.25em solid transparent;
+        border-right        : 0.25em solid transparent;
+        border-top          : 0.5em solid rgb(168, 200, 115);
+        top                 :100%;
+        right               :1em;
+        animation			: PureSocialGroupRequestsAControlTitleWrapperAfter 450ms ease-in-out 0ms 1 normal;
+        -webkit-animation	: PureSocialGroupRequestsAControlTitleWrapperAfter 450ms ease-in-out 0ms 1 normal;
+        -moz-animation		: PureSocialGroupRequestsAControlTitleWrapperAfter 450ms ease-in-out 0ms 1 normal;
+        -o-animation		: PureSocialGroupRequestsAControlTitleWrapperAfter 450ms ease-in-out 0ms 1 normal;
+    }
+        @keyframes PureSocialGroupRequestsAControlTitleWrapperAfter {
+            0% { right:4em;}100% { right:1em;}
+        }
+        @-moz-keyframes PureSocialGroupRequestsAControlTitleWrapperAfter {
+            0% { right:4em;}100% { right:1em;}
+        }
+        @-webkit-keyframes PureSocialGroupRequestsAControlTitleWrapperAfter {
+            0% { right:4em;}100% { right:1em;}
+        }
+    p[data-element-type="Pure.Social.Group.Requests.A.Title"]{
+        margin                  :0;
+        padding                 :0.5em 1em 0.3em 1em;
+        font-family             :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size               :1em;
+        text-align              :left;
+        color                   :rgb(255, 255, 255);
+        cursor                  :default;
+        text-transform          :uppercase;
+    }
+    p[data-element-type="Pure.Social.Group.Requests.A.Title.Sub"]{
+        margin                  :0;
+        padding                 :1em 1em 1em 1.3em;
+        font-family             :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size               :0.8em;
+        text-align              :left;
+        color                   :rgb(255, 255, 255);
+        cursor                  :default;
+    }
+/*=================================================================================================================*/
+ul[data-element-type="Pure.Social.Group.Requests.A.Visibility"]{
+    padding :0;
+    margin  :0.5em 0.5em 0.5em 2em;
+}
+    ul[data-element-type="Pure.Social.Group.Requests.A.Visibility"] li{
+        margin          :0.2em 0.5em 0 0;
+        padding         :0;
+        font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size       :0.8em;
+        text-align      :left;
+        color           :rgb(75,75,75);
+    }
+/*=================================================================================================================*/
+div[data-element-type="Pure.Social.Group.Requests.A.CheckBoxes.Container"]{
+    position:relative;
+    width   :auto;
+    margin  : 0 0 1em 0;
+}
+div[data-element-type="Pure.Social.Group.Requests.A.RadioBoxes.Container"]{
+    position:relative;
+    width   :auto;
+    margin  : 0 0 1em 1.5em;
+}
+/*=================================================================================================================*/
+p[data-element-type="Pure.Social.Group.Requests.A.Information"]{
+    position        :relative;
+    display         :block;
+    padding         :0.5em;
+    margin          :0.5em 1em 0em 1em;
+    background      :none;
+    font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       :1em;
+    text-align      :left;
+    color           :rgb(80, 80, 80);
+}
+/*=================================================================================================================*/
+p[data-element-type="Pure.Social.Group.Requests.A.CheckBox.Caption"]{
+    padding         :0;
+    margin          :0.5em 1em 0em 1em;
+    background      :none;
+    font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       :1em;
+    text-align      :left;
+    color           :rgb(50, 50, 50);
+}
+/*=================================================================================================================*/
+/*=================================================================================================================*/
+/*=================================================================================================================*/
+/*=================================================================================================================*/
+/*=================================================================================================================*/
+div[data-element-type="Pure.Social.Group.Requests.A.Table.Wrapper"]{
+    position: relative;
+    width: auto;
+    margin: 0 1em 0 1em;
+}
+table[data-element-type="Pure.Social.Groups.A.Item.MembersList.Table"]{
+    position        : relative;
+    width           : 100%;
+    border-collapse : collapse;
+}
+    tr[data-element-type="Pure.Social.Groups.A.Item.MembersList.Table.Row"]{
+        height      : 3em;
+        box-sizing  : border-box;
+    }
+    tr[data-element-type="Pure.Social.Groups.A.Item.MembersList.Table.Row"]:hover{
+        border-left      : solid 0.5em rgba(0,0,0,0.4);
+    }
+    tr[data-element-type="Pure.Social.Groups.A.Item.MembersList.Table.Row"]:nth-child(1):hover{
+        border      : none;
+    }
+    tr[data-element-type="Pure.Social.Groups.A.Item.MembersList.Table.Row"]:nth-child(2n){
+        background: rgb(240,240,240);
+    }
+    tr[data-element-type="Pure.Social.Groups.A.Item.FriendsList.Table.Row"]{
+        height      : 3em;
+        box-sizing  : border-box;
+    }
+    tr[data-element-type="Pure.Social.Groups.A.Item.FriendsList.Table.Row"]:nth-child(2n){
+        background: rgb(240,240,240);
+    }
+        p[data-element-type="Pure.Social.Groups.A.Item.MembersList.Title"]{
+            font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+            font-size       :1em;
+            text-align      :left;
+            color           : rgb(40,40,40);
+            margin          :0;
+            padding         :0;
+            cursor          :default;
+        }
+        td[data-element-type="Pure.Social.Groups.A.Item.MembersList.Actions"] p[data-element-type="Pure.Social.Groups.A.Item.MembersList.Title"]{
+            text-align      : right;
+        }
+    td[data-element-type="Pure.Social.Groups.A.Item.MembersList.Avatar"]{
+        width       : 3em;
+        min-width   : 3em;
+    }
+        div[data-element-type="Pure.Social.Groups.A.Item.MembersList.Avatar"]{
+            position                : relative;
+            width                   : 3em;
+            height                  : 3em;
+            background-position     : center;
+            -moz-background-clip    : content-box;
+            -webkit-background-clip : content-box;
+            background-clip         : content-box;
+            background-size         :cover;
+            border-radius           : 1.5em;
+            overflow                : hidden;
+            border                  : solid 3px rgba(0,0,0,0.4);
+            box-sizing              : border-box;
+        }
+    td[data-element-type="Pure.Social.Groups.A.Item.MembersList.Name"]{
+        width           : auto;
+        vertical-align  : middle;
+    }
+        p[data-element-type="Pure.Social.Groups.A.Item.MembersList.Name"]{
+            font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+            font-size       :0.8em;
+            text-align      :left;
+            color           : rgb(100,100,100);
+            margin          :0.2em 0.2em 0.2em 1em;
+            padding         :0.2em 0.2em 0.2em 1em;
+            cursor          :default;
+            font-weight     : normal;
+        }
+    td[data-element-type="Pure.Social.Groups.A.Item.RequestsList.Actions"]{
+        vertical-align  : middle;
+        width           : 10em;
+    }
+p[data-element-type="Pure.Social.Groups.A.Item.MembersList.Small"]{
+    font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       :0.7em;
+    text-align      :left;
+    color           : rgb(170,170,170);
+    margin          :0 0 0 2.3em;
+    padding         :0;
+    cursor          :default;
+    font-weight     : normal;
+}
+input[data-element-type="Pure.Social.Groups.A.Item.FriendsList.MarkerForInvite"]{
+    display: none;
+}
+a[data-element-type="Pure.Social.Groups.A.Item.FriendsList.Actions.Button"]{
+    position        : relative;
+    display         : inline-block;
+    font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       :0.8em;
+    text-align      :center;
+    color           : rgb(100,100,100);
+    margin          :0 0.5em 0 0.5em;
+    padding         :0.2em 0.5em 0.2em 0.5em;
+    cursor          :default;
+    font-weight     : normal;
+    text-decoration : none;
+    border          : dashed 1px rgb(168, 200, 115);
+    border-radius   : 3px;
+    white-space     : nowrap;
+    float           : right;
+}
+    a[data-element-type="Pure.Social.Groups.A.Item.FriendsList.Actions.Button"][data-engine-state="hide"]{
+        display: none;
+    }
+    input[data-element-type="Pure.Social.Groups.A.Item.FriendsList.MarkerForInvite"][data-engine-state="hide"] ~a[data-element-type="Pure.Social.Groups.A.Item.FriendsList.Actions.Button"]{
+        display: none;
+    }
+    a[data-element-type="Pure.Social.Groups.A.Item.FriendsList.Actions.Button"]:hover{
+        border          : dashed 1px rgb(168, 200, 115);
+        background      : rgb(168, 200, 115);
+        color           : rgb(255,255,255);
+    }
+    input[data-element-type="Pure.Social.Groups.A.Item.FriendsList.MarkerForInvite"]:checked ~a[data-element-type="Pure.Social.Groups.A.Item.FriendsList.Actions.Button"]{
+        border          : dashed 1px rgb(168, 200, 115);
+        background      : rgb(168, 200, 115);
+        color           : rgb(255,255,255);
+    }
+
+/*=================================================================================================================*/
+@media screen and (max-width: 1000px){
+    div[data-element-type="Pure.Social.Group.Requests.A.Container"]{
+        width       :80%;
+        height      :90%;
+        left        :10%;
+        top         :5%;
+    }
+}
+@media screen and (max-width: 600px){
+    div[data-element-type="Pure.Social.Group.Requests.A.Container"]{
+        width       :100%;
+        height      :100%;
+        left        :0%;
+        top         :0%;
+    }
+    div[data-element-type="Pure.Social.Group.Requests.A.Page.Icon"]{
+        display:none;
+    }
+    div[data-element-type="Pure.Social.Group.Requests.A.Page.Stages"]{
+        height      :6em;
+    }
+    div[data-element-type="Pure.Social.Group.Requests.A.Page.Tab"]:after,
+    div[data-element-type="Pure.Social.Group.Requests.A.Page.Tab"]:before{
+        top             :2.5em;
+    }
+    div[data-element-type="Pure.Social.Group.Requests.A.Page.Tab.Point"] {
+        width                   : 2em;
+        height                  : 2em;
+        -moz-border-radius      : 1em;
+        -webkit-border-radius   : 1em;
+        border-radius           : 1em;
+        top                     :1.5em;
+        margin-left             :-1em;
+    }
+        div[data-element-type="Pure.Social.Group.Requests.A.Page.Tab.Point"]:after {
+            width                   : 1em;
+            height                  : 1em;
+            top                     :0.5em;
+            margin-left             :0.5em;
+        }
+    div[data-element-type="Pure.Social.Group.Requests.A.Page.Tab.Description"]{
+        top         :4em;
+        height      :2em;
+    }
+    div[data-element-type="Pure.Social.Group.Requests.A.Page.Content"]{
+        top         :6em;
+    }
+}

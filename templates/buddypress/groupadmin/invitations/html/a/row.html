@@ -1,0 +1,25 @@
+<tr data-element-type="Pure.Social.Groups.A.Item.FriendsList.Table.Row">
+    <td data-element-type="Pure.Social.Groups.A.Item.MembersList.Avatar">
+        <div data-element-type="Pure.Social.Groups.A.Item.MembersList.Avatar" style="background-image:url(%member_avatar%);"></div>
+        </td>
+    <td data-element-type="Pure.Social.Groups.A.Item.MembersList.Name">
+        <p data-element-type="Pure.Social.Groups.A.Item.MembersList.Name">%member_name%</p>
+        </td>
+    <td data-element-type="Pure.Social.Groups.A.Item.FriendsList.Actions">
+        <a data-engine-element-id="%instance_id%"
+           data-engine-action="reject"
+           data-engine-state="%state_reject%"
+           data-element-type="Pure.Social.Groups.A.Item.FriendsList.Actions.Button"
+           data-engine-data-member="%member_id%"
+           data-field-type="Group.Invitations.Button.Reject">%label_reject%</a>
+        <label data-element-type="Pure.Social.Groups.A.Item.FriendsList.Actions.Button">
+            <input data-element-type="Pure.Social.Groups.A.Item.FriendsList.MarkerForInvite" type="checkbox"
+                   data-engine-element-id="%instance_id%"
+                   data-engine-action="invite"
+                   data-engine-state="%state_invite%"
+                   data-engine-data-member="%member_id%"
+                   data-field-type="Group.Invitations.Button.Invite"/>
+            <a data-element-type="Pure.Social.Groups.A.Item.FriendsList.Actions.Button">%label_invite%</a>
+        </label>
+    </td>
+</tr>

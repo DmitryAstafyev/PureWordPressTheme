@@ -1,0 +1,91 @@
+﻿/*====================================================================================================================================*/
+div[data-type-element="Group.Thumbnail.C.Container"]{
+    position	    : relative;
+    padding         : 1em;
+    margin          : auto 0;
+    display         : block;
+}
+/*====================================================================================================================================*/
+div[data-type-element="Group.Thumbnail.C.Members"]{
+    position    :relative;
+    height      :5em;
+}
+a[data-type-element="Group.Thumbnail.C.Member"]{
+    position        :relative;
+    display         :block;
+    float           :left;
+    width           :2em;
+    height          :2em;
+    margin          : 0 0.5em 0.5em 0;
+    border          : none;
+    outline         : none;
+    background      : none;
+}
+img[data-type-element="Group.Thumbnail.C.Member"]{
+    position        :relative;
+    display         :block;
+    width           :2em;
+    height          :2em;
+    border-radius   : 0.5em;
+    border          : none;
+    background      : none;
+}
+img[data-type-element="Group.Thumbnail.C.GroupAvatar"]{
+    position        :relative;
+    display         :block;
+    width           :5em;
+    height          :5em;
+    border-radius   : 2.5em;
+    border          : 0.3em solid rgb(140, 148, 170);
+    box-sizing      : border-box;
+    left            :50%;
+    margin-left     : -2.5em;
+}
+/*====================================================================================================================================*/
+div[data-type-element="Group.Thumbnail.C.Info"]{
+    position    :relative;
+}
+a[data-type-element="Group.Thumbnail.C.Name"]{
+    position            :relative;
+    display             :block;
+    font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size           :1em;
+    padding             :0.5em;
+    margin              :0;
+    color               :rgb(100,100,100);
+    line-height         :1.5em;
+    cursor              :pointer;
+    text-align          :center;
+    text-decoration     :none;
+}
+p[data-type-element="Group.Thumbnail.C.Description"]{
+    position            :relative;
+    display             :block;
+    font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size           :0.8em;
+    padding             :0.5em;
+    margin              :0;
+    color               :rgb(100,100,100);
+    line-height         :1.5em;
+    cursor              :default;
+    text-align          :center;
+}
+a[data-type-element="Group.Thumbnail.C.Name"]:hover{
+    color               :rgb(30,30,30);
+}
+a[data-type-element="Group.Thumbnail.C.Members"]{
+    position            :relative;
+    display             :block;
+    font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size           :0.7em;
+    padding             :0.3em;
+    margin              :0;
+    color               :rgb(100,100,100);
+    line-height         :1em;
+    cursor              :pointer;
+    text-align          :center;
+    text-decoration     :none;
+}
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/

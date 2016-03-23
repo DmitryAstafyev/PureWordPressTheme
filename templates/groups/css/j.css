@@ -1,0 +1,90 @@
+﻿/*====================================================================================================================================*/
+div[data-type-element="Group.Thumbnail.J.Container"]{
+    position	    :relative;
+    padding         : 0.5em 0.5em;
+    margin          :0.5em;
+    width           : 15em;
+    display         :inline-block;
+    vertical-align  : top;
+}
+/*====================================================================================================================================*/
+div[data-type-element="Group.Thumbnail.J.Members"]{
+    position    :relative;
+    height      :5em;
+    width       :5em;
+    padding     :0.5em;
+    left        :4.5em;
+    overflow    :hidden;
+}
+a[data-type-element="Group.Thumbnail.J.Member"]{
+    position    :relative;
+    display     :block;
+    float       :left;
+    width       :2em;
+    height      :2em;
+    margin      : 0 0.5em 0.5em 0;
+}
+img[data-type-element="Group.Thumbnail.J.Member"]{
+    position        :relative;
+    display         :block;
+    width           :2em;
+    height          :2em;
+    border-radius   : 0.5em;
+}
+img[data-type-element="Group.Thumbnail.J.GroupAvatar"]{
+    position        :relative;
+    display         :block;
+    width           :5em;
+    height          :5em;
+    border-radius   : 2.5em;
+    border          : 0.3em solid rgb(140, 148, 170);
+    box-sizing      : border-box;
+}
+/*====================================================================================================================================*/
+div[data-type-element="Group.Thumbnail.J.Info"]{
+    position    :relative;
+}
+a[data-type-element="Group.Thumbnail.J.Name"]{
+    position            :relative;
+    display             :block;
+    font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size           :1em;
+    padding             :0.5em;
+    margin              :0;
+    color               :rgb(100,100,100);
+    line-height         :1.5em;
+    cursor              :pointer;
+    text-align          :center;
+    text-decoration     :none;
+}
+p[data-type-element="Group.Thumbnail.J.Description"]{
+    position            :relative;
+    display             :block;
+    font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size           :0.8em;
+    padding             :0.5em;
+    margin              :0;
+    color               :rgb(100,100,100);
+    line-height         :1.5em;
+    cursor              :default;
+    text-align          :center;
+}
+a[data-type-element="Group.Thumbnail.J.Name"]:hover{
+    color               :rgb(30,30,30);
+}
+a[data-type-element="Group.Thumbnail.J.Members"]{
+    position            :relative;
+    display             :block;
+    font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size           :0.7em;
+    padding             :0.3em;
+    margin              :0;
+    color               :rgb(100,100,100);
+    line-height         :1em;
+    cursor              :pointer;
+    text-align          :center;
+    text-decoration     :none;
+}
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/

@@ -1,0 +1,229 @@
+﻿div[data-element-type="Pure.LoginForm.A.Fader"]{
+    position    :fixed;
+    top         :0;
+    left        :0;
+    right       :0;
+    bottom      :0;
+    overflow    :hidden;
+    background  :rgba(255,255,255,0.8);
+    z-index     :9999;
+}
+/*========================================================================================================*/
+div[data-element-type="Pure.LoginForm.A.Table"] {
+    position        : relative;
+    display         : table;
+    top             :0;
+    left            :0;
+    width           : 100%;
+    height          : 100%;
+    margin          : 0;
+    padding         : 0;
+    border-collapse : collapse;
+    vertical-align  : middle;
+    overflow        :hidden;
+}
+    div[data-element-type="Pure.LoginForm.A.Table.Cell"] {
+        position        : relative;
+        display         : table-cell;
+        top             :0;
+        left            :0;
+        width           : 100%;
+        height          : 100%;
+        margin          : 0;
+        padding         : 0;
+        border-collapse : collapse;
+        vertical-align  : middle;
+        text-align      : center;
+    }
+/*========================================================================================================*/
+div[data-element-type="Pure.LoginForm.A.Container"]{
+    position            : relative;
+    display             : inline-block;
+    width               :30em;
+    margin              : 0;
+    background          : rgb(254,255,255);
+    background          : -moz-linear-gradient(top,  rgba(254,255,255,1) 0%, rgba(221,241,249,1) 100%);
+    background          : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,255,255,1)), color-stop(100%,rgba(221,241,249,1)));
+    background          : -webkit-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 100%);
+    background          : -o-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 100%);
+    background          : -ms-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 100%);
+    background          : linear-gradient(to bottom,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 100%);
+    filter              : progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#ddf1f9',GradientType=0 );
+    -moz-box-shadow     : 0 0 0.5em rgba(0,0,0,0.4);
+    -webkit-box-shadow  : 0 0 0.5em rgba(0,0,0,0.4);
+    box-shadow          : 0 0 0.5em rgba(0,0,0,0.4);
+    border-top          : solid 1px rgb(180,180,180);
+    border-left         : solid 1px rgb(180,180,180);
+    border-right        : solid 1px rgb(150,150,150);
+    border-bottom       : solid 1px rgb(150,150,150);
+    -moz-box-sizing     : border-box;
+    -webkit-box-sizing  : border-box;
+    box-sizing          : border-box;
+    max-height          : 100%;
+    text-align          : left;
+    overflow-x          : hidden;
+    overflow-y          : auto;
+}
+/*========================================================================================================*/
+div[data-element-type="Pure.LoginForm.A.Header"]{
+    position            :relative;
+    left                :0;
+    top                 :0;
+    height              :5em;
+    background-size     :cover;
+    background-position :center;
+    z-index             :10;
+    overflow            : hidden;
+}
+    div[data-element-type="Pure.LoginForm.A.Header.Layer"]{
+        position            : absolute;
+        height              : 100%;
+        background-repeat   : repeat;
+        background-position : center;
+        background-size     : contain;
+    }
+        div[data-element-type="Pure.LoginForm.A.Header.Layer"][data-layer-number="0"]{
+            width               : 10000%;
+            animation			: PureLoginFormAHeaderLayer0 2000000ms linear 0ms infinite normal;
+            -webkit-animation	: PureLoginFormAHeaderLayer0 2000000ms linear 0ms infinite normal;
+            -moz-animation		: PureLoginFormAHeaderLayer0 2000000ms linear 0ms infinite normal;
+            -o-animation		: PureLoginFormAHeaderLayer0 2000000ms linear 0ms infinite normal;
+            background-size     : auto;
+        }
+            @keyframes PureLoginFormAHeaderLayer0 {
+                0% { left:0%;}100% { left:-9900%;}
+            }
+            @-moz-keyframes PureLoginFormAHeaderLayer0 {
+                0% { left:0%;}100% { left:-9900%;}
+            }
+            @-webkit-keyframes PureLoginFormAHeaderLayer0 {
+                0% { left:0%;}100% { left:-9900%;}
+            }
+        div[data-element-type="Pure.LoginForm.A.Header.Layer"][data-layer-number="1"]{
+            width               : 300%;
+            animation			: PureLoginFormAHeaderLayer1 200000ms linear 0ms infinite normal;
+            -webkit-animation	: PureLoginFormAHeaderLayer1 200000ms linear 0ms infinite normal;
+            -moz-animation		: PureLoginFormAHeaderLayer1 200000ms linear 0ms infinite normal;
+            -o-animation		: PureLoginFormAHeaderLayer1 200000ms linear 0ms infinite normal;
+        }
+            @keyframes PureLoginFormAHeaderLayer1 {
+                0% { left:100%;}100% { left:-400%;}
+            }
+            @-moz-keyframes PureLoginFormAHeaderLayer1 {
+                0% { left:100%;}100% { left:-400%;}
+            }
+            @-webkit-keyframes PureLoginFormAHeaderLayer1 {
+                0% { left:100%;}100% { left:-400%;}
+            }
+        div[data-element-type="Pure.LoginForm.A.Header.Layer"][data-layer-number="2"]{
+            width               : 300%;
+            animation			: PureLoginFormAHeaderLayer1 70000ms linear 0ms infinite normal;
+            -webkit-animation	: PureLoginFormAHeaderLayer1 70000ms linear 0ms infinite normal;
+            -moz-animation		: PureLoginFormAHeaderLayer1 70000ms linear 0ms infinite normal;
+            -o-animation		: PureLoginFormAHeaderLayer1 70000ms linear 0ms infinite normal;
+        }
+        div[data-element-type="Pure.LoginForm.A.Header.Layer"][data-layer-number="3"]{
+            width               : 300%;
+            animation			: PureLoginFormAHeaderLayer1 100000ms linear 0ms infinite normal;
+            -webkit-animation	: PureLoginFormAHeaderLayer1 100000ms linear 0ms infinite normal;
+            -moz-animation		: PureLoginFormAHeaderLayer1 100000ms linear 0ms infinite normal;
+            -o-animation		: PureLoginFormAHeaderLayer1 100000ms linear 0ms infinite normal;
+        }
+    p[data-element-type="Pure.LoginForm.A.Header"]{
+        position        :relative;
+        display         :block;
+        font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size       :2em;
+        color           :rgb(255, 255, 255);
+        cursor          :default;
+        margin          :0;
+        padding         :0;
+        top             :0.5em;
+        left            :0.8em;
+        text-shadow     : 1px 1px 2px rgba(0,0,0,0.4);
+    }
+/*========================================================================================================*/
+div[data-element-type="Pure.LoginForm.A.Content"]{
+    position            :relative;
+    left                :0;
+    z-index             :10;
+}
+    div[data-element-type="Pure.LoginForm.A.Fields"]{
+        position            :relative;
+        left                :0;
+    }
+    div[data-element-type="Pure.LoginForm.A.Controls"]{
+        position            :relative;
+        left                :0;
+        height              :4em;
+        margin              : 1.5em 0 0 0;
+    }
+/*========================================================================================================*/
+p[data-element-type="Pure.LoginForm.A.Field"]{
+    position        :relative;
+    display         :block;
+    font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       :0.9em;
+    color           :rgb(91, 105, 145);
+    cursor          :default;
+    margin          : 0.8em 0 0.2em 0;
+    padding         :0;
+    width           :70%;
+    left            :15%;
+}
+input[data-element-type="Pure.LoginForm.A.Field"]{
+    position        :relative;
+    display         :block;
+    font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       :1em;
+    color           :rgb(91, 105, 145);
+    background      :rgb(255,255,255);
+    width           :70%;
+    left            :15%;
+    outline         :none;
+    border          :1px solid rgb(140, 148, 170);
+    margin          : 0.2em 0 0.5em 0;
+    padding         :0.5em;
+}
+/*========================================================================================================*/
+input[data-element-type="Pure.LoginForm.A.Field.Remember"]{
+    display: none;
+}
+div[data-element-type="Pure.LoginForm.A.Field.Remember"]{
+    position    : relative;
+    width       : 2em;
+    height      : 2em;
+    left        :15%;
+    margin      : -2.8em 0 0 -2.5em;
+}
+    div[data-element-type="Pure.LoginForm.A.Field.Remember"]:after{
+        position            : absolute;
+        content             : '';
+        width               : 1.5em;
+        height              : 1.5em;
+        top                 :0.25em;
+        left                :0.25em;
+        background-size     : cover;
+        background-image    : url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAKBmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIKICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgIHhtbG5zOklwdGM0eG1wQ29yZT0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcENvcmUvMS4wL3htbG5zLyIKICAgIHhtbG5zOnBsdXNfMV89Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iCiAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiCiAgIHhtcFJpZ2h0czpNYXJrZWQ9IlRydWUiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMTEtMDEtMjVUMTM6NTU6MDgrMDE6MDAiCiAgIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDdCQkMwNTY4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDdCQkMwNTY4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo0N0JCQzA1NjgyMjhFMDExOTg5Q0MwQTFBRDAyQjVDMiI+CiAgIDx4bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC94bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgPGRjOmNyZWF0b3I+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpPkdlbnRsZWZhY2UgY3VzdG9tIHRvb2xiYXIgaWNvbnMgZGVzaWduPC9yZGY6bGk+CiAgICA8L3JkZjpTZXE+CiAgIDwvZGM6Y3JlYXRvcj4KICAgPGRjOmRlc2NyaXB0aW9uPgogICAgPHJkZjpBbHQ+CiAgICAgPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5XaXJlZnJhbWUgbW9ubyB0b29sYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpBbHQ+CiAgIDwvZGM6ZGVzY3JpcHRpb24+CiAgIDxkYzpzdWJqZWN0PgogICAgPHJkZjpCYWc+CiAgICAgPHJkZjpsaT5jdXN0b20gaWNvbiBkZXNpZ248L3JkZjpsaT4KICAgICA8cmRmOmxpPnRvb2xiYXIgaWNvbnM8L3JkZjpsaT4KICAgICA8cmRmOmxpPmN1c3RvbSBpY29uczwvcmRmOmxpPgogICAgIDxyZGY6bGk+aW50ZXJmYWNlIGRlc2lnbjwvcmRmOmxpPgogICAgIDxyZGY6bGk+dWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT5ndWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT50YXNrYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpCYWc+CiAgIDwvZGM6c3ViamVjdD4KICAgPGRjOnJpZ2h0cz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC9kYzpyaWdodHM+CiAgIDxJcHRjNHhtcENvcmU6Q3JlYXRvckNvbnRhY3RJbmZvCiAgICBJcHRjNHhtcENvcmU6Q2lVcmxXb3JrPSJodHRwOi8vd3d3LmdlbnRsZWZhY2UuY29tIi8+CiAgIDxwbHVzXzFfOkltYWdlQ3JlYXRvcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpJbWFnZUNyZWF0b3JOYW1lPSJnZW50bGVmYWNlLmNvbSIvPgogICAgPC9yZGY6U2VxPgogICA8L3BsdXNfMV86SW1hZ2VDcmVhdG9yPgogICA8cGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpDb3B5cmlnaHRPd25lck5hbWU9ImdlbnRsZWZhY2UuY29tIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwvcGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NDdCQkMwNTY4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgICAgIHN0RXZ0OndoZW49IjIwMTEtMDEtMjVUMTM6NTU6MDgrMDE6MDAiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii9tZXRhZGF0YSIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+tsSGrgAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAA8dEVYdEFMVFRhZwBUaGlzIGlzIHRoZSBpY29uIGZyb20gR2VudGxlZmFjZS5jb20gZnJlZSBpY29ucyBzZXQuINhr6MQAAAAfdEVYdENvcHlyaWdodABST1lBTFRZIEZSRUUgTElDRU5TRSDe2YtpAAAARWlUWHREZXNjcmlwdGlvbgAAAAAAVGhpcyBpcyB0aGUgaWNvbiBmcm9tIEdlbnRsZWZhY2UuY29tIGZyZWUgaWNvbnMgc2V0LiC8EfgaAAAAI2lUWHRDb3B5cmlnaHQAAAAAAFJPWUFMVFkgRlJFRSBMSUNFTlNFICddCkoAAAEbSURBVHja7FfdDYIwEO4RAq86AWyAsIEbyAhOpiMwCSUQ3g0LwARgz0jSHCJYfvpgL7nQ8vXn+O4rbSGKohoADmwn67quEY9zmqYZ1iEMw47psSvn/A5BEOgK4BWELSjROD+7WW3bMtlFQHGe50Dfj7loH2J7dCxTXMJiUX9Q3EIGZC+KInmLZZaL9ln/OVimuIQlGCDFBwz0NpcBat/wsiwbitufBukHUrGpfhQfFaGqOKf6UdwwsFiEvu+f+j5Y/lWka6SAe57H5KW7Vgpw01i6STXKIqyq6rjFv3c2Axtux/MY2MoMAwMGTAoMA0aEf5+CwanYdd3LVpPj2HQ+cBxH681k9xQMAtB8NWPiZg71Cicf5RPTU4ABAMk1CJ+hDnqiAAAAAElFTkSuQmCC");
+        opacity             : 0.2;
+
+    }
+input[data-element-type="Pure.LoginForm.A.Field.Remember"]:checked +div[data-element-type="Pure.LoginForm.A.Field.Remember"]:after{
+    opacity: 0.8;
+}
+
+/*========================================================================================================*/
+@media screen and (max-width: 1000px){
+    div[data-element-type="Pure.LoginForm.A.Container"]{
+        width: 30em;
+    }
+}
+@media screen and (max-width: 500px){
+    div[data-element-type="Pure.LoginForm.A.Container"]{
+        width: 100%;
+    }
+}
+/*========================================================================================================*/
+/*========================================================================================================*/
+/*========================================================================================================*/
+

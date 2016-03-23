@@ -1,0 +1,845 @@
+﻿div[data-element-type="Pure.Messenger.Mails.Menu"]{
+    position            :absolute;
+    height              :3em;
+    left                :0;
+    right               :0;
+    top                 :0;
+    background-image    : url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACBAMAAACAmBAXAAAAFVBMVEX///9ERETd7h7d7h7d7h7d7h5EREQ/F03UAAAADElEQVQImWNIYGADAAEqAGcyCY8UAAAAAElFTkSuQmCC");
+    -moz-box-shadow     : 0 0 0.5em rgba(0,0,0,0.4);
+    -webkit-box-shadow  : 0 0 0.5em rgba(0,0,0,0.4);
+    box-shadow          : 0 0 0.5em rgba(0,0,0,0.4);
+    border-top          : solid 1px rgb(80,80,80);
+    border-left         : solid 1px rgb(80,80,80);
+    border-right        : solid 1px rgb(50,50,50);
+    border-bottom       : solid 1px rgb(50,50,50);
+    -moz-box-sizing     : border-box;
+    -webkit-box-sizing  : border-box;
+    box-sizing          : border-box;
+}
+    div[data-element-type="Pure.Messenger.Mails.Menu"]::after{
+        position    :absolute;
+        content     :'';
+        width       :100%;
+        height      :100%;
+        background  : rgb(84,90,95);
+        background  : -moz-linear-gradient(top,  rgba(84,90,95,1) 0%, rgba(40,52,59,1) 100%);
+        background  : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(84,90,95,1)), color-stop(100%,rgba(40,52,59,1)));
+        background  : -webkit-linear-gradient(top,  rgba(84,90,95,1) 0%,rgba(40,52,59,1) 100%);
+        background  : -o-linear-gradient(top,  rgba(84,90,95,1) 0%,rgba(40,52,59,1) 100%);
+        background  : -ms-linear-gradient(top,  rgba(84,90,95,1) 0%,rgba(40,52,59,1) 100%);
+        background  : linear-gradient(to bottom,  rgba(84,90,95,1) 0%,rgba(40,52,59,1) 100%);
+        filter      : progid:DXImageTransform.Microsoft.gradient( startColorstr='#545a5f', endColorstr='#28343b',GradientType=0 );
+        opacity     :0.8;
+    }
+    div[data-element-type="Pure.Messenger.Menu.Mails.Content"]{
+        position    :absolute;
+        width       :100%;
+        height      :100%;
+        z-index     : 1;
+    }
+/*=================================================================================================================*/
+div[data-element-type="Pure.Messenger.Menu.Mails.Item"]{
+    position:relative;
+    height  :100%;
+    width   :auto;
+}
+    div[data-element-type="Pure.Messenger.Menu.Mails.Item"][data-addition-type="left"]{
+        float   :left;
+    }
+    div[data-element-type="Pure.Messenger.Menu.Mails.Item"][data-addition-type="right"]{
+        float   :right;
+    }
+    p[data-element-type="Pure.Messenger.Menu.Mails.Item.Title"]{
+        display                 :block;
+        position                :relative;
+        padding                 :1.7em 1em 0.5em 1em;
+        margin                  :0;
+        font-family             :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size               :0.9em;
+        text-align              :center;
+        color                   :rgb(210, 230, 255);
+        text-shadow             : 1px 1px 2px rgba(0,0,0,0.4);
+        white-space             :nowrap;
+        text-transform          :uppercase;
+        cursor                  :default;
+    }
+    div[data-element-type="Pure.Messenger.Menu.Mails.Item.Icon"]{
+        position                :absolute;
+        display                 :block;
+        width                   :1em;
+        height                  :1em;
+        top                     :0.3em;
+        left                    :50%;
+        margin-left             :-0.5em;
+        background-position     :center;
+        background-size         :contain;
+        opacity                 :0.4;
+    }
+        div[data-element-type="Pure.Messenger.Menu.Mails.Item"]:hover div[data-element-type="Pure.Messenger.Menu.Mails.Item.Icon"]{
+            opacity             : 0.8;
+        }
+        div[data-element-type="Pure.Messenger.Menu.Mails.Item.Icon"][data-addition-type="inbox"]{
+             background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAKBmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIKICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgIHhtbG5zOklwdGM0eG1wQ29yZT0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcENvcmUvMS4wL3htbG5zLyIKICAgIHhtbG5zOnBsdXNfMV89Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iCiAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiCiAgIHhtcFJpZ2h0czpNYXJrZWQ9IlRydWUiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMTEtMDEtMjVUMTM6NTU6MzkrMDE6MDAiCiAgIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzA0MTVENjk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NzA0MTVENjk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3MDQxNUQ2OTgyMjhFMDExOTg5Q0MwQTFBRDAyQjVDMiI+CiAgIDx4bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC94bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgPGRjOmNyZWF0b3I+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpPkdlbnRsZWZhY2UgY3VzdG9tIHRvb2xiYXIgaWNvbnMgZGVzaWduPC9yZGY6bGk+CiAgICA8L3JkZjpTZXE+CiAgIDwvZGM6Y3JlYXRvcj4KICAgPGRjOmRlc2NyaXB0aW9uPgogICAgPHJkZjpBbHQ+CiAgICAgPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5XaXJlZnJhbWUgbW9ubyB0b29sYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpBbHQ+CiAgIDwvZGM6ZGVzY3JpcHRpb24+CiAgIDxkYzpzdWJqZWN0PgogICAgPHJkZjpCYWc+CiAgICAgPHJkZjpsaT5jdXN0b20gaWNvbiBkZXNpZ248L3JkZjpsaT4KICAgICA8cmRmOmxpPnRvb2xiYXIgaWNvbnM8L3JkZjpsaT4KICAgICA8cmRmOmxpPmN1c3RvbSBpY29uczwvcmRmOmxpPgogICAgIDxyZGY6bGk+aW50ZXJmYWNlIGRlc2lnbjwvcmRmOmxpPgogICAgIDxyZGY6bGk+dWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT5ndWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT50YXNrYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpCYWc+CiAgIDwvZGM6c3ViamVjdD4KICAgPGRjOnJpZ2h0cz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC9kYzpyaWdodHM+CiAgIDxJcHRjNHhtcENvcmU6Q3JlYXRvckNvbnRhY3RJbmZvCiAgICBJcHRjNHhtcENvcmU6Q2lVcmxXb3JrPSJodHRwOi8vd3d3LmdlbnRsZWZhY2UuY29tIi8+CiAgIDxwbHVzXzFfOkltYWdlQ3JlYXRvcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpJbWFnZUNyZWF0b3JOYW1lPSJnZW50bGVmYWNlLmNvbSIvPgogICAgPC9yZGY6U2VxPgogICA8L3BsdXNfMV86SW1hZ2VDcmVhdG9yPgogICA8cGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpDb3B5cmlnaHRPd25lck5hbWU9ImdlbnRsZWZhY2UuY29tIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwvcGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NzA0MTVENjk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgICAgIHN0RXZ0OndoZW49IjIwMTEtMDEtMjVUMTM6NTU6MzkrMDE6MDAiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii9tZXRhZGF0YSIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+n1yMMgAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAA8dEVYdEFMVFRhZwBUaGlzIGlzIHRoZSBpY29uIGZyb20gR2VudGxlZmFjZS5jb20gZnJlZSBpY29ucyBzZXQuINhr6MQAAABEdEVYdENvcHlyaWdodABDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIE5vbi1Db21tZXJjaWFsIE5vIERlcml2YXRpdmVze92woAAAAEVpVFh0RGVzY3JpcHRpb24AAAAAAFRoaXMgaXMgdGhlIGljb24gZnJvbSBHZW50bGVmYWNlLmNvbSBmcmVlIGljb25zIHNldC4gvBH4GgAAAEhpVFh0Q29weXJpZ2h0AAAAAABDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIE5vbi1Db21tZXJjaWFsIE5vIERlcml2YXRpdmVzWILLBQAAAS9JREFUeNrsl0mOgzAQRTHqA2SHBGISwzpX4Gh9gj5SrsCaQUwCCTapE5C2axmFYBuzSVwSMotS/efyt1Q2DMFY1/X+2AmWw1uPSAA8ePJM0+Sq/SMBYKgMYQDaYQ3w5QDahBpAe0ADfJwJTZHkZVkC1gGej+VKDSTzPKvt8UZYlkVeHgGlz+lyPVk/3/QABcjocjsRgolnb2fCaZouJ0GguG3bsDuUjuN4od1QCZETQjLHcYB7Kh6GQVUncOeu64LwWN73/VEIFPc8D6TfBV3XyUKguO/7cPhh0ratKASKB0EAyl5GTdPwGhMNF4YhKH+a1XW91wnceRRFwFOPyLiqqqotCBSP4xh4axHZe1WW5TMEiidJAiJ1yJHLXRQF88Qf/QV65r9pmoJojX8BBgCk+NV2GC4gBwAAAABJRU5ErkJggg==");
+        }
+        div[data-element-type="Pure.Messenger.Menu.Mails.Item.Icon"][data-addition-type="outbox"]{
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAKBmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIKICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgIHhtbG5zOklwdGM0eG1wQ29yZT0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcENvcmUvMS4wL3htbG5zLyIKICAgIHhtbG5zOnBsdXNfMV89Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iCiAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiCiAgIHhtcFJpZ2h0czpNYXJrZWQ9IlRydWUiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMTEtMDEtMjVUMTM6NTU6MzkrMDE6MDAiCiAgIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NEMxNjMwNjk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NEMxNjMwNjk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo0QzE2MzA2OTgyMjhFMDExOTg5Q0MwQTFBRDAyQjVDMiI+CiAgIDx4bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC94bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgPGRjOmNyZWF0b3I+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpPkdlbnRsZWZhY2UgY3VzdG9tIHRvb2xiYXIgaWNvbnMgZGVzaWduPC9yZGY6bGk+CiAgICA8L3JkZjpTZXE+CiAgIDwvZGM6Y3JlYXRvcj4KICAgPGRjOmRlc2NyaXB0aW9uPgogICAgPHJkZjpBbHQ+CiAgICAgPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5XaXJlZnJhbWUgbW9ubyB0b29sYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpBbHQ+CiAgIDwvZGM6ZGVzY3JpcHRpb24+CiAgIDxkYzpzdWJqZWN0PgogICAgPHJkZjpCYWc+CiAgICAgPHJkZjpsaT5jdXN0b20gaWNvbiBkZXNpZ248L3JkZjpsaT4KICAgICA8cmRmOmxpPnRvb2xiYXIgaWNvbnM8L3JkZjpsaT4KICAgICA8cmRmOmxpPmN1c3RvbSBpY29uczwvcmRmOmxpPgogICAgIDxyZGY6bGk+aW50ZXJmYWNlIGRlc2lnbjwvcmRmOmxpPgogICAgIDxyZGY6bGk+dWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT5ndWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT50YXNrYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpCYWc+CiAgIDwvZGM6c3ViamVjdD4KICAgPGRjOnJpZ2h0cz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC9kYzpyaWdodHM+CiAgIDxJcHRjNHhtcENvcmU6Q3JlYXRvckNvbnRhY3RJbmZvCiAgICBJcHRjNHhtcENvcmU6Q2lVcmxXb3JrPSJodHRwOi8vd3d3LmdlbnRsZWZhY2UuY29tIi8+CiAgIDxwbHVzXzFfOkltYWdlQ3JlYXRvcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpJbWFnZUNyZWF0b3JOYW1lPSJnZW50bGVmYWNlLmNvbSIvPgogICAgPC9yZGY6U2VxPgogICA8L3BsdXNfMV86SW1hZ2VDcmVhdG9yPgogICA8cGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpDb3B5cmlnaHRPd25lck5hbWU9ImdlbnRsZWZhY2UuY29tIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwvcGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NEMxNjMwNjk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgICAgIHN0RXZ0OndoZW49IjIwMTEtMDEtMjVUMTM6NTU6MzkrMDE6MDAiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii9tZXRhZGF0YSIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+DV4H+wAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAA8dEVYdEFMVFRhZwBUaGlzIGlzIHRoZSBpY29uIGZyb20gR2VudGxlZmFjZS5jb20gZnJlZSBpY29ucyBzZXQuINhr6MQAAABEdEVYdENvcHlyaWdodABDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIE5vbi1Db21tZXJjaWFsIE5vIERlcml2YXRpdmVze92woAAAAEVpVFh0RGVzY3JpcHRpb24AAAAAAFRoaXMgaXMgdGhlIGljb24gZnJvbSBHZW50bGVmYWNlLmNvbSBmcmVlIGljb25zIHNldC4gvBH4GgAAAEhpVFh0Q29weXJpZ2h0AAAAAABDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIE5vbi1Db21tZXJjaWFsIE5vIERlcml2YXRpdmVzWILLBQAAAS9JREFUeNrsl1tqhTAQhg0cxBsacQPtDuwSzkq7lC7hdAftBsRRvOEtzYiUChYnHvUpA/9LEub/yIxDNIwnQgjBpd5ncePKGIaBj+P4kBKzHrh2iXnf91wKDcVf4RrunWredR2XQiOxJtzDM9R8TMW8bVtM/CEVbxz9lLqbpgmHATRNwxljFPNfCNmYd8uy4GmAuq5VzRcQtm3DboCqqqZrlwDxzk91KofjOKAMUJYlteYGpSdc1wUyQFEUR5kvIDzPg02APM/31pzUE77vw78AWZadZb6ACIJggritNM2Z5hjx7PG2egMAIK4Y55xzpjwJ0zR9kfRfpBHL2GsYht+HjmKMJElINxRFESn3bcdgObQUGkAZQL58dAl0D+gSaADdhBoA33Jb/35AzfcjwAAZ3u6OOZtyywAAAABJRU5ErkJggg==");
+        }
+        div[data-element-type="Pure.Messenger.Menu.Mails.Item.Icon"][data-addition-type="create"]{
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADx0RVh0QUxUVGFnAFRoaXMgaXMgdGhlIGljb24gZnJvbSBHZW50bGVmYWNlLmNvbSBmcmVlIGljb25zIHNldC4g2GvoxAAAAB90RVh0Q29weXJpZ2h0AFJPWUFMVFkgRlJFRSBMSUNFTlNFIN7Zi2kAAABFaVRYdERlc2NyaXB0aW9uAAAAAABUaGlzIGlzIHRoZSBpY29uIGZyb20gR2VudGxlZmFjZS5jb20gZnJlZSBpY29ucyBzZXQuILwR+BoAAAAjaVRYdENvcHlyaWdodAAAAAAAUk9ZQUxUWSBGUkVFIExJQ0VOU0UgJ10KSgAAAjVJREFUeNrsV11qwkAQNiIqirCKDyIIqYjP8Qb1BHoUe4I2J9CbND2BvUHzLGLjm4LogviLP50J0aZxt+42a/vSgQ/NZnfn229mdyeRyL9J2OFw0AEtQBcwOwYM27x32EdX5ni/3xuAZ8BREl0cG8r5brdrA44h0ebNr/FebLdbomlaF/4aioS0IUr1eDxOrxLYbDYEfrpAwFCZQ0DAhp96IpGg3xJYr9dvCld+oUQymaydHqLBt6vVqg1MDUDkCkyYSPMD2wTGGeiDqcBisTBA9jeRZaRSqQv1lsslhm4mGI5aOp22o4HGtsAKXHBIUdHxgMcvCsznczw43kUDmclkmPkD8xwl8uEu5lt9U1Gmy3Rv+gk0/oBA4yzjDAwSkDA6mYSQpzCkKKU4/pFBlp4JTKdTJvVcLqeFVQXWRsAZc3e4u2AymRCZbJe1bDbL3R2xH8ZOWW64CuTzeQr3d4QFhbUEE1F/QrAkGo/HoRJwNBoRnIMTgs8khI549d6LTlwoFDSOQ5lYvvpz4EWGgKJz4MVPwMK7QEWsRQ3OHeucA8Vi0fFI/PgyOikgCAt9Bm9D8xcJmBcFSalUskHCDm/L+DEcDr/sDngm2CYyFn2gL25J5jjOTUsyXdfPJVmMI2Mdi9IbkHCLUqGyfDAYEMUkXOflcpkKEThZv9/HrdkK6bxTqVQepD5MAiQMr4aTrZos2OsmOLelv4xY1uv1dI9EwwtNsIChntR4qlrVatW5NueHAAMAVHQbDmF1UQ4AAAAASUVORK5CYII=");
+        }
+/*=================================================================================================================*/
+input[data-element-type="Pure.Messenger.Mails.Tab"][id="Messenger.Mails.Inbox"]:checked ~div[data-element-type="Pure.Messenger.Mails.Menu"] label[for="Messenger.Mails.Inbox"] div[data-element-type="Pure.Messenger.Menu.Mails.Item"]{
+    box-shadow: 0 0 0.5em rgba(0,0,0,0.4) inset;
+    background: rgba(0,0,0,0.2);
+}
+input[data-element-type="Pure.Messenger.Mails.Tab"][id="Messenger.Mails.Outbox"]:checked ~div[data-element-type="Pure.Messenger.Mails.Menu"] label[for="Messenger.Mails.Outbox"] div[data-element-type="Pure.Messenger.Menu.Mails.Item"]{
+    box-shadow: 0 0 0.5em rgba(0,0,0,0.4) inset;
+    background: rgba(0,0,0,0.2);
+}
+input[data-element-type="Pure.Messenger.Mails.Tab"][id="Messenger.Mails.Create"]:checked ~div[data-element-type="Pure.Messenger.Mails.Menu"] label[for="Messenger.Mails.Create"] div[data-element-type="Pure.Messenger.Menu.Mails.Item"]{
+    box-shadow: 0 0 0.5em rgba(0,0,0,0.4) inset;
+    background: rgba(0,0,0,0.2);
+}
+/*=================================================================================================================*/
+input[data-element-type="Pure.Messenger.Mails.Tab"]{
+    display:none;
+}
+div[data-element-type="Pure.Messenger.Mails.List"]{
+    position    :absolute;
+    top         :3em;
+    bottom      :0;
+    width       :100%;
+    display     :none;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+    input[data-element-type="Pure.Messenger.Mails.Tab"]:checked +div[data-element-type="Pure.Messenger.Mails.List"]{
+        display:block;
+    }
+/*=================================================================================================================*/
+table[data-element-type="Pure.Messenger.Mails.List"]{
+    position        :relative;
+    width           :90%;
+    border-collapse :collapse;
+    left            :5%;
+}
+    table[data-element-type="Pure.Messenger.Mails.List"] tr,
+    table[data-element-type="Pure.Messenger.Mails.List"] td{
+        vertical-align:top;
+    }
+        table[data-element-type="Pure.Messenger.Mails.List"] tr td:nth-child(1){
+            width:10em;
+        }
+        table[data-element-type="Pure.Messenger.Mails.List"] tr td:nth-child(2){
+            width:auto;
+        }
+        table[data-element-type="Pure.Messenger.Mails.List"] tr td:nth-child(3){
+            width:7em;
+        }
+        tr[data-element-type="Pure.Messenger.Mails.MessageRow"]{
+            border-bottom: 1px dotted rgb(140, 148, 170);
+        }
+    p[data-element-type="Pure.Messenger.Mails.List.Title"]{
+        font-family             :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size               :0.9em;
+        text-align              :center;
+        color                   :rgb(255, 255, 255);
+        white-space             :nowrap;
+        cursor                  :default;
+        margin                  :0.5em 0 0.5em 0;
+        padding                 :0.5em 1em 0.5em 1em;
+        -moz-border-radius      : 3px;
+        -webkit-border-radius   : 3px;
+        border-radius           : 3px;
+        background              : rgb(136,191,232);
+        -moz-box-shadow         : 0 0 2px rgba(0,0,0,0.4);
+        -webkit-box-shadow      : 0 0 2px rgba(0,0,0,0.4);
+        box-shadow              : 0 0 2px rgba(0,0,0,0.4);
+    }
+/*=================================================================================================================*/
+div[data-element-type="Pure.Messenger.Mails.User"]{
+    position    :relative;
+    width       :100%;
+    height      :4em;
+    overflow    :hidden;
+}
+    div[data-element-type="Pure.Messenger.Mails.User"][data-addition-type="recipients"]{
+        display :inline-block;
+        width   :10em;
+        border  :dotted 1px rgb(136,191,232);
+        margin  : 0.5em 1em 0em 1em;
+        padding : 0 3em 0 0;
+        height  :3.5em;
+    }
+    div[data-element-type="Pure.Messenger.Mails.User"]:after{
+        position    :absolute;
+        content     :'';
+        width       :70%;
+        height      :1px;
+        top         :100%;
+        margin-top  :-1px;
+        left        :15%;
+    }
+    div[data-element-type="Pure.Messenger.Mails.User.Avatar"]{
+        position                : absolute;
+        top                     : 0.5em;
+        left                    : 1em;
+        width                   : 2.5em;
+        height                  : 2.5em;
+        -moz-border-radius      : 1.25em;
+        -webkit-border-radius   : 1.25em;
+        border-radius           : 1.25em;
+        -moz-box-sizing         : border-box;
+        -webkit-box-sizing      : border-box;
+        box-sizing              : border-box;
+        -moz-box-shadow         : 0 0 0.3em rgba(0,0,0,0.4);
+        -webkit-box-shadow      : 0 0 0.3em rgba(0,0,0,0.4);
+        box-shadow              : 0 0 0.3em rgba(0,0,0,0.4);
+        background-position     :center;
+        background-size         :contain;
+        border                  :0.2em solid rgba(136,191,232,1);
+    }
+    p[data-element-type="Pure.Messenger.Mails.User.Name"]{
+        position    :relative;
+        display     :block;
+        margin      :0;
+        padding     :0.7em 0.5em 0.5em 4.5em;
+        font-family :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size   :0.9em;
+        text-align  :left;
+        color       :rgb(5, 21, 67);
+        line-height :1.2em;
+        cursor      : default;
+    }
+    a[data-element-type="Pure.Messenger.Mails.User.Remove"]{
+        position                :absolute;
+        right                   :0.75em;
+        top                     :0.75em;
+        height                  :2em;
+        width                   :2em;
+        border                  :dotted 1px rgb(136,191,232);
+        -moz-border-radius      : 1em;
+        -webkit-border-radius   : 1em;
+        border-radius           : 1em;
+        -moz-box-sizing         : content-box;
+        -webkit-box-sizing      : content-box;
+        box-sizing              : content-box;
+    }
+        a[data-element-type="Pure.Messenger.Mails.User.Remove"]:hover{
+            border                  :solid 1px rgb(136,191,232);
+        }
+        a[data-element-type="Pure.Messenger.Mails.User.Remove"]:after{
+            position                :absolute;
+            content                 :'';
+            top                     :0.5em;
+            left                    :0.5em;
+            width                   :1em;
+            height                  :1em;
+            background-position     :center;
+            background-size         :contain;
+            background-image        : url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAKBmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIKICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgIHhtbG5zOklwdGM0eG1wQ29yZT0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcENvcmUvMS4wL3htbG5zLyIKICAgIHhtbG5zOnBsdXNfMV89Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iCiAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiCiAgIHhtcFJpZ2h0czpNYXJrZWQ9IlRydWUiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMTEtMDEtMjVUMTM6NTU6MTMrMDE6MDAiCiAgIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QkM3MkM5NTk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QkM3MkM5NTk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpCQzcyQzk1OTgyMjhFMDExOTg5Q0MwQTFBRDAyQjVDMiI+CiAgIDx4bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC94bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgPGRjOmNyZWF0b3I+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpPkdlbnRsZWZhY2UgY3VzdG9tIHRvb2xiYXIgaWNvbnMgZGVzaWduPC9yZGY6bGk+CiAgICA8L3JkZjpTZXE+CiAgIDwvZGM6Y3JlYXRvcj4KICAgPGRjOmRlc2NyaXB0aW9uPgogICAgPHJkZjpBbHQ+CiAgICAgPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5XaXJlZnJhbWUgbW9ubyB0b29sYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpBbHQ+CiAgIDwvZGM6ZGVzY3JpcHRpb24+CiAgIDxkYzpzdWJqZWN0PgogICAgPHJkZjpCYWc+CiAgICAgPHJkZjpsaT5jdXN0b20gaWNvbiBkZXNpZ248L3JkZjpsaT4KICAgICA8cmRmOmxpPnRvb2xiYXIgaWNvbnM8L3JkZjpsaT4KICAgICA8cmRmOmxpPmN1c3RvbSBpY29uczwvcmRmOmxpPgogICAgIDxyZGY6bGk+aW50ZXJmYWNlIGRlc2lnbjwvcmRmOmxpPgogICAgIDxyZGY6bGk+dWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT5ndWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT50YXNrYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpCYWc+CiAgIDwvZGM6c3ViamVjdD4KICAgPGRjOnJpZ2h0cz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC9kYzpyaWdodHM+CiAgIDxJcHRjNHhtcENvcmU6Q3JlYXRvckNvbnRhY3RJbmZvCiAgICBJcHRjNHhtcENvcmU6Q2lVcmxXb3JrPSJodHRwOi8vd3d3LmdlbnRsZWZhY2UuY29tIi8+CiAgIDxwbHVzXzFfOkltYWdlQ3JlYXRvcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpJbWFnZUNyZWF0b3JOYW1lPSJnZW50bGVmYWNlLmNvbSIvPgogICAgPC9yZGY6U2VxPgogICA8L3BsdXNfMV86SW1hZ2VDcmVhdG9yPgogICA8cGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpDb3B5cmlnaHRPd25lck5hbWU9ImdlbnRsZWZhY2UuY29tIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwvcGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6QkM3MkM5NTk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgICAgIHN0RXZ0OndoZW49IjIwMTEtMDEtMjVUMTM6NTU6MTMrMDE6MDAiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii9tZXRhZGF0YSIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+EQqr2QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAA8dEVYdEFMVFRhZwBUaGlzIGlzIHRoZSBpY29uIGZyb20gR2VudGxlZmFjZS5jb20gZnJlZSBpY29ucyBzZXQuINhr6MQAAABEdEVYdENvcHlyaWdodABDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIE5vbi1Db21tZXJjaWFsIE5vIERlcml2YXRpdmVze92woAAAAEVpVFh0RGVzY3JpcHRpb24AAAAAAFRoaXMgaXMgdGhlIGljb24gZnJvbSBHZW50bGVmYWNlLmNvbSBmcmVlIGljb25zIHNldC4gvBH4GgAAAEhpVFh0Q29weXJpZ2h0AAAAAABDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIE5vbi1Db21tZXJjaWFsIE5vIERlcml2YXRpdmVzWILLBQAAALFQTFRFAAAAAQEBDAwMKCgoMjIyAwMDBgYGCAgICgoKDQ0NDg4OEBAQExMTFRUVFxcXHR0dHx8fISEhJCQkJiYmJycnKioqLCwsLi4uMTExAQEBCgoKKioqMjIyAwMDBQUFCAgIDg4OGhoaJSUlLCwsLi4uMTExAwMDBQUFBwcHCgoKDAwMDg4OERERExMTFRUVGBgYGhoaHBwcHx8fISEhIyMjJiYmKCgoKioqLCwsLy8vMTExwimoUQAAACZ0Uk5TAFBQUFBgYGBgYGBgYGBgYGBgYGBgYGBgYHBwcHCfn5+fn5+fn58n0VDQAAAAt0lEQVQYGX3BVRbCMBRAwQvF3d0Lxd27/4WRNH0nhQ9m4K9BAisxQCx8v4Po+P4CY/5W2hjttzJHc1+BFlrrFXCB/jPUBJrPUB+ch2jQeAgHqN/F7C7qaLXbrxpG9fqtiqhcoipY5bNVJmp6ElOiSkerhFU8RBURhf23AkZ+9yuPltuKyVbkgPhGZMluRBx661AGyKxDPWC8CqTR0qvAGG20VFIYqaUywhh6XhKR9LwhohvDinVRPjHjOG13yfCpAAAAAElFTkSuQmCC");
+            opacity                 :0.4;
+        }
+            a[data-element-type="Pure.Messenger.Mails.User.Remove"]:hover:after{
+                opacity:0.8;
+            }
+/*=================================================================================================================*/
+div[data-element-type="Pure.Messenger.Mails.User"][data-addition-type="small"]{
+    height      :3em;
+}
+    div[data-element-type="Pure.Messenger.Mails.User"][data-addition-type="small"] div[data-element-type="Pure.Messenger.Mails.User.Avatar"]{
+        width                   : 1.5em;
+        height                  : 1.5em;
+        -moz-border-radius      : 0.75em;
+        -webkit-border-radius   : 0.75em;
+        border-radius           : 0.75em;
+    }
+    div[data-element-type="Pure.Messenger.Mails.User"][data-addition-type="small"] p[data-element-type="Pure.Messenger.Mails.User.Name"]{
+        font-size   :0.8em;
+        padding     :0.5em 0.5em 0.5em 3.5em;
+    }
+/*=================================================================================================================*/
+    a[data-element-type="Pure.Messenger.Mails.List.Subject"]{
+        display         :block;
+        margin          :0;
+        padding         :0.5em 0.5em 0.5em 0.5em;
+        font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size       :1em;
+        text-align      :left;
+        color           :rgb(5, 21, 67);
+        text-decoration :none;
+        cursor          :pointer;
+        clear           : both;
+    }
+        a[data-element-type="Pure.Messenger.Mails.List.Subject"][data-mails-attribute-unread="true"]:before{
+            position        : absolute;
+            display         :block;
+            content         : '';
+            width           :0.5em;
+            height          :0.5em;
+            border-radius   : 0.25em;
+            background      : rgb(114, 14, 65);
+            margin          : -0.25em 0 0 -0.5em;
+        }
+    div[data-element-type="Pure.Messenger.Mails.List.Content"]{
+        display         :block;
+        margin          :0;
+        padding         :0em 0.5em 0.5em 1em;
+        font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size       :0.9em;
+        text-align      :left;
+        color           :rgb(43, 82, 139);
+        text-decoration :none;
+        cursor          :pointer;
+        clear           : both;
+        /*max-height      : 15em;*/
+        overflow        : hidden;
+    }
+    p[data-element-type="Pure.Messenger.Mails.List.Date"]{
+        margin      :0;
+        padding     :0.5em 0.5em 0.5em 0.5em;
+        font-family :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size   :0.9em;
+        text-align  :center;
+        color       :rgb(82, 109, 162);
+    }
+/*=================================================================================================================*/
+div[data-element-type="Pure.Messenger.Mails.Fast.Controls"]{
+    position    :relative;
+    width       :100%;
+    height      :2em;
+    margin      : 0.5em 0 0.5em 0;
+}
+    div[data-element-type="Pure.Messenger.Mails.Fast.Controls.Button"]{
+        position            :relative;
+        width               :2em;
+        height              :2em;
+        border-radius       :1em;
+        opacity             :0.4;
+        border              : dotted thin rgba(20,20,20,1);
+        background          : rgb(255,255,255);
+        -moz-box-sizing     : content-box;
+        -webkit-box-sizing  : content-box;
+        box-sizing          : content-box;
+        float               :right;
+        margin              : 0 0.5em 0 0.5em;
+    }
+        div[data-element-type="Pure.Messenger.Mails.Fast.Controls.Button"]:hover{
+            opacity                 :0.8;
+        }
+        div[data-element-type="Pure.Messenger.Mails.Fast.Controls.Button"]:after{
+            position                :absolute;
+            content                 :'';
+            width                   :1em;
+            height                  :1em;
+            top                     :0.5em;
+            left                    :0.5em;
+            animation			    : Pure_Messenger_Mails_Fast_Controls_Button_Show 350ms cubic-bezier(.44,1.38,.71,1.24) 0ms 1 normal;
+            -webkit-animation	    : Pure_Messenger_Mails_Fast_Controls_Button_Show 350ms cubic-bezier(.44,1.38,.71,1.24) 0ms 1 normal;
+            -moz-animation		    : Pure_Messenger_Mails_Fast_Controls_Button_Show 350ms cubic-bezier(.44,1.38,.71,1.24) 0ms 1 normal;
+            -o-animation		    : Pure_Messenger_Mails_Fast_Controls_Button_Show 350ms cubic-bezier(.44,1.38,.71,1.24) 0ms 1 normal;
+            background-size         :contain;
+            background-position     :center;
+        }
+        div[data-element-type="Pure.Messenger.Mails.Fast.Controls.Button"][data-addition-type="switcher"]:after{
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAALJ2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIgogICAgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIKICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgIHhtbG5zOklwdGM0eG1wQ29yZT0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcENvcmUvMS4wL3htbG5zLyIKICAgIHhtbG5zOnBsdXNfMV89Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iCiAgIHBob3Rvc2hvcDpIZWFkbGluZT0iVXNlciBpbnRlcmZhY2UgbWFrZSB1cCIKICAgeG1wUmlnaHRzOk1hcmtlZD0iVHJ1ZSIKICAgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxMS0wMS0yNVQxMzo1NToxNSswMTowMCIKICAgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEOTREQ0Y1QTgyMjhFMDExOTg5Q0MwQTFBRDAyQjVDMiIKICAgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozNjkwMzFENUUwMjdFMDExOTg5Q0MwQTFBRDAyQjVDMiIKICAgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjM2OTAzMUQ1RTAyN0UwMTE5ODlDQzBBMUFEMDJCNUMyIj4KICAgPHhtcFJpZ2h0czpVc2FnZVRlcm1zPgogICAgPHJkZjpBbHQ+CiAgICAgPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5DcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uLU5vbkNvbW1lcmNpYWwgbGljZW5zZTwvcmRmOmxpPgogICAgPC9yZGY6QWx0PgogICA8L3htcFJpZ2h0czpVc2FnZVRlcm1zPgogICA8eG1wTU06SGlzdG9yeT4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgc3RFdnQ6YWN0aW9uPSJzYXZlZCIKICAgICAgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDozNjkwMzFENUUwMjdFMDExOTg5Q0MwQTFBRDAyQjVDMiIKICAgICAgc3RFdnQ6d2hlbj0iMjAxMS0wMS0yNFQxODozOTowMiswMTowMCIKICAgICAgc3RFdnQ6Y2hhbmdlZD0iL21ldGFkYXRhIi8+CiAgICAgPHJkZjpsaQogICAgICBzdEV2dDphY3Rpb249InNhdmVkIgogICAgICBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOkQ5NERDRjVBODIyOEUwMTE5ODlDQzBBMUFEMDJCNUMyIgogICAgICBzdEV2dDp3aGVuPSIyMDExLTAxLTI1VDEzOjU1OjE1KzAxOjAwIgogICAgICBzdEV2dDpjaGFuZ2VkPSIvbWV0YWRhdGEiLz4KICAgIDwvcmRmOlNlcT4KICAgPC94bXBNTTpIaXN0b3J5PgogICA8ZGM6Y3JlYXRvcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGk+R2VudGxlZmFjZSBjdXN0b20gdG9vbGJhciBpY29ucyBkZXNpZ248L3JkZjpsaT4KICAgIDwvcmRmOlNlcT4KICAgPC9kYzpjcmVhdG9yPgogICA8ZGM6ZGVzY3JpcHRpb24+CiAgICA8cmRmOkFsdD4KICAgICA8cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiPldpcmVmcmFtZSBtb25vIHRvb2xiYXIgaWNvbnM8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC9kYzpkZXNjcmlwdGlvbj4KICAgPGRjOnN1YmplY3Q+CiAgICA8cmRmOkJhZz4KICAgICA8cmRmOmxpPmN1c3RvbSBpY29uIGRlc2lnbjwvcmRmOmxpPgogICAgIDxyZGY6bGk+dG9vbGJhciBpY29uczwvcmRmOmxpPgogICAgIDxyZGY6bGk+Y3VzdG9tIGljb25zPC9yZGY6bGk+CiAgICAgPHJkZjpsaT5pbnRlcmZhY2UgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT51aSBkZXNpZ248L3JkZjpsaT4KICAgICA8cmRmOmxpPmd1aSBkZXNpZ248L3JkZjpsaT4KICAgICA8cmRmOmxpPnRhc2tiYXIgaWNvbnM8L3JkZjpsaT4KICAgIDwvcmRmOkJhZz4KICAgPC9kYzpzdWJqZWN0PgogICA8ZGM6cmlnaHRzPgogICAgPHJkZjpBbHQ+CiAgICAgPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5DcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uLU5vbkNvbW1lcmNpYWwgbGljZW5zZTwvcmRmOmxpPgogICAgPC9yZGY6QWx0PgogICA8L2RjOnJpZ2h0cz4KICAgPElwdGM0eG1wQ29yZTpDcmVhdG9yQ29udGFjdEluZm8KICAgIElwdGM0eG1wQ29yZTpDaVVybFdvcms9Imh0dHA6Ly93d3cuZ2VudGxlZmFjZS5jb20iLz4KICAgPHBsdXNfMV86SW1hZ2VDcmVhdG9yPgogICAgPHJkZjpTZXE+CiAgICAgPHJkZjpsaQogICAgICBwbHVzXzFfOkltYWdlQ3JlYXRvck5hbWU9ImdlbnRsZWZhY2UuY29tIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwvcGx1c18xXzpJbWFnZUNyZWF0b3I+CiAgIDxwbHVzXzFfOkNvcHlyaWdodE93bmVyPgogICAgPHJkZjpTZXE+CiAgICAgPHJkZjpsaQogICAgICBwbHVzXzFfOkNvcHlyaWdodE93bmVyTmFtZT0iZ2VudGxlZmFjZS5jb20iLz4KICAgIDwvcmRmOlNlcT4KICAgPC9wbHVzXzFfOkNvcHlyaWdodE93bmVyPgogIDwvcmRmOkRlc2NyaXB0aW9uPgogPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KPD94cGFja2V0IGVuZD0iciI/PvmuOUAAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAPHRFWHRBTFRUYWcAVGhpcyBpcyB0aGUgaWNvbiBmcm9tIEdlbnRsZWZhY2UuY29tIGZyZWUgaWNvbnMgc2V0LiDYa+jEAAAARHRFWHRDb3B5cmlnaHQAQ3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbiBOb24tQ29tbWVyY2lhbCBObyBEZXJpdmF0aXZlc3vdsKAAAABFaVRYdERlc2NyaXB0aW9uAAAAAABUaGlzIGlzIHRoZSBpY29uIGZyb20gR2VudGxlZmFjZS5jb20gZnJlZSBpY29ucyBzZXQuILwR+BoAAABIaVRYdENvcHlyaWdodAAAAAAAQ3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbiBOb24tQ29tbWVyY2lhbCBObyBEZXJpdmF0aXZlc1iCywUAAAGASURBVHja7FXNaoNAEHZTwaNCLoYIEZJDDgYXcumxPkKfIOsj9IniG5Q+QV7BQ64BhYi5BBRPgj+dCRpW0SRt00NpFj6DszPfNzM7bgThsf7PWi6XLwDlDjwKctXvA3xQStdFUWzyPN+YpvltEYxFDuRCTrSRxWLB4HfN+bllWVrb7Tb6CrlhGAohZIP5cmZ7AIorgMCBYhbz+fzmStAXY6pYnmuFAm9ZlkUAoUYtMpvN9Gvk6FOT8xzIidwEnabTKYW2YHmNrMEWYbs8z3O7yHVdp9gWQLvaCGzWbrdzSW2ZTCY6kL23engW2e/3DRFN0/rIXbC9+r7vnQ6Z3xmPx0pVCW1nhCJhGJ5ERqMRrQ60i9wKguA8IKRdtqqqnSJ1Jaeg/sytw+HQmD7Sd3jD4RBHl904SM7xeLS7NsilKFmWbxFx4ji2+zafLkWmafohiqICX+YzQOiAkySJ/eN7SpIkBihbYHe9DKESBigrsF+5cWFKcDzp47/nb61PAQYAak3zAiCwuC8AAAAASUVORK5CYII=);
+        }
+        div[data-element-type="Pure.Messenger.Mails.Fast.Controls.Button"][data-addition-type="reply"]:after{
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAKBmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIKICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgIHhtbG5zOklwdGM0eG1wQ29yZT0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcENvcmUvMS4wL3htbG5zLyIKICAgIHhtbG5zOnBsdXNfMV89Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iCiAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiCiAgIHhtcFJpZ2h0czpNYXJrZWQ9IlRydWUiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMTEtMDEtMjVUMTM6NTU6MDcrMDE6MDAiCiAgIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OEEzMTBFNTY4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OEEzMTBFNTY4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo4QTMxMEU1NjgyMjhFMDExOTg5Q0MwQTFBRDAyQjVDMiI+CiAgIDx4bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC94bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgPGRjOmNyZWF0b3I+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpPkdlbnRsZWZhY2UgY3VzdG9tIHRvb2xiYXIgaWNvbnMgZGVzaWduPC9yZGY6bGk+CiAgICA8L3JkZjpTZXE+CiAgIDwvZGM6Y3JlYXRvcj4KICAgPGRjOmRlc2NyaXB0aW9uPgogICAgPHJkZjpBbHQ+CiAgICAgPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5XaXJlZnJhbWUgbW9ubyB0b29sYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpBbHQ+CiAgIDwvZGM6ZGVzY3JpcHRpb24+CiAgIDxkYzpzdWJqZWN0PgogICAgPHJkZjpCYWc+CiAgICAgPHJkZjpsaT5jdXN0b20gaWNvbiBkZXNpZ248L3JkZjpsaT4KICAgICA8cmRmOmxpPnRvb2xiYXIgaWNvbnM8L3JkZjpsaT4KICAgICA8cmRmOmxpPmN1c3RvbSBpY29uczwvcmRmOmxpPgogICAgIDxyZGY6bGk+aW50ZXJmYWNlIGRlc2lnbjwvcmRmOmxpPgogICAgIDxyZGY6bGk+dWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT5ndWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT50YXNrYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpCYWc+CiAgIDwvZGM6c3ViamVjdD4KICAgPGRjOnJpZ2h0cz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC9kYzpyaWdodHM+CiAgIDxJcHRjNHhtcENvcmU6Q3JlYXRvckNvbnRhY3RJbmZvCiAgICBJcHRjNHhtcENvcmU6Q2lVcmxXb3JrPSJodHRwOi8vd3d3LmdlbnRsZWZhY2UuY29tIi8+CiAgIDxwbHVzXzFfOkltYWdlQ3JlYXRvcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpJbWFnZUNyZWF0b3JOYW1lPSJnZW50bGVmYWNlLmNvbSIvPgogICAgPC9yZGY6U2VxPgogICA8L3BsdXNfMV86SW1hZ2VDcmVhdG9yPgogICA8cGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpDb3B5cmlnaHRPd25lck5hbWU9ImdlbnRsZWZhY2UuY29tIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwvcGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6OEEzMTBFNTY4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgICAgIHN0RXZ0OndoZW49IjIwMTEtMDEtMjVUMTM6NTU6MDcrMDE6MDAiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii9tZXRhZGF0YSIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+rFVuSgAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAA8dEVYdEFMVFRhZwBUaGlzIGlzIHRoZSBpY29uIGZyb20gR2VudGxlZmFjZS5jb20gZnJlZSBpY29ucyBzZXQuINhr6MQAAAAfdEVYdENvcHlyaWdodABST1lBTFRZIEZSRUUgTElDRU5TRSDe2YtpAAAARWlUWHREZXNjcmlwdGlvbgAAAAAAVGhpcyBpcyB0aGUgaWNvbiBmcm9tIEdlbnRsZWZhY2UuY29tIGZyZWUgaWNvbnMgc2V0LiC8EfgaAAAAI2lUWHRDb3B5cmlnaHQAAAAAAFJPWUFMVFkgRlJFRSBMSUNFTlNFICddCkoAAAHOSURBVHja7FXNTsJAEO5WDpQEsoYAJxIMlx4grTxB+wTizaPevKFPID4JvAF9A/sE0B45ADUcgVg5GQLUb0glVcufKTEmbvJ1Z2dn55vOTLeC8D9+e7B9jCqVisYY04I6z/NcTEa73XZ2EiiKwjFx27bXxqSD0zuINcx8kwMQmcA9zlph+yI9lstlA+iUSiWV1pg1WgMPAF8sFsImYF8DQadcLl+HEZzQI5PJ3MJIBq4gS1A1IHNAOABVnH0ejUbWtxTJsuxFVVQQ6d1u11wTFItFLoriS4QEDnDe6/WoCYQYFirlMsJRgE9qjvqqyPP5vLCtiAG4wCOKetbv9xkB8g10TohtLZ/PrzovBqPCHlG5aFV9OBx+KqDjOE04MhDxE5ZqYIsapIq5SW+g7IoeNsJsNgtlBqmLIHXYWV/OXayKnM1miV3bo3gudch4PA79oHK5HEU9oOg/dCA+Zel0+pAWNSeTib5pE74oLa1AUJexLR3k+LCQ/1dyTvI2dpAbnHMDYtVXqSyZTLbgwKZC+g7c6XRq/bRHU6kUtWnHT5V5lCs6kUjUAU+SpAE7BkE8HqeCv6wvu6gH2voNaadUqUch8IdNV/3f/ye/CzAABjZzbJhZeM8AAAAASUVORK5CYII=);
+        }
+        div[data-element-type="Pure.Messenger.Mails.Fast.Controls.Button"][data-addition-type="write"]:after{
+            background-image : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAKBmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIKICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgIHhtbG5zOklwdGM0eG1wQ29yZT0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcENvcmUvMS4wL3htbG5zLyIKICAgIHhtbG5zOnBsdXNfMV89Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iCiAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiCiAgIHhtcFJpZ2h0czpNYXJrZWQ9IlRydWUiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMTEtMDEtMjVUMTM6NTU6MTArMDE6MDAiCiAgIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjRFQkIwNTc4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjRFQkIwNTc4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyNEVCQjA1NzgyMjhFMDExOTg5Q0MwQTFBRDAyQjVDMiI+CiAgIDx4bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC94bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgPGRjOmNyZWF0b3I+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpPkdlbnRsZWZhY2UgY3VzdG9tIHRvb2xiYXIgaWNvbnMgZGVzaWduPC9yZGY6bGk+CiAgICA8L3JkZjpTZXE+CiAgIDwvZGM6Y3JlYXRvcj4KICAgPGRjOmRlc2NyaXB0aW9uPgogICAgPHJkZjpBbHQ+CiAgICAgPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5XaXJlZnJhbWUgbW9ubyB0b29sYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpBbHQ+CiAgIDwvZGM6ZGVzY3JpcHRpb24+CiAgIDxkYzpzdWJqZWN0PgogICAgPHJkZjpCYWc+CiAgICAgPHJkZjpsaT5jdXN0b20gaWNvbiBkZXNpZ248L3JkZjpsaT4KICAgICA8cmRmOmxpPnRvb2xiYXIgaWNvbnM8L3JkZjpsaT4KICAgICA8cmRmOmxpPmN1c3RvbSBpY29uczwvcmRmOmxpPgogICAgIDxyZGY6bGk+aW50ZXJmYWNlIGRlc2lnbjwvcmRmOmxpPgogICAgIDxyZGY6bGk+dWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT5ndWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT50YXNrYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpCYWc+CiAgIDwvZGM6c3ViamVjdD4KICAgPGRjOnJpZ2h0cz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC9kYzpyaWdodHM+CiAgIDxJcHRjNHhtcENvcmU6Q3JlYXRvckNvbnRhY3RJbmZvCiAgICBJcHRjNHhtcENvcmU6Q2lVcmxXb3JrPSJodHRwOi8vd3d3LmdlbnRsZWZhY2UuY29tIi8+CiAgIDxwbHVzXzFfOkltYWdlQ3JlYXRvcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpJbWFnZUNyZWF0b3JOYW1lPSJnZW50bGVmYWNlLmNvbSIvPgogICAgPC9yZGY6U2VxPgogICA8L3BsdXNfMV86SW1hZ2VDcmVhdG9yPgogICA8cGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpDb3B5cmlnaHRPd25lck5hbWU9ImdlbnRsZWZhY2UuY29tIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwvcGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6MjRFQkIwNTc4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgICAgIHN0RXZ0OndoZW49IjIwMTEtMDEtMjVUMTM6NTU6MTArMDE6MDAiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii9tZXRhZGF0YSIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+QrU1MwAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAA8dEVYdEFMVFRhZwBUaGlzIGlzIHRoZSBpY29uIGZyb20gR2VudGxlZmFjZS5jb20gZnJlZSBpY29ucyBzZXQuINhr6MQAAABEdEVYdENvcHlyaWdodABDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIE5vbi1Db21tZXJjaWFsIE5vIERlcml2YXRpdmVze92woAAAAEVpVFh0RGVzY3JpcHRpb24AAAAAAFRoaXMgaXMgdGhlIGljb24gZnJvbSBHZW50bGVmYWNlLmNvbSBmcmVlIGljb25zIHNldC4gvBH4GgAAAEhpVFh0Q29weXJpZ2h0AAAAAABDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIE5vbi1Db21tZXJjaWFsIE5vIERlcml2YXRpdmVzWILLBQAAAepJREFUeNqsVV1qwkAQziYRi/hg/EMQsSKigtjgCfQGeoN4gupJ7A3sDdqeoO0JXH3yMRURVCRBxAdR09kQQ0jX/HZhmd2dyffNzs8GMSFGq9UagRgYW1nTtN5kMsFWGxQUXBTFMQjJdqwCSWc6neJQBM1mkwZuHf3ZbPZKFpxf8EajMQYvJZiMw+xms9mfzWaDfRHU63XdcxuYDGcdkA8wRStJJpNBnkNUrVZHCKEBRSXM53OVLGq12p/QsV7AK5UK8XpwvV4Z+7xcLqObHayHdr1riMrlMvFofC/epKAEQXhMJpM/sP+EfcKiVx1DVCqVdPAQrdLj72mKxaIEVwwKrkK+hrIsv1NvUCgUwnhOwDuLxQJTGy2fz4cGXy6X9E7O5XISGIQCX61W9LcIOi8UOGm29XqN7QqTIJ1OK0CQCAq+3W4xTalXUSqVakPNJoy69g2+2+3wPQPe6MB20JgrioKdjHQCqPcnY/9FfhwuT7EJrqoqdvPiRnC7wcfhcHiJx+OMA4kOvt/vsZdr8rFYTASCW3L1j4CkD+c0Eh0c9NhrHHmL92Q8R6NRItu2cxP8eDxiP4lCkUjkDT7sutiRvPROpxP2WwmI4zha/ctGwr+JPJ/PctDnFLEsqxn1bAJCeDDzT+NXgAEA6SYnpoMGqe8AAAAASUVORK5CYII=);
+        }
+        div[data-element-type="Pure.Messenger.Mails.Fast.Controls.Button"][data-addition-type="remove"]:after{
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAKBmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIKICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgIHhtbG5zOklwdGM0eG1wQ29yZT0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcENvcmUvMS4wL3htbG5zLyIKICAgIHhtbG5zOnBsdXNfMV89Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iCiAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiCiAgIHhtcFJpZ2h0czpNYXJrZWQ9IlRydWUiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMTEtMDEtMjVUMTM6NTU6MTMrMDE6MDAiCiAgIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QkM3MkM5NTk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QkM3MkM5NTk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpCQzcyQzk1OTgyMjhFMDExOTg5Q0MwQTFBRDAyQjVDMiI+CiAgIDx4bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC94bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgPGRjOmNyZWF0b3I+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpPkdlbnRsZWZhY2UgY3VzdG9tIHRvb2xiYXIgaWNvbnMgZGVzaWduPC9yZGY6bGk+CiAgICA8L3JkZjpTZXE+CiAgIDwvZGM6Y3JlYXRvcj4KICAgPGRjOmRlc2NyaXB0aW9uPgogICAgPHJkZjpBbHQ+CiAgICAgPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5XaXJlZnJhbWUgbW9ubyB0b29sYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpBbHQ+CiAgIDwvZGM6ZGVzY3JpcHRpb24+CiAgIDxkYzpzdWJqZWN0PgogICAgPHJkZjpCYWc+CiAgICAgPHJkZjpsaT5jdXN0b20gaWNvbiBkZXNpZ248L3JkZjpsaT4KICAgICA8cmRmOmxpPnRvb2xiYXIgaWNvbnM8L3JkZjpsaT4KICAgICA8cmRmOmxpPmN1c3RvbSBpY29uczwvcmRmOmxpPgogICAgIDxyZGY6bGk+aW50ZXJmYWNlIGRlc2lnbjwvcmRmOmxpPgogICAgIDxyZGY6bGk+dWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT5ndWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT50YXNrYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpCYWc+CiAgIDwvZGM6c3ViamVjdD4KICAgPGRjOnJpZ2h0cz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC9kYzpyaWdodHM+CiAgIDxJcHRjNHhtcENvcmU6Q3JlYXRvckNvbnRhY3RJbmZvCiAgICBJcHRjNHhtcENvcmU6Q2lVcmxXb3JrPSJodHRwOi8vd3d3LmdlbnRsZWZhY2UuY29tIi8+CiAgIDxwbHVzXzFfOkltYWdlQ3JlYXRvcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpJbWFnZUNyZWF0b3JOYW1lPSJnZW50bGVmYWNlLmNvbSIvPgogICAgPC9yZGY6U2VxPgogICA8L3BsdXNfMV86SW1hZ2VDcmVhdG9yPgogICA8cGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpDb3B5cmlnaHRPd25lck5hbWU9ImdlbnRsZWZhY2UuY29tIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwvcGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6QkM3MkM5NTk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgICAgIHN0RXZ0OndoZW49IjIwMTEtMDEtMjVUMTM6NTU6MTMrMDE6MDAiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii9tZXRhZGF0YSIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+EQqr2QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAA8dEVYdEFMVFRhZwBUaGlzIGlzIHRoZSBpY29uIGZyb20gR2VudGxlZmFjZS5jb20gZnJlZSBpY29ucyBzZXQuINhr6MQAAABEdEVYdENvcHlyaWdodABDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIE5vbi1Db21tZXJjaWFsIE5vIERlcml2YXRpdmVze92woAAAAEVpVFh0RGVzY3JpcHRpb24AAAAAAFRoaXMgaXMgdGhlIGljb24gZnJvbSBHZW50bGVmYWNlLmNvbSBmcmVlIGljb25zIHNldC4gvBH4GgAAAEhpVFh0Q29weXJpZ2h0AAAAAABDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIE5vbi1Db21tZXJjaWFsIE5vIERlcml2YXRpdmVzWILLBQAAAftJREFUeNrEVctqwkAUTZr6wBeCqLgygiiIiPoVXaa7LpM/sLsu2y/oJ2R2XRb/JCsXItgRBB8IPlBwY3pvUBuTSTLqogPHITNz7pm5LwXhP0a73e4AlCs5CvKc65JzodVq6TC9AV4KhQKdTCZGkHHgqDB9AZ6AIwOnyxRoNBpoXDVNUzhCyefzdDqdeooAB43rNk4TODJwuhcC9XodD9mNn0VyuRydzWYuEeDgeZ3BaQJHBk5XxIO1Wg199xngCa3X65HTB3CsmwdwXh/w93A4/ACEAOjVahWNCjjjNwfnRzxJVSoVnhvh84koiipHYmn9fp+I9pVyuWz59N40hwtog8HAcqfo3CyVSlwv8bv5cDg8x0pknSgWi7eKaJRS4ltoOFarlZFKpSgESWGkIBNofDQakcBKPo31em0kEgkZc5pDgIzH4w+WHU8BqEZ00zvnC5rxeJxut1tXMTJjkM1mb47BfD4nvgKZTObuLFosFuwsSqfTKuTw3XUALtOWyyW5iAFkjVfjcgWUI/BKJBKh+/3esF4A2YJ/Lt88FbrZbEgymeSt+OfHY7OTeXy72+2sZ6NILBYTOGL1ZzcajerwLJMF2GM2N1z34bjFQ6GQDjDtCIfDvp0T950ctONJkCRJB5hH8LRl5Kg2js7TbjsA5coWrSDPuf4rwABoRbwF1dFingAAAABJRU5ErkJggg==);
+        }
+        div[data-element-type="Pure.Messenger.Mails.Fast.Controls.Button"][data-addition-type="full"]:after{
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAKBmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIKICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgIHhtbG5zOklwdGM0eG1wQ29yZT0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcENvcmUvMS4wL3htbG5zLyIKICAgIHhtbG5zOnBsdXNfMV89Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iCiAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiCiAgIHhtcFJpZ2h0czpNYXJrZWQ9IlRydWUiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMTEtMDEtMjVUMTM6NTU6MTMrMDE6MDAiCiAgIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODlCRTUwNTk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODlCRTUwNTk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo4OUJFNTA1OTgyMjhFMDExOTg5Q0MwQTFBRDAyQjVDMiI+CiAgIDx4bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC94bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgPGRjOmNyZWF0b3I+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpPkdlbnRsZWZhY2UgY3VzdG9tIHRvb2xiYXIgaWNvbnMgZGVzaWduPC9yZGY6bGk+CiAgICA8L3JkZjpTZXE+CiAgIDwvZGM6Y3JlYXRvcj4KICAgPGRjOmRlc2NyaXB0aW9uPgogICAgPHJkZjpBbHQ+CiAgICAgPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5XaXJlZnJhbWUgbW9ubyB0b29sYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpBbHQ+CiAgIDwvZGM6ZGVzY3JpcHRpb24+CiAgIDxkYzpzdWJqZWN0PgogICAgPHJkZjpCYWc+CiAgICAgPHJkZjpsaT5jdXN0b20gaWNvbiBkZXNpZ248L3JkZjpsaT4KICAgICA8cmRmOmxpPnRvb2xiYXIgaWNvbnM8L3JkZjpsaT4KICAgICA8cmRmOmxpPmN1c3RvbSBpY29uczwvcmRmOmxpPgogICAgIDxyZGY6bGk+aW50ZXJmYWNlIGRlc2lnbjwvcmRmOmxpPgogICAgIDxyZGY6bGk+dWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT5ndWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT50YXNrYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpCYWc+CiAgIDwvZGM6c3ViamVjdD4KICAgPGRjOnJpZ2h0cz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC9kYzpyaWdodHM+CiAgIDxJcHRjNHhtcENvcmU6Q3JlYXRvckNvbnRhY3RJbmZvCiAgICBJcHRjNHhtcENvcmU6Q2lVcmxXb3JrPSJodHRwOi8vd3d3LmdlbnRsZWZhY2UuY29tIi8+CiAgIDxwbHVzXzFfOkltYWdlQ3JlYXRvcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpJbWFnZUNyZWF0b3JOYW1lPSJnZW50bGVmYWNlLmNvbSIvPgogICAgPC9yZGY6U2VxPgogICA8L3BsdXNfMV86SW1hZ2VDcmVhdG9yPgogICA8cGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpDb3B5cmlnaHRPd25lck5hbWU9ImdlbnRsZWZhY2UuY29tIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwvcGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6ODlCRTUwNTk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgICAgIHN0RXZ0OndoZW49IjIwMTEtMDEtMjVUMTM6NTU6MTMrMDE6MDAiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii9tZXRhZGF0YSIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+0QYSLQAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAG6SURBVHjatFVRasJAEM1KCP6IEb8UDYKI+Qx4AXOD9gZ6gtKT9AjaG/QGegHtgj8iIT8iKvgh+Cdo+jY2YU3dzS7YgWHjzsybyZsZYxj/LETVsdfr9XH0NbCns9lsaqp6R1F0hL7h0dZJUlD1nM/nFAn86/V6hBoqyqSgwyeFIFA5iXYCJovFgl4ul3eokadMTNd1v3F6EszxcrkcJj+63a6H6j5UCzLhLAVfrVYpeKfT8dCHCdTWSSAED4IgBW+326zyCSFEZ4oMM+EqXgpCXsMw/Mo6tVqtGFxzRG9N5rv+CNxxnJgW2G3JxLAdGWanK48io9FoqNByhPrr9Zo2m02K57s3LWQzJlKv12Nw1lBZ5WwvGDiLYSe/J396wMvvKEorx5v52+2W8pebzYbWajU/iRVShMo/oX0Z+G63o4+MfFIhRfv9foy7oYgW2FOQarU6Ek5RdrV5ORwOcRLOJwbHfQpeqVRGuBsIiSyXy1GiIh/btgewT3B6mdhRXiwplUqp8XQ6EZ0lUomV7kGeqMTe9aBYLL6ogsN3IOtfSpFlWdEzPu7n8/n5FKn+XdOcD47S11Rk+BFgAGRozPjhkBcNAAAAAElFTkSuQmCC");
+        }
+        div[data-element-type="Pure.Messenger.Mails.Fast.Controls"][data-addition-type="nested"] div[data-element-type="Pure.Messenger.Mails.Fast.Controls.Button"]{
+            display: block;
+        }
+        @keyframes Pure_Messenger_Mails_Fast_Controls_Button_Show {
+            0% { top:-2em;}100% { top:0.5em;}
+        }
+        @-moz-keyframes Pure_Messenger_Mails_Fast_Controls_Button_Show {
+            0% { top:-2em;}100% { top:0.5em;}
+        }
+        @-webkit-keyframes Pure_Messenger_Mails_Fast_Controls_Button_Show {
+            0% { top:-2em;}100% { top:0.5em;}
+        }
+/*=================================================================================================================*/
+p[data-element-type="Pure.Messenger.Mails.Fast.Controls.Nested.Count"]{
+    position            :relative;
+    display             : block;
+    height              :2em;
+    float               :right;
+    margin              : 0;
+    padding             : 0.5em;
+    font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size           :0.9em;
+    text-align          :right;
+    color               :rgb(140, 148, 170);
+    text-decoration     :none;
+    cursor              :default;
+}
+    p[data-element-type="Pure.Messenger.Mails.Fast.Controls.Nested.Count"] sup{
+        color               :rgb(82, 0, 42);
+    }
+/*=================================================================================================================*/
+input[data-element-type="Pure.Messenger.Mails.Fast.Controls.Switcher"]{
+    display: none;
+}
+div[data-element-type="Pure.Messenger.Mails.Fast.Controls"] > div[data-element-type="Pure.Messenger.Mails.Fast.Controls.Button"]{
+    display: none;
+}
+input[data-element-type="Pure.Messenger.Mails.Fast.Controls.Switcher"]:checked + div *{
+    display: block;
+}
+input[data-element-type="Pure.Messenger.Mails.Fast.Controls.Switcher"]:checked + div label{
+    display: none;
+}
+input[data-element-type="Pure.Messenger.Mails.Fast.Controls.Switcher"]:checked ~ div[data-element-type="Pure.Messenger.Mails.Nested.Container"]{
+    display: block;
+}
+/*=================================================================================================================*/
+p[data-element-type="Pure.Messenger.Mails.List.More"]{
+    margin          :0;
+    padding         :0.5em 0.5em 0.5em 1em;
+    font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       :0.9em;
+    text-align      :right;
+    color           :rgb(140, 148, 170);
+    text-decoration :none;
+    cursor          :default;
+}
+    a[data-element-type="Pure.Messenger.Mails.Button"]{
+        display                 :inline-block;
+        position                :relative;
+        margin                  :0 0.5em 0 0.5em;
+        padding                 :0.5em 1.5em 0.5em 1.5em;
+        font-family             :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size               :0.9em;
+        text-align              :right;
+        color                   :rgb(43, 82, 139);
+        text-decoration         :none;
+        -moz-border-radius      : 3px;
+        -webkit-border-radius   : 3px;
+        border-radius           : 3px;
+        background              : rgb(242,245,246);
+        background              : -moz-linear-gradient(top,  rgba(242,245,246,1) 0%, rgba(227,234,237,1) 37%, rgba(200,215,220,1) 100%);
+        background              : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,245,246,1)), color-stop(37%,rgba(227,234,237,1)), color-stop(100%,rgba(200,215,220,1)));
+        background              : -webkit-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%);
+        background              : -o-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%);
+        background              : -ms-linear-gradient(top,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%);
+        background              : linear-gradient(to bottom,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%);
+        filter                  : progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 );
+        cursor                  :default;
+        border-top              : solid 1px rgb(140,140,140);
+        border-left             : solid 1px rgb(140,140,140);
+        border-right            : solid 1px rgb(100,100,100);
+        border-bottom           : solid 1px rgb(100,100,100);
+        -moz-box-sizing         : border-box;
+        -webkit-box-sizing      : border-box;
+        box-sizing              : border-box;
+        -moz-box-shadow         : 0 0 3px rgba(0,0,0,0) inset;
+        -webkit-box-shadow      : 0 0 3px rgba(0,0,0,0) inset;
+        box-shadow              : 0 0 3px rgba(0,0,0,0) inset;
+    }
+        a[data-element-type="Pure.Messenger.Mails.Button"]:hover{
+            -moz-box-shadow         : 0 0 3px rgba(0,0,0,0.4) inset;
+            -webkit-box-shadow      : 0 0 3px rgba(0,0,0,0.4) inset;
+            box-shadow              : 0 0 3px rgba(0,0,0,0.4) inset;
+        }
+        a[data-element-type="Pure.Messenger.Mails.Button"][data-addition-type="send"]{
+            margin              :0.5em;
+            float               :right;
+        }
+        a[data-element-type="Pure.Messenger.Mails.Button"][data-addition-type="send"]:first-child{
+            margin-right:0;
+        }
+        a[data-element-type="Pure.Messenger.Mails.Button"][data-addition-type="add"]{
+            margin              :0.5em 0 0.5em 0.5em;
+            float               :right;
+        }
+/*=================================================================================================================*/
+div[data-element-type="Pure.Messenger.Mails.Create.Container"]{
+    position:relative;
+    width   :100%;
+}
+/*=================================================================================================================*/
+img[data-element-type="Pure.Messenger.Mails.Create.Icon"]{
+    position    :absolute;
+    display     :block;
+    width       :8em;
+    top         :1em;
+    left        :1em;
+    opacity     :0.4;
+}
+/*=================================================================================================================*/
+div[data-element-type="Pure.Messenger.Mails.Create.Center"]{
+    position: relative;
+    width   : 100%;
+}
+    div[data-element-type="Pure.Messenger.Mails.Create.Center"]:after{
+        content : '';
+        display : block;
+        clear   : both;
+    }
+    div[data-element-type="Pure.Messenger.Mails.Create.Center.Container"]{
+        position: relative;
+        right   : 50%;
+        float   : right;
+    }
+        div[data-element-type="Pure.Messenger.Mails.Create.Center.Content"]{
+            position: relative;
+            z-index : 1;
+            right   : -50%;
+        }
+/*=================================================================================================================*/
+div[data-element-type="Pure.Messenger.Mails.Create.PseudoCenter"]{
+    display                 : table;
+    width                   : 100%;
+    -ms-align-content       : center;
+    -webkit-align-content   : center;
+    align-content           : center;
+    vertical-align          :top;
+    text-align              :center;
+}
+    div[data-element-type="Pure.Messenger.Mails.Create.PseudoCenter.Container"]{
+        position    :relative;
+        display     :inline-block;
+        width       :90%;
+        max-width   :40em;
+        min-width   :20em;
+        height      :auto;
+    }
+/*=================================================================================================================*/
+div[data-element-type="Pure.Messenger.Mails.Create.Group"]{
+    position    :relative;
+    width       :100%;
+    height      :auto;
+}
+/*=================================================================================================================*/
+p[data-element-type="Pure.Messenger.Mails.Create.Block.Title"]{
+    margin                  :0.5em 0 0.5em 0;
+    padding                 :0.5em 1em 0.5em 1em;
+    font-family             :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size               :0.9em;
+    text-align              :left;
+    color                   :rgb(255, 255, 255);
+    text-decoration         :none;
+    cursor                  :default;
+    -moz-border-radius      : 3px;
+    -webkit-border-radius   : 3px;
+    border-radius           : 3px;
+    background              : rgb(136,191,232);
+    -moz-box-shadow         : 0 0 2px rgba(0,0,0,0.4);
+    -webkit-box-shadow      : 0 0 2px rgba(0,0,0,0.4);
+    box-shadow              : 0 0 2px rgba(0,0,0,0.4);
+    text-shadow             :1px 1px 2px rgba(0,0,0,0.4);
+    float                   :left;
+}
+    p[data-element-type="Pure.Messenger.Mails.Create.Block.Title"][data-addition-disabled-field="true"]:after{
+        position        : absolute;
+        content         : '';
+        width           : 1em;
+        height          : 1em;
+        left            : -1.5em;
+        top             : 0.5em;
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAKBmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIKICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgIHhtbG5zOklwdGM0eG1wQ29yZT0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcENvcmUvMS4wL3htbG5zLyIKICAgIHhtbG5zOnBsdXNfMV89Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iCiAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiCiAgIHhtcFJpZ2h0czpNYXJrZWQ9IlRydWUiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMTEtMDEtMjVUMTM6NTU6MTArMDE6MDAiCiAgIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDg4OUMzNTc4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDg4OUMzNTc4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowODg5QzM1NzgyMjhFMDExOTg5Q0MwQTFBRDAyQjVDMiI+CiAgIDx4bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC94bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgPGRjOmNyZWF0b3I+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpPkdlbnRsZWZhY2UgY3VzdG9tIHRvb2xiYXIgaWNvbnMgZGVzaWduPC9yZGY6bGk+CiAgICA8L3JkZjpTZXE+CiAgIDwvZGM6Y3JlYXRvcj4KICAgPGRjOmRlc2NyaXB0aW9uPgogICAgPHJkZjpBbHQ+CiAgICAgPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5XaXJlZnJhbWUgbW9ubyB0b29sYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpBbHQ+CiAgIDwvZGM6ZGVzY3JpcHRpb24+CiAgIDxkYzpzdWJqZWN0PgogICAgPHJkZjpCYWc+CiAgICAgPHJkZjpsaT5jdXN0b20gaWNvbiBkZXNpZ248L3JkZjpsaT4KICAgICA8cmRmOmxpPnRvb2xiYXIgaWNvbnM8L3JkZjpsaT4KICAgICA8cmRmOmxpPmN1c3RvbSBpY29uczwvcmRmOmxpPgogICAgIDxyZGY6bGk+aW50ZXJmYWNlIGRlc2lnbjwvcmRmOmxpPgogICAgIDxyZGY6bGk+dWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT5ndWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT50YXNrYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpCYWc+CiAgIDwvZGM6c3ViamVjdD4KICAgPGRjOnJpZ2h0cz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC9kYzpyaWdodHM+CiAgIDxJcHRjNHhtcENvcmU6Q3JlYXRvckNvbnRhY3RJbmZvCiAgICBJcHRjNHhtcENvcmU6Q2lVcmxXb3JrPSJodHRwOi8vd3d3LmdlbnRsZWZhY2UuY29tIi8+CiAgIDxwbHVzXzFfOkltYWdlQ3JlYXRvcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpJbWFnZUNyZWF0b3JOYW1lPSJnZW50bGVmYWNlLmNvbSIvPgogICAgPC9yZGY6U2VxPgogICA8L3BsdXNfMV86SW1hZ2VDcmVhdG9yPgogICA8cGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpDb3B5cmlnaHRPd25lck5hbWU9ImdlbnRsZWZhY2UuY29tIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwvcGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6MDg4OUMzNTc4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgICAgIHN0RXZ0OndoZW49IjIwMTEtMDEtMjVUMTM6NTU6MTArMDE6MDAiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii9tZXRhZGF0YSIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+UgHAdAAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAA8dEVYdEFMVFRhZwBUaGlzIGlzIHRoZSBpY29uIGZyb20gR2VudGxlZmFjZS5jb20gZnJlZSBpY29ucyBzZXQuINhr6MQAAABEdEVYdENvcHlyaWdodABDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIE5vbi1Db21tZXJjaWFsIE5vIERlcml2YXRpdmVze92woAAAAEVpVFh0RGVzY3JpcHRpb24AAAAAAFRoaXMgaXMgdGhlIGljb24gZnJvbSBHZW50bGVmYWNlLmNvbSBmcmVlIGljb25zIHNldC4gvBH4GgAAAEhpVFh0Q29weXJpZ2h0AAAAAABDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIE5vbi1Db21tZXJjaWFsIE5vIERlcml2YXRpdmVzWILLBQAAAWBJREFUeNpiYKAxYCRWoZGRUQAjI6MBjP////8PQGrDuXPnHlBkgYGBAcjgfiBTAYeSBUDLCi9cuPCBZAv09PQSgIbPJ8KDF4CWOF66dAnDEmZcOnR0dEDBsR2okQEJPwDiDaDgAWIBIOaAiksAscarV69WEu0DLS2t9UAqAK6QkbHw6tWrE2B8bW1tASDVDzQ4AUmb4bVr1y4gm8OEy4J///4FADEDFDciGw4CQP4HIE4Eyj1AUheAbg4LHguQuQfwqLuAJwHg9QEc37p1C58FF5HVEu2Dv3//EpU/CKkjNogYyFVHcwswkqmUlNR8YJJMoKT8efr0KSNOHwBd9JCahR0LuUEzeC0gkOweAOMnEUg7AIuIemIsYMKXwbDgDe/evTvw58+fCfjUURJEBTw8PAdBrgeVorSKA1DZDyp/DGgSBz9+/HjAwcFxEMhOoIUPFNjY2P6TktKGfj4ACDAAW0oZJ9O1/AMAAAAASUVORK5CYII=");
+        background-size : contain;
+    }
+div[data-element-type="Pure.Messenger.Mails.Create.Block.Container"]{
+    position                :relative;
+    width                   :100%;
+    height                  :auto;
+    min-height              :2em;
+    background              :rgb(240, 240, 255);
+    -moz-box-shadow         : 0 0 0.5em rgba(0,0,0,0.4) inset;
+    -webkit-box-shadow      : 0 0 0.5em rgba(0,0,0,0.4) inset;
+    box-shadow              : 0 0 0.5em rgba(0,0,0,0.4) inset;
+    padding-bottom          :0.5em;
+}
+    div[data-element-type="Pure.Messenger.Mails.Create.Block.Container"][data-addition-type="subject"]{
+        height      :3.5em;
+    }
+    div[data-element-type="Pure.Messenger.Mails.Create.Block.Container"][data-addition-type="message"]{
+        min-height              :10em;
+        padding                 :0;
+        -moz-box-shadow         : none;
+        -webkit-box-shadow      : none;
+        box-shadow              : none;
+        border                  : 1px solid rgb(140, 148, 170);
+    }
+    div[data-element-type="Pure.Messenger.Mails.Create.Block.Container"][data-addition-type="controls"]{
+        min-height  :2em;
+    }
+    div[data-element-type="Pure.Messenger.Mails.Create.Block.ResetFloat"]{
+        position:relative;
+        float   :none;
+        clear   :both;
+    }
+/*=================================================================================================================*/
+div[data-element-type="Pure.Messenger.Mails.Create.Textarea.Container"]{
+    display     :block;
+    position    :absolute;
+    top         :0.5em;
+    left        :0.5em;
+    right       :0.5em;
+    bottom      :0.5em;
+}
+div[data-element-type="Pure.Messenger.Mails.Create.Textarea.Container"][data-resize-type="message"]{
+    position        : relative;
+    height          :100%;
+    width           :auto;
+    top             :0;
+    left            :0;
+    right           : 0;
+    bottom          : 0;
+    min-height      :10em;
+    margin          : 0.5em;
+}
+    textarea[data-element-type="Pure.Messenger.Mails.Create.Subject"]{
+        display         :block;
+        position        :absolute;
+        height          :100%;
+        width           :100%;
+        resize          :none;
+        border          :none;
+        outline         :none;
+        margin          :0;
+        padding         :0;
+        font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size       :1em;
+        text-align      :left;
+        color           :rgb(5, 21, 67);
+        background      :none;
+    }
+    textarea[data-element-type="Pure.Messenger.Mails.Create.Subject"][data-resize-type="message"]{
+        position    : relative;
+        resize      :vertical;
+        min-height  :10em;
+    }
+/*=================================================================================================================*/
+div[data-element-type="Pure.Messenger.Mails.Nested.Container"]{
+    position: relative;
+    width   : 100%;
+    display : none;
+}
+    div[data-element-type="Pure.Messenger.Mails.Nested"]{
+        position                : relative;
+        width                   : 100%;
+        animation			    : Pure_Messenger_Mails_Fast_Controls_Button_Show 350ms cubic-bezier(.44,1.38,.71,1.24) 0ms 1 normal;
+        -webkit-animation	    : Pure_Messenger_Mails_Fast_Controls_Button_Show 350ms cubic-bezier(.44,1.38,.71,1.24) 0ms 1 normal;
+        -moz-animation		    : Pure_Messenger_Mails_Fast_Controls_Button_Show 350ms cubic-bezier(.44,1.38,.71,1.24) 0ms 1 normal;
+        -o-animation		    : Pure_Messenger_Mails_Fast_Controls_Button_Show 350ms cubic-bezier(.44,1.38,.71,1.24) 0ms 1 normal;
+    }
+        div[data-element-type="Pure.Messenger.Mails.Nested"] div[data-element-type="Pure.Messenger.Mails.List.Content"]{
+            cursor                  : default;
+        }
+        p[data-element-type="Pure.Messenger.Mails.List.Subject"]{
+            position    :relative;
+            margin      :0;
+            padding     :0.2em 0.5em 0.2em 0.5em;
+            font-family :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+            font-size   :0.9em;
+            text-align  :left;
+            color       :rgb(5, 21, 67);
+        }
+            p[data-element-type="Pure.Messenger.Mails.List.Subject"]:after{
+                position    : absolute;
+                content     : '';
+                width       :0.2em;
+                height      : 100%;
+                top         :0;
+                left        :0;
+                background  : rgb(140, 148, 170);
+            }
+            div[data-element-type="Pure.Messenger.Mails.Nested"][data-addition-type="income"] p[data-element-type="Pure.Messenger.Mails.List.Subject"][data-mails-attribute-unread="false"]:after{
+                position    : absolute;
+                content     : '';
+                width       :0.2em;
+                height      : 100%;
+                top         :0;
+                left        :0;
+                background  : rgb(58, 92, 0);
+            }
+            p[data-element-type="Pure.Messenger.Mails.List.Subject"][data-mails-attribute-unread="true"]:after{
+                position    : absolute;
+                content     : '';
+                width       :0.2em;
+                height      : 100%;
+                top         :0;
+                left        :0;
+                background  : rgb(114, 14, 65);
+            }
+        p[data-element-type="Pure.Messenger.Mails.List.Name"]{
+            position    :relative;
+            margin      :0;
+            padding     :0.1em 0.5em 0.1em 0.5em;
+            font-family :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+            font-size   :0.8em;
+            text-align  :left;
+            color       :rgb(91, 105, 145);
+        }
+        p[data-element-type="Pure.Messenger.Mails.List.Date"][data-addition-type="nested"]{
+            position    :absolute;
+            display     : block;
+            margin      :0;
+            padding     :0;
+            font-family :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+            font-size   :0.7em;
+            text-align  :left;
+            color       :rgb(140, 148, 170);
+            top         :0;
+            left        :-10em;
+            width       : 10em;
+        }
+/*=================================================================================================================*/
+p[data-element-type="Pure.Messenger.Mails.Dialog"]{
+    position    :relative;
+    margin      :0;
+    padding     :0.5em;
+    font-family :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size   :0.9em;
+    text-align  :left;
+    color       :rgb(5, 21, 67);
+}
+/*=================================================================================================================*/
+div[data-element-type="Pure.Messenger.Mails.Create.Attachment"]{
+    position        : relative;
+    min-height      : 1.5em;
+    margin          : 0.5em;
+    border-radius   : 0.3em;
+    border          : 1px dotted rgb(136,191,232);
+    padding         : 0.5em;
+}
+    p[data-element-type="Pure.Messenger.Mails.Create.Attachment.FileName"]{
+        margin      :0;
+        padding     :0.5em 3em 0.5em 0.5em;
+        font-family :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size   :0.9em;
+        text-align  :left;
+        color       :rgb(5, 21, 67);
+    }
+    a[data-element-type="Pure.Messenger.Mails.User.Remove"][data-addition-type="attachment_remove"]{
+        position        : absolute;
+        top             : 50%;
+        margin-top      : -1em;
+    }
+    a[data-element-type="Pure.Messenger.Mails.User.Remove"][data-addition-type="attachment_download"]:after{
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAKBmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIKICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgIHhtbG5zOklwdGM0eG1wQ29yZT0iaHR0cDovL2lwdGMub3JnL3N0ZC9JcHRjNHhtcENvcmUvMS4wL3htbG5zLyIKICAgIHhtbG5zOnBsdXNfMV89Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iCiAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiCiAgIHhtcFJpZ2h0czpNYXJrZWQ9IlRydWUiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMTEtMDEtMjVUMTM6NTU6MTMrMDE6MDAiCiAgIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OTQzNDVBNTk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OTQzNDVBNTk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo5NDM0NUE1OTgyMjhFMDExOTg5Q0MwQTFBRDAyQjVDMiI+CiAgIDx4bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC94bXBSaWdodHM6VXNhZ2VUZXJtcz4KICAgPGRjOmNyZWF0b3I+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpPkdlbnRsZWZhY2UgY3VzdG9tIHRvb2xiYXIgaWNvbnMgZGVzaWduPC9yZGY6bGk+CiAgICA8L3JkZjpTZXE+CiAgIDwvZGM6Y3JlYXRvcj4KICAgPGRjOmRlc2NyaXB0aW9uPgogICAgPHJkZjpBbHQ+CiAgICAgPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5XaXJlZnJhbWUgbW9ubyB0b29sYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpBbHQ+CiAgIDwvZGM6ZGVzY3JpcHRpb24+CiAgIDxkYzpzdWJqZWN0PgogICAgPHJkZjpCYWc+CiAgICAgPHJkZjpsaT5jdXN0b20gaWNvbiBkZXNpZ248L3JkZjpsaT4KICAgICA8cmRmOmxpPnRvb2xiYXIgaWNvbnM8L3JkZjpsaT4KICAgICA8cmRmOmxpPmN1c3RvbSBpY29uczwvcmRmOmxpPgogICAgIDxyZGY6bGk+aW50ZXJmYWNlIGRlc2lnbjwvcmRmOmxpPgogICAgIDxyZGY6bGk+dWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT5ndWkgZGVzaWduPC9yZGY6bGk+CiAgICAgPHJkZjpsaT50YXNrYmFyIGljb25zPC9yZGY6bGk+CiAgICA8L3JkZjpCYWc+CiAgIDwvZGM6c3ViamVjdD4KICAgPGRjOnJpZ2h0cz4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbi1Ob25Db21tZXJjaWFsIGxpY2Vuc2U8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC9kYzpyaWdodHM+CiAgIDxJcHRjNHhtcENvcmU6Q3JlYXRvckNvbnRhY3RJbmZvCiAgICBJcHRjNHhtcENvcmU6Q2lVcmxXb3JrPSJodHRwOi8vd3d3LmdlbnRsZWZhY2UuY29tIi8+CiAgIDxwbHVzXzFfOkltYWdlQ3JlYXRvcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpJbWFnZUNyZWF0b3JOYW1lPSJnZW50bGVmYWNlLmNvbSIvPgogICAgPC9yZGY6U2VxPgogICA8L3BsdXNfMV86SW1hZ2VDcmVhdG9yPgogICA8cGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgcGx1c18xXzpDb3B5cmlnaHRPd25lck5hbWU9ImdlbnRsZWZhY2UuY29tIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwvcGx1c18xXzpDb3B5cmlnaHRPd25lcj4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiCiAgICAgIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6OTQzNDVBNTk4MjI4RTAxMTk4OUNDMEExQUQwMkI1QzIiCiAgICAgIHN0RXZ0OndoZW49IjIwMTEtMDEtMjVUMTM6NTU6MTMrMDE6MDAiCiAgICAgIHN0RXZ0OmNoYW5nZWQ9Ii9tZXRhZGF0YSIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+WjLLfAAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAA8dEVYdEFMVFRhZwBUaGlzIGlzIHRoZSBpY29uIGZyb20gR2VudGxlZmFjZS5jb20gZnJlZSBpY29ucyBzZXQuINhr6MQAAABEdEVYdENvcHlyaWdodABDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIE5vbi1Db21tZXJjaWFsIE5vIERlcml2YXRpdmVze92woAAAAEVpVFh0RGVzY3JpcHRpb24AAAAAAFRoaXMgaXMgdGhlIGljb24gZnJvbSBHZW50bGVmYWNlLmNvbSBmcmVlIGljb25zIHNldC4gvBH4GgAAAEhpVFh0Q29weXJpZ2h0AAAAAABDcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIE5vbi1Db21tZXJjaWFsIE5vIERlcml2YXRpdmVzWILLBQAAAeBJREFUeNrsVl2KwjAQNltRWkW6ikUURdADiE/76k30CHsDb+DewF7BE+wN1AvIgqKIogw+KIhaJ0Gk1v4kNd0nPxiCNcx8881MEhITQLPZ1HH5I4Tofvssy4LhcPjJ4zMuQgAd00W/rX7QeX1+iBAYjUZwuVxiPMYLIQVsKkiDMAGR7N4KvEsgfQzr9XqVdwzpXh6fxPmhVqvJTdEDk8mEuJYA2Y9xaUQcf+zZA1jjFtpvhCTGeJe0PEtAUalU6FkeBQmaeWs6nYIvAYpyuaxLVoJlPpvNwLcJ7SiVSrKUYJnP53MInAInisXiq0qwzBeLBXCNoRsKhUJYJVjmy+USuM8BLxiGIUqCBV+tViB0EPkhn8/zloPJvl6vQfgkDEIulwtSgmW+2WyAxx8J01XZbNZLCZb5drsFXl8k7FzpCIcSLHNAiPghrwx3JpOhJHq3n9+73Q5CO0un010062a9qG4h6tsWp3tXIJVKWY5Lydzv9x2ZwTVN62OPtF1LoKqq2zvAPBwOUkig/z4ubed35X4vx+O0nl+O/xuKolTP5/PgleDJZNI1OOLnoQkTiYTXxihgHo/HztMUoBL/QcI8nU6dhxLYnmQDbJRqhC8iE0sa3FdIoodmSban8b4KMAAukgIC4pol1AAAAABJRU5ErkJggg==");
+    }
+    a[data-element-type="Pure.Messenger.Mails.User.Remove"][data-addition-type="attachment_download"]{
+        position        : absolute;
+        top             : 50%;
+        margin-top      : -1em;
+    }
+/*=================================================================================================================*/
+/*Message styles*/
+/*=================================================================================================================*/
+div[data-element-type="Pure.Messenger.Mails.FullView.Content"]{
+    padding: 1em;
+}
+div[data-element-type="Pure.Messenger.Mails.List.Content"] *,
+div[data-element-type="Pure.Messenger.Mails.FullView.Content"] *{
+    font-family :'Ubuntu' DroidScanAttached, Verdana, Arial!important;
+    color       :rgb(5, 21, 67)!important;
+}
+div[data-element-type="Pure.Messenger.Mails.List.Content"] p,
+div[data-element-type="Pure.Messenger.Mails.List.Content"] li,
+div[data-element-type="Pure.Messenger.Mails.FullView.Content"] p,
+div[data-element-type="Pure.Messenger.Mails.FullView.Content"] li{
+    margin      :0!important;
+    padding     :0.25em!important;
+    font-size   :0.9em!important;
+}
+div[data-element-type="Pure.Messenger.Mails.List.Content"] a,
+div[data-element-type="Pure.Messenger.Mails.FullView.Content"] a{
+    margin      :0!important;
+    padding     :0.25em!important;
+    font-size   :1em!important;
+}
+/*=================================================================================================================*/
+@media screen and (max-width: 1200px){
+    table[data-element-type="Pure.Messenger.Mails.List"]{
+        width           :92%;
+        left            :4%;
+    }
+}
+@media screen and (max-width: 1000px){
+    table[data-element-type="Pure.Messenger.Mails.List"]{
+        width           :94%;
+        left            :3%;
+    }
+}
+@media screen and (max-width: 800px){
+    table[data-element-type="Pure.Messenger.Mails.List"]{
+        width           :96%;
+        left            :2%;
+    }
+    table[data-element-type="Pure.Messenger.Mails.List"] tr td:nth-child(1){
+        width:6em;
+    }
+    table[data-element-type="Pure.Messenger.Mails.List"] tr td:nth-child(3){
+        width:5em;
+    }
+    table[data-element-type="Pure.Messenger.Mails.List"] tr[data-element-type="Pure.Messenger.Mails.MessageRow"] td:nth-child(3) *{
+        font-size: 0.7em!important;
+    }
+    table[data-element-type="Pure.Messenger.Mails.List"] tr[data-element-type="Pure.Messenger.Mails.MessageRow"] td:nth-child(1) div[data-element-type="Pure.Messenger.Mails.User.Avatar"]{
+        display: none;
+    }
+    table[data-element-type="Pure.Messenger.Mails.List"] tr[data-element-type="Pure.Messenger.Mails.MessageRow"] td:nth-child(1) p[data-element-type="Pure.Messenger.Mails.User.Name"]{
+        padding     : 0.7em 0.5em 0.5em 0.5em;
+        font-size   : 0.7em!important;
+    }
+}
+@media screen and (max-width: 600px){
+    table[data-element-type="Pure.Messenger.Mails.List"]{
+        width           :100%;
+        left            :0%;
+    }
+    table[data-element-type="Pure.Messenger.Mails.List"] tr td:nth-child(1){
+        width:6em;
+    }
+    table[data-element-type="Pure.Messenger.Mails.List"] tr td:nth-child(3){
+        width:5em;
+    }
+    table[data-element-type="Pure.Messenger.Mails.List"] tr[data-element-type="Pure.Messenger.Mails.MessageRow"] td:nth-child(3) *{
+        font-size: 0.7em!important;
+    }
+    table[data-element-type="Pure.Messenger.Mails.List"] tr[data-element-type="Pure.Messenger.Mails.MessageRow"] td:nth-child(1) div[data-element-type="Pure.Messenger.Mails.User.Avatar"]{
+        display: none;
+    }
+    table[data-element-type="Pure.Messenger.Mails.List"] tr[data-element-type="Pure.Messenger.Mails.MessageRow"] td:nth-child(1) p[data-element-type="Pure.Messenger.Mails.User.Name"]{
+        padding     : 0.7em 0.5em 0.5em 0.5em;
+        font-size   : 0.7em!important;
+    }
+}
+@media screen and (max-width: 500px){
+    table[data-element-type="Pure.Messenger.Mails.List"]{
+        width           :100%;
+        left            :0%;
+    }
+    table[data-element-type="Pure.Messenger.Mails.List"] tr td:nth-child(1){
+        width:6em;
+    }
+    table[data-element-type="Pure.Messenger.Mails.List"] tr td:nth-child(3){
+        width:5em;
+    }
+    table[data-element-type="Pure.Messenger.Mails.List"] tr td:nth-child(3) {
+        display: none;
+    }
+    table[data-element-type="Pure.Messenger.Mails.List"] tr[data-element-type="Pure.Messenger.Mails.MessageRow"] td:nth-child(1) div[data-element-type="Pure.Messenger.Mails.User.Avatar"]{
+        display: none;
+    }
+    table[data-element-type="Pure.Messenger.Mails.List"] tr[data-element-type="Pure.Messenger.Mails.MessageRow"] td:nth-child(1) p[data-element-type="Pure.Messenger.Mails.User.Name"]{
+        padding     : 0.7em 0.5em 0.5em 0.5em;
+        font-size   : 0.7em!important;
+    }
+    div[data-element-type="Pure.Messenger.Mails.Create.PseudoCenter.Container"]{
+        width       :100%;
+    }
+}

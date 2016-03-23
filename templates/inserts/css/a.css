@@ -1,0 +1,22 @@
+﻿div[data-element-type="Pure.Insert.A"]{
+    position:relative;
+    width   :auto;
+    padding : 0.5em 0 0.5em 0;
+}
+p[data-element-type="Pure.Insert.A.Title"]{
+    font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size           :1rem;
+    padding             :0 0.5rem 0.5rem 0.5rem;
+    margin              :0;
+    color               :rgb(30,30,30);
+    cursor              :default;
+}
+p[data-element-type="Pure.Insert.A.Content"]{
+    font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size           :0.9rem;
+    padding             :0.5rem;
+    margin              :0;
+    color               :rgb(70,70,70);
+    cursor              :default;
+    text-align          : justify;
+}

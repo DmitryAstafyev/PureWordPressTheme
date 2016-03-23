@@ -1,0 +1,28 @@
+div[data-element-type="Pure.Positioning.A"]{
+    position    :relative;
+    width       :100%;
+}
+/*============================================================================*/
+ul[data-element-type="Pure.Positioning.A"]{
+    position    :relative;
+    display     : block;
+    width       :100%;
+    list-style  :none;
+    margin      : 0;
+    padding     : 0;
+    white-space :nowrap;
+    text-align  : center;
+    overflow    : hidden;
+}
+    li[data-element-type="Pure.Positioning.A"]{
+        position        :relative;
+        display         :inline-block!important;
+        list-style      :none;
+        margin          :0.5rem 0;
+        padding         :0;
+        white-space     :normal!important;
+        vertical-align  :top;
+        overflow        :hidden;
+        width           :33%;
+        text-align      : left;
+    }

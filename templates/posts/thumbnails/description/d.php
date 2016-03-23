@@ -1,0 +1,1 @@
+<p style="padding-left: 2em; font-size: 0.8em;">Universal template for post thumbnail. Can render images, gallery, video and audio.</p>

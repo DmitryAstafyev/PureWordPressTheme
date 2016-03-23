@@ -1,0 +1,53 @@
+/*============================================================================*/
+div[data-element-type="Pure.ErrorMessage.A.Container"]{
+    position    :relative;
+    width       :100%;
+    background  :rgba(255,255,255,0.8);
+    box-shadow  : 2px 2px 3px rgba(0,0,0,0.4);
+}
+/*============================================================================*/
+div[data-element-type="Pure.ErrorMessage.A.Image"]{
+    position                :relative;
+    width                   :auto;
+    text-align              :right;
+    padding                 : 2rem 2rem 0 2rem;
+    animation			    : PureErrorMessageAImage 3050ms linear 0ms infinite normal;
+    -webkit-animation	    : PureErrorMessageAImage 3050ms linear 0ms infinite normal;
+    -moz-animation		    : PureErrorMessageAImage 3050ms linear 0ms infinite normal;
+    -o-animation		    : PureErrorMessageAImage 3050ms linear 0ms infinite normal;
+}
+    @keyframes PureErrorMessageAImage {
+        0% { opacity:0.5;}50% { opacity:1;}100% { opacity:0.5;}
+    }
+    @-moz-keyframes PureErrorMessageAImage {
+        0% { opacity:0.5;}50% { opacity:1;}100% { opacity:0.5;}
+    }
+    @-webkit-keyframes PureErrorMessageAImage {
+        0% { opacity:0.5;}50% { opacity:1;}100% { opacity:0.5;}
+    }
+    img[data-element-type="Pure.ErrorMessage.A.Image"]{
+        position                :relative;
+        display                 :inline-block;
+        max-height              :5rem;
+    }
+/*============================================================================*/
+div[data-element-type="Pure.ErrorMessage.A.Text"]{
+    position:relative;
+    width   :auto;
+    padding : 0 2rem 2rem 2rem;
+}
+/*============================================================================*/
+p[data-element-type="Pure.ErrorMessage.A.Title"]{
+    padding     :0.5rem;
+    margin      :0;
+    font-family :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size   :1.5rem;
+    color       :rgb(30,30,30);
+}
+    p[data-element-type="Pure.ErrorMessage.A.Message"]{
+        padding     :0.5rem;
+        margin      :0;
+        font-family :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size   :1rem;
+        color       :rgb(100,100,100);
+    }

@@ -1,0 +1,229 @@
+﻿div[data-element-type="Pure.RegistrationForm.A.Fader"]{
+    position    :fixed;
+    top         :0;
+    left        :0;
+    right       :0;
+    bottom      :0;
+    overflow    :hidden;
+    background  :rgba(255,255,255,0.8);
+    z-index     :9999;
+}
+/*========================================================================================================*/
+div[data-element-type="Pure.LoginForm.A.Table"] {
+    position        : relative;
+    display         : table;
+    top             :0;
+    left            :0;
+    width           : 100%;
+    height          : 100%;
+    margin          : 0;
+    padding         : 0;
+    border-collapse : collapse;
+    vertical-align  : middle;
+    overflow        :hidden;
+}
+    div[data-element-type="Pure.LoginForm.A.Table.Cell"] {
+        position        : relative;
+        display         : table-cell;
+        top             :0;
+        left            :0;
+        width           : 100%;
+        height          : 100%;
+        margin          : 0;
+        padding         : 0;
+        border-collapse : collapse;
+        vertical-align  : middle;
+        text-align      : center;
+    }
+/*========================================================================================================*/
+div[data-element-type="Pure.RegistrationForm.A.Container"]{
+    position            : relative;
+    display             : inline-block;
+    width               :30em;
+    margin              : 0;
+    background          : rgb(254,255,255);
+    background          : -moz-linear-gradient(top,  rgba(254,255,255,1) 0%, rgba(221,241,249,1) 100%);
+    background          : -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,255,255,1)), color-stop(100%,rgba(221,241,249,1)));
+    background          : -webkit-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 100%);
+    background          : -o-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 100%);
+    background          : -ms-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 100%);
+    background          : linear-gradient(to bottom,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 100%);
+    filter              : progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#ddf1f9',GradientType=0 );
+    -moz-box-shadow     : 0 0 0.5em rgba(0,0,0,0.4);
+    -webkit-box-shadow  : 0 0 0.5em rgba(0,0,0,0.4);
+    box-shadow          : 0 0 0.5em rgba(0,0,0,0.4);
+    border-top          : solid 1px rgb(180,180,180);
+    border-left         : solid 1px rgb(180,180,180);
+    border-right        : solid 1px rgb(150,150,150);
+    border-bottom       : solid 1px rgb(150,150,150);
+    -moz-box-sizing     : border-box;
+    -webkit-box-sizing  : border-box;
+    box-sizing          : border-box;
+    max-height          : 100%;
+    text-align          : left;
+    overflow-x          : hidden;
+    overflow-y          : auto;
+}
+/*========================================================================================================*/
+div[data-element-type="Pure.RegistrationForm.A.Header"]{
+    position            :relative;
+    left                :0;
+    right               :0;
+    top                 :0;
+    height              :5em;
+    background-size     :cover;
+    background-position :center;
+    z-index             :10;
+    overflow            : hidden;
+}
+    div[data-element-type="Pure.RegistrationForm.A.Header.Layer"]{
+        position            : absolute;
+        height              : 100%;
+        background-repeat   : repeat;
+        background-position :center;
+        background-size     : contain;
+    }
+        div[data-element-type="Pure.RegistrationForm.A.Header.Layer"][data-layer-number="0"]{
+            width               : 10000%;
+            animation			: PureLoginFormAHeaderLayer0 2000000ms linear 0ms infinite normal;
+            -webkit-animation	: PureLoginFormAHeaderLayer0 2000000ms linear 0ms infinite normal;
+            -moz-animation		: PureLoginFormAHeaderLayer0 2000000ms linear 0ms infinite normal;
+            -o-animation		: PureLoginFormAHeaderLayer0 2000000ms linear 0ms infinite normal;
+            background-size     : auto;
+        }
+            @keyframes PureLoginFormAHeaderLayer0 {
+                0% { left:0%;}100% { left:-9900%;}
+            }
+            @-moz-keyframes PureLoginFormAHeaderLayer0 {
+                0% { left:0%;}100% { left:-9900%;}
+            }
+            @-webkit-keyframes PureLoginFormAHeaderLayer0 {
+                0% { left:0%;}100% { left:-9900%;}
+            }
+        div[data-element-type="Pure.RegistrationForm.A.Header.Layer"][data-layer-number="1"]{
+            width               : 300%;
+            animation			: PureLoginFormAHeaderLayer1 200000ms linear 0ms infinite normal;
+            -webkit-animation	: PureLoginFormAHeaderLayer1 200000ms linear 0ms infinite normal;
+            -moz-animation		: PureLoginFormAHeaderLayer1 200000ms linear 0ms infinite normal;
+            -o-animation		: PureLoginFormAHeaderLayer1 200000ms linear 0ms infinite normal;
+        }
+            @keyframes PureLoginFormAHeaderLayer1 {
+                0% { left:100%;}100% { left:-400%;}
+            }
+            @-moz-keyframes PureLoginFormAHeaderLayer1 {
+                0% { left:100%;}100% { left:-400%;}
+            }
+            @-webkit-keyframes PureLoginFormAHeaderLayer1 {
+                0% { left:100%;}100% { left:-400%;}
+            }
+        div[data-element-type="Pure.RegistrationForm.A.Header.Layer"][data-layer-number="2"]{
+            width               : 300%;
+            animation			: PureLoginFormAHeaderLayer1 70000ms linear 0ms infinite normal;
+            -webkit-animation	: PureLoginFormAHeaderLayer1 70000ms linear 0ms infinite normal;
+            -moz-animation		: PureLoginFormAHeaderLayer1 70000ms linear 0ms infinite normal;
+            -o-animation		: PureLoginFormAHeaderLayer1 70000ms linear 0ms infinite normal;
+        }
+        div[data-element-type="Pure.RegistrationForm.A.Header.Layer"][data-layer-number="3"]{
+            width               : 300%;
+            animation			: PureLoginFormAHeaderLayer1 100000ms linear 0ms infinite normal;
+            -webkit-animation	: PureLoginFormAHeaderLayer1 100000ms linear 0ms infinite normal;
+            -moz-animation		: PureLoginFormAHeaderLayer1 100000ms linear 0ms infinite normal;
+            -o-animation		: PureLoginFormAHeaderLayer1 100000ms linear 0ms infinite normal;
+        }
+    p[data-element-type="Pure.RegistrationForm.A.Header"]{
+        position        :relative;
+        display         :block;
+        font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size       :2em;
+        color           :rgb(255, 255, 255);
+        cursor          :default;
+        margin          :0;
+        padding         :0;
+        top             :0.5em;
+        left            :0.8em;
+        text-shadow     : 1px 1px 2px rgba(0,0,0,0.4);
+    }
+/*========================================================================================================*/
+div[data-element-type="Pure.RegistrationForm.A.Content"]{
+    position            :relative;
+    left                :0;
+    z-index             :10;
+}
+    div[data-element-type="Pure.RegistrationForm.A.Fields"]{
+        position            :relative;
+        left                :0;
+    }
+    div[data-element-type="Pure.RegistrationForm.A.Controls"]{
+        position            :relative;
+        left                :0;
+        height              :4em;
+        margin              : 1.5em 0 0 0;
+    }
+/*========================================================================================================*/
+p[data-element-type="Pure.RegistrationForm.A.Field"]{
+    position        :relative;
+    display         :block;
+    font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       :0.9em;
+    color           :rgb(91, 105, 145);
+    cursor          :default;
+    margin          : 0.8em 0 0.2em 0;
+    padding         :0;
+    width           :70%;
+    left            :15%;
+}
+input[data-element-type="Pure.RegistrationForm.A.Field"]{
+    position        :relative;
+    display         :block;
+    font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       :1em;
+    color           :rgb(91, 105, 145);
+    background      :rgb(255,255,255);
+    width           :70%;
+    left            :15%;
+    outline         :none;
+    border          :1px solid rgb(140, 148, 170);
+    margin          : 0.2em 0 0.5em 0;
+    padding         :0.5em;
+}
+a[data-element-type="Pure.RegistrationForm.A.Field"]{
+    position        :relative;
+    display         :block;
+    font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       :0.7em;
+    color           :rgb(91, 105, 145);
+    cursor          :pointer;
+    margin          : 0.2em 0 0.2em 1.6em;
+    padding         :0;
+    width           :70%;
+    left            :15%;
+    text-align      : right;
+    text-decoration : none;
+}
+    a[data-element-type="Pure.RegistrationForm.A.Field"]:hover{
+        text-decoration: underline;
+    }
+/*========================================================================================================*/
+p[data-element-type="Pure.RegistrationForm.A.Dialog"]{
+    font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       :0.9em;
+    color           :rgb(91, 105, 145);
+    cursor          :default;
+    margin          : 0.5em;
+    padding         :0;
+}
+/*========================================================================================================*/
+@media screen and (max-width: 1000px){
+    div[data-element-type="Pure.RegistrationForm.A.Container"]{
+        width: 30em;
+    }
+}
+@media screen and (max-width: 500px){
+    div[data-element-type="Pure.RegistrationForm.A.Container"]{
+        width: 100%;
+    }
+}
+/*========================================================================================================*/
+/*========================================================================================================*/
+/*========================================================================================================*/
+

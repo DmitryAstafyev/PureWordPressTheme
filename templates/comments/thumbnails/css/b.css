@@ -1,0 +1,87 @@
+﻿div[data-element-type="Pure.Preview.Comments.B.Container"]{
+    position:relative;
+    width   :100%;
+}
+/*====================================================================================================================================*/
+div[data-element-type="Pure.Preview.Comments.B.Simple"]{
+    position    :relative;
+    width       :100%;
+    margin-top  :1em;
+}
+/*====================================================================================================================================*/
+div[data-element-type="Pure.Preview.Comments.B.Simple.Author"]{
+    position:relative;
+    width   :100%;
+    height  :2em;
+}
+    img[data-element-type="Pure.Preview.Comments.B.Simple.Avatar"]{
+        position        :relative;
+        display         :block;
+        overflow        :hidden;
+        width           :2em;
+        height          :2em;
+        border-radius   :1em;
+    }
+    img[data-element-type="Pure.Preview.Comments.B.Simple.Avatar"][src=""]{
+        display: none;
+    }
+        a[data-element-type="Pure.Preview.Comments.B.Simple.Author"]{
+            position            :absolute;
+            display             :block;
+            top                 :0;
+            left                :3em;
+            right               :0.5em;
+            height              :1em;
+            font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+            font-size           :0.8em;
+            padding             :0.2em;
+            margin              :0;
+            color               :rgb(50,50,50);
+            line-height         :1em;
+            cursor              :pointer;
+            text-decoration     :none;
+            overflow            :hidden;
+        }
+        p[data-element-type="Pure.Preview.Comments.B.Simple.Date"]{
+            position            :absolute;
+            display             :block;
+            top                 :1.5em;
+            left                :3.5em;
+            right               :0.5em;
+            height              :1em;
+            font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+            font-size           :0.7em;
+            padding             :0.2em;
+            margin              :0;
+            text-align          :left;
+            color               :rgb(140,140,140);
+            line-height         :1em;
+            cursor              :default;
+            overflow            :hidden;
+        }
+/*====================================================================================================================================*/
+a[data-element-type="Pure.Preview.Comments.B.Simple.Comment"]{
+    position            :relative;
+    display             :block;
+    font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size           :0.7em;
+    padding             :0.2em 0 0 3.8em;
+    margin              :0;
+    color               :rgb(50,50,50);
+    line-height         :1.5em;
+    cursor              :pointer;
+    text-decoration     :none;
+}
+    a[data-element-type="Pure.Preview.Comments.B.Simple.Comment"]:hover:after{
+        position        :absolute;
+        content         :"";
+        margin-left     : 0.5em;
+        margin-top      : 0.5em;
+        width           : 0.5em;
+        height          : 0.5em;
+        background      : rgb(152,176,217);
+        border-radius   : 0.5em;
+    }
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/

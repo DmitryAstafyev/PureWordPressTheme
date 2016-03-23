@@ -1,0 +1,61 @@
+﻿div[data-element-type="Pure.Social.Quote.B"]{
+    position    :relative;
+    width       :100%;
+}
+    div[data-element-type="Pure.Social.Quote.B.Value"]{
+        position            :relative;
+        width               :100%;
+        background          :rgb(140, 148, 170);
+    }
+        div[data-element-type="Pure.Social.Quote.B.Value"]:after{
+            position            :absolute;
+            content             :'';
+            width               : 0;
+            height              : 0;
+            border-left         : 0.25em solid transparent;
+            border-right        : 0.25em solid transparent;
+            border-top          : 0.5em solid rgb(140, 148, 170);
+            top                 :100%;
+            left                :2em;
+        }
+    p[data-element-type="Pure.Social.Quote.B.Value"]{
+        font-family             :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size               :0.9em;
+        text-align              :left;
+        color                   :rgb(255, 255, 255);
+        margin                  :0;
+        padding                 : 1em 2em 1em 2em;
+        line-height             :1.4em;
+        font-style              :italic;
+        -moz-transition         : all ease-in-out 300ms;
+        -o-transition           : all ease-in-out 300ms;
+        -webkit-transition      : all ease-in-out 300ms;
+        transition              : all ease-in-out 300ms;
+    }
+    p[data-element-type="Pure.Social.Quote.B.Info"]{
+        font-family             :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size               :0.8rem;
+        text-align              :left;
+        color                   :rgb(140, 148, 170);
+        margin                  :0;
+        padding                 : 1.5em;
+        line-height             :1em;
+        -moz-transition         : all ease-in-out 300ms;
+        -o-transition           : all ease-in-out 300ms;
+        -webkit-transition      : all ease-in-out 300ms;
+        transition              : all ease-in-out 300ms;
+    }
+        a[data-element-type="Pure.Social.Quote.B.Member"]{
+            font-family             :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+            font-size               :0.8rem;
+            text-align              :left;
+            color                   :rgb(140, 148, 170);
+            margin                  :0;
+            padding                 :0;
+            line-height             :1em;
+            cursor                  :pointer;
+            text-decoration         :none;
+        }
+        a[data-element-type="Pure.Social.Quote.B.Member"]:hover{
+            text-decoration         :underline;
+        }

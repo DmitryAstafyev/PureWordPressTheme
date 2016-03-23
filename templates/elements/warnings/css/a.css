@@ -1,0 +1,16 @@
+p[data-element-type="Pure.Elements.Warnings.A"]{
+    font-family             :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size               :1em;
+    color                   :rgb(150, 150, 150);
+    text-align              :left;
+    margin                  : 0;
+    padding                 : 0.5rem 0.5rem 0.5rem 2rem;
+}
+h1[data-element-type="Pure.Elements.Warnings.A"]{
+    font-family             :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size               :1.3em;
+    color                   :rgb(100, 100, 100);
+    text-align              :left;
+    margin                  : 0;
+    padding                 : 0.5rem 0.5rem 0.5rem 2rem;
+}

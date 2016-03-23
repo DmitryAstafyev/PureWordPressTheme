@@ -1,0 +1,5147 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pure\n"
+"POT-Creation-Date: 2015-07-02 22:47+0100\n"
+"PO-Revision-Date: 2015-07-02 22:47+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-Basepath: ..\\\n"
+"X-Poedit-WPHeader: style.css\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: components/buddypress/activities/class/activities.php:134
+#: components/buddypress/activities/class/activities.php:158
+#: components/buddypress/activities/class/activities.php:187
+#: components/buddypress/activities/class/activities.php:206
+#: templates/BuddyPress/GroupAdmin/Manage/class/A.php:126
+#: templates/BuddyPress/GroupAdmin/Manage/class/A.php:160
+msgid "Member"
+msgstr "Участник"
+
+#: components/buddypress/activities/class/activities.php:136
+msgid "get admonition. The reason is:"
+msgstr "получил предупреждение. Причина:"
+
+#: components/buddypress/activities/class/activities.php:137
+msgid "Now"
+msgstr "Сейчас"
+
+#: components/buddypress/activities/class/activities.php:137
+msgid "has"
+msgstr "имеет"
+
+#: components/buddypress/activities/class/activities.php:138
+#: components/buddypress/activities/class/activities.php:162
+#: components/buddypress/activities/class/activities.php:210
+msgid "admonition(s)."
+msgstr "предупреждение(ия)"
+
+#: components/buddypress/activities/class/activities.php:157
+msgid "banned"
+msgstr "забанен"
+
+#: components/buddypress/activities/class/activities.php:157
+msgid "unbanned"
+msgstr "разбанен"
+
+#: components/buddypress/activities/class/activities.php:160
+#: components/buddypress/activities/class/activities.php:208
+msgid "was"
+msgstr "был"
+
+#: components/buddypress/activities/class/activities.php:161
+#: components/buddypress/activities/class/activities.php:209
+msgid "Before"
+msgstr "До"
+
+#: components/buddypress/activities/class/activities.php:161
+#: components/buddypress/activities/class/activities.php:209
+msgid "had"
+msgstr "имел"
+
+#: components/buddypress/activities/class/activities.php:175
+msgid "is administrator"
+msgstr "администратор"
+
+#: components/buddypress/activities/class/activities.php:178
+msgid "is moderator"
+msgstr "модератор"
+
+#: components/buddypress/activities/class/activities.php:181
+msgid "is not administrator"
+msgstr "не администратор"
+
+#: components/buddypress/activities/class/activities.php:184
+msgid "is not moderator"
+msgstr "не модератор"
+
+#: components/buddypress/activities/class/activities.php:189
+msgid "from now"
+msgstr "с текущего момента"
+
+#: components/buddypress/activities/class/activities.php:205
+msgid "removed"
+msgstr "удален"
+
+#: components/buddypress/profile/class/profile.php:290
+#: templates/Authorization/registration/class/A.php:62
+#: templates/BuddyPress/PersonalSettings/class/A.php:179
+msgid "Email"
+msgstr "Почта"
+
+#: components/buddypress/profile/class/profile.php:291
+#: templates/Authorization/registration/class/A.php:50
+#: templates/HeaderMenu/class/C.php:127
+msgid "Login"
+msgstr "Логин"
+
+#: components/buddypress/profile/class/profile.php:292
+msgid "Site"
+msgstr "Сайт"
+
+#: components/buddypress/profile/class/profile.php:293
+msgid "First name"
+msgstr "Имя"
+
+#: components/buddypress/profile/class/profile.php:294
+msgid "Last name"
+msgstr "Фамилия"
+
+#: components/buddypress/profile/class/profile.php:295
+msgid "Nick"
+msgstr "Псевдоним "
+
+#: components/buddypress/profile/class/profile.php:296
+msgid "About"
+msgstr "Об авторе"
+
+#: components/buddypress/profile/class/profile.php:704
+#: components/buddypress/profile/class/profile.php:713
+msgid "Your new profile photo was uploaded successfully."
+msgstr "Фото было успешно обновлено. "
+
+#: components/demo/Minimal/class/core.php:109
+#: components/demo/Minimal/class/core.php:148
+#: components/demo/Minimal/class/core.php:204
+#: components/demo/Minimal/class/core.php:238
+#: components/demo/Minimal/class/core.php:273
+#: components/demo/Minimal/class/core.php:295
+#: components/wordpress/sidebars/class/sidebars.php:275
+msgid "Hello, World!"
+msgstr "Привет, Мир!"
+
+#: components/demo/Minimal/class/core.php:110
+#: components/demo/Minimal/class/core.php:149
+#: components/demo/Minimal/class/core.php:205
+#: components/demo/Minimal/class/core.php:239
+#: components/demo/Minimal/class/core.php:274
+msgid ""
+"This photo was created by great photographer, Greg Martin. You will get a "
+"tons pleasure, if visit his <a href=\"http://www.artofgregmartin.com/"
+"\">site</a>."
+msgstr ""
+
+#: components/demo/Minimal/class/core.php:111
+#: components/demo/Minimal/class/core.php:150
+#: components/demo/Minimal/class/core.php:206
+#: components/demo/Minimal/class/core.php:275
+msgid ""
+"This is demonstration post. You can configure front-page in administration "
+"panel in section \"Pure\", scroll \"Page editor\"."
+msgstr ""
+
+#: components/demo/Minimal/class/core.php:296
+#: components/wordpress/sidebars/class/sidebars.php:273
+msgid ""
+"This is \"insert\". It is type of post, which was defined by us for inserts "
+"into page, like you see here. You can easily change, remove or add new "
+"inserts; render it on your page or in sidebar. To manage content of inserts, "
+"you should go to an administration panel, section \"Inserts\". To define "
+"place of inserts on page, you should go to \"Widgets\" page (for configure "
+"footers and magic bar) or \"Page editor\" (for configure front-page)."
+msgstr ""
+
+#: components/demo/Module/class/core.php:560
+msgid ""
+"Import does not possible. Function [simplexml_load_file] is not available."
+msgstr ""
+
+#: components/demo/Module/class/core.php:567
+msgid ""
+"Cannot find DEMO directory. DEMO directory should be: [wp-content/uploads/"
+"demo]"
+msgstr ""
+
+#: components/demo/Module/class/core.php:573
+msgid "File ["
+msgstr "Файл ["
+
+#: components/messenger/Notifications/class/notifications.php:76
+#: components/messenger/Notifications/class/notifications.php:119
+#: components/messenger/Notifications/class/notifications.php:146
+msgid "accept"
+msgstr "принять"
+
+#: components/messenger/Notifications/class/notifications.php:84
+#: components/messenger/Notifications/class/notifications.php:129
+msgid "deny"
+msgstr "отказать"
+
+#: components/messenger/Notifications/class/notifications.php:99
+#: components/messenger/Notifications/class/notifications.php:166
+#: kernel/inserts/settings/settings.images.php:55
+#: kernel/inserts/settings/settings.reports.php:52
+#: kernel/inserts/settings/settings.reports.php:85
+#: kernel/inserts/settings/settings.reports.php:119
+#: kernel/inserts/settings/settings.reports.php:152
+#: plugins/Counters/inc/widget.php:221 plugins/Counters/inc/widget.php:270
+#: plugins/Footage/inc/widget.php:210 plugins/Footage/inc/widget.php:244
+#: plugins/HighLights/inc/widget.php:271 plugins/HighLights/inc/widget.php:342
+#: plugins/Popups/inc/widget.php:287 plugins/Popups/inc/widget.php:367
+#: plugins/Tabs/inc/widget.php:298 plugins/Tabs/inc/widget.php:385
+#: templates/BuddyPress/HeadersBackgrounds/class/A.php:62
+#: templates/BuddyPress/QuotesManage/class/A.php:18
+#: templates/BuddyPress/QuotesManage/class/A.php:98
+#: templates/BuddyPress/QuotesManage/class/A.php:173
+#: templates/Elements/fileloader/class/A.php:106
+#: templates/Elements/fileloader/class/A.php:167
+#: templates/Pages/EventEditor/class/A.php:397
+#: templates/Pages/EventEditor/class/A.php:720
+#: templates/Pages/PostEditor/class/A.php:163
+#: templates/Pages/PostEditor/class/A.php:487
+#: templates/Pages/QuestionEditor/class/A.php:420
+#: templates/Pages/ReportEditor/class/A.php:288
+#: templates/Pages/ReportEditor/class/A.php:611
+#: templates/Posts/elements/questions/additions/class/A.php:120
+#: templates/Posts/elements/questions/additions/class/A.php:155
+#: templates/Posts/elements/questions/relatedPosts/class/A.php:118
+#: templates/Posts/elements/questions/relatedQuestions/class/A.php:138
+msgid "remove"
+msgstr "удалить"
+
+#: components/messenger/Notifications/class/notifications.php:154
+msgid "reject"
+msgstr "отозвать "
+
+#: components/posttypes/reports/Module/inc/initialization.php:46
+msgid "Restaurants, cafes, food"
+msgstr "Рестораны, кафе, еда"
+
+#: components/posttypes/reports/Module/inc/initialization.php:49
+msgid "Food"
+msgstr "Еда"
+
+#: components/posttypes/reports/Module/inc/initialization.php:53
+msgid "Service"
+msgstr "Сервис"
+
+#: components/posttypes/reports/Module/inc/initialization.php:57
+msgid "Atmosphere"
+msgstr "Атмосфера"
+
+#: components/posttypes/reports/Module/inc/initialization.php:61
+msgid "Location"
+msgstr "Расположение"
+
+#: components/posttypes/reports/Module/inc/initialization.php:67
+msgid "Movie"
+msgstr "Кино"
+
+#: components/posttypes/reports/Module/inc/initialization.php:70
+msgid "Screenplay"
+msgstr "Сценарий"
+
+#: components/posttypes/reports/Module/inc/initialization.php:74
+msgid "Direction"
+msgstr "Режиссура "
+
+#: components/posttypes/reports/Module/inc/initialization.php:78
+msgid "Entertainment"
+msgstr "Зрелищность"
+
+#: components/posttypes/reports/Module/inc/initialization.php:82
+msgid "Actors"
+msgstr "Актерская игра"
+
+#: components/wordpress/authorization/class/authorization.php:73
+msgid "Thank you, for registration on"
+msgstr "Спасибо Вам за регистрацию на сайте "
+
+#: components/wordpress/authorization/class/authorization.php:74
+msgid ""
+"To finish procedure of registration you should confirm your email. To do it, "
+"just follow next link."
+msgstr ""
+"Для завершения регистрации Вам необходимо подтвердить Ваш адрес электронной "
+"почты. Чтобы это сделать, просто следуйте ссылке ниже."
+
+#: components/wordpress/authorization/class/authorization.php:75
+msgid "FINISH REGISTRATION"
+msgstr "Завершение регистрации"
+
+#: components/wordpress/authorization/class/authorization.php:76
+msgid "This link will be actual only 2 days."
+msgstr "Данная ссылка будет актуальна только 2 дня. "
+
+#: components/wordpress/authorization/class/authorization.php:77
+#: components/wordpress/authorization/class/authorization.php:86
+msgid "Thank you, have a nice day with a great mood."
+msgstr "Спасибо, хорошего Вам дня и прекрасного настроения. "
+
+#: components/wordpress/authorization/class/authorization.php:78
+#: templates/HeaderMenu/class/C.php:129
+#: templates/Pages/EventEditor/class/A.php:275
+#: templates/Posts/elements/events/timeanddate/class/A.php:57
+msgid "Registration"
+msgstr "Регистрация"
+
+#: components/wordpress/authorization/class/authorization.php:83
+msgid "Your password was reset"
+msgstr "Ваш пароль сброшен "
+
+#: components/wordpress/authorization/class/authorization.php:84
+msgid "Here is your new password:"
+msgstr "Ваш новый пароль:"
+
+#: components/wordpress/authorization/class/authorization.php:87
+msgid "Reset password"
+msgstr "Сбросить пароль"
+
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:7
+#: templates/BuddyPress/Home/class/A.php:14
+msgid "Home"
+msgstr "Главная"
+
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:26
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:38
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:54
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:70
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:104
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:166
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:207
+#: templates/Layout/BuddyPress/Group/class/A.php:25
+#: templates/Layout/Page/ByScheme/defaults/Community/defaults.php:52
+#: templates/Layout/Page/ByScheme/defaults/DefaultScheme/defaults.php:44
+#: templates/Layout/Special/GroupContent/class/A.php:79
+#: templates/Posts/elements/events/members/class/A.php:42
+msgid "Members"
+msgstr "Участники "
+
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:46
+#: templates/Authors/class/H.php:71
+#: templates/BuddyPress/Headers/class/A.php:130
+#: templates/BuddyPress/Headers/class/A.php:151
+#: templates/BuddyPress/Headers/class/A.php:169
+#: templates/BuddyPress/Home/class/A.php:24
+#: templates/BuddyPress/Home/class/A.php:186
+msgid "Profile"
+msgstr "Профиль"
+
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:62
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:78
+msgid "Member groups"
+msgstr "Группы участника "
+
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:88
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:98
+#: templates/Authors/class/H.php:213 templates/Authors/class/H.php:276
+#: templates/BuddyPress/Headers/class/A.php:188
+#: templates/BuddyPress/Home/class/A.php:40
+#: templates/BuddyPress/Home/class/A.php:238
+#: templates/Layout/BuddyPress/Member/class/A.php:88
+#: templates/Layout/Page/ByScheme/defaults/Community/defaults.php:54
+#: templates/Layout/Page/ByScheme/defaults/DefaultScheme/defaults.php:46
+#: templates/Layout/Page/ByScheme/defaults/DefaultScheme/defaults.php:151
+msgid "Groups"
+msgstr "Группы"
+
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:117
+msgid "Creation new post"
+msgstr "Создание нового поста"
+
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:123
+msgid "Creation new event"
+msgstr "Создание нового события"
+
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:129
+msgid "Creation new report"
+msgstr "Создание нового отчета"
+
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:135
+#: components/wordpress/pageTitle/class/PageTitle.php:56
+msgid "Editing the post"
+msgstr "Редактирование поста"
+
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:141
+#: components/wordpress/pageTitle/class/PageTitle.php:59
+msgid "Editing the event"
+msgstr "Редактирование события"
+
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:147
+msgid "Editing the report"
+msgstr "Редактирование отчета"
+
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:153
+#: components/wordpress/menus/Basic/inc/registration.php:86
+#: components/wordpress/pageTitle/class/PageTitle.php:62
+msgid "Top of posts"
+msgstr "Лучшие посты"
+
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:174
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:215
+#: templates/BuddyPress/Content/class/A.php:20
+#: templates/BuddyPress/Headers/class/A.php:186
+#: templates/BuddyPress/Headers/class/AGroup.php:107
+#: templates/Messenger/Mails/class/A.php:13
+#: templates/Messenger/Mails/class/A.php:91
+#: templates/Messenger/Notifications/class/A.php:9
+msgid "Content"
+msgstr "Контент "
+
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:221
+#: templates/Layout/Page/ByScheme/defaults/City/defaults.php:209
+#: templates/Layout/Page/ByScheme/defaults/Community/defaults.php:287
+#: templates/Layout/Page/ByScheme/defaults/DefaultScheme/defaults.php:258
+#: templates/Layout/Page/ByScheme/defaults/Journal/defaults.php:107
+#: templates/Posts/sidebars/tag/class/A.php:43
+msgid "Categories"
+msgstr "Категории"
+
+#: components/wordpress/breadcrumbs/class/breadcrumbs.php:231
+#: templates/Layout/Page/ByScheme/defaults/City/defaults.php:226
+#: templates/Layout/Page/ByScheme/defaults/DefaultScheme/defaults.php:275
+#: templates/Layout/Page/ByScheme/defaults/Journal/defaults.php:124
+#: templates/Posts/sidebars/category/class/A.php:43
+msgid "Tags"
+msgstr "Теги"
+
+#: components/wordpress/location/requests/class/requests.php:36
+msgid "We get from you request with command:"
+msgstr "Мы получили от вам запрос с командой:"
+
+#: components/wordpress/location/requests/class/requests.php:40
+msgid ""
+"but we cannot detect all necessary parameters, which are defined for this "
+"command. Missing parameter: ["
+msgstr ""
+"но мы не обнаружили все необходимые параметры. Пропущенные параметры: ["
+
+#: components/wordpress/location/requests/class/requests.php:57
+msgid ""
+"We get from you URL with request. But we cannot detect command of request."
+msgstr ""
+"Мы получили от вас ссылку с запросом. Но команда запроса не обнаружена."
+
+#: components/wordpress/menus/Basic/inc/registration.php:15
+#: components/wordpress/menus/Basic/inc/registration.php:123
+msgid "Create"
+msgstr "Создать"
+
+#: components/wordpress/menus/Basic/inc/registration.php:21
+#: components/wordpress/menus/Basic/inc/registration.php:129
+#: kernel/inserts/settings/settings.mana.php:33
+#: templates/Layout/Special/PostEdit/class/A.php:9
+msgid "Create post"
+msgstr "Создать пост"
+
+#: components/wordpress/menus/Basic/inc/registration.php:28
+#: components/wordpress/menus/Basic/inc/registration.php:136
+#: kernel/inserts/settings/settings.mana.php:42
+#: templates/Layout/Special/EventEdit/class/A.php:9
+msgid "Create event"
+msgstr "Создать событие"
+
+#: components/wordpress/menus/Basic/inc/registration.php:35
+#: components/wordpress/menus/Basic/inc/registration.php:143
+#: kernel/inserts/settings/settings.mana.php:51
+#: templates/Layout/Special/ReportEdit/class/A.php:9
+msgid "Create report"
+msgstr "Создать отчет"
+
+#: components/wordpress/menus/Basic/inc/registration.php:42
+#: components/wordpress/menus/Basic/inc/registration.php:150
+#: templates/Layout/Special/QuestionEdit/class/A.php:9
+msgid "Create question"
+msgstr "Создать вопрос"
+
+#: components/wordpress/menus/Basic/inc/registration.php:49
+#: components/wordpress/menus/Basic/inc/registration.php:157
+msgid "My drafts"
+msgstr "Черновики"
+
+#: components/wordpress/menus/Basic/inc/registration.php:58
+#: components/wordpress/menus/Basic/inc/registration.php:166
+msgid "My posts"
+msgstr "Мои посты"
+
+#: components/wordpress/menus/Basic/inc/registration.php:65
+#: components/wordpress/menus/Basic/inc/registration.php:180
+msgid "Logoff"
+msgstr "Выйти"
+
+#: components/wordpress/menus/Basic/inc/registration.php:93
+msgid "All members"
+msgstr "Все участники"
+
+#: components/wordpress/menus/Basic/inc/registration.php:100
+msgid "All groups"
+msgstr "Все группы"
+
+#: components/wordpress/menus/Basic/inc/registration.php:173
+msgid "Console"
+msgstr "Консоль"
+
+#: components/wordpress/menus/Social/inc/registration.php:16
+msgid "My"
+msgstr "Персональное"
+
+#: components/wordpress/menus/Social/inc/registration.php:22
+msgid "My page"
+msgstr "Моя страница"
+
+#: components/wordpress/menus/Social/inc/registration.php:29
+msgid "My friends"
+msgstr "Мои друзья"
+
+#: components/wordpress/menus/Social/inc/registration.php:36
+msgid "My groups"
+msgstr "Мои группы"
+
+#: components/wordpress/menus/Social/inc/registration.php:45
+msgid "Messenger"
+msgstr "Цент сообщений"
+
+#: components/wordpress/menus/Social/inc/registration.php:51
+msgid "Mails"
+msgstr "Почта"
+
+#: components/wordpress/menus/Social/inc/registration.php:58
+msgid "Notifications"
+msgstr "Уведомления "
+
+#: components/wordpress/menus/Social/inc/registration.php:65
+msgid "Chat"
+msgstr "Чат"
+
+#: components/wordpress/pageTitle/class/PageTitle.php:19
+msgid "(home page)"
+msgstr "(главная страница)"
+
+#: components/wordpress/pageTitle/class/PageTitle.php:24
+msgid "Groups of"
+msgstr "Группы"
+
+#: components/wordpress/pageTitle/class/PageTitle.php:29
+msgid "Friends of"
+msgstr "Друзья"
+
+#: components/wordpress/pageTitle/class/PageTitle.php:35
+msgid "Group:"
+msgstr "Группа:"
+
+#: components/wordpress/pageTitle/class/PageTitle.php:38
+msgid "List of groups"
+msgstr "Список групп"
+
+#: components/wordpress/pageTitle/class/PageTitle.php:41
+msgid "List of members"
+msgstr "Список участников"
+
+#: components/wordpress/pageTitle/class/PageTitle.php:50
+msgid "Create new post"
+msgstr "Создать новый пост"
+
+#: components/wordpress/pageTitle/class/PageTitle.php:53
+msgid "Create new event"
+msgstr "Создать новое событие"
+
+#: components/wordpress/pageTitle/class/PageTitle.php:80
+msgid "Posts of"
+msgstr "Посты"
+
+#: components/wordpress/pageTitle/class/PageTitle.php:84
+msgid "Category: "
+msgstr "Категория:"
+
+#: components/wordpress/pageTitle/class/PageTitle.php:87
+msgid "All about: "
+msgstr "Все о:"
+
+#: components/wordpress/settings/class/settings.php:38
+msgid "Sandbox"
+msgstr "Песочница"
+
+#: components/wordpress/settings/class/settings.php:41
+msgid "Here is all posts of new members"
+msgstr "Сюда попадают все посты новых участников"
+
+#: kernel/inserts/content.php:25 kernel/inserts/content.php:37
+#: kernel/inserts/content.php:49 kernel/inserts/content.php:61
+#: kernel/inserts/content.php:89 kernel/inserts/content.php:100
+#: kernel/inserts/content.php:111 kernel/inserts/content.php:122
+#: kernel/inserts/content.php:133 kernel/inserts/content.php:144
+#: kernel/inserts/content.php:155 kernel/inserts/content.php:166
+#: kernel/inserts/content.php:190 kernel/inserts/content.php:239
+msgid "No access"
+msgstr "Нет доступа"
+
+#: kernel/inserts/content.php:26 kernel/inserts/content.php:38
+#: kernel/inserts/content.php:50 kernel/inserts/content.php:62
+msgid "You have not permission to see this page."
+msgstr "У вас нет прав для просмотра этой страницы"
+
+#: kernel/inserts/content.php:90
+msgid "You have not permission for creating a post."
+msgstr "У вас нет прав для создания поста"
+
+#: kernel/inserts/content.php:101
+msgid "You have not permission for creating an event."
+msgstr "У вас нет прав для создания события"
+
+#: kernel/inserts/content.php:112
+msgid "You have not permission for creating an report."
+msgstr "У вас нет прав для создания отчета"
+
+#: kernel/inserts/content.php:123
+msgid "You have not permission for creating an question."
+msgstr "У вас нет прав для создания вопроса"
+
+#: kernel/inserts/content.php:134
+msgid "You have not permission for editing an post."
+msgstr "У вас нет прав для редактирования поста"
+
+#: kernel/inserts/content.php:145
+msgid "You have not permission for editing an event."
+msgstr "У вас нет прав для редактирования события"
+
+#: kernel/inserts/content.php:156
+msgid "You have not permission for editing an report."
+msgstr "У вас нет прав для редактирования отчета"
+
+#: kernel/inserts/content.php:167
+msgid "You have not permission for editing an question."
+msgstr "У вас нет прав для редактирования вопроса"
+
+#: kernel/inserts/content.php:191
+msgid "Incorrect type of page was defined in url"
+msgstr "В ссылке указан некорректный идентификатор страницы"
+
+#: kernel/inserts/content.php:240
+msgid "You have not permission for reading this post / event."
+msgstr "У вас нет прав для просмотра"
+
+#: kernel/inserts/settings/settings.attachments.php:12
+msgid "Attachments module settings"
+msgstr "Настройки модуля приложений"
+
+#: kernel/inserts/settings/settings.attachments.php:22
+#: kernel/inserts/settings/settings.buddypress.activities.php:22
+#: kernel/inserts/settings/settings.comments.php:22
+#: kernel/inserts/settings/settings.counts.php:22
+#: kernel/inserts/settings/settings.footer.php:23
+#: kernel/inserts/settings/settings.googlemaps.php:28
+#: kernel/inserts/settings/settings.information.php:22
+#: kernel/inserts/settings/settings.mailer.php:22
+#: kernel/inserts/settings/settings.reports.php:184
+msgid "Where it is actual?"
+msgstr "Где это актуально?"
+
+#: kernel/inserts/settings/settings.attachments.php:23
+msgid ""
+"In some places of site, members can attach any files to posts, comments and "
+"etc. For example, module \"Questions & Answers\", where members can attach "
+"files to question, additions and answers. So, here you can configure "
+"settings for attachments."
+msgstr ""
+
+#: kernel/inserts/settings/settings.attachments.php:27
+msgid "Size of one attachment"
+msgstr ""
+
+#: kernel/inserts/settings/settings.attachments.php:28
+msgid ""
+"Size in bytes. Of course defined size should be less then it defines in your "
+"PHP settings."
+msgstr ""
+
+#: kernel/inserts/settings/settings.attachments.php:36
+msgid "Number of attachments per one object"
+msgstr ""
+
+#: kernel/inserts/settings/settings.attachments.php:37
+msgid ""
+"How many attachments can be attached to one object (post, comment, addition "
+"and etc.)"
+msgstr ""
+
+#: kernel/inserts/settings/settings.attachments.php:45
+msgid "Number of attachments per one month"
+msgstr ""
+
+#: kernel/inserts/settings/settings.attachments.php:46
+msgid ""
+"How many attachments can be attached by member per one month. This setting "
+"can be useful to prevent DDOS attacks."
+msgstr ""
+
+#: kernel/inserts/settings/settings.basic.php:14
+msgid "Basic templates"
+msgstr ""
+
+#: kernel/inserts/settings/settings.basic.php:24
+msgid "Header menu"
+msgstr ""
+
+#: kernel/inserts/settings/settings.basic.php:40
+msgid "404 page template"
+msgstr ""
+
+#: kernel/inserts/settings/settings.basic.php:56
+msgid "Security"
+msgstr ""
+
+#: kernel/inserts/settings/settings.basic.php:60
+msgid "Can registered users see WordPress console or not. "
+msgstr ""
+
+#: kernel/inserts/settings/settings.basic.php:64
+msgid "Registered users have access to console"
+msgstr ""
+
+#: kernel/inserts/settings/settings.basic.php:65
+msgid "Only admin of site has access to console"
+msgstr ""
+
+#: kernel/inserts/settings/settings.basic.php:67
+msgid "We are strongly recommend you, deny access anybody except admin."
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:12
+msgid "Activities settings (life section)"
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:23
+msgid ""
+"These settings actual for activities (life section) of <strong>member</"
+"strong> and <strong>group</strong>."
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:24
+#: kernel/inserts/settings/settings.comments.php:24
+#: kernel/inserts/settings/settings.googlemaps.php:30
+#: kernel/inserts/settings/settings.mailer.php:24
+#: kernel/inserts/settings/settings.messenger.php:22
+#: kernel/inserts/settings/settings.websockets.php:26
+msgid "Basic settings"
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:28
+msgid "Attachments in comments and activity"
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:29
+msgid ""
+"You can allow attach files (from media library of user) to comment or to "
+"activity"
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:33
+#: kernel/inserts/settings/settings.buddypress.activities.php:46
+#: kernel/inserts/settings/settings.buddypress.activities.php:78
+#: kernel/inserts/settings/settings.buddypress.activities.php:91
+#: kernel/inserts/settings/settings.buddypress.activities.php:103
+#: kernel/inserts/settings/settings.comments.php:33
+#: kernel/inserts/settings/settings.comments.php:46
+#: kernel/inserts/settings/settings.comments.php:78
+#: kernel/inserts/settings/settings.messenger.php:57
+#: kernel/inserts/settings/settings.messenger.php:99
+#: kernel/inserts/settings/settings.websockets.php:76
+msgid "Allow"
+msgstr "Разрешить"
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:34
+#: kernel/inserts/settings/settings.buddypress.activities.php:47
+#: kernel/inserts/settings/settings.buddypress.activities.php:79
+#: kernel/inserts/settings/settings.buddypress.activities.php:92
+#: kernel/inserts/settings/settings.buddypress.activities.php:104
+#: kernel/inserts/settings/settings.comments.php:34
+#: kernel/inserts/settings/settings.comments.php:47
+#: kernel/inserts/settings/settings.comments.php:79
+#: kernel/inserts/settings/settings.messenger.php:58
+#: kernel/inserts/settings/settings.messenger.php:100
+#: kernel/inserts/settings/settings.websockets.php:77
+#: templates/BuddyPress/GroupAdmin/Requests/class/A.php:61
+msgid "Deny"
+msgstr "Запретить"
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:36
+#: kernel/inserts/settings/settings.comments.php:36
+msgid "User always can attach only one file per one comment"
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:41
+#: kernel/inserts/settings/settings.comments.php:41
+msgid "Allow memes in comments"
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:42
+#: kernel/inserts/settings/settings.comments.php:42
+#: kernel/inserts/settings/settings.messenger.php:95
+msgid ""
+"Memes is a simple collection of some images. It can be memes, smiles or "
+"something else. You as administrator can make any collection of memes."
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:49
+#: kernel/inserts/settings/settings.comments.php:49
+#: kernel/inserts/settings/settings.messenger.php:102
+msgid ""
+"Folder of memes on server. This is sub folder in \"../wp-content/uploads\""
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:51
+#: kernel/inserts/settings/settings.comments.php:51
+#: kernel/inserts/settings/settings.messenger.php:104
+msgid ""
+"To create collection of memes you should create any folder inside \"../wp-"
+"content/uploads\", place images (*.gif, *.png, *.jpg, *.jpeg) into and "
+"define name of this folder here."
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:56
+#: kernel/inserts/settings/settings.comments.php:56
+msgid "Maximum size of one comment message"
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:57
+#: kernel/inserts/settings/settings.comments.php:57
+#: kernel/inserts/settings/settings.messenger.php:77
+msgid "Size in symbols"
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:65
+msgid "Max count of activities on page (only root activities)"
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:73
+#: kernel/inserts/settings/settings.comments.php:73
+msgid "Allow hot update"
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:74
+#: kernel/inserts/settings/settings.comments.php:74
+msgid ""
+"Hot update based on WebSocket server. If you switch on it, comments will be "
+"updating in real-time mode and all users will see changes immediately."
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:81
+#: kernel/inserts/settings/settings.comments.php:81
+msgid ""
+"For sure you should activate <strong>WebSocket server</strong> to use hot "
+"updating."
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:86
+msgid "Allow remove activities (root)"
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:87
+msgid ""
+"If you give to users such permission they can remove activity (root) with "
+"all children. It can do only owner of activity."
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:98
+msgid "Allow remove comments (under root activity)"
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.activities.php:99
+msgid ""
+"If you give to users such permission they can remove comments under root "
+"activity with all children. It can do only owner of root activity, where "
+"comment is."
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.render.php:14
+msgid "Visual settings"
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.render.php:24
+msgid "Template of personal user's page header"
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.render.php:40
+msgid "Template of user's activities"
+msgstr ""
+
+#: kernel/inserts/settings/settings.buddypress.render.php:56
+msgid "Other"
+msgstr "Другие"
+
+#: kernel/inserts/settings/settings.buddypress.render.php:60
+msgid "Count of records on page"
+msgstr ""
+
+#: kernel/inserts/settings/settings.comments.php:12
+msgid "Comments block settings"
+msgstr ""
+
+#: kernel/inserts/settings/settings.comments.php:23
+msgid ""
+"These settings actual for comments in <strong>post</strong> and in "
+"<strong>page</strong>."
+msgstr ""
+
+#: kernel/inserts/settings/settings.comments.php:28
+msgid "Attachments in comments"
+msgstr ""
+
+#: kernel/inserts/settings/settings.comments.php:29
+msgid "You can allow attach files (from media library of user) to comment"
+msgstr ""
+
+#: kernel/inserts/settings/settings.comments.php:65
+msgid "Max count of comments on page (only root comments)"
+msgstr ""
+
+#: kernel/inserts/settings/settings.counts.php:12
+msgid "Count of items"
+msgstr ""
+
+#: kernel/inserts/settings/settings.counts.php:23
+msgid ""
+"Here you can configure count of items to render. For example, you can define "
+"count of posts as 5. It means that on page will be shown 5 thumbnails of "
+"posts, but user can load more for sure."
+msgstr ""
+
+#: kernel/inserts/settings/settings.counts.php:27
+msgid "Post"
+msgstr "Пост"
+
+#: kernel/inserts/settings/settings.counts.php:28
+msgid ""
+"Count of post's thumbnails on different pages, like: user's content, content "
+"of friends, content of category and ect."
+msgstr ""
+
+#: kernel/inserts/settings/settings.counts.php:36
+msgid "Items in sidebar"
+msgstr ""
+
+#: kernel/inserts/settings/settings.counts.php:37
+msgid ""
+"Here you can define count of items of each group of sidebar. For example, if "
+"some sidebar shows members of site you can define here count of member to "
+"show. For sure, user can load more."
+msgstr ""
+
+#: kernel/inserts/settings/settings.counts.php:45
+msgid "Groups on groups page"
+msgstr ""
+
+#: kernel/inserts/settings/settings.counts.php:46
+msgid ""
+"How much groups we should show on groups page (where list of site's groups "
+"is)."
+msgstr ""
+
+#: kernel/inserts/settings/settings.counts.php:54
+msgid "Members on members page"
+msgstr ""
+
+#: kernel/inserts/settings/settings.counts.php:55
+msgid ""
+"How much members we should show on members page (where list of site's "
+"members is)."
+msgstr ""
+
+#: kernel/inserts/settings/settings.counts.php:63
+msgid "Groups on some members page"
+msgstr ""
+
+#: kernel/inserts/settings/settings.counts.php:64
+msgid ""
+"How much groups we should show on page of some member of site. This is list "
+"of member's groups."
+msgstr ""
+
+#: kernel/inserts/settings/settings.counts.php:72
+msgid "Members on some members page"
+msgstr ""
+
+#: kernel/inserts/settings/settings.counts.php:73
+msgid ""
+"How much members (friends) we should show on page of some member of site. "
+"This is list of member's friends."
+msgstr ""
+
+#: kernel/inserts/settings/settings.footer.php:13
+msgid "Footer settings"
+msgstr ""
+
+#: kernel/inserts/settings/settings.footer.php:24
+msgid "All settings here are about footer"
+msgstr ""
+
+#: kernel/inserts/settings/settings.footer.php:28
+msgid "After footer text"
+msgstr ""
+
+#: kernel/inserts/settings/settings.footer.php:29
+msgid "As usual here is something about copyrights"
+msgstr ""
+
+#: kernel/inserts/settings/settings.footer.php:33
+msgid "You can use here HTML tags."
+msgstr ""
+
+#: kernel/inserts/settings/settings.googlemaps.php:12
+msgid "Google maps settings"
+msgstr ""
+
+#: kernel/inserts/settings/settings.googlemaps.php:29
+msgid ""
+"As default Google maps are used in <strong>events</strong>. So if you do not "
+"configure it, your users will not see map with place of event."
+msgstr ""
+
+#: kernel/inserts/settings/settings.googlemaps.php:34
+msgid "Link to script with Google maps."
+msgstr ""
+
+#: kernel/inserts/settings/settings.googlemaps.php:42
+msgid "Your access key to Google maps API"
+msgstr ""
+
+#: kernel/inserts/settings/settings.googlemaps.php:50
+msgid "Your client ID for Google maps API"
+msgstr ""
+
+#: kernel/inserts/settings/settings.googlemaps.php:58
+msgid ""
+"To get more information about how you can get <strong>key</strong> and "
+"<strong>clientID</strong>, please visit <a href=\"https://developers.google."
+"com/maps/documentation/javascript/tutorial\">Google Developer page</a>. We "
+"use <strong>Google Maps JavaScript API v3</strong>."
+msgstr ""
+
+#: kernel/inserts/settings/settings.images.php:13
+msgid "Background & logo"
+msgstr ""
+
+#: kernel/inserts/settings/settings.images.php:27
+msgid "Common background"
+msgstr ""
+
+#: kernel/inserts/settings/settings.images.php:28
+msgid ""
+"Background image for not personal pages, like search page, top of posts and "
+"etc."
+msgstr ""
+
+#: kernel/inserts/settings/settings.images.php:31
+msgid "Dark logo"
+msgstr ""
+
+#: kernel/inserts/settings/settings.images.php:32
+#: kernel/inserts/settings/settings.images.php:36
+msgid "This logo will be used with light menu background"
+msgstr ""
+
+#: kernel/inserts/settings/settings.images.php:35
+msgid "Light logo"
+msgstr ""
+
+#: kernel/inserts/settings/settings.images.php:54
+#: templates/BuddyPress/HeadersBackgrounds/class/A.php:59
+#: templates/Pages/EventEditor/class/A.php:396
+#: templates/Pages/PostEditor/class/A.php:162
+#: templates/Pages/ReportEditor/class/A.php:287
+msgid "load"
+msgstr "загрузить"
+
+#: kernel/inserts/settings/settings.import.done.php:5
+#: kernel/inserts/settings/settings.import.online.php:12
+msgid "Import demo data"
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.done.php:15
+msgid "You have imported demo data."
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.minimal.php:9
+msgid "Basic demo data generated."
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.minimal.php:13
+msgid "Basic demo data removed."
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.minimal.php:21
+msgid "Basic demo data"
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.minimal.php:31
+msgid ""
+"Basic demo data (or minimal demo data) is a several posts only. Basic demo "
+"data was added automaticaly, when you activated (first time) Pure template. "
+"You can remove whole basic data or restore it here."
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.minimal.php:40
+msgid ""
+"Several demo posts (events, reports, questions, inserts and single posts) "
+"will be generated with attachments (images). This operation will take some "
+"time. Maybe about 2-3 minutes. Be sure, that configuration of your PHP and "
+"your server allows run scripts for a long time."
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.minimal.php:43
+msgid "Generate basic (minimal) demo data"
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.minimal.php:49
+msgid ""
+"All basic demo posts (events, reports, questions, inserts and single posts) "
+"will be removed with all attachments (include files)."
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.minimal.php:52
+msgid "Remove basic (minimal) demo data"
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.online.php:23
+msgid "Online mode of import was started"
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.online.php:24
+msgid ""
+"Do not close browser and do not update page while procedure of import is "
+"going. Procedure of import will take much time. About 5-10 minutes."
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.online.php:47
+msgid "Online mode of import cannot be started"
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.online.php:48
+msgid ""
+"Sorry, but you cannot start import, because server script has not access for "
+"write to folder: "
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.start.php:5
+msgid "Import advanced demo data"
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.start.php:15
+msgid ""
+"You can import advanced demo data on your site. To do it you have to place "
+"demo data into folder [wp-content/uploads/demo]. This folder should consists "
+"such files like [titles.xml], [authors.xml] and etc."
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.start.php:16
+msgid ""
+"Pure template importer does not use any DB import procedures. We do not "
+"modify DB, at least directly. To add demo data on your site we use emulate "
+"mode - we create everything step by step like real user. This is safe mode. "
+"And it takes much time. Whole procedure of import will take about 5-10 "
+"minutes."
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.start.php:17
+msgid "You have two ways of import:"
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.start.php:18
+msgid "Safe mode"
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.start.php:20
+#: kernel/inserts/settings/settings.import.start.php:28
+msgid ""
+"Be sure - all files from [demo.zip] are in folder [wp-content/uploads/demo]"
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.start.php:21
+msgid "Stop any outside connections on your server (for this site for sure)."
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.start.php:22
+msgid "Go to the folder [wp-content/themes/pure/components/demo/Module/bin]"
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.start.php:23
+msgid ""
+"Using write/read rights for folders [../wp-content/uploads] and [PHP temp "
+"upload folder] (scripts will add images on your server) run next command "
+"[php -q launcher.php]"
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.start.php:25
+msgid ""
+"For sure we recommend use this way. After you run import, you will see logs "
+"of process in console. If you have some problems with import, you should "
+"open file [launcher.php] and turn on DEBUG mode according comments in "
+"script. Copy logs data from console and send us, please. We will help you, "
+"you will help other people. "
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.start.php:26
+msgid "Online mode"
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.start.php:29
+msgid ""
+"At the time of import, set rights to ../wp-content/uploads to 777 for "
+"standard user of your server (import script will be run by standard user of "
+"your server). In unix OS - use CHMOD; in windows - set permission via "
+"properties of folder (section \"security\"). It is necessary only during "
+"import."
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.start.php:30
+msgid ""
+"At the time of import, set rights to your PHP upload temp folder (you can "
+"see path to this folder in your php.ini - [upload_tmp_dir]) to 777 for "
+"standard user of your server. Use commands like in step (2). It is necessary "
+"only during import."
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.start.php:31
+msgid ""
+"After you press button \"Start import in online mode\", you will see area "
+"with logs information"
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.start.php:32
+msgid "Procedure of import will take much time. About 5-10 minutes."
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.start.php:33
+msgid ""
+"Do not close browser and do not update page while procedure of import is "
+"going."
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.start.php:34
+msgid ""
+"After finishing of import, restore rights to ../wp-content/uploads and PHP "
+"upload temp folder to standard."
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.start.php:35
+msgid ""
+"If something is going wrong, you will see information about errors in logs."
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.start.php:42
+#: kernel/inserts/settings/settings.import.start.php:53
+msgid "Start import in online mode"
+msgstr ""
+
+#: kernel/inserts/settings/settings.import.start.php:51
+msgid ""
+"Do not worry, if you forget set correct permissions or copy necessary files. "
+"Before start procedure, script will check everything and will not start "
+"import, if something is not ready for it."
+msgstr ""
+
+#: kernel/inserts/settings/settings.information.php:12
+msgid "Support information"
+msgstr ""
+
+#: kernel/inserts/settings/settings.information.php:23
+msgid "This information will be show before menu"
+msgstr ""
+
+#: kernel/inserts/settings/settings.information.php:27
+msgid "Facebook"
+msgstr ""
+
+#: kernel/inserts/settings/settings.information.php:28
+msgid "Link to your official facebook account"
+msgstr ""
+
+#: kernel/inserts/settings/settings.information.php:36
+msgid "Google +"
+msgstr ""
+
+#: kernel/inserts/settings/settings.information.php:37
+msgid "Link to your official google + account"
+msgstr ""
+
+#: kernel/inserts/settings/settings.information.php:45
+msgid "LinkIn"
+msgstr ""
+
+#: kernel/inserts/settings/settings.information.php:46
+msgid "Link to your official linkIn account"
+msgstr ""
+
+#: kernel/inserts/settings/settings.information.php:54
+msgid "Twitter"
+msgstr ""
+
+#: kernel/inserts/settings/settings.information.php:55
+msgid "Link to your official twitter account"
+msgstr ""
+
+#: kernel/inserts/settings/settings.information.php:63
+msgid "Phone number"
+msgstr ""
+
+#: kernel/inserts/settings/settings.information.php:64
+msgid "Define here support phone number"
+msgstr ""
+
+#: kernel/inserts/settings/settings.information.php:72
+msgid "Mail"
+msgstr ""
+
+#: kernel/inserts/settings/settings.information.php:73
+msgid "Define here support mail"
+msgstr ""
+
+#: kernel/inserts/settings/settings.information.php:80
+msgid "To remove some button (or phone, or mail), just leave empty field."
+msgstr ""
+
+#: kernel/inserts/settings/settings.mailer.php:12
+msgid "Mailer settings"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mailer.php:23
+msgid ""
+"To send some notification to your user we should do it from some mailbox. "
+"For example to make available conformation of email (during registration of "
+"new user). At least without it we cannot register new user. So, it will be "
+"better if you configure mailer."
+msgstr ""
+
+#: kernel/inserts/settings/settings.mailer.php:28
+msgid "STMP Host"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mailer.php:29
+msgid "For example: stmp.google.com"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mailer.php:37
+msgid "STMP Port"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mailer.php:45
+msgid "Username"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mailer.php:46
+msgid "For example: administrator@gmail.com "
+msgstr ""
+
+#: kernel/inserts/settings/settings.mailer.php:54
+#: templates/Authorization/login/class/A.php:55
+#: templates/Authorization/registration/class/A.php:54
+#: templates/BuddyPress/PersonalSettings/class/A.php:182
+msgid "Password"
+msgstr "Пароль"
+
+#: kernel/inserts/settings/settings.mailer.php:55
+msgid "It will be saved in data base of your site"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mailer.php:63
+msgid "Use SMTP authorization"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mailer.php:67
+msgid "use"
+msgstr "использовать"
+
+#: kernel/inserts/settings/settings.mailer.php:68
+#: kernel/inserts/settings/settings.mailer.php:78
+msgid "do not use"
+msgstr "не использовать"
+
+#: kernel/inserts/settings/settings.mailer.php:74
+msgid "SMTP security protocol"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mailer.php:79
+msgid "TLS"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mailer.php:80
+msgid "SSL"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:13
+msgid "Settings of mana scheme for Pure theme"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:23
+msgid "Use mana for manage permissions of users (members)"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:24
+msgid ""
+"If you switch off mana, users can rate comments, posts and etc in any case. "
+"But in such case, value of mana does not mater for user's permissions."
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:26
+msgid "Use mana"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:27
+msgid "Do not use mana"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:29
+msgid "If mana management is active"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:34
+msgid ""
+"User should have defined value of mana (positive value) to create post. If "
+"user has not necessary value of mana, he will not create any post."
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:43
+msgid ""
+"User should have defined value of mana (positive value) to create event."
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:52
+msgid ""
+"User should have defined value of mana (positive value) to create report."
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:60
+msgid "Create question and add answers"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:61
+msgid ""
+"User should have defined value of mana (positive value) to create question "
+"and add answers."
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:69
+msgid "Post comments"
+msgstr "Комментарии к посту"
+
+#: kernel/inserts/settings/settings.mana.php:70
+msgid ""
+"User should have defined value of mana (positive value) to add comments in "
+"any place of site."
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:78
+msgid "Update status (add activity)"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:79
+msgid ""
+"User should have defined value of mana (positive value) to add new activity "
+"(short post in his activities (\"Life\" section)."
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:87
+msgid "Remove status (remove activity)"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:88
+msgid ""
+"User should have defined value of mana (positive value) to remove his "
+"activity (short post in his activities (\"Life\" section)."
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:96
+msgid "Remove comment (in activities)"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:97
+msgid ""
+"User should have defined value of mana (positive value) to remove comments "
+"to his activity (short post in his activities (\"Life\" section)."
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:105
+msgid "Vote comment"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:106
+msgid ""
+"User should have defined value of mana (positive value) to vote any comment."
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:114
+msgid "Vote post"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:115
+msgid "User should have defined value of mana (positive value) to vote post."
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:123
+msgid "Go out from sandbox"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:124
+msgid ""
+"If user has not enough value of mana, any his post will be placed in sandbox "
+"(special category). When user get necessary value of mana, he can go out "
+"from sandbox."
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:128
+msgid "Choose category which will be used as sandbox."
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:139
+msgid ""
+"If you use mana you have to define sandbox category, or can be unexpected "
+"errors."
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:144
+msgid "Allow or deny comments"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:145
+msgid ""
+"If user has enough value of mana, he can allow or deny comments to his post. "
+"If not - comments will be allowed."
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:153
+msgid "Allow or deny vote of post"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:154
+msgid ""
+"If user has enough value of mana, he can allow or deny vote to his post. If "
+"not - vote will be allowed."
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:162
+msgid "Maximum gift"
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:163
+msgid ""
+"Users can give own mana to other users. Define here value of maximum gift."
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:170
+msgid "Default value of mana for new users is 0."
+msgstr ""
+
+#: kernel/inserts/settings/settings.mana.php:171
+msgid "Template of mana icons"
+msgstr ""
+
+#: kernel/inserts/settings/settings.messenger.php:12
+msgid "Global messenger setting for Pure theme"
+msgstr ""
+
+#: kernel/inserts/settings/settings.messenger.php:26
+msgid "Max count of mails on page"
+msgstr ""
+
+#: kernel/inserts/settings/settings.messenger.php:34
+msgid "Max size of one message"
+msgstr ""
+
+#: kernel/inserts/settings/settings.messenger.php:35
+msgid "Size on one message in symbols."
+msgstr ""
+
+#: kernel/inserts/settings/settings.messenger.php:43
+msgid "Max size of subject"
+msgstr ""
+
+#: kernel/inserts/settings/settings.messenger.php:44
+msgid "Size of message's subject in symbols"
+msgstr ""
+
+#: kernel/inserts/settings/settings.messenger.php:52
+msgid "Attachments in mails"
+msgstr ""
+
+#: kernel/inserts/settings/settings.messenger.php:53
+msgid "Can user attach file to message or not."
+msgstr ""
+
+#: kernel/inserts/settings/settings.messenger.php:60
+msgid "Size of one attachment in bytes"
+msgstr ""
+
+#: kernel/inserts/settings/settings.messenger.php:62
+msgid "Allowed count of attachments per one message"
+msgstr ""
+
+#: kernel/inserts/settings/settings.messenger.php:68
+msgid "Max count of chat messages on page"
+msgstr ""
+
+#: kernel/inserts/settings/settings.messenger.php:76
+msgid "Maximum size of one chat message"
+msgstr ""
+
+#: kernel/inserts/settings/settings.messenger.php:85
+msgid "Size of one attachment (in chat message) in bytes"
+msgstr ""
+
+#: kernel/inserts/settings/settings.messenger.php:86
+msgid "Count of attachments per message in chat always is 1"
+msgstr ""
+
+#: kernel/inserts/settings/settings.messenger.php:94
+msgid "Allow memes in chat"
+msgstr ""
+
+#: kernel/inserts/settings/settings.messenger.php:109
+msgid "Max count of notifications messages on page"
+msgstr ""
+
+#: kernel/inserts/settings/settings.page.front.php:13
+msgid "Front page template"
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:31
+msgid "Cheatin&#8217; uh?"
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:60
+msgid "Widgets"
+msgstr "Виджеты"
+
+#: kernel/inserts/settings/settings.pages.editor.php:65
+msgid "Overview"
+msgstr "Обзор"
+
+#: kernel/inserts/settings/settings.pages.editor.php:67
+msgid ""
+"Widgets are independent sections of content that can be placed into any "
+"widgetized area provided by your theme (commonly called sidebars). To "
+"populate your sidebars/widget areas with individual widgets, drag and drop "
+"the title bars into the desired area. By default, only the first widget area "
+"is expanded. To populate additional widget areas, click on their title bars "
+"to expand them."
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:68
+msgid ""
+"The Available Widgets section contains all the widgets you can choose from. "
+"Once you drag a widget into a sidebar, it will open to allow you to "
+"configure its settings. When you are happy with the widget settings, click "
+"the Save button and the widget will go live on your site. If you click "
+"Delete, it will remove the widget."
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:72
+msgid "Removing and Reusing"
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:74
+msgid ""
+"If you want to remove the widget but save its setting for possible future "
+"use, just drag it into the Inactive Widgets area. You can add them back "
+"anytime from there. This is especially helpful when you switch to a theme "
+"with fewer or different widget areas."
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:75
+msgid ""
+"Widgets may be used multiple times. You can give each widget a title, to "
+"display on your site, but it&#8217;s not required."
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:76
+msgid ""
+"Enabling Accessibility Mode, via Screen Options, allows you to use Add and "
+"Edit buttons instead of using drag and drop."
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:80
+msgid "Missing Widgets"
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:82
+msgid ""
+"Many themes show some sidebar widgets by default until you edit your "
+"sidebars, but they are not automatically displayed in your sidebar "
+"management tool. After you make your first widget change, you can re-add the "
+"default widgets by adding them from the Available Widgets area."
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:83
+msgid ""
+"When changing themes, there is often some variation in the number and setup "
+"of widget areas/sidebars and sometimes these conflicts make the transition a "
+"bit less smooth. If you changed themes and seem to be missing widgets, "
+"scroll down on this screen to the Inactive Widgets area, where all of your "
+"widgets and their settings will have been saved."
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:87
+msgid "For more information:"
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:88
+msgid ""
+"<a href=\"http://codex.wordpress.org/Appearance_Widgets_Screen\" target="
+"\"_blank\">Documentation on Widgets</a>"
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:89
+msgid ""
+"<a href=\"https://wordpress.org/support/\" target=\"_blank\">Support Forums</"
+"a>"
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:93
+msgid ""
+"The theme you are currently using isn&#8217;t widget-aware, meaning that it "
+"has no sidebars that you are able to change. For information on making your "
+"theme widget-aware, please <a href=\"http://codex.wordpress.org/"
+"Widgetizing_Themes\">follow these instructions</a>."
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:109
+msgid "Inactive Sidebar (not used)"
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:112
+msgid ""
+"This sidebar is no longer available and does not show anywhere on your site. "
+"Remove each of the widgets below to fully remove this inactive sidebar."
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:126
+msgid "Inactive Widgets"
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:129
+msgid ""
+"Drag widgets here to remove them from the sidebar but keep their settings."
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:250
+#, php-format
+msgid "Widget %s"
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:258
+msgid "There are no options for this widget."
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:261
+msgid ""
+"Select both the sidebar for this widget and the position of the widget in "
+"that sidebar."
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:263
+msgid "Sidebar"
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:263
+msgid "Position"
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:280
+msgid "&mdash; Select &mdash;"
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:296
+#: kernel/inserts/settings/settings.pages.editor.php:434
+msgid "Cancel"
+msgstr "Отмена"
+
+#: kernel/inserts/settings/settings.pages.editor.php:299
+msgid "Delete"
+msgstr "Удалить"
+
+#: kernel/inserts/settings/settings.pages.editor.php:301
+msgid "Save Widget"
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:317
+msgid "Changes saved."
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:321
+msgid "Error while saving."
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:322
+msgid "Error in displaying the widget settings form."
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:363
+msgid "Available Widgets"
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:363
+msgctxt "removing-widget"
+msgid "Deactivate"
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:367
+msgid ""
+"To activate a widget drag it to a sidebar or click on it. To deactivate a "
+"widget and delete its settings, drag it back."
+msgstr ""
+
+#: kernel/inserts/settings/settings.pages.editor.php:435
+msgid "Add Widget"
+msgstr ""
+
+#: kernel/inserts/settings/settings.reports.php:30
+msgid "Collection of indexes for reports"
+msgstr ""
+
+#: kernel/inserts/settings/settings.reports.php:47
+msgid "New index"
+msgstr ""
+
+#: kernel/inserts/settings/settings.reports.php:114
+msgid "New collection"
+msgstr ""
+
+#: kernel/inserts/settings/settings.reports.php:185
+msgid ""
+"Here you can manage collection of indexes for reports. For example, you can "
+"define indexes for movie or restaurant."
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:12
+msgid "WebSocket server settings"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:22
+msgid "What is it?"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:23
+msgid ""
+"WebSocket server allows communicate in real-time mode. For example, chat. "
+"With active server members will see messages immediately without any delay "
+"and addition requests to server. Also WebSocket server allow render any "
+"changes of comments in real-time mode."
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:24
+msgid ""
+"You can switch off WebSocket server, in this case site will work, but chat "
+"will not be available."
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:25
+msgid ""
+"WebSocket server can work in two modes: none-thread and thread mode. Thread "
+"mode requires PHPThreads on your server. Thread mode will use automatically "
+"if PHPThreads are installed. What use? None-thread server is better for "
+"small systems - not more 500 users online at moment. And thread server is "
+"more stable for big systems with more than 500 users online. In addition, "
+"you should know, thread server \"eats\" much more memory than none-thread."
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:30
+msgid "Start mode"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:34
+msgid "Start and restart server automatically"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:35
+msgid "Start server automatically (by request)"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:36
+msgid "I will start server manually"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:37
+msgid "Do not use it."
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:39
+msgid ""
+"Modes \"Start and restart server automatically\" and \"Start server "
+"automatically (by request)\" are different. In first case will be started "
+"launcher (not webSocketServer). This launcher starts webSocketServer and "
+"controls its heartbeat. If server stops, launcher will restart it "
+"automatically. In second case (\"Start server automatically (by request)\") "
+"status of webSocketServer checks only if some user makes request to site. In "
+"this case if at current moment nobody are on site, webSocketServer can be "
+"stopped (until somebody visit it)."
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:40
+#: kernel/inserts/settings/settings.websockets.php:115
+msgid ""
+"To launch server manually you should call in OS console next command: [php -"
+"q initialization.php] from folder \"../wp-content/themes/pure/components/"
+"webSocketServer/Module/bin/thread\"."
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:41
+msgid ""
+"If you choose option \"Do not use it\" client part of webSocket will not be "
+"loaded on client side."
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:46
+msgid "IP adress of server"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:54
+msgid "Port"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:62
+msgid "Backlog"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:63
+msgid "If you do not know what does it mean, just leave it as default"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:71
+msgid "Logs"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:72
+msgid "Do logs or not."
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:83
+msgid "Logs rendering"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:87
+msgid "Show as comment"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:88
+msgid "Render in console only"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:94
+msgid "Heartbeat time out in seconds"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:95
+msgid ""
+"Server should check his status periodically to be sure, that everything is "
+"ok. Here you can define duration of such period"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:103
+msgid "Duration of server life in heartbeat iterations"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:104
+msgid ""
+"Server can be automatically rebooted after defined count of heartbeat "
+"iterations. For example, if you set heartbeat duration in 60 seconds and "
+"this parameter in 1000 - each 1000 * 60 seconds server will be stopped (not "
+"rebooted). It can be useful for deep clearing memory usage."
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:108
+msgid ""
+"Attention. If you start server manually, in this case server will not "
+"reboot, but just switch off."
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:113
+msgid "PHP debug mode"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:114
+msgid ""
+"This option is very useful if you launch webSocketServer manually (via [php -"
+"q initialization.php]). In this case you can switch on debug mode and see a "
+"lot information about current work of server in real-time mode."
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:119
+msgid "Debug mode on"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:120
+msgid "Debug mode off"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:122
+msgid ""
+"In console you can see current usage of memory by webSocketServer. This is "
+"actual only if PHP debug mode is on."
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:124
+msgid "Show memory usage"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:125
+msgid "Do not show memory usage"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:131
+msgid ""
+"Attention. Your php server should support <strong>Sockets</strong> and "
+"<strong>PHPThreads</strong> (if you want to use thread server for big "
+"systems). See below instruction."
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:149
+msgid "Install PHP Sockets"
+msgstr ""
+
+#: kernel/inserts/settings/settings.websockets.php:176
+msgid "Install PHP Threads"
+msgstr ""
+
+#: kernel/requests/request.events.editor.php:16
+msgid "We are created your event, but we did not attach thumbnail (miniature)."
+msgstr ""
+"Событие создано, но возникла ошибка с загрузкой миниатюры. Миниатюра не "
+"прикреплена к событию. Но событие создано. Все не так уж и плохо. Да вообще "
+"все хорошо. "
+
+#: kernel/requests/request.events.editor.php:20
+#: kernel/requests/request.posts.create.php:12
+#: kernel/requests/request.questions.editor.php:8
+#: kernel/requests/request.reports.editor.php:12
+msgid "We are sorry, but there are some error during saving."
+msgstr ""
+"Нам очень жаль, но что-то пошло ни так. Возникла какая-то дурацкая ошибка. "
+"Будем разбираться, если вы нам об этом сообщите. Сообщите нам по почте об "
+"этой ошибке пожалуйста. "
+
+#: kernel/requests/request.events.editor.php:24
+msgid ""
+"Sorry, but some date of event (start, finish or dates of registration) has "
+"error."
+msgstr ""
+"Извините, но событие не создано. Обнаружена ошибка в дате (или времени) "
+"начала или завершения события."
+
+#: kernel/requests/request.events.editor.php:28
+msgid "Sorry, but we cannot create event, because content of it was not found."
+msgstr "Извините, но нельзя создать событие без содержания. "
+
+#: kernel/requests/request.events.editor.php:32
+msgid "Sorry, but we cannot create event, because title of it was not found."
+msgstr "Извините, но нельзя создать событие без названия. "
+
+#: kernel/requests/request.events.editor.php:36
+msgid "Sorry, but we cannot create event, you should login."
+msgstr "Извините, но нельзя создать событие. Вам следует авторизоваться."
+
+#: kernel/requests/request.events.editor.php:40
+msgid "Sorry, but we cannot find event."
+msgstr "Извините, не удалось найти событие."
+
+#: kernel/requests/request.posts.create.php:8
+msgid "We are created your post, but we did not attach thumbnail (miniature)."
+msgstr ""
+"Пост создан, но возникла ошибка с загрузкой миниатюры. Миниатюра не "
+"прикреплена к посту. Но пост создан. Все не так уж и плохо. Да вообще все "
+"хорошо. "
+
+#: kernel/requests/request.posts.create.php:16
+msgid "Sorry, but we cannot create post, because content of it was not found."
+msgstr "Извините, но нельзя создать пост без содержания. "
+
+#: kernel/requests/request.posts.create.php:20
+msgid "Sorry, but we cannot create post, because title of it was not found."
+msgstr "Извините, но нельзя создать пост без названия. "
+
+#: kernel/requests/request.posts.create.php:24
+msgid "Sorry, but we cannot create post, you should login."
+msgstr "Извините, но нельзя создать пост. Вам следует авторизоваться."
+
+#: kernel/requests/request.posts.create.php:28
+msgid "Sorry, but we cannot find post."
+msgstr "Извините, не удалось найти пост."
+
+#: kernel/requests/request.questions.editor.php:12
+msgid ""
+"Sorry, but we cannot create question, because content of it was not found."
+msgstr "Извините, но нельзя создать вопрос без содержания. "
+
+#: kernel/requests/request.questions.editor.php:16
+msgid ""
+"Sorry, but we cannot create question, because title of it was not found."
+msgstr "Извините, но нельзя создать вопрос без названия. "
+
+#: kernel/requests/request.questions.editor.php:20
+msgid "Sorry, but we cannot create question, you should login."
+msgstr "Извините, но нельзя создать вопрос. Вам следует авторизоваться."
+
+#: kernel/requests/request.questions.editor.php:24
+msgid "Sorry, but we cannot find question."
+msgstr "Извините, не удалось найти вопрос."
+
+#: kernel/requests/request.reports.editor.php:8
+msgid ""
+"We are created your report, but we did not attach thumbnail (miniature)."
+msgstr ""
+"Отчет создан, но возникла ошибка с загрузкой миниатюры. Миниатюра не "
+"прикреплена к отчету. Но отчет создан. Все не так уж и плохо. Да вообще все "
+"хорошо. "
+
+#: kernel/requests/request.reports.editor.php:16
+msgid ""
+"We are sorry, but there are some error during generation indexes for report."
+msgstr ""
+"Нам очень жаль, но отчет не создан. Возникла какая-то дурацкая ошибка с "
+"показателями отчета. Будет разбираться, если вы нам об этом сообщите. "
+"Сообщите нам по почте об этой ошибке пожалуйста. "
+
+#: kernel/requests/request.reports.editor.php:20
+msgid ""
+"Sorry, but we cannot create report, because content of it was not found."
+msgstr "Извините, но нельзя создать отчет без содержания. "
+
+#: kernel/requests/request.reports.editor.php:24
+msgid "Sorry, but we cannot create report, because title of it was not found."
+msgstr "Извините, но нельзя создать отчет без названия. "
+
+#: kernel/requests/request.reports.editor.php:28
+msgid "Sorry, but we cannot create report, you should login."
+msgstr "Извините, но нельзя создать отчет. Вам следует авторизоваться."
+
+#: kernel/requests/request.reports.editor.php:32
+msgid "Sorry, but we cannot find report."
+msgstr "Извините, не удалось найти отчет."
+
+#: plugins/OpenMenu/inc/widget.php:113
+#: templates/Layout/Page/ByScheme/defaults/City/defaults.php:217
+#: templates/Layout/Page/ByScheme/defaults/Community/defaults.php:295
+#: templates/Layout/Page/ByScheme/defaults/DefaultScheme/defaults.php:266
+#: templates/Layout/Page/ByScheme/defaults/Journal/defaults.php:115
+#: templates/Makeup/Footer/elements/hotlinks/class/A.php:41
+msgid "Hot links"
+msgstr "Горячие ссылки"
+
+#: plugins/Thumbnails/Posts/inc/kernel.php:116
+#: plugins/Thumbnails/Posts/inc/kernel.php:194
+#: plugins/Thumbnails/Posts/inc/kernel.php:250
+msgid "see more"
+msgstr "больше"
+
+#: templates/Authorization/login/class/A.php:51
+msgid "Login or email"
+msgstr "Логин или почта"
+
+#: templates/Authorization/login/class/A.php:70
+#: templates/Authorization/registration/class/A.php:73
+#: templates/Authorization/reset/class/A.php:61
+msgid "CANCEL"
+msgstr "ОТМЕНИТЬ"
+
+#: templates/Authorization/login/class/A.php:73
+msgid "LOGIN"
+msgstr "ВОЙТИ"
+
+#: templates/Authorization/registration/class/A.php:58
+msgid "Repeat password"
+msgstr "Повторите пароль"
+
+#: templates/Authorization/registration/class/A.php:68
+msgid "Resend activation link"
+msgstr "Отправить ссылку активации повторно "
+
+#: templates/Authorization/registration/class/A.php:76
+msgid "TRY"
+msgstr "ПРОБУЕМ"
+
+#: templates/Authorization/registration/class/A.php:113
+msgid "Sorry, but at current time registration is unavailable."
+msgstr "Извините, но в настоящее время регистрация невозможна."
+
+#: templates/Authorization/registration/class/A.php:118
+msgid "BACK"
+msgstr "НАЗАД"
+
+#: templates/Authorization/reset/class/A.php:49
+msgid "Your login"
+msgstr "Ваш логин"
+
+#: templates/Authorization/reset/class/A.php:53
+msgid "Your email"
+msgstr "Ваша почта"
+
+#: templates/Authorization/reset/class/A.php:64
+msgid "RESET"
+msgstr "СБРОСИТЬ"
+
+#: templates/Authors/class/A.php:21
+msgid "Registered on"
+msgstr "Зарегистрирован на сайте "
+
+#: templates/Authors/class/A.php:69 templates/Groups/class/A.php:84
+#: templates/HeaderMenu/class/C.php:54
+#: templates/Messenger/Chat/class/A.php:120
+#: templates/Messenger/Notifications/class/A.php:38
+#: templates/Posts/thumbnails/class/D.php:365
+#: templates/Posts/thumbnails/class/DMini.php:292
+#: templates/Posts/thumbnails/class/EventA.php:59
+#: templates/Posts/thumbnails/class/F.php:283
+#: templates/Posts/thumbnails/class/QuestionA.php:53
+#: templates/Posts/thumbnails/class/QuestionB.php:53
+#: templates/Posts/thumbnails/class/QuestionC.php:53
+#: templates/Posts/thumbnails/class/QuestionD.php:53
+#: templates/Posts/thumbnails/class/ReportA.php:139
+msgid "more"
+msgstr "больше"
+
+#: templates/Authors/class/C.php:16
+msgid "consists images from"
+msgstr "содержит изображения от"
+
+#: templates/Authors/class/C.php:19
+msgid "consists media content from"
+msgstr "содержит медиа данные от "
+
+#: templates/Authors/class/C.php:52
+#: templates/Posts/elements/questions/relatedPosts/class/A.php:96
+#: templates/Posts/elements/questions/relatedPosts/class/A.php:191
+#: templates/Posts/thumbnails/class/D.php:38
+#: templates/Posts/thumbnails/class/F.php:25
+#: templates/Posts/thumbnails/class/F.php:45
+#: templates/Posts/thumbnails/class/F.php:62
+#: templates/Posts/thumbnails/class/F.php:84
+#: templates/Posts/thumbnails/class/F.php:103
+#: templates/Posts/thumbnails/class/F.php:190
+#: templates/Posts/thumbnails/class/F.php:210
+#: templates/Posts/thumbnails/class/QuestionA.php:25
+#: templates/Posts/thumbnails/class/QuestionB.php:25
+#: templates/Posts/thumbnails/class/QuestionC.php:25
+#: templates/Posts/thumbnails/class/QuestionD.php:25
+#: templates/Posts/thumbnails/class/ReportA.php:51
+#: templates/Posts/thumbnails/class/ReportA.php:74
+#: templates/Posts/thumbnails/class/ReportA.php:97
+#: templates/PresentationTabs/class/A.php:52
+#: templates/PresentationTabs/class/B.php:52
+msgid "read more"
+msgstr "больше"
+
+#: templates/Authors/class/H.php:17 templates/BuddyPress/Home/class/A.php:95
+#: templates/Layout/BuddyPress/Friends/class/A.php:212
+#: templates/Layout/BuddyPress/Groups/class/A.php:234
+#: templates/Layout/BuddyPress/Member/class/A.php:82
+#: templates/Layout/BuddyPress/Profile/class/A.php:29
+msgid "With us from"
+msgstr "С нами с"
+
+#: templates/Authors/class/H.php:18 templates/BuddyPress/Home/class/A.php:96
+msgid "Friendship"
+msgstr "Дружба "
+
+#: templates/Authors/class/H.php:18 templates/BuddyPress/Home/class/A.php:96
+msgid "Request"
+msgstr "Запрос"
+
+#: templates/Authors/class/H.php:18 templates/BuddyPress/Home/class/A.php:96
+msgid "from"
+msgstr "от"
+
+#: templates/Authors/class/H.php:19 templates/BuddyPress/Home/class/A.php:97
+#: templates/Layout/BuddyPress/Friends/class/A.php:198
+#: templates/Layout/BuddyPress/Groups/class/A.php:220
+#: templates/Layout/BuddyPress/Member/class/A.php:68
+#: templates/Layout/BuddyPress/Profile/class/A.php:28
+msgid "Created"
+msgstr "Создан"
+
+#: templates/Authors/class/H.php:19 templates/Authors/class/H.php:145
+#: templates/BuddyPress/Home/class/A.php:97
+#: templates/Layout/BuddyPress/Friends/class/A.php:198
+#: templates/Layout/BuddyPress/Groups/class/A.php:220
+#: templates/Layout/BuddyPress/Member/class/A.php:68
+#: templates/Layout/BuddyPress/Profile/class/A.php:28
+msgid "posts"
+msgstr "посты"
+
+#: templates/Authors/class/H.php:19 templates/BuddyPress/Home/class/A.php:97
+#: templates/Layout/BuddyPress/Friends/class/A.php:198
+#: templates/Layout/BuddyPress/Groups/class/A.php:220
+#: templates/Layout/BuddyPress/Member/class/A.php:68
+#: templates/Layout/BuddyPress/Profile/class/A.php:28
+msgid "and"
+msgstr "и"
+
+#: templates/Authors/class/H.php:19 templates/Authors/class/H.php:146
+#: templates/BuddyPress/Home/class/A.php:97
+#: templates/Comments/post/class/A.php:319
+#: templates/Layout/BuddyPress/Friends/class/A.php:198
+#: templates/Layout/BuddyPress/Groups/class/A.php:220
+#: templates/Layout/BuddyPress/Member/class/A.php:68
+#: templates/Layout/BuddyPress/Profile/class/A.php:28
+msgid "comments"
+msgstr "комментарии "
+
+#: templates/Authors/class/H.php:20 templates/BuddyPress/Home/class/A.php:98
+#: templates/Layout/BuddyPress/Friends/class/A.php:226
+#: templates/Layout/BuddyPress/Groups/class/A.php:255
+#: templates/Layout/BuddyPress/Member/class/A.php:103
+#: templates/Layout/BuddyPress/Profile/class/A.php:30
+msgid "Has"
+msgstr "Имеет"
+
+#: templates/Authors/class/H.php:20 templates/BuddyPress/Home/class/A.php:98
+#: templates/Layout/BuddyPress/Friends/class/A.php:226
+#: templates/Layout/BuddyPress/Groups/class/A.php:255
+#: templates/Layout/BuddyPress/Member/class/A.php:103
+#: templates/Layout/BuddyPress/Profile/class/A.php:30
+msgid "friends and member of"
+msgstr "друзей и является участником "
+
+#: templates/Authors/class/H.php:20 templates/Authors/class/H.php:148
+#: templates/BuddyPress/Home/class/A.php:98
+#: templates/Layout/BuddyPress/Friends/class/A.php:226
+#: templates/Layout/BuddyPress/Groups/class/A.php:255
+#: templates/Layout/BuddyPress/Member/class/A.php:103
+#: templates/Layout/BuddyPress/Profile/class/A.php:30
+#: templates/Messenger/Chat/class/A.php:73
+msgid "groups"
+msgstr "групп"
+
+#: templates/Authors/class/H.php:23 templates/BuddyPress/Home/class/A.php:34
+#: templates/BuddyPress/Home/class/A.php:212
+msgid "History"
+msgstr "История"
+
+#: templates/Authors/class/H.php:31
+msgid "Friendship status"
+msgstr "Статус дружбы "
+
+#: templates/Authors/class/H.php:36
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:242
+#: templates/BuddyPress/PersonalSettings/class/A.php:191
+msgid "Remove"
+msgstr "Удалить "
+
+#: templates/Authors/class/H.php:37
+msgid ""
+"You can cancel your friendship with this user. To do it, just press \"Remove"
+"\". In this case this user will be removed from your friend's list."
+msgstr ""
+"Вы можете прекратить дружбу с этим пользователем. Для того чтобы это "
+"сделать, нажмите кнопку \"Удалить\". В этом случае данный пользователь будет "
+"удален из списка ваших друзей."
+
+#: templates/Authors/class/H.php:44
+msgid "Accept friendship"
+msgstr "Принять дружбу "
+
+#: templates/Authors/class/H.php:45
+msgid ""
+"You and this user are not friends. But this user requested friendship with "
+"you. You can accept it and you with this user will be a friends. Or you can "
+"deny it. It is your choose."
+msgstr ""
+"Вы и данный пользователь не друзья. Но пользователь отправил вам запрос на "
+"дружбу. Вы можете его (запрос) принять и стать друзьями. Либо вы может "
+"отклонить запрос на дружбу и, возможно, обидеть этого пользователя. Может "
+"быть даже до слез. "
+
+#: templates/Authors/class/H.php:51
+#: templates/BuddyPress/Headers/class/A.php:199
+msgid "Cancel request"
+msgstr "Прекратить запрос "
+
+#: templates/Authors/class/H.php:52
+msgid ""
+"You and this user are not friends. But you requested friendship with him. "
+"Now you can wait for an admission from this user or you can cancel your "
+"request."
+msgstr ""
+"Вы и данный пользователь не друзья. Но вы отправили к нему запрос на дружбу. "
+"Теперь остается только ждать. Тот пользователь может как принять ваш запрос "
+"и вы станете друзьями (конечно только в рамках этого сайта), либо он "
+"отклонит ваш запрос и друзьями вы не станете (да и не особо было нужно). "
+
+#: templates/Authors/class/H.php:60
+msgid "Add"
+msgstr "Добавить"
+
+#: templates/Authors/class/H.php:61
+msgid ""
+"You and this user are not friends. You can request a friendship with this "
+"user. After you should wait for an admission from this user."
+msgstr ""
+"Вы и данный пользователь не друзья. Но вы можете отправить к нему запрос на "
+"дружбу. Если вы отправите запрос, вам будет нужно только ждать. Тот "
+"пользователь может как принять ваш запрос и вы станете друзьями (конечно "
+"только в рамках этого сайта), либо он отклонит ваш запрос и друзьями вы не "
+"станете (да и не особо было нужно). "
+
+#: templates/Authors/class/H.php:147
+#: templates/Pages/EventEditor/class/A.php:503
+#: templates/Pages/PostEditor/class/A.php:269
+#: templates/Pages/QuestionEditor/class/A.php:242
+#: templates/Pages/ReportEditor/class/A.php:394
+#: templates/Posts/sidebars/event/class/A.php:93
+#: templates/Posts/sidebars/post/class/A.php:93
+msgid "friends"
+msgstr "друзья"
+
+#: templates/Authors/class/H.php:204 templates/Authors/class/H.php:239
+#: templates/BuddyPress/CreateGroup/class/A.php:23
+msgid "Summary"
+msgstr "Итого"
+
+#: templates/Authors/class/H.php:207 templates/Authors/class/H.php:250
+#: templates/Elements/search/class/A.php:23
+#: templates/Layout/BuddyPress/Friends/class/A.php:131
+#: templates/Layout/BuddyPress/Groups/class/A.php:150
+#: templates/Layout/Special/GroupContent/class/A.php:109
+#: templates/Layout/Special/Stream/class/A.php:83
+#: templates/Layout/WordPress/Author/class/A.php:78
+#: templates/Layout/WordPress/Category/class/A.php:74
+#: templates/Layout/WordPress/SearchResults/class/A.php:74
+#: templates/Layout/WordPress/Tag/class/A.php:74
+#: templates/LoaderProgress/class/A.php:59
+msgid "Posts"
+msgstr "Посты"
+
+#: templates/Authors/class/H.php:210 templates/Authors/class/H.php:261
+#: templates/BuddyPress/Headers/class/A.php:187
+#: templates/BuddyPress/Home/class/A.php:37
+#: templates/BuddyPress/Home/class/A.php:223
+#: templates/BuddyPress/Profile/class/A.php:144
+#: templates/BuddyPress/Profile/class/A.php:164
+#: templates/BuddyPress/Profile/class/A.php:185
+#: templates/BuddyPress/Profile/class/A.php:212
+#: templates/Layout/BuddyPress/Friends/class/A.php:204
+#: templates/Layout/BuddyPress/Groups/class/A.php:226
+#: templates/Layout/BuddyPress/Member/class/A.php:74
+msgid "Friends"
+msgstr "Друзья"
+
+#: templates/BuddyPress/Activities/class/A.php:178
+msgid "Activities"
+msgstr "Активности "
+
+#: templates/BuddyPress/Activities/class/A.php:179
+#: templates/Comments/post/class/A.php:137
+msgid "total"
+msgstr "всего"
+
+#: templates/BuddyPress/Activities/class/A.php:206
+msgid "add new one"
+msgstr "добавить новый"
+
+#: templates/BuddyPress/Activities/class/A.php:210
+msgid "Write here"
+msgstr "Пишите здесь"
+
+#: templates/BuddyPress/Activities/class/A.php:247
+#: templates/BuddyPress/Activities/class/A.php:314
+#: templates/BuddyPress/Activities/class/A.php:754
+#: templates/BuddyPress/Activities/class/A.php:850
+#: templates/Comments/post/class/A.php:199
+#: templates/Comments/post/class/A.php:251
+#: templates/Comments/post/class/A.php:565
+#: templates/Comments/post/class/A.php:643
+msgid "say"
+msgstr "сказал(а)"
+
+#: templates/BuddyPress/Activities/class/A.php:247
+#: templates/BuddyPress/Activities/class/A.php:314
+msgid "do"
+msgstr "сделал(а)"
+
+#: templates/BuddyPress/Activities/class/A.php:333
+#: templates/BuddyPress/Activities/class/A.php:786
+#: templates/Comments/post/class/A.php:268
+#: templates/Comments/post/class/A.php:594
+msgid "include"
+msgstr "включая"
+
+#: templates/BuddyPress/Activities/class/A.php:398
+msgid "activities"
+msgstr "активности "
+
+#: templates/BuddyPress/Activities/class/A.php:575
+msgid "Sorry, but you have not enough mana to add some post here."
+msgstr "Извините, но у вас не достаточно кармы, чтобы добавить пост."
+
+#: templates/BuddyPress/Activities/class/A.php:579
+msgid "Sorry, but you have not enough mana to add comments here."
+msgstr "Извините, но у вас не достаточно кармы, чтобы добавить комментарий. "
+
+#: templates/BuddyPress/Activities/class/A.php:583
+msgid "Sorry, but you have not enough mana to remove activities."
+msgstr "Извините, но у вас не достаточно кармы, чтобы удалить активность. "
+
+#: templates/BuddyPress/Activities/class/A.php:587
+msgid "Sorry, but you have not enough mana to remove comments."
+msgstr "Извините, но у вас не достаточно кармы, чтобы удалить комментарий. "
+
+#: templates/BuddyPress/Activities/class/A.php:607
+#: templates/BuddyPress/Activities/class/A.php:615
+#: templates/BuddyPress/Activities/class/A.php:665
+#: templates/BuddyPress/Activities/class/A.php:673
+#: templates/Comments/post/class/A.php:484
+#: templates/Comments/post/class/A.php:492
+msgid "attachment"
+msgstr "приложение "
+
+#: templates/BuddyPress/Activities/class/A.php:624
+#: templates/BuddyPress/Activities/class/A.php:679
+#: templates/Comments/post/class/A.php:498
+msgid "hide"
+msgstr "скрыть "
+
+#: templates/BuddyPress/Activities/class/A.php:626
+#: templates/BuddyPress/Activities/class/A.php:685
+#: templates/Comments/post/class/A.php:504
+#: templates/Messenger/Mails/class/A.php:191
+msgid "send"
+msgstr "отправить "
+
+#: templates/BuddyPress/Activities/class/A.php:628
+#: templates/BuddyPress/Activities/class/A.php:634
+#: templates/BuddyPress/Activities/class/A.php:687
+#: templates/BuddyPress/Activities/class/A.php:693
+#: templates/Comments/post/class/A.php:506
+#: templates/Comments/post/class/A.php:512
+msgid "image"
+msgstr "изображение"
+
+#: templates/BuddyPress/Activities/class/A.php:681
+#: templates/Comments/post/class/A.php:500
+msgid "quote"
+msgstr "цитата "
+
+#: templates/BuddyPress/Activities/class/A.php:683
+#: templates/Comments/post/class/A.php:502
+msgid "meme"
+msgstr "мем"
+
+#: templates/BuddyPress/Activities/class/A.php:717
+#: templates/Comments/post/class/A.php:536
+msgid "Quote was saved"
+msgstr "Цитата была сохранена"
+
+#: templates/BuddyPress/Content/class/A.php:27
+#: templates/BuddyPress/Content/class/A.php:121
+#: templates/Posts/top/class/A.php:21 templates/Posts/top/class/A.php:99
+#: templates/Search/Content/class/A.php:14
+#: templates/Search/Content/class/A.php:94
+#: templates/Tag/Content/class/A.php:14 templates/Tag/Content/class/A.php:93
+msgid "All"
+msgstr "Все"
+
+#: templates/BuddyPress/Content/class/A.php:30
+#: templates/BuddyPress/Content/class/A.php:140
+#: templates/Posts/top/class/A.php:24 templates/Posts/top/class/A.php:118
+#: templates/Search/Content/class/A.php:17
+#: templates/Search/Content/class/A.php:113
+#: templates/Tag/Content/class/A.php:17 templates/Tag/Content/class/A.php:112
+msgid "Galleries"
+msgstr "Галереи "
+
+#: templates/BuddyPress/Content/class/A.php:33
+#: templates/BuddyPress/Content/class/A.php:159
+#: templates/Posts/top/class/A.php:27 templates/Posts/top/class/A.php:137
+#: templates/Search/Content/class/A.php:20
+#: templates/Search/Content/class/A.php:132
+#: templates/Tag/Content/class/A.php:20 templates/Tag/Content/class/A.php:131
+msgid "Media"
+msgstr "Медиа "
+
+#: templates/BuddyPress/Content/class/A.php:36
+#: templates/BuddyPress/Content/class/A.php:178
+#: templates/Posts/top/class/A.php:30 templates/Posts/top/class/A.php:156
+#: templates/Search/Content/class/A.php:23
+#: templates/Search/Content/class/A.php:151
+#: templates/Tag/Content/class/A.php:23 templates/Tag/Content/class/A.php:150
+msgid "Audio"
+msgstr "Аудио"
+
+#: templates/BuddyPress/Content/class/A.php:41
+msgid "Drafts"
+msgstr "Черновики "
+
+#: templates/BuddyPress/Content/class/A.php:203
+msgid "Drafts (not published)"
+msgstr "Черновики (не опубликованное)"
+
+#: templates/BuddyPress/CreateGroup/class/A.php:21
+#: templates/BuddyPress/CreateGroup/class/A.php:31
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:235
+msgid "Description"
+msgstr "Описание"
+
+#: templates/BuddyPress/CreateGroup/class/A.php:22
+#: templates/BuddyPress/Headers/class/A.php:133
+#: templates/BuddyPress/Headers/class/AGroup.php:201
+#: templates/BuddyPress/Home/class/A.php:29
+#: templates/BuddyPress/Home/class/A.php:199
+msgid "Settings"
+msgstr "Настройки"
+
+#: templates/BuddyPress/CreateGroup/class/A.php:24
+#: templates/Presentation/class/A.php:34
+msgid "next"
+msgstr "следующий "
+
+#: templates/BuddyPress/CreateGroup/class/A.php:25
+#: templates/Presentation/class/A.php:32
+msgid "previous"
+msgstr "предыдущий "
+
+#: templates/BuddyPress/CreateGroup/class/A.php:26
+#: templates/Messenger/Mails/class/A.php:217
+msgid "create"
+msgstr "создать"
+
+#: templates/BuddyPress/CreateGroup/class/A.php:27
+#: templates/BuddyPress/GroupAdmin/Invitations/class/A.php:121
+#: templates/BuddyPress/GroupAdmin/Manage/class/A.php:164
+#: templates/BuddyPress/GroupAdmin/Requests/class/A.php:104
+#: templates/BuddyPress/QuotesManage/class/A.php:112
+#: templates/Mana/summary/class/A.php:135
+#: templates/Messenger/Mails/class/A.php:189
+#: templates/Messenger/Users/class/A.php:60
+#: templates/Posts/elements/questions/additions/class/A.php:119
+#: templates/Posts/elements/questions/additions/class/A.php:154
+#: templates/Posts/elements/questions/relatedPosts/class/A.php:211
+#: templates/Posts/elements/questions/relatedQuestions/class/A.php:219
+msgid "cancel"
+msgstr "отменить"
+
+#: templates/BuddyPress/CreateGroup/class/A.php:29
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:233
+msgid "Name"
+msgstr "Имя"
+
+#: templates/BuddyPress/CreateGroup/class/A.php:30
+msgid "Define here name of your group. Not more than 255 symbols."
+msgstr "Укажите название группы. Не больше 255 символов. "
+
+#: templates/BuddyPress/CreateGroup/class/A.php:32
+msgid ""
+"Here you should add some short description of your group. Not more than 500 "
+"symbols."
+msgstr "Укажите короткое описание группы. Не больше 500 символов. "
+
+#: templates/BuddyPress/CreateGroup/class/A.php:34
+msgid "Type of group"
+msgstr "Тип группы"
+
+#: templates/BuddyPress/CreateGroup/class/A.php:35
+msgid "Choose which type of group you want to create"
+msgstr "Выберите тип группы"
+
+#: templates/BuddyPress/CreateGroup/class/A.php:36
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:208
+#: templates/Groups/class/F.php:333
+msgid "This is a public group"
+msgstr "Публичная группа"
+
+#: templates/BuddyPress/CreateGroup/class/A.php:37
+msgid "Any site member can join this group"
+msgstr "Любой участник сайта может присоединиться к группе "
+
+#: templates/BuddyPress/CreateGroup/class/A.php:38
+#: templates/BuddyPress/CreateGroup/class/A.php:42
+msgid "This group will be listed in the groups directory and in search results"
+msgstr ""
+"Эта группа будет доступна в списках групп, а также будет доступна для поиска "
+"по сайту"
+
+#: templates/BuddyPress/CreateGroup/class/A.php:39
+msgid "Group content and activity will be visible to any site member"
+msgstr ""
+"Контент, привязанный к группе, а также активности группы будут доступны всем "
+"участникам сайта"
+
+#: templates/BuddyPress/CreateGroup/class/A.php:40
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:212
+#: templates/Groups/class/F.php:342
+msgid "This is a private group"
+msgstr "Приватная группа"
+
+#: templates/BuddyPress/CreateGroup/class/A.php:41
+msgid "Only users who request membership and are accepted can join the group"
+msgstr ""
+"Только те участники, которые отправили запрос на членство (который был "
+"удовлетворен) могут присоединиться к группе"
+
+#: templates/BuddyPress/CreateGroup/class/A.php:43
+#: templates/BuddyPress/CreateGroup/class/A.php:47
+msgid "Group content and activity will only be visible to members of the group"
+msgstr ""
+"Контент, привязанный к группе, а также активности группы будут доступны "
+"только членам группы."
+
+#: templates/BuddyPress/CreateGroup/class/A.php:44
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:216
+#: templates/Groups/class/F.php:351
+msgid "This is a hidden group"
+msgstr "Скрытая группа"
+
+#: templates/BuddyPress/CreateGroup/class/A.php:45
+msgid "Only users who are invited can join the group"
+msgstr "Только приглашенные участники могут вступить в группу."
+
+#: templates/BuddyPress/CreateGroup/class/A.php:46
+msgid "This group will not be listed in the groups directory or search results"
+msgstr ""
+"Весь контент группы доступен только для членов группы. Также группа "
+"исключена из поиска."
+
+#: templates/BuddyPress/CreateGroup/class/A.php:48
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:220
+#: templates/Groups/class/F.php:358
+msgid "Group Invitations"
+msgstr "Приглашения "
+
+#: templates/BuddyPress/CreateGroup/class/A.php:49
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:221
+#: templates/Groups/class/F.php:359
+msgid "Which members of this group are allowed to invite others?"
+msgstr "Какие участники могут приглашать других участников "
+
+#: templates/BuddyPress/CreateGroup/class/A.php:50
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:222
+#: templates/Groups/class/F.php:363
+msgid "All group members"
+msgstr "Все члены группы"
+
+#: templates/BuddyPress/CreateGroup/class/A.php:51
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:223
+#: templates/Groups/class/F.php:367
+msgid "Group admins and mods only"
+msgstr "Только администраторы и модераторы "
+
+#: templates/BuddyPress/CreateGroup/class/A.php:52
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:224
+#: templates/Groups/class/F.php:371
+msgid "Group admins only"
+msgstr "Только администраторы "
+
+#: templates/BuddyPress/CreateGroup/class/A.php:53
+msgid "All group members can invite to group"
+msgstr "Все члены группы могут приглашать участников в группу"
+
+#: templates/BuddyPress/CreateGroup/class/A.php:54
+msgid "Group admins and mods only can invite to group"
+msgstr ""
+"Только администраторы и модераторы группы могут отправлять приглашения "
+
+#: templates/BuddyPress/CreateGroup/class/A.php:55
+msgid "Group admins only can invite to group"
+msgstr "Только администраторы группы могут отправлять приглашения "
+
+#: templates/BuddyPress/CreateGroup/class/A.php:57
+msgid "Perfect"
+msgstr "Отлично"
+
+#: templates/BuddyPress/CreateGroup/class/A.php:58
+msgid "Now, please, check summary information and create your new group."
+msgstr "Теперь проверьте корректность всех параметров и создайте группу."
+
+#: templates/BuddyPress/CreateGroup/class/A.php:59
+msgid ""
+"Incorrect name of group. Name of group should be not less 3 symbols and not "
+"more 255 symbols."
+msgstr ""
+"Неверное название группы. Название должно быть не короче 3-х символов и не "
+"длиннее 255."
+
+#: templates/BuddyPress/CreateGroup/class/A.php:60
+msgid ""
+"Incorrect description of group. Description of group should be not less 12 "
+"symbols and not more 500 symbols."
+msgstr ""
+"Неверное описание группы. Описание должно быть не короче 12-х символов и не "
+"длиннее 500."
+
+#: templates/BuddyPress/GroupAdmin/Invitations/class/A.php:73
+#: templates/BuddyPress/GroupAdmin/Invitations/class/A.php:120
+#: templates/BuddyPress/Headers/class/AGroup.php:165
+msgid "Invite"
+msgstr "Пригласить "
+
+#: templates/BuddyPress/GroupAdmin/Invitations/class/A.php:74
+msgid "Reject invitation"
+msgstr "Отозвать приглашение"
+
+#: templates/BuddyPress/GroupAdmin/Invitations/class/A.php:86
+msgid "Your friend"
+msgstr "Ваш друг"
+
+#: templates/BuddyPress/GroupAdmin/Invitations/class/A.php:87
+msgid "Invitation"
+msgstr "Приглашение "
+
+#: templates/BuddyPress/GroupAdmin/Invitations/class/A.php:116
+msgid "Invitations new members"
+msgstr "Приглашения новый участников "
+
+#: templates/BuddyPress/GroupAdmin/Invitations/class/A.php:117
+msgid "Select people, which should get your invitation"
+msgstr "Укажите участников, которые получать приглашение"
+
+#: templates/BuddyPress/GroupAdmin/Manage/class/A.php:76
+msgid "Moderator role"
+msgstr "Модератор"
+
+#: templates/BuddyPress/GroupAdmin/Manage/class/A.php:77
+msgid "Administrator role"
+msgstr "Администратор "
+
+#: templates/BuddyPress/GroupAdmin/Manage/class/A.php:86
+msgid "Remove member"
+msgstr "Исключить участника "
+
+#: templates/BuddyPress/GroupAdmin/Manage/class/A.php:104
+#: templates/BuddyPress/GroupAdmin/Manage/class/A.php:161
+msgid "Admonition"
+msgstr "Предупреждение "
+
+#: templates/BuddyPress/GroupAdmin/Manage/class/A.php:105
+msgid "Ban member"
+msgstr "Забанить "
+
+#: templates/BuddyPress/GroupAdmin/Manage/class/A.php:115
+msgid "Role"
+msgstr "Роль"
+
+#: templates/BuddyPress/GroupAdmin/Manage/class/A.php:127
+#: templates/BuddyPress/GroupAdmin/Requests/class/A.php:72
+msgid "Actions"
+msgstr "Действия "
+
+#: templates/BuddyPress/GroupAdmin/Manage/class/A.php:156
+msgid "Administration of group"
+msgstr "Управление группой "
+
+#: templates/BuddyPress/GroupAdmin/Manage/class/A.php:157
+msgid "Here you can manage members of this group"
+msgstr "Здесь вы можете управлять членами группы"
+
+#: templates/BuddyPress/GroupAdmin/Manage/class/A.php:162
+msgid "Please, write below the reason of admonition."
+msgstr "Укажите причину предупреждения "
+
+#: templates/BuddyPress/GroupAdmin/Manage/class/A.php:165
+msgid "back to list"
+msgstr "вернуться к списку"
+
+#: templates/BuddyPress/GroupAdmin/Manage/class/A.php:166
+msgid "apply admonition"
+msgstr "применить предупреждение "
+
+#: templates/BuddyPress/GroupAdmin/Requests/class/A.php:60
+msgid "waited "
+msgstr "ожидает"
+
+#: templates/BuddyPress/GroupAdmin/Requests/class/A.php:62
+msgid "Accept"
+msgstr "Принять"
+
+#: templates/BuddyPress/GroupAdmin/Requests/class/A.php:71
+msgid "Waiting users"
+msgstr "Ожидающие участники "
+
+#: templates/BuddyPress/GroupAdmin/Requests/class/A.php:100
+#: templates/Groups/class/F.php:402
+msgid "Requests for membership"
+msgstr "Запросы на членство"
+
+#: templates/BuddyPress/GroupAdmin/Requests/class/A.php:101
+msgid "You can accept of deny request for membership"
+msgstr "Вы можете принять или отклонить запрос на членство "
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:193
+#: templates/BuddyPress/PersonalSettings/class/A.php:157
+msgid "Avatar & view"
+msgstr "Иконка и внешний вид"
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:194
+#: templates/BuddyPress/PersonalSettings/class/A.php:158
+msgid "Privacy"
+msgstr "Приватность "
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:195
+msgid "Name & description"
+msgstr "Название и описание "
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:197
+msgid "Group avatar"
+msgstr "Иконка группы"
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:198
+msgid "Define here group avatar"
+msgstr "Укажите иконку группы "
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:199
+#: templates/BuddyPress/PersonalSettings/class/A.php:163
+msgid "Title image"
+msgstr "Заголовок изображения "
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:200
+msgid "This image will be shown on header of group page."
+msgstr "Это изображение будет помещено в заголовок страницы группы"
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:201
+#: templates/BuddyPress/PersonalSettings/class/A.php:165
+msgid "Background"
+msgstr "Фоновое изображение "
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:202
+msgid "Background image for group page"
+msgstr "Фоновое изображение страницы группы"
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:203
+#: templates/BuddyPress/PersonalSettings/class/A.php:167
+msgid "Color scheme"
+msgstr "Цветовая схема "
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:204
+#: templates/BuddyPress/PersonalSettings/class/A.php:168
+msgid "You can choose the most suitable color scheme"
+msgstr "Вы можете выбрать наиболее подходящую цветовую схему"
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:206
+msgid "Access to group"
+msgstr "Доступ к группе"
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:207
+msgid ""
+"Here you can define who can visit this group. Please pay your attention, "
+"this setting manages access not only to group page. Also if group has some "
+"post, such post will be hidden (for hidden group)."
+msgstr ""
+"Здесь вы можете определить, кто может посещать страницу группы. Обратите "
+"внимание на тот факт, что данные настройки будут актуальны и для всего "
+"ассоциированного с группой контента. Иными словами, например, пост, "
+"привязанный к группе, будет скрыт от не членов группы, если группа скрыта. "
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:209
+#: templates/Groups/class/F.php:335
+msgid "Any site member can join this group."
+msgstr "Любой участник сайта может присоединиться к группе."
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:210
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:214
+#: templates/Groups/class/F.php:336 templates/Groups/class/F.php:345
+msgid ""
+"This group will be listed in the groups directory and in search results."
+msgstr ""
+"Эта группа будет доступна в списках групп, а также будет доступна для поиска "
+"по сайту"
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:211
+#: templates/Groups/class/F.php:337
+msgid "Group content and activity will be visible to any site member."
+msgstr ""
+"Страница группы и ассоциированный с группой контент будет доступен всем "
+"участникам сайта."
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:213
+#: templates/Groups/class/F.php:344
+msgid "Only users who request membership and are accepted can join the group."
+msgstr ""
+"Только те участники, которые отправили запрос на членство (который был "
+"удовлетворен) могут присоединиться к группе."
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:215
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:219
+#: templates/Groups/class/F.php:346 templates/Groups/class/F.php:355
+msgid ""
+"Group content and activity will only be visible to members of the group."
+msgstr ""
+"Контент, привязанный к группе, а также активности группы будут доступны "
+"только членам группы."
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:217
+#: templates/Groups/class/F.php:353
+msgid "Only users who are invited can join the group."
+msgstr "Только приглашенные участники могут вступить в группу."
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:218
+#: templates/Groups/class/F.php:354
+msgid ""
+"This group will not be listed in the groups directory or search results."
+msgstr ""
+"Весь контент группы доступен только для членов группы. Также группа "
+"исключена из поиска."
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:234
+msgid "Name of group. Not more 255 symbols; not less - 3 symbols."
+msgstr "Название группы. Не больше 255 символов. "
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:236
+msgid ""
+"Some short description of group. Not more 500 symbols; not less - 12 symbols."
+msgstr "Описание группы. Не больше 500 символов и не меньше 12. "
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:240
+#: templates/BuddyPress/PersonalSettings/class/A.php:189
+msgid "Save image"
+msgstr "Сохранить изображение"
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:241
+#: templates/BuddyPress/PersonalSettings/class/A.php:190
+msgid "Load image"
+msgstr "Загрузить изображение "
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:243
+#: templates/BuddyPress/PersonalSettings/class/A.php:192
+msgid "Select image"
+msgstr "Выбрать изображение"
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:244
+#: templates/BuddyPress/PersonalSettings/class/A.php:193
+msgid "Save"
+msgstr "Сохранить"
+
+#: templates/BuddyPress/GroupAdmin/Settings/class/A.php:245
+#: templates/BuddyPress/PersonalSettings/class/A.php:194
+#: templates/Elements/termsSelector/class/A.php:80
+#: templates/Messenger/Manager/class/A.php:76
+#: templates/Posts/elements/gallery/class/A.php:71
+#: templates/Posts/elements/image/class/A.php:32
+msgid "close"
+msgstr "закрыть"
+
+#: templates/BuddyPress/Headers/class/A.php:131
+#: templates/BuddyPress/Home/class/A.php:54
+#: templates/BuddyPress/Home/class/A.php:268
+msgid "Manage quotes"
+msgstr "Управление цитатами"
+
+#: templates/BuddyPress/Headers/class/A.php:132
+#: templates/BuddyPress/Home/class/A.php:51
+#: templates/BuddyPress/Home/class/A.php:253
+msgid "Create group"
+msgstr "Создать группу"
+
+#: templates/BuddyPress/Headers/class/A.php:152
+msgid "Add / remove to stream"
+msgstr "Добавить / удалить в поток"
+
+#: templates/BuddyPress/Headers/class/A.php:153
+msgid "Send message"
+msgstr "Отправить сообщение"
+
+#: templates/BuddyPress/Headers/class/A.php:158
+msgid "Add to your stream"
+msgstr "Добавить в ваш поток"
+
+#: templates/BuddyPress/Headers/class/A.php:159
+msgid "Remove from your stream"
+msgstr "Удалить из вашего потока"
+
+#: templates/BuddyPress/Headers/class/A.php:185
+#: templates/BuddyPress/Home/class/A.php:21
+#: templates/BuddyPress/Home/class/A.php:175
+msgid "Life"
+msgstr "Активность"
+
+#: templates/BuddyPress/Headers/class/A.php:189
+msgid "Stream"
+msgstr "Поток"
+
+#: templates/BuddyPress/Headers/class/A.php:197
+msgid "Request friendship"
+msgstr "Запрос на дружбу"
+
+#: templates/BuddyPress/Headers/class/A.php:198
+msgid "Remove from friends"
+msgstr "Удалить из друзей "
+
+#: templates/BuddyPress/Headers/class/A.php:200
+msgid "Accept request"
+msgstr "Принять запрос"
+
+#: templates/BuddyPress/Headers/class/AGroup.php:150
+msgid "Join"
+msgstr "Присоединиться "
+
+#: templates/BuddyPress/Headers/class/AGroup.php:153
+msgid "Join to group"
+msgstr "Присоединиться к группе"
+
+#: templates/BuddyPress/Headers/class/AGroup.php:154
+msgid "Leave group"
+msgstr "Покинуть группу"
+
+#: templates/BuddyPress/Headers/class/AGroup.php:155
+msgid "You are banned"
+msgstr "Вы забанены"
+
+#: templates/BuddyPress/Headers/class/AGroup.php:156
+msgid "Reject request"
+msgstr "Отозвать запрос"
+
+#: templates/BuddyPress/Headers/class/AGroup.php:157
+msgid "Accept / deny invitation"
+msgstr "Принять / отклонить приглашение "
+
+#: templates/BuddyPress/Headers/class/AGroup.php:177
+msgid "Requests"
+msgstr "Запросы"
+
+#: templates/BuddyPress/Headers/class/AGroup.php:189
+msgid "Manage"
+msgstr "Управление"
+
+#: templates/BuddyPress/Headers/class/AGroup.php:242
+msgid "Group was created"
+msgstr "Группа была создана "
+
+#: templates/BuddyPress/Headers/class/AGroup.php:242
+msgid "ago"
+msgstr "назад "
+
+#: templates/BuddyPress/Headers/class/AGroup.php:261
+msgid "Group"
+msgstr "Группа "
+
+#: templates/BuddyPress/HeadersBackgrounds/class/A.php:74
+msgid ""
+"You can upload image to make as background of the title of your personal "
+"page. You can upload next formats: .jpg, .jpeg, .bmp, .png and .gif. Or you "
+"can choose image from you collection."
+msgstr ""
+"Вы можете загрузить изображение (.jpg, .jpeg, .bmp, .png или.gif), чтобы "
+"сделать его фоном для заголовка вашей станицы. Или вы можете выбрать "
+"изображение из вашей галереи."
+
+#: templates/BuddyPress/HeadersBackgrounds/class/B.php:106
+msgid ""
+"As background you will see slide show with yours images (from your "
+"galleries). To activate slide show you should have at least 8 images in you "
+"library. Here you can defined how much images should be in slide show."
+msgstr ""
+"В качестве фоновой картинки для вашей страницы будет использовано слайд-шоу "
+"из изображений из вашей коллекции. Чтобы слайд-шоу выглядело достойно, у вас "
+"должно быть как минимум 8 изображений в коллекции. "
+
+#: templates/BuddyPress/PersonalSettings/class/A.php:159
+msgid "Email & password"
+msgstr "Почта и пароль"
+
+#: templates/BuddyPress/PersonalSettings/class/A.php:161
+msgid "Your avatar"
+msgstr "Ваша иконка"
+
+#: templates/BuddyPress/PersonalSettings/class/A.php:162
+msgid "Define here your avatar"
+msgstr "Укажите свою иконку"
+
+#: templates/BuddyPress/PersonalSettings/class/A.php:164
+msgid "This image will be shown on header of your personal page."
+msgstr "Это изображение будет отображаться в заголовке вашей страницы"
+
+#: templates/BuddyPress/PersonalSettings/class/A.php:166
+msgid "Background image for your personal page"
+msgstr "Фоновое изображение для вашей страницы "
+
+#: templates/BuddyPress/PersonalSettings/class/A.php:170
+msgid "Access to your personal page"
+msgstr "Доступ к вашей странице "
+
+#: templates/BuddyPress/PersonalSettings/class/A.php:171
+msgid ""
+"Here you can define who can see your page. Please pay your attention, this "
+"setting manages access only to your personal page. Access to your posts can "
+"be configured in post editor."
+msgstr ""
+"Здесь вы можете определить тех, кому будет доступна ваша страница. Обратите "
+"внимание, эти настройки актуальны только для вашей персональной страницы. "
+"Настройки видимости постов (событий, отчетов и т.д.) определяются при "
+"создании (или редактировании) поста."
+
+#: templates/BuddyPress/PersonalSettings/class/A.php:172
+msgid "Everybody can see my page"
+msgstr "Все могут видеть мою страницу "
+
+#: templates/BuddyPress/PersonalSettings/class/A.php:173
+msgid "Only registered members can see my page"
+msgstr "Только участники сайта могут видеть мою страницу"
+
+#: templates/BuddyPress/PersonalSettings/class/A.php:174
+msgid "Only my friends can see my page"
+msgstr "Только мои друзья могут видеть мою страницу "
+
+#: templates/BuddyPress/PersonalSettings/class/A.php:180
+msgid "Email for access to your account."
+msgstr "Почта для доступа к вашей учетной записи"
+
+#: templates/BuddyPress/PersonalSettings/class/A.php:181
+msgid "Update email"
+msgstr "Обновить почту"
+
+#: templates/BuddyPress/PersonalSettings/class/A.php:183
+msgid "You can change here you password."
+msgstr "Здесь вы можете изменить свой пароль"
+
+#: templates/BuddyPress/PersonalSettings/class/A.php:184
+msgid "Update password"
+msgstr "Обновить пароль"
+
+#: templates/BuddyPress/PersonalSettings/class/A.php:185
+msgid "new password"
+msgstr "новый пароль"
+
+#: templates/BuddyPress/PersonalSettings/class/A.php:186
+msgid "new password again"
+msgstr "новый пароль повторно "
+
+#: templates/BuddyPress/Profile/class/A.php:134
+#: templates/BuddyPress/Profile/class/A.php:244
+msgid "Basic information"
+msgstr "Основная информация "
+
+#: templates/BuddyPress/Profile/class/A.php:135
+msgid "Visibility"
+msgstr "Видимость "
+
+#: templates/BuddyPress/Profile/class/A.php:138
+#: templates/BuddyPress/Profile/class/A.php:179
+msgid "Apply to all in group"
+msgstr "Применить ко всем в группе"
+
+#: templates/BuddyPress/Profile/class/A.php:142
+#: templates/BuddyPress/Profile/class/A.php:162
+#: templates/BuddyPress/Profile/class/A.php:183
+#: templates/BuddyPress/Profile/class/A.php:210
+msgid "Anybody"
+msgstr "Все"
+
+#: templates/BuddyPress/Profile/class/A.php:143
+#: templates/BuddyPress/Profile/class/A.php:163
+#: templates/BuddyPress/Profile/class/A.php:184
+#: templates/BuddyPress/Profile/class/A.php:211
+msgid "Registered users"
+msgstr "Участники сайта"
+
+#: templates/BuddyPress/Profile/class/A.php:145
+#: templates/BuddyPress/Profile/class/A.php:165
+#: templates/BuddyPress/Profile/class/A.php:186
+#: templates/BuddyPress/Profile/class/A.php:213
+msgid "Hidden"
+msgstr "Скрытый "
+
+#: templates/BuddyPress/Profile/class/A.php:152
+#: templates/BuddyPress/Profile/class/A.php:198
+msgid "This field cannot be changed."
+msgstr "Это поле не может быть изменено "
+
+#: templates/BuddyPress/Profile/class/A.php:154
+#: templates/BuddyPress/Profile/class/A.php:200
+msgid "Visibility of field cannot be changed."
+msgstr "Видимость этого поля не может быть изменена "
+
+#: templates/BuddyPress/Profile/class/A.php:227
+msgid "Update"
+msgstr "Обновить"
+
+#: templates/BuddyPress/QuotesManage/class/A.php:19
+#: templates/BuddyPress/QuotesManage/class/A.php:99
+#: templates/BuddyPress/QuotesManage/class/A.php:174
+msgid "activate"
+msgstr "активировать "
+
+#: templates/BuddyPress/QuotesManage/class/A.php:20
+#: templates/BuddyPress/QuotesManage/class/A.php:100
+#: templates/BuddyPress/QuotesManage/class/A.php:175
+msgid "deactivate"
+msgstr "деактивировать "
+
+#: templates/BuddyPress/QuotesManage/class/A.php:46
+#: templates/BuddyPress/QuotesManage/class/A.php:188
+msgid "You did not create any quote, yet. Just add new one."
+msgstr ""
+"Вы не создали ни одной цитаты. Создайте свою первую цитату прямо сейчас. "
+
+#: templates/BuddyPress/QuotesManage/class/A.php:57
+msgid "Do not show quotes on my page"
+msgstr "Не показывать цитаты на моей странице. "
+
+#: templates/BuddyPress/QuotesManage/class/A.php:93
+msgid "Your quotes"
+msgstr "Ваши цитаты"
+
+#: templates/BuddyPress/QuotesManage/class/A.php:94
+msgid "Add new"
+msgstr "Добавить новую"
+
+#: templates/BuddyPress/QuotesManage/class/A.php:95
+msgid "View settings"
+msgstr "Настройки отображения"
+
+#: templates/BuddyPress/QuotesManage/class/A.php:102
+msgid "New quote"
+msgstr "Новая цитата"
+
+#: templates/BuddyPress/QuotesManage/class/A.php:103
+msgid ""
+"Enter below your new quote. It can be text with length not less 10 symbols "
+"and not more than 500 symbols."
+msgstr ""
+"Ниже введите новую цитату. Это должен быть текст не короче 10 символов и не "
+"длиннее 500."
+
+#: templates/BuddyPress/QuotesManage/class/A.php:105
+msgid "Template"
+msgstr "Шаблон"
+
+#: templates/BuddyPress/QuotesManage/class/A.php:106
+msgid "Choose template for render quotes on your personal page."
+msgstr "Выберите шаблон для отображения цитат на вашей странице."
+
+#: templates/BuddyPress/QuotesManage/class/A.php:109
+msgid "add new"
+msgstr "добавить новую"
+
+#: templates/BuddyPress/QuotesManage/class/A.php:110
+#: templates/Posts/elements/questions/additions/class/A.php:118
+#: templates/Posts/elements/questions/additions/class/A.php:153
+msgid "save"
+msgstr "сохранить"
+
+#: templates/BuddyPress/QuotesManage/class/A.php:111
+msgid "activate / deactivate"
+msgstr "активировать / деактивировать "
+
+#: templates/BuddyPress/QuotesRender/class/A.php:30
+msgid "Attach to my page"
+msgstr "Присоединить к моей странице "
+
+#: templates/BuddyPress/QuotesRender/class/A.php:31
+msgid "Remove from my page"
+msgstr "Удалить с моей страницы "
+
+#: templates/BuddyPress/QuotesRender/class/A.php:134
+msgid "Next"
+msgstr "Следующий"
+
+#: templates/BuddyPress/QuotesRender/class/C.php:31
+msgid "with us"
+msgstr "с нами"
+
+#: templates/Comments/post/class/A.php:136
+#: templates/Pages/EventEditor/class/A.php:626
+#: templates/Pages/PostEditor/class/A.php:392
+#: templates/Pages/QuestionEditor/class/A.php:365
+#: templates/Pages/ReportEditor/class/A.php:517
+msgid "Comments"
+msgstr "Комментарии"
+
+#: templates/Comments/post/class/A.php:162
+msgid "write your comment"
+msgstr "напишите свой комментарий"
+
+#: templates/Comments/post/class/A.php:166
+msgid "Your comment"
+msgstr "Ваш комментарий"
+
+#: templates/Comments/post/class/A.php:445
+msgid "To leave some comments you should login or register."
+msgstr "Чтобы оставить свой комментарий вы должны зарегистрироваться на сайте."
+
+#: templates/Comments/post/class/A.php:450
+msgid "Sorry, but you have not enough mana to leave comments."
+msgstr ""
+"Извините, но у вас недостаточно кармы для того, чтобы вы могли оставлять "
+"комментарий. "
+
+#: templates/Comments/post/class/A.php:459
+msgid ""
+"Comments for this post are denied. But you are an author (or administrator) "
+"and you can see it, but cannot add new."
+msgstr ""
+"Комментарии к данному посту запрещены. Но вы либо автор, либо администратор, "
+"поэтому может их видеть. "
+
+#: templates/Comments/post/class/A.php:463
+#: templates/Comments/post/class/A.php:467
+msgid "Comments for this post are denied."
+msgstr "Комментарии к данному посту запрещены."
+
+#: templates/Elements/categories/class/A.php:13
+#: templates/Elements/categories/class/B.php:13
+#: templates/Elements/categories/class/C.php:13
+#: templates/Elements/categories/class/D.php:13
+msgid "no found"
+msgstr "не найден"
+
+#: templates/Elements/fileloader/class/A.php:117
+#: templates/Elements/fileloader/class/A.php:181
+msgid "download"
+msgstr "скачать"
+
+#: templates/Elements/fileloader/class/A.php:142
+#: templates/Elements/fileloader/class/A.php:192
+msgid "Attachments"
+msgstr "Приложения"
+
+#: templates/Elements/search/class/A.php:29
+#: templates/Layout/BuddyPress/Friends/class/A.php:138
+#: templates/Layout/BuddyPress/Groups/class/A.php:157
+#: templates/Layout/Special/GroupContent/class/A.php:116
+#: templates/Layout/Special/Stream/class/A.php:90
+#: templates/Layout/WordPress/Author/class/A.php:85
+#: templates/Layout/WordPress/Category/class/A.php:81
+#: templates/Layout/WordPress/SearchResults/class/A.php:81
+#: templates/Layout/WordPress/Tag/class/A.php:81
+#: templates/LoaderProgress/class/A.php:60
+msgid "Events"
+msgstr "События"
+
+#: templates/Elements/search/class/A.php:35
+#: templates/Layout/BuddyPress/Friends/class/A.php:145
+#: templates/Layout/BuddyPress/Groups/class/A.php:164
+#: templates/Layout/Special/GroupContent/class/A.php:123
+#: templates/Layout/Special/Stream/class/A.php:97
+#: templates/Layout/WordPress/Author/class/A.php:92
+#: templates/Layout/WordPress/Category/class/A.php:88
+#: templates/Layout/WordPress/SearchResults/class/A.php:88
+#: templates/Layout/WordPress/Tag/class/A.php:88
+msgid "Reports"
+msgstr "Отчеты"
+
+#: templates/Elements/search/class/A.php:41
+#: templates/Layout/BuddyPress/Friends/class/A.php:152
+#: templates/Layout/BuddyPress/Groups/class/A.php:171
+#: templates/Layout/Special/GroupContent/class/A.php:130
+#: templates/Layout/Special/Stream/class/A.php:104
+#: templates/Layout/WordPress/Author/class/A.php:99
+#: templates/Layout/WordPress/Category/class/A.php:95
+#: templates/Layout/WordPress/SearchResults/class/A.php:95
+#: templates/Layout/WordPress/Tag/class/A.php:95
+msgid "Q&A"
+msgstr "Вопрос-Ответ"
+
+#: templates/Elements/search/class/B.php:43
+msgid "write here what are you looking for"
+msgstr "напишите, что вы ищите"
+
+#: templates/Elements/search/class/B.php:44
+msgid "or choose what you what to see"
+msgstr "или укажите критерии поиска"
+
+#: templates/Elements/search/class/B.php:45
+msgid "show posts"
+msgstr "показать"
+
+#: templates/Elements/search/class/B.php:48
+msgid "select categories"
+msgstr "выберите категорию"
+
+#: templates/Elements/search/class/B.php:56
+msgid "select tags"
+msgstr "выберите теги"
+
+#: templates/Elements/termsSelector/class/A.php:79
+#: templates/Posts/elements/termsEditor/class/A.php:95
+msgid "new term"
+msgstr "новое "
+
+#: templates/Groups/class/F.php:134
+msgid "You should make decision: accept user' request or not."
+msgstr "Вам следует принять решение: принять или отклонить запрос участника."
+
+#: templates/Groups/class/F.php:170
+msgid "No requests for membership"
+msgstr "Нет запросов на членство"
+
+#: templates/Groups/class/F.php:287
+msgid "Group Name (required)"
+msgstr "Название группы (обязательно)"
+
+#: templates/Groups/class/F.php:289
+msgid "Group Description (required)"
+msgstr "Описание группы (обязательно)"
+
+#: templates/Groups/class/F.php:292
+msgid "Notify group members of these changes via email"
+msgstr "Оповестить членов группы об изменениях по почте."
+
+#: templates/Groups/class/F.php:293
+msgid "Choose avatar"
+msgstr "Выбрать иконку"
+
+#: templates/Groups/class/F.php:294
+msgid ""
+"Upload an image to use as an avatar for this group. The image will be shown "
+"on the main group page, and in search results."
+msgstr "Загрузить иконку группы. "
+
+#: templates/Groups/class/F.php:390
+msgid "Manage members of group"
+msgstr "Управление членами группы"
+
+#: templates/Groups/class/F.php:391
+msgid ""
+"Here you can manage members of group. You can define administrators and "
+"moderators. You can ban some member or remove ban. Also you can remove "
+"member from group, but be careful with such operation."
+msgstr ""
+"Здесь вы можете управлять членами группы. Назначать администраторов, "
+"модераторов. Исключать из группы ее участников. "
+
+#: templates/Groups/class/F.php:413
+msgid "Invitations to group"
+msgstr "Приглашения в группу"
+
+#: templates/Groups/class/F.php:414
+msgid ""
+"Select users from your friends list, which should get invitation and press "
+"\"Send intitation\""
+msgstr ""
+"Выберите участников из списка ваших друзей, которые должны получить "
+"приглашения и нажмите \"Отправить приглашение\"."
+
+#: templates/HeaderMenu/class/C.php:126
+msgid "Account"
+msgstr "Учетная запись"
+
+#: templates/HeaderMenu/class/C.php:128
+msgid "Restore password"
+msgstr "Восстановить пароль"
+
+#: templates/HighLights/class/A.php:19 templates/HighLights/class/B.php:19
+#: templates/HighLights/class/C.php:19 templates/HighLights/class/D.php:19
+#: templates/HighLights/class/E.php:19 templates/HighLights/class/F.php:19
+#: templates/Popups/class/A.php:19 templates/Presentation/class/A.php:33
+msgid "read"
+msgstr "читать"
+
+#: templates/Layout/BuddyPress/AllGroups/class/A.php:32
+msgid "No groups on site yet."
+msgstr "Пока на сайте не создано ни одной группы"
+
+#: templates/Layout/BuddyPress/AllGroups/class/A.php:37
+msgid "All groups on site"
+msgstr "Все группы на сайте"
+
+#: templates/Layout/BuddyPress/AllMembers/class/A.php:28
+msgid "No members on site yet."
+msgstr "Пока на сайте нет ни одного участника. "
+
+#: templates/Layout/BuddyPress/AllMembers/class/A.php:33
+msgid "All members on site"
+msgstr "Все участники сайта"
+
+#: templates/Layout/BuddyPress/Friends/class/A.php:27
+#: templates/Layout/BuddyPress/Groups/class/A.php:27
+#: templates/Layout/BuddyPress/Member/class/A.php:25
+msgid "has not any friend here yet."
+msgstr "пока не имеет ни одного друга"
+
+#: templates/Layout/BuddyPress/Friends/class/A.php:63
+#: templates/Layout/BuddyPress/Groups/class/A.php:57
+#: templates/Layout/BuddyPress/Groups/class/A.php:82
+#: templates/Layout/BuddyPress/Member/class/A.php:46
+msgid "are not a member of any group yet."
+msgstr "не является членом ни одной группы"
+
+#: templates/Layout/BuddyPress/Friends/class/A.php:71
+#: templates/Layout/BuddyPress/Groups/class/A.php:90
+#: templates/Layout/Special/GroupContent/class/A.php:15
+#: templates/Layout/Special/Stream/class/A.php:15
+#: templates/Layout/WordPress/Author/class/A.php:15
+#: templates/Layout/WordPress/Category/class/A.php:15
+#: templates/Layout/WordPress/SearchResults/class/A.php:15
+#: templates/Layout/WordPress/Tag/class/A.php:15
+msgid "No posts found"
+msgstr "Постов не найдено "
+
+#: templates/Layout/BuddyPress/Friends/class/A.php:75
+#: templates/Layout/BuddyPress/Groups/class/A.php:94
+#: templates/Layout/Special/GroupContent/class/A.php:19
+#: templates/Layout/Special/Stream/class/A.php:19
+#: templates/Layout/WordPress/Author/class/A.php:19
+#: templates/Layout/WordPress/Category/class/A.php:19
+#: templates/Layout/WordPress/SearchResults/class/A.php:19
+#: templates/Layout/WordPress/Tag/class/A.php:19
+msgid "No events found"
+msgstr "Событий не найдено "
+
+#: templates/Layout/BuddyPress/Friends/class/A.php:79
+#: templates/Layout/BuddyPress/Groups/class/A.php:98
+#: templates/Layout/Special/GroupContent/class/A.php:23
+#: templates/Layout/Special/Stream/class/A.php:23
+#: templates/Layout/WordPress/Author/class/A.php:23
+#: templates/Layout/WordPress/Category/class/A.php:23
+#: templates/Layout/WordPress/SearchResults/class/A.php:23
+#: templates/Layout/WordPress/Tag/class/A.php:23
+msgid "No reports found"
+msgstr "Отчетнов не найдено "
+
+#: templates/Layout/BuddyPress/Friends/class/A.php:83
+#: templates/Layout/BuddyPress/Groups/class/A.php:102
+#: templates/Layout/Special/GroupContent/class/A.php:27
+#: templates/Layout/Special/Stream/class/A.php:27
+#: templates/Layout/WordPress/Author/class/A.php:27
+#: templates/Layout/WordPress/Category/class/A.php:27
+#: templates/Layout/WordPress/SearchResults/class/A.php:27
+#: templates/Layout/WordPress/Tag/class/A.php:27
+msgid "No questions found"
+msgstr "Вопросов не найдено "
+
+#: templates/Layout/BuddyPress/Friends/class/A.php:132
+#: templates/Layout/BuddyPress/Friends/class/A.php:139
+#: templates/Layout/BuddyPress/Friends/class/A.php:146
+#: templates/Layout/BuddyPress/Friends/class/A.php:153
+#: templates/Layout/BuddyPress/Groups/class/A.php:151
+#: templates/Layout/BuddyPress/Groups/class/A.php:158
+#: templates/Layout/BuddyPress/Groups/class/A.php:165
+#: templates/Layout/BuddyPress/Groups/class/A.php:172
+#: templates/Layout/Special/GroupContent/class/A.php:110
+#: templates/Layout/Special/GroupContent/class/A.php:117
+#: templates/Layout/Special/GroupContent/class/A.php:124
+#: templates/Layout/Special/GroupContent/class/A.php:131
+#: templates/Layout/Special/Search/class/A.php:12
+#: templates/Layout/Special/Search/class/A.php:18
+#: templates/Layout/Special/Search/class/A.php:24
+#: templates/Layout/Special/Search/class/A.php:30
+#: templates/Layout/Special/Stream/class/A.php:84
+#: templates/Layout/Special/Stream/class/A.php:91
+#: templates/Layout/Special/Stream/class/A.php:98
+#: templates/Layout/Special/Stream/class/A.php:105
+#: templates/Layout/Special/Top/Posts/class/A.php:73
+#: templates/Layout/Special/Top/Posts/class/A.php:80
+#: templates/Layout/Special/Top/Posts/class/A.php:87
+#: templates/Layout/Special/Top/Posts/class/A.php:94
+#: templates/Layout/WordPress/Author/class/A.php:79
+#: templates/Layout/WordPress/Author/class/A.php:86
+#: templates/Layout/WordPress/Author/class/A.php:93
+#: templates/Layout/WordPress/Author/class/A.php:100
+#: templates/Layout/WordPress/Category/class/A.php:75
+#: templates/Layout/WordPress/Category/class/A.php:82
+#: templates/Layout/WordPress/Category/class/A.php:89
+#: templates/Layout/WordPress/Category/class/A.php:96
+#: templates/Layout/WordPress/SearchResults/class/A.php:75
+#: templates/Layout/WordPress/SearchResults/class/A.php:82
+#: templates/Layout/WordPress/SearchResults/class/A.php:89
+#: templates/Layout/WordPress/SearchResults/class/A.php:96
+#: templates/Layout/WordPress/Tag/class/A.php:75
+#: templates/Layout/WordPress/Tag/class/A.php:82
+#: templates/Layout/WordPress/Tag/class/A.php:89
+#: templates/Layout/WordPress/Tag/class/A.php:96
+msgid "show"
+msgstr "показать"
+
+#: templates/Layout/BuddyPress/Friends/class/A.php:162
+msgid "FRIENDS WRITES"
+msgstr "ДРУЗЬЯ ПИШУТ"
+
+#: templates/Layout/BuddyPress/Friends/class/A.php:218
+#: templates/Layout/BuddyPress/Groups/class/A.php:247
+#: templates/Posts/sidebars/MemberFriends/class/A.php:100
+msgid "Friends groups"
+msgstr "Группы друзей"
+
+#: templates/Layout/BuddyPress/Group/class/A.php:52
+msgid "Moderators"
+msgstr "Модераторы"
+
+#: templates/Layout/BuddyPress/Groups/class/A.php:181
+msgid "IN GROUPS OF "
+msgstr "В ГРУППАХ"
+
+#: templates/Layout/BuddyPress/Groups/class/A.php:240
+msgid "are a member of"
+msgstr "член групп(ы)"
+
+#: templates/Layout/BuddyPress/Member/class/A.php:95
+msgid "Karma"
+msgstr "Карма"
+
+#: templates/Layout/Page/ByScheme/defaults/City/defaults.php:21
+msgid "Discover Ljubljana"
+msgstr "Изучаем Любляну"
+
+#: templates/Layout/Page/ByScheme/defaults/City/defaults.php:31
+#: templates/Layout/Page/ByScheme/defaults/Community/defaults.php:155
+msgid "Nearest events"
+msgstr "Ближайшие события"
+
+#: templates/Layout/Page/ByScheme/defaults/City/defaults.php:71
+#: templates/Layout/Page/ByScheme/defaults/Community/defaults.php:92
+#: templates/Posts/sidebars/page/class/A.php:91
+msgid "Last on site"
+msgstr "Последнее на сайте"
+
+#: templates/Layout/Page/ByScheme/defaults/City/defaults.php:98
+#: templates/Layout/Page/ByScheme/defaults/Community/defaults.php:119
+#: templates/Layout/Page/ByScheme/defaults/DefaultScheme/defaults.php:111
+msgid "Most creative"
+msgstr "Наиболее креативные "
+
+#: templates/Layout/Page/ByScheme/defaults/City/defaults.php:121
+#: templates/Layout/Page/ByScheme/defaults/Community/defaults.php:180
+msgid "Last reports"
+msgstr "Последние отчеты"
+
+#: templates/Layout/Page/ByScheme/defaults/City/defaults.php:148
+#: templates/Layout/Page/ByScheme/defaults/Community/defaults.php:207
+msgid "Solved questions"
+msgstr "Решенные вопросы"
+
+#: templates/Layout/Page/ByScheme/defaults/City/defaults.php:173
+#: templates/Layout/Page/ByScheme/defaults/Community/defaults.php:232
+msgid "Padding for solution"
+msgstr "Ожидающие решения"
+
+#: templates/Layout/Page/ByScheme/defaults/Community/defaults.php:21
+msgid "Our community"
+msgstr "Сообщество"
+
+#: templates/Layout/Page/ByScheme/defaults/Community/defaults.php:53
+#: templates/Layout/Page/ByScheme/defaults/DefaultScheme/defaults.php:45
+msgid "Top"
+msgstr "Топ"
+
+#: templates/Layout/Page/ByScheme/defaults/Community/defaults.php:55
+#: templates/Layout/Page/ByScheme/defaults/DefaultScheme/defaults.php:47
+msgid "About us"
+msgstr "О нас"
+
+#: templates/Layout/Page/ByScheme/defaults/Community/defaults.php:59
+#: templates/Layout/Page/ByScheme/defaults/DefaultScheme/defaults.php:51
+msgid "All our members"
+msgstr "Все участники "
+
+#: templates/Layout/Page/ByScheme/defaults/Community/defaults.php:60
+#: templates/Layout/Page/ByScheme/defaults/DefaultScheme/defaults.php:52
+msgid "Best posts from our members"
+msgstr "Лучшие посты наших участников "
+
+#: templates/Layout/Page/ByScheme/defaults/Community/defaults.php:61
+#: templates/Layout/Page/ByScheme/defaults/DefaultScheme/defaults.php:53
+msgid "All groups on our site"
+msgstr "Все группы на сайте"
+
+#: templates/Layout/Page/ByScheme/defaults/Community/defaults.php:62
+#: templates/Layout/Page/ByScheme/defaults/DefaultScheme/defaults.php:54
+msgid "A few words about project"
+msgstr "Несколько слов о проекте"
+
+#: templates/Layout/Page/ByScheme/defaults/DefaultScheme/defaults.php:32
+msgid "Discover"
+msgstr "Изучить"
+
+#: templates/Layout/Page/ByScheme/defaults/DefaultScheme/defaults.php:130
+msgid "Most active"
+msgstr "Наиболее активные "
+
+#: templates/Layout/Special/EventEdit/class/A.php:9
+msgid "Edit event"
+msgstr "Редактировать событие"
+
+#: templates/Layout/Special/PostEdit/class/A.php:9
+msgid "Edit post"
+msgstr "Редактировать пост"
+
+#: templates/Layout/Special/QuestionEdit/class/A.php:9
+msgid "Edit question"
+msgstr "Редактировать вопрос"
+
+#: templates/Layout/Special/ReportEdit/class/A.php:9
+msgid "Edit report"
+msgstr "Редактировать отчет"
+
+#: templates/Layout/Special/Search/class/A.php:11
+#: templates/Layout/Special/Top/Posts/class/A.php:72
+msgid "Total posts"
+msgstr "Всего постов"
+
+#: templates/Layout/Special/Search/class/A.php:17
+#: templates/Layout/Special/Top/Posts/class/A.php:79
+msgid "Images and photos"
+msgstr "Изображения и фото"
+
+#: templates/Layout/Special/Search/class/A.php:23
+#: templates/Layout/Special/Top/Posts/class/A.php:86
+msgid "Audio and music"
+msgstr "Аудио и музыка"
+
+#: templates/Layout/Special/Search/class/A.php:29
+#: templates/Layout/Special/Top/Posts/class/A.php:93
+msgid "All media"
+msgstr "Все медиа "
+
+#: templates/Layout/Special/Search/class/A.php:38
+msgid "Looking for something?"
+msgstr "Что-то ищите?"
+
+#: templates/Layout/Special/Stream/class/A.php:147
+#: templates/Layout/Special/Stream/class/A.php:151
+msgid "No members in this stream."
+msgstr "В потоке нет участников"
+
+#: templates/Layout/Special/Stream/class/A.php:150
+msgid "No posts."
+msgstr "Нет постов."
+
+#: templates/Layout/Special/Stream/class/A.php:157
+msgid "Members in this stream"
+msgstr "Участники в потоке"
+
+#: templates/Layout/Special/Top/Events/class/A.php:46
+msgid "Last events"
+msgstr "Последние события "
+
+#: templates/Layout/Special/Top/Events/class/A.php:47
+#: templates/Layout/Special/Top/Posts/class/A.php:104
+#: templates/Layout/Special/Top/Questions/class/A.php:54
+#: templates/Layout/Special/Top/Reports/class/A.php:47
+msgid "for last 180 days"
+msgstr "за последние 180 дней"
+
+#: templates/Layout/Special/Top/Posts/class/A.php:103
+#: templates/Posts/sidebars/page/class/A.php:93
+msgid "Most popular"
+msgstr "Наиболее популярны "
+
+#: templates/Layout/Special/Top/Questions/class/A.php:53
+msgid "Last "
+msgstr "Последние "
+
+#: templates/Layout/Special/Top/Reports/class/A.php:46
+msgid "Most popular report"
+msgstr "Наиболее популярные отчеты"
+
+#: templates/Layout/WordPress/Category/class/A.php:107
+msgid "all post of category"
+msgstr "все посты категории "
+
+#: templates/Layout/WordPress/Event/class/A.php:105
+#: templates/Layout/WordPress/Post/class/A.php:72
+#: templates/Layout/WordPress/Question/class/A.php:79
+#: templates/Layout/WordPress/Report/class/A.php:87
+msgid "Like this post? Rate it"
+msgstr "Понравился пост? Оцените его"
+
+#: templates/Layout/WordPress/Page/class/A.php:12
+#: templates/Posts/elements/title/class/A.php:23
+#: templates/Posts/elements/title/class/A.php:32
+msgid "views"
+msgstr "просмотров"
+
+#: templates/Layout/WordPress/SearchResults/class/A.php:105
+msgid "Search result"
+msgstr "Результаты поиска"
+
+#: templates/Layout/WordPress/SearchResults/class/A.php:106
+msgid "records found"
+msgstr "Найдено записей"
+
+#: templates/Layout/WordPress/Tag/class/A.php:107
+msgid "all post of tag"
+msgstr "все посты по тегу"
+
+#: templates/LoaderProgress/class/A.php:58
+msgid "Authors"
+msgstr "Авторы"
+
+#: templates/LoaderProgress/class/A.php:61
+msgid "Questions"
+msgstr "Вопросы"
+
+#: templates/Makeup/Footer/elements/categories/class/A.php:14
+msgid "Categories cloud"
+msgstr "Облако категорий"
+
+#: templates/Makeup/Footer/elements/categories/class/A.php:21
+#: templates/Makeup/Footer/elements/categories/class/B.php:20
+msgid "no categories found"
+msgstr "не найдено категорий "
+
+#: templates/Makeup/Footer/elements/tags/class/A.php:14
+msgid "Tags cloud"
+msgstr "Облако тегов"
+
+#: templates/Makeup/Footer/elements/tags/class/A.php:21
+#: templates/Makeup/Footer/elements/tags/class/B.php:20
+msgid "no tags found"
+msgstr "тегов не найдено"
+
+#: templates/Mana/summary/class/A.php:120
+msgid "add karma to user"
+msgstr "добавить кармы участнику"
+
+#: templates/Mana/summary/class/A.php:121
+msgid "how many karma you want give, maximum is "
+msgstr "как много кармы вы хотите передать? Максимум - "
+
+#: templates/Mana/summary/class/A.php:123
+msgid "You have "
+msgstr "У вас есть"
+
+#: templates/Mana/summary/class/A.php:127
+msgid "karma, but you can use only"
+msgstr "кармы, но вы можете использовать только"
+
+#: templates/Mana/summary/class/A.php:131
+msgid "It means, that minimal value karma should be at least"
+msgstr "Минимальное значение вашей кармы всегда должно оставаться как минимум"
+
+#: templates/Mana/summary/class/A.php:134
+msgid "give"
+msgstr "передать"
+
+#: templates/Messenger/Chat/class/A.php:51
+msgid "last talk"
+msgstr "последний разговор"
+
+#: templates/Messenger/Chat/class/A.php:70
+#: templates/Posts/thumbnails/class/EventA.php:28
+msgid "members"
+msgstr "участники"
+
+#: templates/Messenger/Chat/class/A.php:113
+msgid "Select user(s) to open chat."
+msgstr "Выберите участника(ов), чтобы открыть чат"
+
+#: templates/Messenger/Chat/class/A.php:181
+msgid ""
+"Select user(s) and press \"talk\" to create new chat. <br/>Or just select a "
+"group to start chat with all members of group."
+msgstr ""
+"Выберите участника(ов), чтобы начать чат.<br/>Или выберите группы, чтобы "
+"начать групповой чат."
+
+#: templates/Messenger/Chat/class/A.php:182
+msgid "talk"
+msgstr "разговор"
+
+#: templates/Messenger/Mails/class/A.php:10
+msgid "From"
+msgstr "От"
+
+#: templates/Messenger/Mails/class/A.php:16
+#: templates/Messenger/Mails/class/A.php:94
+#: templates/Messenger/Notifications/class/A.php:12
+msgid "Date"
+msgstr "Дата"
+
+#: templates/Messenger/Mails/class/A.php:88
+msgid "Recipient"
+msgstr "Получатель"
+
+#: templates/Messenger/Mails/class/A.php:148
+msgid "Recipients"
+msgstr "Получатели"
+
+#: templates/Messenger/Mails/class/A.php:149
+msgid "add recipients"
+msgstr "добавить получателей"
+
+#: templates/Messenger/Mails/class/A.php:161
+msgid "Subject"
+msgstr "Тема"
+
+#: templates/Messenger/Mails/class/A.php:170
+msgid "Message"
+msgstr "Сообщение"
+
+#: templates/Messenger/Mails/class/A.php:190
+msgid "attach"
+msgstr "прикрепить"
+
+#: templates/Messenger/Mails/class/A.php:203
+msgid "inbox"
+msgstr "входящие"
+
+#: templates/Messenger/Mails/class/A.php:210
+msgid "outbox"
+msgstr "исходящие"
+
+#: templates/Messenger/Manager/class/A.php:53
+msgid "mail"
+msgstr "почта"
+
+#: templates/Messenger/Manager/class/A.php:61
+msgid "chat"
+msgstr "чат"
+
+#: templates/Messenger/Manager/class/A.php:69
+msgid "notification"
+msgstr "уведомления"
+
+#: templates/Messenger/Users/class/A.php:12
+msgid "Last recipients"
+msgstr "Последние получатели"
+
+#: templates/Messenger/Users/class/A.php:13
+msgid "Your friends"
+msgstr "Ваши друзья"
+
+#: templates/Messenger/Users/class/A.php:14
+msgid "Peaple from your groups"
+msgstr "Участники из ваших групп"
+
+#: templates/Messenger/Users/class/A.php:61
+msgid "select"
+msgstr "выбрать"
+
+#: templates/Pages/EventEditor/class/A.php:26
+msgid "You cannot create event"
+msgstr "Вы не можете создать событие"
+
+#: templates/Pages/EventEditor/class/A.php:33
+msgid ""
+"Sorry, but you cannot create event, because you have not enough mana (rate) "
+"for it. You should have at least "
+msgstr ""
+"Вы не можете создать событие, так как у вас не достаточно кармы. Вы должны "
+"иметь как минимум"
+
+#: templates/Pages/EventEditor/class/A.php:35
+#: templates/Pages/EventEditor/class/A.php:604
+#: templates/Pages/EventEditor/class/A.php:662
+#: templates/Pages/PostEditor/class/A.php:35
+#: templates/Pages/PostEditor/class/A.php:370
+#: templates/Pages/PostEditor/class/A.php:428
+#: templates/Pages/QuestionEditor/class/A.php:35
+#: templates/Pages/QuestionEditor/class/A.php:343
+#: templates/Pages/QuestionEditor/class/A.php:401
+#: templates/Pages/ReportEditor/class/A.php:35
+#: templates/Pages/ReportEditor/class/A.php:495
+#: templates/Pages/ReportEditor/class/A.php:553
+msgid " but you have "
+msgstr "но у вас есть только"
+
+#: templates/Pages/EventEditor/class/A.php:68
+msgid "Edit the event"
+msgstr "Редактировать событие"
+
+#: templates/Pages/EventEditor/class/A.php:70
+msgid "Create a new event"
+msgstr "Создать новое событие"
+
+#: templates/Pages/EventEditor/class/A.php:78
+msgid "This event is not published yet."
+msgstr "Это событие еще не опубликовано."
+
+#: templates/Pages/EventEditor/class/A.php:92
+msgid "Name of your event"
+msgstr "Название события"
+
+#: templates/Pages/EventEditor/class/A.php:99
+msgid "Please define name of your event. Not more 250 symbols."
+msgstr "Название события. Не более 250 символов."
+
+#: templates/Pages/EventEditor/class/A.php:106
+msgid "Description of event"
+msgstr "Описание события"
+
+#: templates/Pages/EventEditor/class/A.php:173
+msgid "month"
+msgstr "месяц"
+
+#: templates/Pages/EventEditor/class/A.php:176
+msgid "day"
+msgstr "день"
+
+#: templates/Pages/EventEditor/class/A.php:179
+msgid "year"
+msgstr "год"
+
+#: templates/Pages/EventEditor/class/A.php:212
+msgid "hour"
+msgstr "час"
+
+#: templates/Pages/EventEditor/class/A.php:215
+msgid "min"
+msgstr "минуты"
+
+#: templates/Pages/EventEditor/class/A.php:233
+msgid "Setup your event"
+msgstr "Настройте событие"
+
+#: templates/Pages/EventEditor/class/A.php:239
+msgid "How many of members can participate in the event?"
+msgstr "Как много участников могут принять участие в событии?"
+
+#: templates/Pages/EventEditor/class/A.php:249
+msgid "If you do not want limit count of members, just leave this field empty."
+msgstr ""
+"Если вы не хотите ограничивать число участников (либо данное событие просто "
+"не может быть ограничено) просто оставьте это поле пустым."
+
+#: templates/Pages/EventEditor/class/A.php:250
+msgid "Date and time of the event"
+msgstr "Время и дата события"
+
+#: templates/Pages/EventEditor/class/A.php:254
+#: templates/Pages/EventEditor/class/A.php:292
+msgid "Start"
+msgstr "Начало"
+
+#: templates/Pages/EventEditor/class/A.php:265
+#: templates/Pages/EventEditor/class/A.php:303
+msgid "Finish"
+msgstr "Завершение"
+
+#: templates/Pages/EventEditor/class/A.php:286
+msgid "use same time as for event"
+msgstr "использовать такое же время как время события"
+
+#: templates/Pages/EventEditor/class/A.php:321
+msgid "Place, where your event will be"
+msgstr "Место проведения события"
+
+#: templates/Pages/EventEditor/class/A.php:342
+#: templates/Pages/ReportEditor/class/A.php:233
+msgid "address or coordinates"
+msgstr "адрес или координаты"
+
+#: templates/Pages/EventEditor/class/A.php:357
+#: templates/Pages/ReportEditor/class/A.php:248
+msgid "Find place on map or write here address (or coordinates)."
+msgstr "Найдите место на карте или укажите здесь адрес (или координаты)"
+
+#: templates/Pages/EventEditor/class/A.php:361
+#: templates/Pages/ReportEditor/class/A.php:252
+msgid "name of place"
+msgstr "Название места"
+
+#: templates/Pages/EventEditor/class/A.php:367
+msgid "Write here name of place or how you want to call place of event"
+msgstr ""
+"Напишите здесь название места проведения события или то как бы вы хотели "
+"называть это место (может отличаться от реального географического названия)"
+
+#: templates/Pages/EventEditor/class/A.php:373
+msgid "Short description of your event"
+msgstr "Короткое описание события"
+
+#: templates/Pages/EventEditor/class/A.php:380
+msgid ""
+"You can define short description for your event. This is not a mandatory "
+"field. If you do not define it, quote will be built by content of your "
+"event. Not more 500 symbols."
+msgstr ""
+"Вы можете определить короткое описание события. Это не обязательно, но будет "
+"полезно и удобно другим участникам. Описание не должно превышать 500 "
+"символов."
+
+#: templates/Pages/EventEditor/class/A.php:388
+msgid "Miniature for your event"
+msgstr "Миниатюра для вашего события."
+
+#: templates/Pages/EventEditor/class/A.php:400
+msgid ""
+"You can define some image for your event. This is not a mandatory field. If "
+"your event has some images, it will be used as miniature."
+msgstr ""
+"Вы можете определить для события миниатюру. Это изображение, которое будет "
+"использоваться для отображения события в списках событий. Это не "
+"обязательно, но помните, что миниатюра привлекает большее число участников."
+
+#: templates/Pages/EventEditor/class/A.php:420
+msgid "Visibility of your event"
+msgstr "Видимость события"
+
+#: templates/Pages/EventEditor/class/A.php:426
+#: templates/Pages/PostEditor/class/A.php:192
+#: templates/Pages/QuestionEditor/class/A.php:165
+#: templates/Pages/ReportEditor/class/A.php:317
+msgid "First level."
+msgstr "Первый уровень"
+
+#: templates/Pages/EventEditor/class/A.php:426
+#: templates/Pages/PostEditor/class/A.php:192
+#: templates/Pages/QuestionEditor/class/A.php:165
+#: templates/Pages/ReportEditor/class/A.php:317
+msgid "Please, define first (global) level of visibility."
+msgstr "Пожалуйста, определите первый (глобальный) уровень видимости."
+
+#: templates/Pages/EventEditor/class/A.php:440
+#: templates/Pages/PostEditor/class/A.php:206
+#: templates/Pages/QuestionEditor/class/A.php:179
+#: templates/Pages/ReportEditor/class/A.php:331
+msgid "anyone"
+msgstr "все"
+
+#: templates/Pages/EventEditor/class/A.php:445
+msgid "Your event will be available for all user. And for registered and not."
+msgstr ""
+"Событие будет доступно для всех (в том числе незарегистрированных "
+"пользователей)."
+
+#: templates/Pages/EventEditor/class/A.php:460
+#: templates/Pages/PostEditor/class/A.php:226
+#: templates/Pages/QuestionEditor/class/A.php:199
+#: templates/Pages/ReportEditor/class/A.php:351
+msgid "registered"
+msgstr "участники"
+
+#: templates/Pages/EventEditor/class/A.php:465
+msgid "Show event only registered users."
+msgstr "Доступно только участникам сайта."
+
+#: templates/Pages/EventEditor/class/A.php:469
+#: templates/Pages/PostEditor/class/A.php:235
+#: templates/Pages/QuestionEditor/class/A.php:208
+#: templates/Pages/ReportEditor/class/A.php:360
+msgid "Second level."
+msgstr "Второй уровень."
+
+#: templates/Pages/EventEditor/class/A.php:469
+msgid "You can define second level of visibility of your event."
+msgstr "Вы можете определить второй уровень видимости события."
+
+#: templates/Pages/EventEditor/class/A.php:483
+#: templates/Pages/PostEditor/class/A.php:249
+#: templates/Pages/QuestionEditor/class/A.php:222
+#: templates/Pages/ReportEditor/class/A.php:374
+msgid "community"
+msgstr "сообщество (то есть этот сайт)"
+
+#: templates/Pages/EventEditor/class/A.php:488
+msgid ""
+"With this setting of visibility your event will be available for any user "
+"according a first level of visibility."
+msgstr ""
+"С данной опцией видимости событие будет видно всем в соответствии с "
+"настройками первого уровня."
+
+#: templates/Pages/EventEditor/class/A.php:508
+msgid ""
+"Use this setting of visibility to associate event with your friends. If "
+"first level of visibility is \"registered\", your event will see only your "
+"friends."
+msgstr ""
+"Используйте данную опцию, чтобы ассоциировать событие с вашими друзьями. "
+"Если первый уровень установлен в положение \"участники\", то пост будет "
+"виден только вашими друзьям. "
+
+#: templates/Pages/EventEditor/class/A.php:525
+#: templates/Pages/PostEditor/class/A.php:291
+#: templates/Pages/QuestionEditor/class/A.php:264
+#: templates/Pages/ReportEditor/class/A.php:416
+msgid "group"
+msgstr "группа"
+
+#: templates/Pages/EventEditor/class/A.php:530
+msgid ""
+"Use this setting of visibility to associate event with some group, where you "
+"are a member. If first level of visibility is \"registered\", your event "
+"will see only members of selected group."
+msgstr "Используя данную опцию вы можете связать событие с группой. "
+
+#: templates/Pages/EventEditor/class/A.php:550
+msgid "Define category of your event"
+msgstr "Категория"
+
+#: templates/Pages/EventEditor/class/A.php:602
+#: templates/Pages/PostEditor/class/A.php:368
+#: templates/Pages/QuestionEditor/class/A.php:341
+#: templates/Pages/ReportEditor/class/A.php:493
+msgid ""
+"You have not enough mana (rate). So you can (and should) define any "
+"category, but it will be placed into \"sandbox\" until you have not enough "
+"mana (rate). Should be at least  "
+msgstr ""
+"У вас недостаточно кармы. Поэтому данная запись будет помещена в песочницу "
+"до тех пор пока уровень кармы не составить как минимум "
+
+#: templates/Pages/EventEditor/class/A.php:606
+msgid ""
+" If you are updating event, updated event will be placed into sandbox too."
+msgstr ""
+" если вы обновляете событие, то обновленное событие также будет помещено в "
+"песочницу. "
+
+#: templates/Pages/EventEditor/class/A.php:612
+msgid "It will be better, if you define category of your event."
+msgstr ""
+"Будет просто здорово, если вы определите к какой категории относится ваше "
+"событие."
+
+#: templates/Pages/EventEditor/class/A.php:660
+#: templates/Pages/PostEditor/class/A.php:426
+#: templates/Pages/QuestionEditor/class/A.php:399
+#: templates/Pages/ReportEditor/class/A.php:551
+msgid ""
+"You have not enough mana (rate). So you cannot manage comments for now. "
+"Should be at least  "
+msgstr ""
+"У вас недостаточно кармы, чтобы управлять доступностью комментирования. У "
+"вас должно быть как минимум "
+
+#: templates/Pages/EventEditor/class/A.php:666
+msgid "You can allow or deny comments to your event."
+msgstr "Вы можете разрешить или запретить комментарии. "
+
+#: templates/Pages/EventEditor/class/A.php:674
+msgid "Tags for event"
+msgstr "Теги"
+
+#: templates/Pages/EventEditor/class/A.php:693
+#: templates/Pages/PostEditor/class/A.php:460
+#: templates/Pages/ReportEditor/class/A.php:584
+msgid "Warnings"
+msgstr "Предупреждения"
+
+#: templates/Pages/EventEditor/class/A.php:715
+#: templates/Pages/EventEditor/class/A.php:723
+#: templates/Pages/PostEditor/class/A.php:482
+#: templates/Pages/PostEditor/class/A.php:490
+#: templates/Pages/QuestionEditor/class/A.php:415
+#: templates/Pages/QuestionEditor/class/A.php:423
+#: templates/Pages/ReportEditor/class/A.php:606
+#: templates/Pages/ReportEditor/class/A.php:614
+msgid "publish"
+msgstr "опубликовать"
+
+#: templates/Pages/EventEditor/class/A.php:717
+#: templates/Pages/PostEditor/class/A.php:484
+#: templates/Pages/QuestionEditor/class/A.php:417
+#: templates/Pages/ReportEditor/class/A.php:608
+msgid "to draft"
+msgstr "в черновики"
+
+#: templates/Pages/EventEditor/class/A.php:719
+#: templates/Pages/PostEditor/class/A.php:486
+#: templates/Pages/QuestionEditor/class/A.php:419
+#: templates/Pages/ReportEditor/class/A.php:610
+msgid "update"
+msgstr "обновить"
+
+#: templates/Pages/EventEditor/class/A.php:721
+#: templates/Pages/EventEditor/class/A.php:724
+#: templates/Pages/PostEditor/class/A.php:488
+#: templates/Pages/PostEditor/class/A.php:491
+#: templates/Pages/QuestionEditor/class/A.php:421
+#: templates/Pages/QuestionEditor/class/A.php:424
+#: templates/Pages/ReportEditor/class/A.php:612
+#: templates/Pages/ReportEditor/class/A.php:615
+msgid "preview"
+msgstr "просмотр"
+
+#: templates/Pages/EventEditor/class/A.php:725
+#: templates/Pages/PostEditor/class/A.php:492
+#: templates/Pages/QuestionEditor/class/A.php:425
+#: templates/Pages/ReportEditor/class/A.php:616
+msgid "save as draft"
+msgstr "сохранить как черновик"
+
+#: templates/Pages/EventEditor/class/A.php:733
+msgid "Event not found"
+msgstr "Событие не найдено"
+
+#: templates/Pages/EventEditor/class/A.php:740
+msgid ""
+"Sorry, but event, which you are required, was not found. Please check url "
+"and try again."
+msgstr ""
+"Извините, но событие, которое вы запросили не найдено. Проверьте "
+"корректность ссылки."
+
+#: templates/Pages/EventEditor/class/A.php:747
+#: templates/Pages/PostEditor/class/A.php:514
+#: templates/Pages/QuestionEditor/class/A.php:447
+#: templates/Pages/ReportEditor/class/A.php:638
+msgid "You should register"
+msgstr "Вам следует зарегистрироваться"
+
+#: templates/Pages/EventEditor/class/A.php:754
+msgid "Sorry, but to create event you should register first."
+msgstr ""
+"Извините, но чтобы создать событие, следует вначале зарегистрироваться. "
+
+#: templates/Pages/PostEditor/class/A.php:26
+msgid "You cannot create post"
+msgstr "Вы не можете создать пост"
+
+#: templates/Pages/PostEditor/class/A.php:33
+msgid ""
+"Sorry, but you cannot create post, because you have not enough mana (rate) "
+"for it. You should have at least "
+msgstr ""
+"Извините вы не можете создать пост, так как у вас недостаточно кармы. Чтобы "
+"создать пост у вас должно быть кармы как минимум "
+
+#: templates/Pages/PostEditor/class/A.php:68
+msgid "Edit the post"
+msgstr "Редактировать пост"
+
+#: templates/Pages/PostEditor/class/A.php:70
+msgid "Create a new post"
+msgstr "Создать новый пост"
+
+#: templates/Pages/PostEditor/class/A.php:78
+#: templates/Pages/QuestionEditor/class/A.php:70
+msgid "This post is not published yet."
+msgstr "Этот пост пока еще не опубликован"
+
+#: templates/Pages/PostEditor/class/A.php:92
+msgid "Title of your post"
+msgstr "Название поста"
+
+#: templates/Pages/PostEditor/class/A.php:99
+#: templates/Pages/QuestionEditor/class/A.php:91
+msgid "Please define title of your post. Not more 250 symbols."
+msgstr "Укажите название поста. Не более 255 символов. "
+
+#: templates/Pages/PostEditor/class/A.php:106
+msgid "Your post"
+msgstr "Ваш пост"
+
+#: templates/Pages/PostEditor/class/A.php:139
+msgid "Quote for your post"
+msgstr "Отрывок"
+
+#: templates/Pages/PostEditor/class/A.php:146
+msgid ""
+"You can define short description for your post. This is not a mandatory "
+"field. If you do not define it, quote will be built by content of your post. "
+"Not more 500 symbols."
+msgstr ""
+"Отрывок - это короткое описание поста, которое поможет другим участникам "
+"понять, о чем ваш пост. Не более 500 символов. "
+
+#: templates/Pages/PostEditor/class/A.php:154
+msgid "Miniature for your post"
+msgstr "Миниатюра вашего поста"
+
+#: templates/Pages/PostEditor/class/A.php:166
+msgid ""
+"You can define some image for your post. This is not a mandatory field. If "
+"your post has some images, it will be used as miniature."
+msgstr ""
+"Вы можете определить для поста миниатюру. Это изображение, которое будет "
+"использоваться для отображения поста в списках постов. Это не обязательно, "
+"но помните, что миниатюра привлекает большее число участников."
+
+#: templates/Pages/PostEditor/class/A.php:186
+msgid "Visibility of your post"
+msgstr "Видимость поста"
+
+#: templates/Pages/PostEditor/class/A.php:211
+msgid "Your post will be available for all user. And for registered and not."
+msgstr ""
+"Пост будет доступен для всех (в том числе незарегистрированных "
+"пользователей)."
+
+#: templates/Pages/PostEditor/class/A.php:231
+msgid "Show post only registered users."
+msgstr "Доступно только участникам сайта."
+
+#: templates/Pages/PostEditor/class/A.php:235
+msgid "You can define second level of visibility of your post."
+msgstr "Вы можете определить второй уровень видимости поста."
+
+#: templates/Pages/PostEditor/class/A.php:254
+msgid ""
+"With this setting of visibility your post will be available for any user "
+"according a first level of visibility."
+msgstr ""
+"С данной опцией видимости пост будет виден всем в соответствии с настройками "
+"первого уровня."
+
+#: templates/Pages/PostEditor/class/A.php:274
+msgid ""
+"Use this setting of visibility to associate post with your friends. If first "
+"level of visibility is \"registered\", your post will see only your friends."
+msgstr ""
+"Используйте данную опцию, чтобы ассоциировать пост с вашими друзьями. Если "
+"первый уровень установлен в положение \"участники\", то пост будет виден "
+"только вашими друзьям. "
+
+#: templates/Pages/PostEditor/class/A.php:296
+msgid ""
+"Use this setting of visibility to associate post with some group, where you "
+"are a member. If first level of visibility is \"registered\", your post will "
+"see only members of selected group."
+msgstr "Используя данную опцию вы можете связать пост с группой. "
+
+#: templates/Pages/PostEditor/class/A.php:316
+msgid "Define category of your post"
+msgstr "Категория"
+
+#: templates/Pages/PostEditor/class/A.php:372
+msgid ""
+" If you are updating post, updated post will be placed into sandbox too."
+msgstr ""
+" если вы обновляете пост, то обновленный пост также будет помещен в "
+"песочницу. "
+
+#: templates/Pages/PostEditor/class/A.php:378
+msgid "It will be better, if you define category of your post."
+msgstr ""
+"Будет просто здорово, если вы определите к какой категории относится пост."
+
+#: templates/Pages/PostEditor/class/A.php:432
+msgid "You can allow or deny comments to your post."
+msgstr "Вы можете разрешить или запретить комментарии. "
+
+#: templates/Pages/PostEditor/class/A.php:440
+#: templates/Pages/ReportEditor/class/A.php:565
+msgid "Tags for post"
+msgstr "Теги"
+
+#: templates/Pages/PostEditor/class/A.php:500
+msgid "Post not found"
+msgstr "Пост не найден"
+
+#: templates/Pages/PostEditor/class/A.php:507
+msgid ""
+"Sorry, but post, which you are required, was not found. Please check url and "
+"try again."
+msgstr ""
+"Извините, но пост, который вы запросили не найден. Проверьте корректность "
+"ссылки."
+
+#: templates/Pages/PostEditor/class/A.php:521
+msgid "Sorry, but to create post you should register first."
+msgstr "Извините, но чтобы создать пост, следует вначале зарегистрироваться. "
+
+#: templates/Pages/QuestionEditor/class/A.php:26
+msgid "You cannot create question"
+msgstr "Вы не можете создать вопрос"
+
+#: templates/Pages/QuestionEditor/class/A.php:33
+msgid ""
+"Sorry, but you cannot create question, because you have not enough mana "
+"(rate) for it. You should have at least "
+msgstr ""
+"Извините вы не можете создать вопрос, так как у вас недостаточно кармы. "
+"Чтобы создать вопрос у вас должно быть кармы как минимум "
+
+#: templates/Pages/QuestionEditor/class/A.php:84
+msgid "Title of your question"
+msgstr "Название вопроса"
+
+#: templates/Pages/QuestionEditor/class/A.php:98
+msgid "Your question"
+msgstr "Ваш вопрос"
+
+#: templates/Pages/QuestionEditor/class/A.php:132
+msgid "Keywords for question"
+msgstr "Ключевые слова"
+
+#: templates/Pages/QuestionEditor/class/A.php:159
+msgid "Visibility of your question"
+msgstr "Видимость"
+
+#: templates/Pages/QuestionEditor/class/A.php:184
+msgid ""
+"Your question will be available for all user. And for registered and not."
+msgstr ""
+"Вопрос будет доступен для всех (в том числе незарегистрированных "
+"пользователей)."
+
+#: templates/Pages/QuestionEditor/class/A.php:204
+msgid "Show question only registered users."
+msgstr "Доступно только участникам сайта."
+
+#: templates/Pages/QuestionEditor/class/A.php:208
+msgid "You can define second level of visibility of your question."
+msgstr "Вы можете определить второй уровень видимости вопроса."
+
+#: templates/Pages/QuestionEditor/class/A.php:227
+msgid ""
+"With this setting of visibility your question will be available for any user "
+"according a first level of visibility."
+msgstr ""
+"С данной опцией видимости вопрос будет виден всем в соответствии с "
+"настройками первого уровня."
+
+#: templates/Pages/QuestionEditor/class/A.php:247
+msgid ""
+"Use this setting of visibility to associate question with your friends. If "
+"first level of visibility is \"registered\", your question will see only "
+"your friends."
+msgstr ""
+"Используйте данную опцию, чтобы ассоциировать вопрос с вашими друзьями. Если "
+"первый уровень установлен в положение \"участники\", то вопрос будет виден "
+"только вашими друзьям. "
+
+#: templates/Pages/QuestionEditor/class/A.php:269
+msgid ""
+"Use this setting of visibility to associate question with some group, where "
+"you are a member. If first level of visibility is \"registered\", your "
+"question will see only members of selected group."
+msgstr "Используя данную опцию вы можете связать вопрос с группой. "
+
+#: templates/Pages/QuestionEditor/class/A.php:289
+msgid "Define category of your question"
+msgstr "Категория"
+
+#: templates/Pages/QuestionEditor/class/A.php:345
+msgid ""
+" If you are updating question, updated question will be placed into sandbox "
+"too."
+msgstr ""
+" если вы обновляете вопрос, то обновленный вопрос также будет помещен в "
+"песочницу. "
+
+#: templates/Pages/QuestionEditor/class/A.php:351
+msgid "It will be better, if you define category of your question."
+msgstr ""
+"Будет просто здорово, если вы определите к какой категории относится вопрос."
+
+#: templates/Pages/QuestionEditor/class/A.php:405
+msgid "You can allow or deny comments to your question."
+msgstr "Вы можете разрешить или запретить комментарии. "
+
+#: templates/Pages/QuestionEditor/class/A.php:433
+msgid "Question not found"
+msgstr "Вопрос не найден"
+
+#: templates/Pages/QuestionEditor/class/A.php:440
+msgid ""
+"Sorry, but question, which you are required, was not found. Please check url "
+"and try again."
+msgstr ""
+"Извините, но вопрос, который вы запросили не найден. Проверьте корректность "
+"ссылки."
+
+#: templates/Pages/QuestionEditor/class/A.php:454
+msgid "Sorry, but to create question you should register first."
+msgstr ""
+"Извините, но чтобы создать вопрос, следует вначале зарегистрироваться. "
+
+#: templates/Pages/ReportEditor/class/A.php:26
+msgid "You cannot create report"
+msgstr "Вы не можете создать отчет"
+
+#: templates/Pages/ReportEditor/class/A.php:33
+msgid ""
+"Sorry, but you cannot create report, because you have not enough mana (rate) "
+"for it. You should have at least "
+msgstr ""
+"Извините вы не можете создать отчет, так как у вас недостаточно кармы. Чтобы "
+"создать отчет у вас должно быть кармы как минимум "
+
+#: templates/Pages/ReportEditor/class/A.php:68
+msgid "Edit the report"
+msgstr "Редактировать отчет"
+
+#: templates/Pages/ReportEditor/class/A.php:70
+msgid "Create a new report"
+msgstr "Создать новый отчет"
+
+#: templates/Pages/ReportEditor/class/A.php:78
+msgid "This report is not published yet."
+msgstr "Этот отчет еще не опубликован"
+
+#: templates/Pages/ReportEditor/class/A.php:92
+msgid "Name of your report"
+msgstr "Название отчета"
+
+#: templates/Pages/ReportEditor/class/A.php:99
+msgid "Please define name of your report. Not more 250 symbols."
+msgstr "Укажите название отчета. Не более 255 символов. "
+
+#: templates/Pages/ReportEditor/class/A.php:106
+msgid "Your report"
+msgstr "Ваш отчет"
+
+#: templates/Pages/ReportEditor/class/A.php:139
+msgid "Setup indexes for your report"
+msgstr "Определите показатели отчета"
+
+#: templates/Pages/ReportEditor/class/A.php:154
+msgid ""
+"You should define collection of indexes to rate results of your report. All "
+"registered users will vote by your indexes too."
+msgstr ""
+"Вам следует определить коллекцию показателей для отчета. Все участники сайта "
+"смогут голосовать. "
+
+#: templates/Pages/ReportEditor/class/A.php:156
+msgid ""
+"Please, remember, you cad define indexes only once. You can vote, after "
+"report will be published."
+msgstr ""
+"Обратите внимание, вы не сможете изменить показатели для отчета после того, "
+"как сохраните отчет."
+
+#: templates/Pages/ReportEditor/class/A.php:193
+msgid "You cannot change collection of indexes after report was published."
+msgstr ""
+"Вы не сможете изменить показатели для отчета после того, как сохраните отчет."
+
+#: templates/Pages/ReportEditor/class/A.php:212
+msgid "You can define place for your report."
+msgstr "Вы можете связать какое-либо место (географическое) с отчетом. "
+
+#: templates/Pages/ReportEditor/class/A.php:258
+msgid ""
+"Write here name of place or how you want to call place of report about is."
+msgstr ""
+"Напишите название места или то, как бы вы хотели чтобы это место называлось "
+"(не обязательно в соответствии с географическим названием)"
+
+#: templates/Pages/ReportEditor/class/A.php:264
+msgid "Short description of your report"
+msgstr "Короткое описание вашего отчета"
+
+#: templates/Pages/ReportEditor/class/A.php:271
+msgid ""
+"You can define short description for your report. This is not a mandatory "
+"field. If you do not define it, quote will be built by content of your "
+"report. Not more 500 symbols."
+msgstr ""
+"Краткое описание отчета поможет другим участникам понять, о чем ваш отчет. "
+"Не более 500 символов. "
+
+#: templates/Pages/ReportEditor/class/A.php:279
+msgid "Miniature for your report"
+msgstr "Миниатюра отчета"
+
+#: templates/Pages/ReportEditor/class/A.php:291
+msgid ""
+"You can define some image for your report. This is not a mandatory field. If "
+"your report has some images, it will be used as miniature."
+msgstr ""
+"Вы можете определить для отчета миниатюру. Это изображение, которое будет "
+"использоваться для отображения отчета в списках отчетов. Это не обязательно, "
+"но помните, что миниатюра привлекает большее число участников."
+
+#: templates/Pages/ReportEditor/class/A.php:311
+msgid "Visibility of your report"
+msgstr "Видимость"
+
+#: templates/Pages/ReportEditor/class/A.php:336
+msgid "Your report will be available for all user. And for registered and not."
+msgstr ""
+"Отчет будет доступен для всех (в том числе незарегистрированных "
+"пользователей)."
+
+#: templates/Pages/ReportEditor/class/A.php:356
+msgid "Show report only registered users."
+msgstr "Доступно только участникам сайта."
+
+#: templates/Pages/ReportEditor/class/A.php:360
+msgid "You can define second level of visibility of your report."
+msgstr "Вы можете определить второй уровень видимости отчета."
+
+#: templates/Pages/ReportEditor/class/A.php:379
+msgid ""
+"With this setting of visibility your report will be available for any user "
+"according a first level of visibility."
+msgstr ""
+"С данной опцией видимости отчет будет виден всем в соответствии с "
+"настройками первого уровня."
+
+#: templates/Pages/ReportEditor/class/A.php:399
+msgid ""
+"Use this setting of visibility to associate report with your friends. If "
+"first level of visibility is \"registered\", your report will see only your "
+"friends."
+msgstr ""
+"Используйте данную опцию, чтобы ассоциировать отчет с вашими друзьями. Если "
+"первый уровень установлен в положение \"участники\", то отчет будет виден "
+"только вашими друзьям. "
+
+#: templates/Pages/ReportEditor/class/A.php:421
+msgid ""
+"Use this setting of visibility to associate report with some group, where "
+"you are a member. If first level of visibility is \"registered\", your "
+"report will see only members of selected group."
+msgstr "Используя данную опцию вы можете связать отчет с группой. "
+
+#: templates/Pages/ReportEditor/class/A.php:441
+msgid "Define category of your report"
+msgstr "Категория"
+
+#: templates/Pages/ReportEditor/class/A.php:497
+msgid ""
+" If you are updating report, updated report will be placed into sandbox too."
+msgstr ""
+" если вы обновляете отчет, то обновленный отчет также будет помещен в "
+"песочницу. "
+
+#: templates/Pages/ReportEditor/class/A.php:503
+msgid "It will be better, if you define category of your report."
+msgstr ""
+"Будет просто здорово, если вы определите к какой категории относится отчет."
+
+#: templates/Pages/ReportEditor/class/A.php:557
+msgid "You can allow or deny comments to your report."
+msgstr "Вы можете разрешить или запретить комментарии. "
+
+#: templates/Pages/ReportEditor/class/A.php:624
+msgid "Report not found"
+msgstr "Отчет не найден "
+
+#: templates/Pages/ReportEditor/class/A.php:631
+msgid ""
+"Sorry, but report, which you are required, was not found. Please check url "
+"and try again."
+msgstr ""
+"Извините, но отчет, который вы запросили не найден. Проверьте корректность "
+"ссылки."
+
+#: templates/Pages/ReportEditor/class/A.php:645
+msgid "Sorry, but to create report you should register first."
+msgstr "Извините, но чтобы создать отчет, следует вначале зарегистрироваться. "
+
+#: templates/Posts/elements/embed/class/A.php:23
+msgid "Direct link"
+msgstr "Прямая ссылка"
+
+#: templates/Posts/elements/events/members/class/A.php:61
+msgid "At current time are no members."
+msgstr "В текущий момент нет участников"
+
+#: templates/Posts/elements/events/members/class/A.php:78
+msgid "JOIN"
+msgstr "ПРИСОЕДИНИТЬСЯ"
+
+#: templates/Posts/elements/events/members/class/A.php:78
+msgid "REFUSE"
+msgstr "ОТКАЗАТЬСЯ"
+
+#: templates/Posts/elements/events/members/class/A.php:80
+msgid "Registration is closed for now."
+msgstr "Регистрация закрыта"
+
+#: templates/Posts/elements/events/timeanddate/class/A.php:30
+msgid "Event"
+msgstr "Событие"
+
+#: templates/Posts/elements/events/timeanddate/class/A.php:35
+#: templates/Posts/elements/events/timeanddate/class/A.php:62
+msgid "start at"
+msgstr "Начало с "
+
+#: templates/Posts/elements/events/timeanddate/class/A.php:49
+#: templates/Posts/elements/events/timeanddate/class/A.php:76
+msgid "and finish"
+msgstr "и завершение"
+
+#: templates/Posts/elements/questions/additions/class/A.php:115
+#: templates/Posts/elements/questions/additions/class/A.php:150
+#: templates/Posts/thumbnails/class/D.php:33
+msgid "edit"
+msgstr "редактировать"
+
+#: templates/Posts/elements/questions/additions/class/A.php:116
+#: templates/Posts/elements/questions/additions/class/A.php:151
+msgid "Modify addition"
+msgstr "Изменить дополнение"
+
+#: templates/Posts/elements/questions/additions/class/A.php:117
+#: templates/Posts/elements/questions/additions/class/A.php:152
+msgid "Update addition to your question"
+msgstr "Обновить дополнение к вопросу"
+
+#: templates/Posts/elements/questions/additions/class/A.php:130
+#: templates/Posts/elements/questions/additions/class/A.php:174
+msgid "added"
+msgstr "добавлено"
+
+#: templates/Posts/elements/questions/additions/class/A.php:206
+msgid "write addition"
+msgstr "написать дополнение"
+
+#: templates/Posts/elements/questions/additions/class/A.php:207
+msgid "Addition"
+msgstr "Дополнение"
+
+#: templates/Posts/elements/questions/additions/class/A.php:208
+msgid "New addition to your question"
+msgstr "Новое дополнение к вопросу"
+
+#: templates/Posts/elements/questions/additions/class/A.php:217
+msgid "additions"
+msgstr "дополнения"
+
+#: templates/Posts/elements/questions/answers/class/A.php:255
+#: templates/Posts/elements/questions/answers/class/A.php:303
+#: templates/Posts/elements/questions/answers/class/A.php:410
+#: templates/Posts/elements/questions/answers/class/A.php:441
+#: templates/Posts/elements/questions/relatedPosts/class/A.php:89
+#: templates/Posts/elements/questions/relatedPosts/class/A.php:184
+#: templates/Posts/elements/questions/relatedQuestions/class/A.php:111
+#: templates/Posts/elements/questions/relatedQuestions/class/A.php:194
+#: templates/Posts/thumbnails/class/EventA.php:17
+#: templates/Posts/thumbnails/class/F.php:18
+#: templates/Posts/thumbnails/class/F.php:38
+#: templates/Posts/thumbnails/class/F.php:56
+#: templates/Posts/thumbnails/class/F.php:77
+#: templates/Posts/thumbnails/class/F.php:97
+#: templates/Posts/thumbnails/class/F.php:183
+#: templates/Posts/thumbnails/class/F.php:204
+#: templates/Posts/thumbnails/class/QuestionA.php:22
+#: templates/Posts/thumbnails/class/QuestionB.php:22
+#: templates/Posts/thumbnails/class/QuestionC.php:22
+#: templates/Posts/thumbnails/class/QuestionD.php:22
+#: templates/Posts/thumbnails/class/ReportA.php:39
+#: templates/Posts/thumbnails/class/ReportA.php:63
+#: templates/Posts/thumbnails/class/ReportA.php:86
+msgid "by"
+msgstr " "
+
+#: templates/Posts/elements/questions/answers/class/A.php:259
+#: templates/Posts/elements/questions/answers/class/A.php:414
+msgid "included"
+msgstr "включая"
+
+#: templates/Posts/elements/questions/answers/class/A.php:481
+msgid "write answer"
+msgstr "напишите ответ"
+
+#: templates/Posts/elements/questions/answers/class/A.php:482
+msgid "Answer"
+msgstr "Ответ"
+
+#: templates/Posts/elements/questions/answers/class/A.php:483
+msgid "Notice, you can add only one answer to one question."
+msgstr "Обратите внимание, вы можете дать только один ответ."
+
+#: templates/Posts/elements/questions/answers/class/A.php:493
+#: templates/Posts/elements/questions/answers/class/A.php:494
+msgid "answers"
+msgstr "ответы"
+
+#: templates/Posts/elements/questions/relatedPosts/class/A.php:91
+#: templates/Posts/elements/questions/relatedPosts/class/A.php:186
+#: templates/Posts/elements/questions/relatedQuestions/class/A.php:113
+#: templates/Posts/elements/questions/relatedQuestions/class/A.php:196
+msgid "attached by"
+msgstr "прикреплен "
+
+#: templates/Posts/elements/questions/relatedPosts/class/A.php:119
+#: templates/Posts/elements/questions/relatedPosts/class/A.php:130
+#: templates/Posts/elements/questions/relatedPosts/class/A.php:139
+#: templates/Posts/elements/questions/relatedQuestions/class/A.php:139
+#: templates/Posts/elements/questions/relatedQuestions/class/A.php:150
+#: templates/Posts/elements/questions/relatedQuestions/class/A.php:159
+msgid "Waiting for confirmation of removing"
+msgstr "Ожидает подтверждения на удаление"
+
+#: templates/Posts/elements/questions/relatedPosts/class/A.php:129
+#: templates/Posts/elements/questions/relatedQuestions/class/A.php:149
+msgid "confirm removing"
+msgstr "подтвердите удаление"
+
+#: templates/Posts/elements/questions/relatedPosts/class/A.php:206
+msgid "add post"
+msgstr "добавить пост"
+
+#: templates/Posts/elements/questions/relatedPosts/class/A.php:208
+msgid "Related post"
+msgstr "Связанные посты"
+
+#: templates/Posts/elements/questions/relatedPosts/class/A.php:209
+msgid ""
+"Place URL to post here. You can attach to this question some post from site. "
+"Of course it should be about solution of problematic."
+msgstr ""
+"Укажите здесь ссылку на пост. Вы можете прикрепить к вопросу посты только с "
+"этого сайта. Конечно, это должны быть посты, дающие информацию о решении "
+"указанной проблемы. "
+
+#: templates/Posts/elements/questions/relatedPosts/class/A.php:210
+msgid "attach post"
+msgstr "прикрепить пост"
+
+#: templates/Posts/elements/questions/relatedPosts/class/A.php:212
+msgid "URL of post"
+msgstr "Ссылка на пост"
+
+#: templates/Posts/elements/questions/relatedPosts/class/A.php:229
+msgid "Related posts"
+msgstr "Связанные посты"
+
+#: templates/Posts/elements/questions/relatedPosts/class/A.php:230
+msgid "No posts attached yet"
+msgstr "Пока нет прикрепленных постов"
+
+#: templates/Posts/elements/questions/relatedQuestions/class/A.php:214
+msgid "add question"
+msgstr "добавить вопрос"
+
+#: templates/Posts/elements/questions/relatedQuestions/class/A.php:216
+msgid "Related question"
+msgstr "Связанные вопросы"
+
+#: templates/Posts/elements/questions/relatedQuestions/class/A.php:217
+msgid ""
+"Place URL to answer here. If you know some similar question, would be great "
+"attach it."
+msgstr ""
+"Укажите здесь ссылку на другой вопрос (имеющий решение), проблематика "
+"которого схожа с проблематикой текущего вопрос. "
+
+#: templates/Posts/elements/questions/relatedQuestions/class/A.php:218
+msgid "attach question"
+msgstr "присоединить вопрос"
+
+#: templates/Posts/elements/questions/relatedQuestions/class/A.php:220
+msgid "URL of question"
+msgstr "Ссылка на вопрос"
+
+#: templates/Posts/elements/questions/relatedQuestions/class/A.php:237
+msgid "Related questions"
+msgstr "Связанные вопросы"
+
+#: templates/Posts/elements/questions/relatedQuestions/class/A.php:238
+msgid "No questions attached yet"
+msgstr "Нет прикрепленных вопросов"
+
+#: templates/Posts/elements/questions/solution/class/A.php:64
+#: templates/Posts/elements/questions/solution/class/A.php:115
+msgid "Is it solution for your question or not?"
+msgstr "Это решение вашего вопроса или нет?"
+
+#: templates/Posts/elements/questions/solution/class/A.php:65
+#: templates/Posts/elements/questions/solution/class/A.php:116
+msgid "yes"
+msgstr "да"
+
+#: templates/Posts/elements/questions/solution/class/A.php:66
+#: templates/Posts/elements/questions/solution/class/A.php:117
+msgid "no"
+msgstr "нет"
+
+#: templates/Posts/sidebars/Group/class/A.php:49
+#: templates/Posts/sidebars/Group/class/A.php:77
+#: templates/Posts/sidebars/Groups/class/A.php:49
+#: templates/Posts/sidebars/Groups/class/A.php:77
+#: templates/Posts/sidebars/MemberActivities/class/A.php:48
+#: templates/Posts/sidebars/MemberActivities/class/A.php:80
+#: templates/Posts/sidebars/MemberContent/class/A.php:51
+#: templates/Posts/sidebars/MemberFriends/class/A.php:51
+#: templates/Posts/sidebars/MemberFriends/class/A.php:85
+#: templates/Posts/sidebars/MemberGroups/class/A.php:48
+#: templates/Posts/sidebars/MemberGroups/class/A.php:82
+#: templates/Posts/sidebars/Members/class/A.php:49
+#: templates/Posts/sidebars/Members/class/A.php:77
+#: templates/Posts/sidebars/category/class/A.php:23
+#: templates/Posts/sidebars/category/class/A.php:32
+#: templates/Posts/sidebars/event/class/A.php:49
+#: templates/Posts/sidebars/event/class/A.php:77
+#: templates/Posts/sidebars/page/class/A.php:49
+#: templates/Posts/sidebars/page/class/A.php:78
+#: templates/Posts/sidebars/post/class/A.php:49
+#: templates/Posts/sidebars/post/class/A.php:77
+#: templates/Posts/sidebars/tag/class/A.php:23
+#: templates/Posts/sidebars/tag/class/A.php:32
+msgid "Nothing to show"
+msgstr "Ничего нет"
+
+#: templates/Posts/sidebars/Group/class/A.php:87
+#: templates/Posts/sidebars/Groups/class/A.php:87
+#: templates/Posts/sidebars/Members/class/A.php:89
+msgid "Popular groups"
+msgstr "Популярные группы"
+
+#: templates/Posts/sidebars/Group/class/A.php:89
+#: templates/Posts/sidebars/Groups/class/A.php:89
+#: templates/Posts/sidebars/Members/class/A.php:87
+msgid "Creative members"
+msgstr "Креативные участники"
+
+#: templates/Posts/sidebars/MemberActivities/class/A.php:97
+#: templates/Posts/sidebars/MemberGroups/class/A.php:116
+msgid "writes"
+msgstr "пишет"
+
+#: templates/Posts/sidebars/MemberActivities/class/A.php:99
+#: templates/Posts/sidebars/MemberContent/class/A.php:67
+#: templates/Posts/sidebars/MemberFriends/class/A.php:98
+msgid "Friends write"
+msgstr "Друзья пишут"
+
+#: templates/Posts/sidebars/MemberGroups/class/A.php:118
+msgid "Members groups"
+msgstr "Группы участников"
+
+#: templates/Posts/sidebars/category/class/A.php:41
+msgid "Other categories"
+msgstr "Другие категории"
+
+#: templates/Posts/sidebars/event/class/A.php:91
+#: templates/Posts/sidebars/post/class/A.php:91
+msgid "More from author"
+msgstr "Больше от автора"
+
+#: templates/Posts/sidebars/tag/class/A.php:41
+msgid "Other tags"
+msgstr "Другие теги"
+
+#: templates/Posts/thumbnails/class/A.php:74
+msgid "Author page"
+msgstr "Страница автора"
+
+#: templates/Posts/thumbnails/class/A.php:77
+msgid "Author posts"
+msgstr "Посты автора"
+
+#: templates/Reports/indexes/class/A.php:37
+#: templates/Reports/indexes/class/A.php:99
+#: templates/Reports/indexes/class/A.php:114
+msgid "Author vote is"
+msgstr "Голос автора"
+
+#: templates/Reports/indexes/class/A.php:37
+#: templates/Reports/indexes/class/A.php:99
+#: templates/Reports/indexes/class/A.php:114
+msgid "Author not voted yet"
+msgstr "Автор еще не голосовал"
+
+#. Theme Name of the plugin/theme
+msgid "Pure"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://puretheme.net"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"The Pure theme is an ideal theme for active community, multi-blog or "
+"entertainment site. Powerful AJAX core and included webSocketServer give "
+"many unique features: a chat in real-time, life-notifications, instant "
+"messages and many other. Most part of BuddyPress’s functionality works "
+"without reload of page. Messenger allows attach files with mails, like real "
+"mail-box. Flexible KARMA core allows manage user’s capabilities and rights "
+"automatically. With KARMA core users can rate any element in site: activity, "
+"post, event, comment and etc. Users can customize personal pages: change "
+"background, add and manage own quotes."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Dmitry Astafyev S.P."
+msgstr ""
+
+#~ msgid "Warnings for post"
+#~ msgstr "Предупреждения"

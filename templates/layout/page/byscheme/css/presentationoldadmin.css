@@ -1,0 +1,29 @@
+﻿div[data-element-type="Pure.SettingLayout.Container"]{
+    position:relative;
+    width   :100%;
+}
+    div[data-element-type="Pure.SettingLayout.Full"]{
+        position:relative;
+        width   :100%;
+    }
+    div[data-element-type="Pure.SettingLayout.Columns"]{
+        position        :relative;
+        display         :table;
+        width           :100%;
+        margin          :0;
+        padding         :0;
+        vertical-align  :top;
+        border-collapse :collapse;
+        border          :none;
+    }
+        div[data-element-type="Pure.SettingLayout.Column"]{
+            position        :relative;
+            display         :table-cell;
+            width           :50%;
+            max-width       :50%;
+            margin          :0;
+            padding         :0;
+            vertical-align  :top;
+            border-collapse :collapse;
+            border          :none;
+        }

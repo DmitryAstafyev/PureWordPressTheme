@@ -1,0 +1,53 @@
+<div data-post-element-type="Pure.Questions.A.Answer">
+    <div data-post-element-type="Pure.Questions.A.Answer.Container">
+        <div data-post-element-type="Pure.Questions.A.Answer.Left">
+            <a data-post-element-type="Pure.Questions.A.Answer.Avatar"><img data-post-element-type="Pure.Questions.A.Answer.Avatar" src="%avatar%"/></a>
+            %mana%
+            %solution%
+        </div>
+        <div data-post-element-type="Pure.Questions.A.Answer.Right">
+            <p data-post-element-type="Pure.Questions.A.Answer.Caption">%label_by% <a href="%author_url%">%author%</a>, %created%</p>
+            <div data-post-element-type="Pure.Questions.A.Answer.Content"
+                 data-layout-engine-element="Post.Content"
+                 data-answer-engine-editor-content="%question_id%"
+                 data-answer-engine-answer_id="%answer_id%">
+                %content%
+            </div>
+            %attachments%
+            <!--BEGIN: Include -->
+            <div data-post-element-type="Pure.Questions.A.Answer.Include"
+                 data-answer-engine-editor-progress="%question_id%"
+                 data-answer-engine-answer_id="%answer_id%">
+                <input data-post-element-type="Pure.Questions.A.Answer.Include.Switcher" type="checkbox" id="%answer_id%" />
+                <input data-post-element-type="Pure.Questions.A.Answer.Include.Editor.Switcher"
+                       type="checkbox"
+                       id="editor_%answer_id%"
+                       data-answer-engine-switcher-editor="%question_id%"
+                       data-answer-engine-answer_id="%answer_id%" disabled />
+                <div data-post-element-type="Pure.Questions.A.Editor.Controls" data-controls-type="include"
+                     data-answer-engine-switcher-container="%question_id%"
+                     data-answer-engine-answer_id="%answer_id%">
+                    <p data-post-element-type="Pure.Questions.A.Button.Label"
+                       data-answer-engine-included-title="%question_id%"
+                       data-answer-engine-answer_id="%answer_id%">%label_included% <span>%count_included%</span></p>
+                    <label data-post-element-type="Pure.Questions.A.Button" data-button-type="switcher" for="%answer_id%"></label>
+                </div>
+                <div data-post-element-type="Pure.Questions.A.Editor.Controls" data-controls-type="reply">
+                    %attachment_button%
+                    %reply_button%
+                    %edit_button%
+                    <label data-post-element-type="Pure.Questions.A.Button" data-button-type="cancel" for="%answer_id%"></label>
+                </div>
+                %editor%
+                <!--BEGIN: Included answers -->
+                <div data-post-element-type="Pure.Questions.A.Answer.Included.Content"
+                     data-answer-engine-included-container="%question_id%"
+                     data-answer-engine-answer_id="%answer_id%">
+                    %included%
+                </div>
+                <!--END: Included answers -->
+            </div>
+            <!--END: Include -->
+        </div>
+    </div>
+</div>

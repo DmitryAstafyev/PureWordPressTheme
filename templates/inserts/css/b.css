@@ -1,0 +1,23 @@
+﻿div[data-element-type="Pure.Insert.B"]{
+    position:relative;
+    width   :auto;
+    padding : 1rem 0 3rem 0;
+}
+p[data-element-type="Pure.Insert.B.Title"]{
+    font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size           :2rem;
+    padding             :0 0.5rem 0.5rem 0.5rem;
+    margin              :0;
+    color               :rgb(250,250,250);
+    cursor              :default;
+    text-align          : center;
+}
+p[data-element-type="Pure.Insert.B.Content"]{
+    font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size           :1rem;
+    padding             :0.5rem;
+    margin              :0;
+    color               :rgb(200,200,200);
+    cursor              :default;
+    text-align          : center;
+}

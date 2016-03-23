@@ -1,0 +1,51 @@
+﻿div[data-post-element-type="Pure.Posts.Author.A.Icon"]{
+    position        : relative;
+    width           : 5em;
+    height          : 5em;
+    border-radius   : 0;
+    border          : 0.3em solid rgba(140, 148, 170,1);
+    box-sizing      : border-box;
+    background-size : contain;
+    left            :50%;
+    margin-left     : -2.5em;
+}
+a[data-post-element-type="Pure.Posts.Author.A.Name"]{
+    position        : relative;
+    display         : block;
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 0.9em;
+    text-decoration : none;
+    color           : rgb(91, 105, 145);
+    text-align      : center;
+    margin          : 0;
+    padding         : 0.5em 0 0.5em 0;
+}
+    a[data-post-element-type="Pure.Posts.Author.A.Name"]:hover{
+        text-decoration : underline;
+    }
+p[data-post-element-type="Pure.Posts.Author.A.Date"]{
+    position        : relative;
+    display         : block;
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 1em;
+    text-decoration : none;
+    color           : rgb(91, 105, 145);
+    text-align      : center;
+    margin          : 0;
+    padding         : 0.5em 0 0.5em 0;
+}
+a[data-post-element-type="Pure.Posts.Author.A.Category"]{
+    position        : relative;
+    display         : block;
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 0.8em;
+    text-decoration : none;
+    color           : rgba(91, 105, 145, 0.4);
+    text-align      : center;
+    margin          : 0;
+    padding         : 0.5em 0 0.5em 0;
+    text-decoration : none;
+}
+    a[data-post-element-type="Pure.Posts.Author.A.Category"]:hover{
+        text-decoration : underline;
+    }

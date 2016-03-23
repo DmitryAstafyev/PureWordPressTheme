@@ -1,0 +1,59 @@
+﻿div[data-element-type="Pure.Title.G_for_dark"]{
+    position:relative;
+    width   :100%;
+    overflow:hidden;
+}
+    div[data-element-type="Pure.Title.G_for_dark"]:after{
+        content : '';
+        display : block;
+        clear   : both;
+    }
+    div[data-element-type="Pure.Title.G_for_dark.Container"]{
+        position: relative;
+        right   : 50%;
+        float   : right;
+    }
+    p[data-element-type="Pure.Title.G_for_dark"],
+    a[data-element-type="Pure.Title.G_for_dark"]{
+        position        :relative;
+        display         :inline-block;
+        font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size       :1rem;
+        text-transform  :uppercase;
+        text-align      :center;
+        color           : rgb(245, 245, 245);
+        z-index         : 1;
+        right           : -50%;
+        margin          :2rem 0 2rem 0;
+        padding         :0;
+        text-decoration : none;
+        text-transform  : uppercase;
+        font-weight     : normal;
+    }
+        p[data-element-type="Pure.Title.G_for_dark"]:before,
+        a[data-element-type="Pure.Title.G_for_dark"]:before{
+            position    :absolute;
+            content     :'';
+            width       :10000px;
+            height      :1px;
+            border-top  :1px dashed rgb(100, 100, 100);
+            left        :-10000px;
+            top         :50%;
+            margin-left :-1em;
+        }
+        p[data-element-type="Pure.Title.G_for_dark"]:after,
+        a[data-element-type="Pure.Title.G_for_dark"]:after{
+            position    :absolute;
+            content     :'';
+            width       :10000px;
+            height      :1px;
+            border-top  :1px dashed rgb(100, 100, 100);
+            left        :100%;
+            top         :50%;
+            margin-left :1em;
+        }
+    p[data-element-type="Pure.Title.G_for_dark"][data-addition-type="shadow"],
+    a[data-element-type="Pure.Title.G_for_dark"][data-addition-type="shadow"]{
+        font-size       :0.8em;
+        color           : rgb(245, 245, 245);
+    }

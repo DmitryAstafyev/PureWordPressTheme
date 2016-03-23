@@ -1,0 +1,59 @@
+﻿div[data-page-element-type="Pure.Footer.Elements.Categories.D"]{
+    position    : relative;
+    width       : auto;
+    padding     : 0;
+}
+p[data-page-element-type="Pure.Footer.Elements.Categories.D"]{
+    position        : relative;
+    display         : block;
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 1em;
+    color           : rgb(50, 50, 50);
+    text-align      : left;
+    margin          : 0.5em;
+    padding         : 0;
+    text-shadow     : 0 0 1px rgba(0,0,0,0.4);
+}
+p[data-page-element-type="Pure.Footer.Elements.Categories.D.Categories"]{
+    position        : relative;
+    display         : block;
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 1rem;
+    color           : rgb(50, 50, 50);
+    text-align      : left;
+    margin          : 0 0.5em;
+    padding         : 0.5em 0 0.5em 1.5em;
+    border-bottom   : thin dashed rgba(0,0,0,0.4);
+}
+    p[data-page-element-type="Pure.Footer.Elements.Categories.D.Categories"]:after{
+        position                : absolute;
+        display                 : block;
+        content                 : '';
+        width                   : 0;
+        height                  : 0;
+        border-top              : 0.25em solid transparent;
+        border-left             : 0.5em solid rgba(0,0,0,0.4);
+        border-bottom           : 0.25em solid transparent;
+        top                     :1em;
+        left                    :0em;
+        -moz-transition         : all ease-in-out 300ms;
+        -o-transition           : all ease-in-out 300ms;
+        -webkit-transition      : all ease-in-out 300ms;
+        transition              : all ease-in-out 300ms;
+    }
+    p[data-page-element-type="Pure.Footer.Elements.Categories.D.Categories"]:hover:after{
+        left            :0.7em;
+    }
+a[data-page-element-type="Pure.Footer.Elements.Categories.D"]{
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 0.8rem;
+    color           : rgb(50, 50, 50);
+    text-align      : left;
+    margin          : 0;
+    padding         : 0;
+    text-decoration : none;
+    cursor          : pointer;
+}
+a[data-page-element-type="Pure.Footer.Elements.Categories.D"]:hover{
+    text-decoration : underline;
+}

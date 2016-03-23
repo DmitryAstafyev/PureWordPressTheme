@@ -1,0 +1,68 @@
+﻿/*====================================================================================================================================*/
+div[data-type-element="Group.Thumbnail.H.Container"]{
+    position	    :relative;
+    padding         : 0.5em 0.5em;
+    margin          :0.5em;
+    width           : 10em;
+    display         :inline-block;
+}
+/*====================================================================================================================================*/
+div[data-type-element="Group.Thumbnail.H.Members"]{
+    position    :relative;
+    height      :4.5em;
+    width       :5em;
+    padding     :0.5em;
+    left        :2em;
+    overflow    :hidden;
+}
+a[data-type-element="Group.Thumbnail.H.Member"]{
+    position    :relative;
+    display     :block;
+    float       :left;
+    width       :2em;
+    height      :2em;
+    margin      : 0 0.5em 0.5em 0;
+}
+img[data-type-element="Group.Thumbnail.H.Member"]{
+    position        :relative;
+    display         :block;
+    width           :2em;
+    height          :2em;
+    border-radius   : 0.5em;
+}
+/*====================================================================================================================================*/
+div[data-type-element="Group.Thumbnail.H.Info"]{
+    position    :relative;
+}
+a[data-type-element="Group.Thumbnail.H.Name"]{
+    position            :relative;
+    display             :block;
+    font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size           :0.8em;
+    padding             :0.5em;
+    margin              :0;
+    color               :rgb(100,100,100);
+    line-height         :1.5em;
+    cursor              :pointer;
+    text-align          :center;
+    text-decoration     :none;
+}
+a[data-type-element="Group.Thumbnail.H.Name"]:hover{
+    color               :rgb(30,30,30);
+}
+a[data-type-element="Group.Thumbnail.H.Members"]{
+    position            :relative;
+    display             :block;
+    font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size           :0.7em;
+    padding             :0.3em;
+    margin              :0;
+    color               :rgb(100,100,100);
+    line-height         :1em;
+    cursor              :pointer;
+    text-align          :center;
+    text-decoration     :none;
+}
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/
+/*====================================================================================================================================*/

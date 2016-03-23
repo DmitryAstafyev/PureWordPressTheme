@@ -1,0 +1,322 @@
+﻿*[data-layout-engine-element="Post.Content"] > *{
+    font-family :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif!important;
+}
+*[data-layout-engine-element="Post.Content"] > article,
+*[data-layout-engine-element="Post.Content"] > aside,
+*[data-layout-engine-element="Post.Content"] > details,
+*[data-layout-engine-element="Post.Content"] > figcaption,
+*[data-layout-engine-element="Post.Content"] > figure,
+*[data-layout-engine-element="Post.Content"] > footer,
+*[data-layout-engine-element="Post.Content"] > header,
+*[data-layout-engine-element="Post.Content"] > hgroup,
+*[data-layout-engine-element="Post.Content"] > nav,
+*[data-layout-engine-element="Post.Content"] > section {
+	display: block;
+}
+
+*[data-layout-engine-element="Post.Content"] > a {
+	color: #24890d;
+	text-decoration: none;
+}
+*[data-layout-engine-element="Post.Content"] > a:focus {
+	outline: thin dotted;
+}
+
+*[data-layout-engine-element="Post.Content"] > a:hover,
+*[data-layout-engine-element="Post.Content"] > a:active {
+	outline: 0;
+}
+
+*[data-layout-engine-element="Post.Content"] > a:active,
+*[data-layout-engine-element="Post.Content"] > a:hover {
+	color: #41a62a;
+}
+
+*[data-layout-engine-element="Post.Content"] > h1,
+*[data-layout-engine-element="Post.Content"] > h2,
+*[data-layout-engine-element="Post.Content"] > h3,
+*[data-layout-engine-element="Post.Content"] > h4,
+*[data-layout-engine-element="Post.Content"] > h5,
+*[data-layout-engine-element="Post.Content"] > h6 {
+	clear: both;
+	font-weight: normal!important;
+	margin: 36px 0 12px;
+}
+
+*[data-layout-engine-element="Post.Content"] > h1 {
+	font-size: 26px;
+	line-height: 1.3846153846;
+}
+
+*[data-layout-engine-element="Post.Content"] > h2 {
+	font-size: 24px;
+	line-height: 1;
+}
+
+*[data-layout-engine-element="Post.Content"] > h3 {
+	font-size: 22px;
+	line-height: 1.0909090909;
+}
+
+*[data-layout-engine-element="Post.Content"] > h4 {
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+*[data-layout-engine-element="Post.Content"] > h5 {
+	font-size: 18px;
+	line-height: 1.3333333333;
+}
+
+*[data-layout-engine-element="Post.Content"] > h6 {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+*[data-layout-engine-element="Post.Content"] > address {
+	font-style: italic;
+	margin-bottom: 24px;
+}
+
+*[data-layout-engine-element="Post.Content"] > abbr[title] {
+	border-bottom: 1px dotted #2b2b2b;
+	cursor: help;
+}
+
+*[data-layout-engine-element="Post.Content"] > b,
+*[data-layout-engine-element="Post.Content"] > strong {
+	font-weight: 700;
+}
+
+*[data-layout-engine-element="Post.Content"] > cite,
+*[data-layout-engine-element="Post.Content"] > dfn,
+*[data-layout-engine-element="Post.Content"] > em,
+*[data-layout-engine-element="Post.Content"] > i {
+	font-style: italic;
+}
+
+*[data-layout-engine-element="Post.Content"] > mark,
+*[data-layout-engine-element="Post.Content"] > ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+*[data-layout-engine-element="Post.Content"] > p {
+	margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+*[data-layout-engine-element="Post.Content"] > code,
+*[data-layout-engine-element="Post.Content"] > kbd,
+*[data-layout-engine-element="Post.Content"] > tt,
+*[data-layout-engine-element="Post.Content"] > var,
+*[data-layout-engine-element="Post.Content"] > samp {
+	font-family: monospace, serif;
+	font-size: 15px;
+	-webkit-hyphens: none;
+	-moz-hyphens:    none;
+	-ms-hyphens:     none;
+	hyphens:         none;
+	line-height: 1.6;
+}
+*[data-layout-engine-element="Post.Content"] > blockquote,
+*[data-layout-engine-element="Post.Content"] > q {
+	-webkit-hyphens: none;
+	-moz-hyphens:    none;
+	-ms-hyphens:     none;
+	hyphens:         none;
+	quotes: none;
+}
+
+*[data-layout-engine-element="Post.Content"] > blockquote:before,
+*[data-layout-engine-element="Post.Content"] > blockquote:after,
+*[data-layout-engine-element="Post.Content"] > q:before,
+*[data-layout-engine-element="Post.Content"] > q:after {
+	content: "";
+	content: none;
+}
+
+*[data-layout-engine-element="Post.Content"] > blockquote {
+	color: #767676;
+	font-size: 19px;
+	font-style: italic;
+	font-weight: 300;
+	line-height: 1.2631578947;
+	margin-bottom: 24px;
+}
+
+*[data-layout-engine-element="Post.Content"] > blockquote cite,
+*[data-layout-engine-element="Post.Content"] > blockquote small {
+	color: #2b2b2b;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+*[data-layout-engine-element="Post.Content"] > blockquote em,
+*[data-layout-engine-element="Post.Content"] > blockquote i,
+*[data-layout-engine-element="Post.Content"] > blockquote cite {
+	font-style: normal;
+}
+
+*[data-layout-engine-element="Post.Content"] > blockquote strong,
+*[data-layout-engine-element="Post.Content"] > blockquote b {
+	font-weight: 400;
+}
+
+*[data-layout-engine-element="Post.Content"] > small {
+	font-size: smaller;
+}
+
+*[data-layout-engine-element="Post.Content"] > big {
+	font-size: 125%;
+}
+
+*[data-layout-engine-element="Post.Content"] > sup,
+*[data-layout-engine-element="Post.Content"] > sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+*[data-layout-engine-element="Post.Content"] > sup {
+	bottom: 1ex;
+}
+
+*[data-layout-engine-element="Post.Content"] > sub {
+	top: .5ex;
+}
+
+*[data-layout-engine-element="Post.Content"] > dl {
+	margin-bottom: 24px;
+}
+
+*[data-layout-engine-element="Post.Content"] > dt {
+	font-weight: bold;
+}
+
+*[data-layout-engine-element="Post.Content"] > dd {
+	margin-bottom: 24px;
+}
+
+*[data-layout-engine-element="Post.Content"] > ul,
+*[data-layout-engine-element="Post.Content"] > ol {
+	list-style: none;
+	margin: 0 0 24px 20px;
+}
+
+*[data-layout-engine-element="Post.Content"] > ul {
+	list-style: disc;
+}
+
+*[data-layout-engine-element="Post.Content"] > ol {
+	list-style: decimal;
+}
+
+*[data-layout-engine-element="Post.Content"] > li > ul,
+*[data-layout-engine-element="Post.Content"] > li > ol {
+	margin: 0 0 0 20px;
+}
+
+*[data-layout-engine-element="Post.Content"] > img {
+	-ms-interpolation-mode: bicubic;
+	border: 0;
+	vertical-align: middle;
+}
+
+*[data-layout-engine-element="Post.Content"] > figure {
+	margin: 0;
+}
+
+*[data-layout-engine-element="Post.Content"] > fieldset {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	margin: 0 0 24px;
+	padding: 11px 12px 0;
+}
+
+*[data-layout-engine-element="Post.Content"] > legend {
+	white-space: normal;
+}
+*[data-layout-engine-element="Post.Content"] > table,
+*[data-layout-engine-element="Post.Content"] > th,
+*[data-layout-engine-element="Post.Content"] > td {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+*[data-layout-engine-element="Post.Content"] > table {
+	border-collapse: separate;
+	border-spacing: 0;
+	border-width: 1px 0 0 1px;
+	margin-bottom: 24px;
+	width: 100%;
+}
+
+*[data-layout-engine-element="Post.Content"] > caption,
+*[data-layout-engine-element="Post.Content"] > th,
+*[data-layout-engine-element="Post.Content"] > td {
+	font-weight: normal;
+	text-align: left;
+}
+
+*[data-layout-engine-element="Post.Content"] > th {
+	border-width: 0 1px 1px 0;
+	font-weight: bold;
+}
+
+*[data-layout-engine-element="Post.Content"] > td {
+	border-width: 0 1px 1px 0;
+}
+
+*[data-layout-engine-element="Post.Content"] > del {
+	color: #767676;
+}
+
+*[data-layout-engine-element="Post.Content"] > hr {
+	background-color: rgba(0, 0, 0, 0.1);
+	border: 0;
+	height: 1px;
+	margin-bottom: 23px;
+}
+*[data-layout-engine-element="Post.Content"] .alignleft {
+    float: left;
+}
+
+*[data-layout-engine-element="Post.Content"] .alignright {
+    float: right;
+}
+
+*[data-layout-engine-element="Post.Content"] .aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+*[data-layout-engine-element="Post.Content"] > pre {
+    font-family         : monospace, serif!important;
+    font-size           : 0.9rem!important;
+    line-height         : 1.2rem!important;
+    -webkit-hyphens     : none;
+    -moz-hyphens        : none;
+    -ms-hyphens         : none;
+    hyphens             : none;
+    line-height         : 1.6;
+    border              : 1px dashed rgba(200, 200, 200, 1);
+    -webkit-box-sizing  : border-box;
+    -moz-box-sizing     : border-box;
+    box-sizing          : border-box;
+    margin-bottom       : 24px;
+    max-width           : 100%;
+    overflow            : auto;
+    padding             : 12px;
+    white-space         : pre;
+    white-space         : pre-wrap;
+    word-wrap           : break-word;
+    background          : rgb(245,245,245);
+}
+*[data-layout-engine-element="Post.Content"] > pre *{
+    font-family         : monospace, serif!important;
+    font-size           : 0.9rem!important;
+    line-height         : 1.2rem!important;
+    background          : none!important;
+}

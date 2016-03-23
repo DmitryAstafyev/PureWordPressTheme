@@ -1,0 +1,1 @@
+<p>It's special template for BuddyPress template A. This template shows complex information about group: activities of group; members; administrators and moderators.</p>

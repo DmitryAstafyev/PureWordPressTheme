@@ -1,0 +1,1 @@
+<p>This is transparent template of thumbnail. Recommended use it on light background.</p>

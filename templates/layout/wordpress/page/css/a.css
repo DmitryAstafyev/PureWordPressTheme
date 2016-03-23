@@ -1,0 +1,65 @@
+﻿div[data-element-type="Pure.Social.Segment"] {
+    position            : relative;
+    display             :table;
+    border-collapse     :collapse;
+    width               : 100%;
+    margin              : 2em 0;
+    z-index             : 10;
+    background          :rgb(255,255,255);
+    border-top          : dashed 1px rgb(220,220,220);
+    border-bottom       : dashed 1px rgb(220,220,220);
+}
+    div[data-element-type="Pure.Social.Segment"][data-segment="single"]{
+        display :block;
+        width   :auto;
+        padding : 0.8em 1em 1em 1em;
+    }
+/*====================================================================================================*/
+p[data-element-type="Pure.Social.Segment.Title"]{
+    display                 : block;
+    position                : relative;
+    font-family             :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size               :1.5em;
+    text-align              :left;
+    color                   :rgb(50, 50, 50);
+    padding                 :0rem 0rem 1.5rem 0rem;
+    margin                  :0;
+    cursor                  :default;
+    text-transform          : uppercase;
+    border-bottom: 1px dashed rgb(230,230,230);
+}
+/*====================================================================================================*/
+div[data-segment-padding="single"]{
+    display :block;
+    width   :auto;
+    padding : 2rem!important;
+}
+@media screen and (max-width: 800px){
+    div[data-segment-padding="single"]{
+        padding : 1.5rem!important;
+    }
+}
+@media screen and (max-width: 600px){
+    div[data-segment-padding="single"]{
+        padding : 1rem!important;
+    }
+}
+/*====================================================================================================*/
+*[data-global-makeup-marks="magic-sidebar"]{
+    background      : rgb(245,245,245)!important;
+    box-shadow      : none!important;
+    background-image: none!important;
+    border-left     : dashed 1px rgb(220,220,220)!important;
+}
+*[data-global-makeup-marks="menu-top-line-full"]{
+    background      : rgb(245,245,245)!important;
+    box-shadow      : none!important;
+    background-image: none!important;
+    border-top      : dashed 1px rgb(220,220,220)!important;
+    border-bottom   : dashed 1px rgb(220,220,220)!important;
+}
+*[data-global-makeup-marks="menu-popup-items"]:before{
+    background      : rgb(245,245,245)!important;
+    box-shadow      : none!important;
+    background-image: none!important;
+}

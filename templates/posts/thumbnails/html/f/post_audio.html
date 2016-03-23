@@ -1,0 +1,78 @@
+<article data-element-type="Pure.Post.Thumbnail.F.Container" data-engine-element="parent" data-engine-element-ID="%id_container%" %attribute%>
+    <div data-element-type="Pure.Post.Thumbnail.F.Audio.Icon">
+    </div>
+    <div data-element-type="Pure.Post.Thumbnail.F.Audio.Gallery">
+        %tracks%
+    </div>
+    <div data-element-type="Pure.Post.Thumbnail.F.Audio.Controls"
+        data-type-use="Pure.Components.AudioPlayer.A"
+        data-AudioPlayer-handle-volume="pure.components.slider.A.Handles.set"
+        data-AudioPlayer-handle-volume-param="%id_container%_volume"
+        data-AudioPlayer-handle-progress="pure.components.slider.A.Handles.set"
+        data-AudioPlayer-handle-progress-param="%id_container%_progress"
+        data-AudioPlayer-handle-ghost="pure.components.slider.A.Handles.ghost"
+        data-AudioPlayer-handle-ghost-param="%id_container%"
+        data-type-AudioPlayer-playlist="%playlist%"
+        data-type-AudioPlayer-ID="%id_container%">
+        <div data-element-type="Pure.Post.Thumbnail.F.Audio.Basic">
+            <div data-element-type="Pure.Post.Thumbnail.F.Audio.Previous"
+                 data-engine-type="Slider.B.Button.Left"
+                 data-type-AudioPlayer="previous">
+            </div>
+            <div data-element-type="Pure.Post.Thumbnail.F.Audio.Play"
+                 data-player-state="paused"
+                 data-type-AudioPlayer-state="play"
+                 data-type-AudioPlayer="playpause">
+            </div>
+            <div data-element-type="Pure.Post.Thumbnail.F.Audio.Next"
+                 data-engine-type="Slider.B.Button.Right"
+                 data-type-AudioPlayer="next">
+            </div>
+        </div>
+        <input data-element-type="Pure.Post.Thumbnail.F.Audio.More.Switcher" type="checkbox" id="%id_container%"/>
+        <div data-element-type="Pure.Post.Thumbnail.F.Audio.More">
+            <div data-element-type="Pure.Post.Thumbnail.F.Audio.Lines">
+                <div data-element-type="Pure.Post.Thumbnail.F.Audio.Line.Container"
+                     data-type-use="Pure.Components.Slider.A"
+                     data-type-slider-ID="%id_container%_progress"
+                     data-slider-handle-onchange="pure.components.audioplayer.A.Handles.position"
+                     data-slider-handle-onchange-param="%id_container%"
+                     data-slider-handle-onfinish="pure.components.audioplayer.A.Handles.position"
+                     data-slider-handle-onfinish-param="%id_container%"
+                     data-type-slider="line">
+                    <div data-element-type="Pure.Post.Thumbnail.F.Audio.Line.Shadow" data-type-slider-ghost="buffered">
+                    </div>
+                    <div data-element-type="Pure.Post.Thumbnail.F.Audio.Line.Value" data-type-slider="progress">
+                    </div>
+                </div>
+                <div data-element-type="Pure.Post.Thumbnail.F.Audio.Line.Container"
+                    data-type-use="Pure.Components.Slider.A"
+                    data-type-slider-ID="%id_container%_volume"
+                    data-slider-handle-onchange="pure.components.audioplayer.A.Handles.volume"
+                    data-slider-handle-onchange-param="%id_container%"
+                    data-slider-handle-onfinish="pure.components.audioplayer.A.Handles.volume"
+                    data-slider-handle-onfinish-param="%id_container%"
+                    data-type-slider="line">
+                    <div data-element-type="Pure.Post.Thumbnail.F.Audio.Line.Value" data-type-slider="progress">
+                    </div>
+                    <div data-element-type="Pure.Post.Thumbnail.F.Audio.Line.Shadow" data-type-slider-ghost="peak">
+                    </div>
+                    <div data-element-type="Pure.Post.Thumbnail.F.Audio.Line.Pointer" data-type-slider="pointer">
+                    </div>
+                </div>
+            </div>
+            <div data-element-type="Pure.Post.Thumbnail.F.Audio.Time">
+                <p data-element-type="Pure.Post.Thumbnail.F.Audio.Time.Current" data-type-AudioPlayer="current">..:..</p>
+                <p data-element-type="Pure.Post.Thumbnail.F.Audio.Time.Total" data-type-AudioPlayer="total">..:..</p>
+            </div>
+        </div>
+        <label for="%id_container%">
+            <div data-element-type="Pure.Post.Thumbnail.F.Audio.More.Switcher">
+            </div>
+        </label>
+    </div>
+    <p data-element-type="Pure.Post.Thumbnail.F.Title">%title%</p>
+    <p data-element-type="Pure.Post.Thumbnail.F.Author">%label_by% %author% / %created%</p>
+    <p data-element-type="Pure.Post.Thumbnail.F.Statistic"><span data-event-field-type="Comments">%comments%</span><span data-event-field-type="Views">%views%</span><span data-event-field-type="Karma">%karma%</span></p>
+    <a data-element-type="Pure.Post.Thumbnail.F.Read" href="%post_url%">%read_more% &#62;</a>
+</article>

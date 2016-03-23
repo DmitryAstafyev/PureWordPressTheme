@@ -1,0 +1,1 @@
+<p>Best usage: light background or clear-white background.</p>

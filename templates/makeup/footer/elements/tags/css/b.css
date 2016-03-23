@@ -1,0 +1,37 @@
+﻿div[data-page-element-type="Pure.Footer.Elements.Tags.B"]{
+    position    : relative;
+    width       : 100%;
+}
+p[data-page-element-type="Pure.Footer.Elements.Tags.B"]{
+    position        : relative;
+    display         : block;
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 1em!important;
+    color           : rgb(250, 250, 250);
+    text-align      : left;
+    margin          : 0.5em;
+    padding         : 0.5em;
+    text-shadow     : 0 0 1px rgba(0,0,0,0.4);
+}
+p[data-page-element-type="Pure.Footer.Elements.Tags.B.Tags"]{
+    position        : relative;
+    display         : block;
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 1rem!important;
+    color           : rgb(250, 250, 250);
+    text-align      : left;
+    margin          : 0 0.5em;
+    padding         : 0.5em;
+}
+p[data-page-element-type="Pure.Footer.Elements.Tags.B.Tags"] a{
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 0.8rem!important;
+    color           : rgb(200, 200, 200);
+    text-align      : left;
+    margin          : 0.5em;
+    padding         : 0.5em;
+    text-decoration : none;
+}
+p[data-page-element-type="Pure.Footer.Elements.Tags.B.Tags"] a:hover{
+    text-decoration : underline;
+}

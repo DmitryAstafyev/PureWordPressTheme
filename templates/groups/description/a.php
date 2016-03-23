@@ -1,0 +1,1 @@
+<p>This is template of thumbnail has fader of shadow and can be used only on clear-white background.</p>

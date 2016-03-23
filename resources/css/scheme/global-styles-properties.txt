@@ -1,0 +1,24 @@
+//Menu marks
+data-global-makeup-marks="menu-top-line-full"
+data-global-makeup-marks="menu-top-line-items"
+data-global-makeup-marks="menu-top-line-item"
+data-global-makeup-marks="menu-popup-items"
+data-global-makeup-marks="menu-popup-item"
+data-global-makeup-marks="menu-content-container"
+data-global-makeup-marks="menu-social-container"
+data-global-makeup-marks="menu-addition-container"
+
+//Magic sidebar
+data-global-makeup-marks="magic-sidebar"
+data-global-makeup-marks="magic-sidebar-switcher"
+
+//Footer
+data-global-makeup-marks="footer"
+data-global-makeup-marks="to-top-button"
+data-global-makeup-marks="footer.body"
+
+//Segments
+data-global-makeup-marks="segment-container"
+
+//Content
+data-global-makeup-marks="global-content-wrapper"

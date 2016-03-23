@@ -1,0 +1,35 @@
+<tr data-element-type="Pure.Social.Groups.A.Item.MembersList.Table.Row"
+    data-engine-element-id="%instance_id%"
+    data-field-type="Group.Manage.Row"
+    data-engine-data-memberID="%member_id%">
+    <td data-element-type="Pure.Social.Groups.A.Item.MembersList.Avatar">
+        <div data-element-type="Pure.Social.Groups.A.Item.MembersList.Avatar" style="background-image:url(%member_avatar%);"></div>
+    </td>
+    <td data-element-type="Pure.Social.Groups.A.Item.MembersList.Name">
+        <p data-element-type="Pure.Social.Groups.A.Item.MembersList.Name">%member_name%</p>
+    </td>
+    %remove_segment%
+    <td data-element-type="Pure.Social.Groups.A.Item.MembersList.Actions">
+        <div data-engine-data-memberID="%member_id%"
+             data-engine-data-memberName="%member_name%"
+             data-element-type="Pure.Social.Groups.A.Item.MembersList.ButtonIcon"
+             data-engine-element-id="%instance_id%"
+             data-field-type="Group.Manage.Admonition.Caller"
+             data-engine-action="admonition">
+            <span data-field-type="Group.Manage.Admonition.Counter"
+                  data-engine-element-id="%instance_id%"
+                  data-engine-data-memberID="%member_id%">%admonition_count%</span>
+            <p data-element-type="Pure.Social.Groups.A.Item.MembersList.Help">%help_admonition%</p>
+        </div>
+        <div data-engine-data-memberID="%member_id%"
+             data-engine-data-memberName="%member_name%"
+             data-element-type="Pure.Social.Groups.A.Item.MembersList.ButtonIcon"
+             data-engine-element-id="%instance_id%"
+             data-engine-action="ban"
+             data-field-type="Group.Manage.Ban.Button"
+             data-engine-state="%active_ban%">
+            <p data-element-type="Pure.Social.Groups.A.Item.MembersList.Help">%help_ban%</p>
+        </div>
+        %remove_button%
+    </td>
+</tr>

@@ -1,0 +1,292 @@
+﻿div[data-compressor-loader]{
+    position    :fixed;
+    width       :100%;
+    height      :100%;
+    z-index     :999999;
+    top         :0;
+    left        :0;
+    background  :rgb(245,245,245);
+    -moz-transition     : opacity ease-in-out 1000ms;
+    -o-transition       : opacity ease-in-out 1000ms;
+    -webkit-transition  : opacity ease-in-out 1000ms;
+    transition          : opacity ease-in-out 1000ms;
+}
+div[data-compressor-column]{
+    position    :absolute;
+    width       :20%;
+    bottom      :2rem;
+}
+div[data-compressor-column]:nth-child(1){
+    left:0;
+}
+div[data-compressor-column]:nth-child(2){
+    left:20%;
+}
+div[data-compressor-column]:nth-child(3){
+    left:40%;
+}
+div[data-compressor-column]:nth-child(4){
+    left:60%;
+}
+div[data-compressor-column]:nth-child(5){
+    left:80%;
+}
+div[data-compressor-loader] p{
+    display     :block;
+    position    :relative;
+    font-family :'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+    cursor      :default;
+}
+p[data-compressor-title]{
+    margin          :1rem 2rem;
+    padding         :0;
+    font-size       :1rem;
+    text-transform  :uppercase;
+    color           :rgb(100, 100, 100);
+}
+p[data-compressor-item]{
+    margin                  :-1.5rem 2rem 0.5rem 2rem;
+    padding                 :0;
+    font-size               :0.8rem;
+    color                   :rgb(150, 150, 150);
+    animation               : DataCompressorItem 600ms ease-in-out 1 normal forwards;
+    -webkit-animation       : DataCompressorItem 600ms ease-in-out 1 normal forwards;
+    -moz-animation          : DataCompressorItem 600ms ease-in-out 1 normal forwards;
+    -o-animation            : DataCompressorItem 600ms ease-in-out 1 normal forwards;
+}
+@keyframes DataCompressorItem {
+    0% { opacity: 0;margin-top: -1.5rem; }100% { opacity: 1;margin-top: 0.5rem;  }
+}
+@-moz-keyframes DataCompressorItem {
+    0% { opacity: 0;margin-top: -1.5rem; }100% { opacity: 1;margin-top: 0.5rem;  }
+}
+@-webkit-keyframes DataCompressorItem {
+    0% { opacity: 0;margin-top: -1.5rem; }100% { opacity: 1;margin-top: 0.5rem;  }
+}
+div[data-compressor-progress] {
+    position                : absolute;
+    width                   : 5rem;
+    height                  : 5rem;
+    left                    : 50%;
+    margin-left             : -2.5rem;
+    -moz-border-radius      : 2.5rem;
+    -webkit-border-radius   : 2.5rem;
+    border-radius           : 2.5rem;
+    background              : rgb(200,200,200);
+    -moz-box-shadow         : 0 0 3px rgba(0,0,0,0.4) inset;
+    -webkit-box-shadow      : 0 0 3px rgba(0,0,0,0.4) inset;
+    box-shadow              : 0 0 3px rgba(0,0,0,0.4) inset;
+    bottom                  :0;
+    -moz-box-sizing         : border-box;
+    -webkit-box-sizing      : border-box;
+    box-sizing              : border-box;
+    border-bottom           :thin solid rgb(230, 230, 230);
+    border-right            :thin solid rgb(230, 230, 230);
+    border-top              :thin solid rgb(200, 200, 200);
+    border-left             :thin solid rgb(200, 200, 200);
+    overflow                : hidden;
+}
+div[data-compressor-progress]:after {
+    position                : absolute;
+    content                 :'';
+    width                   : 4rem;
+    height                  : 4rem;
+    top                     :50%;
+    left                    :50%;
+    margin                  :-2rem 0 0 -2rem;
+    -moz-border-radius      : 2rem;
+    -webkit-border-radius   : 2rem;
+    border-radius           : 2rem;
+    background              : rgb(240,240,240);
+    bottom                  :0;
+    -moz-box-shadow         : 0 0 3px rgba(0,0,0,0.4);
+    -webkit-box-shadow      : 0 0 3px rgba(0,0,0,0.4);
+    box-shadow              : 0 0 3px rgba(0,0,0,0.4);
+    -moz-box-sizing         : border-box;
+    -webkit-box-sizing      : border-box;
+    box-sizing              : border-box;
+    border-bottom           :thin solid rgb(200, 200, 200);
+    border-right            :thin solid rgb(200, 200, 200);
+    border-top              :thin solid rgb(230, 230, 230);
+    border-left             :thin solid rgb(230, 230, 230);
+    overflow                : hidden;
+}
+div[data-compressor-progress-move] {
+    position                : absolute;
+    width                   : 4rem;
+    height                  : 4rem;
+    top                     :50%;
+    left                    :50%;
+    margin                  :-2rem 0 0 -2rem;
+    -moz-transform-origin   : center center;
+    -ms-transform-origin    : center center;
+    -o-transform-origin     : center center;
+    -webkit-transform-origin: center center;
+    transform-origin        : center center;
+    animation               : DataCompressorProgressMove 3500ms cubic-bezier(.65,.95,.41,.13) infinite normal;
+    -webkit-animation       : DataCompressorProgressMove 3500ms cubic-bezier(.65,.95,.41,.13) infinite normal;
+    -moz-animation          : DataCompressorProgressMove 3500ms cubic-bezier(.65,.95,.41,.13) infinite normal;
+    -o-animation            : DataCompressorProgressMove 3500ms cubic-bezier(.65,.95,.41,.13) infinite normal;
+}
+div[data-compressor-progress-move]:nth-child(1) {
+    -moz-animation-delay    : 0ms;
+    -o-animation-delay      : 0ms;
+    -webkit-animation-delay : 0ms;
+    animation-delay         : 0ms;
+}
+div[data-compressor-progress-move]:nth-child(2) {
+    -moz-animation-delay    : 300ms;
+    -o-animation-delay      : 300ms;
+    -webkit-animation-delay : 300ms;
+    animation-delay         : 300ms;
+}
+div[data-compressor-progress-move]:nth-child(3) {
+    -moz-animation-delay    : 600ms;
+    -o-animation-delay      : 600ms;
+    -webkit-animation-delay : 600ms;
+    animation-delay         : 600ms;
+}
+div[data-compressor-progress-move]:nth-child(4) {
+    -moz-animation-delay    : 900ms;
+    -o-animation-delay      : 900ms;
+    -webkit-animation-delay : 900ms;
+    animation-delay         : 900ms;
+}
+div[data-compressor-progress-move]:nth-child(5) {
+    -moz-animation-delay    : 1200ms;
+    -o-animation-delay      : 1200ms;
+    -webkit-animation-delay : 1200ms;
+    animation-delay         : 1200ms;
+}
+div[data-compressor-progress-move]:nth-child(6) {
+    -moz-animation-delay    : 1500ms;
+    -o-animation-delay      : 1500ms;
+    -webkit-animation-delay : 1500ms;
+    animation-delay         : 1500ms;
+}
+div[data-compressor-progress-move]:after {
+    position                : absolute;
+    content                 :'';
+    top                     : 0.5rem;
+    left                    : 0;
+    width                   : 0.5rem;
+    height                  : 0.5rem;
+    -moz-border-radius      : 0.25rem;
+    -webkit-border-radius   : 0.25rem;
+    border-radius           : 0.25rem;
+    background              :rgb(255, 255, 255);
+}
+@keyframes DataCompressorProgressMove {
+    0% {
+        -moz-transform      : rotateZ(0deg);
+        -ms-transform       : rotateZ(0deg);
+        -o-transform        : rotateZ(0deg);
+        -webkit-transform   : rotateZ(0deg);
+        transform           : rotateZ(0deg);
+    }100% {
+         -moz-transform      : rotateZ(360deg);
+         -ms-transform       : rotateZ(360deg);
+         -o-transform        : rotateZ(360deg);
+         -webkit-transform   : rotateZ(360deg);
+         transform           : rotateZ(360deg);
+     }
+}
+@-moz-keyframes DataCompressorProgressMove {
+    0% {
+        -moz-transform      : rotateZ(0deg);
+        -ms-transform       : rotateZ(0deg);
+        -o-transform        : rotateZ(0deg);
+        -webkit-transform   : rotateZ(0deg);
+        transform           : rotateZ(0deg);
+    }100% {
+         -moz-transform      : rotateZ(360deg);
+         -ms-transform       : rotateZ(360deg);
+         -o-transform        : rotateZ(360deg);
+         -webkit-transform   : rotateZ(360deg);
+         transform           : rotateZ(360deg);
+     }
+}
+@-webkit-keyframes DataCompressorProgressMove {
+    0% {
+        -moz-transform      : rotateZ(0deg);
+        -ms-transform       : rotateZ(0deg);
+        -o-transform        : rotateZ(0deg);
+        -webkit-transform   : rotateZ(0deg);
+        transform           : rotateZ(0deg);
+    }100% {
+         -moz-transform      : rotateZ(360deg);
+         -ms-transform       : rotateZ(360deg);
+         -o-transform        : rotateZ(360deg);
+         -webkit-transform   : rotateZ(360deg);
+         transform           : rotateZ(360deg);
+     }
+}
+@media screen and (max-width: 600px){
+    p[data-compressor-title]{
+        margin          :0.5rem 1rem;
+        font-size       :0.8rem;
+    }
+    p[data-compressor-item]{
+        margin                  :-1.5rem 1.5rem 0.5rem 1.5rem;
+        font-size               :0.6rem;
+    }
+    div[data-compressor-progress] {
+        width                   : 4rem;
+        height                  : 4rem;
+        left                    : 50%;
+        margin-left             : -2rem;
+        -moz-border-radius      : 2rem;
+        -webkit-border-radius   : 2rem;
+        border-radius           : 2rem;
+    }
+    div[data-compressor-progress]:after {
+        width                   : 3rem;
+        height                  : 3rem;
+        margin                  :-1.5rem 0 0 -1.5rem;
+        -moz-border-radius      : 1.5rem;
+        -webkit-border-radius   : 1.5rem;
+        border-radius           : 1.5rem;
+    }
+    div[data-compressor-progress-move] {
+        width                   : 3rem;
+        height                  : 3rem;
+        top                     :50%;
+        left                    :50%;
+        margin                  :-1.5rem 0 0 -1.5rem;
+    }
+}
+@media screen and (max-width: 400px){
+    p[data-compressor-title]{
+        margin          :0.5rem 1rem;
+        font-size       :0.7rem;
+    }
+    p[data-compressor-item]{
+        margin                  :-1.5rem 1.5rem 0.5rem 1.5rem;
+        font-size               :0.5rem;
+    }
+    div[data-compressor-progress] {
+        width                   : 3rem;
+        height                  : 3rem;
+        left                    : 50%;
+        margin-left             : -1.5rem;
+        -moz-border-radius      : 1.5rem;
+        -webkit-border-radius   : 1.5rem;
+        border-radius           : 1.5rem;
+    }
+    div[data-compressor-progress]:after {
+        width                   : 2rem;
+        height                  : 2rem;
+        margin                  :-1rem 0 0 -1rem;
+        -moz-border-radius      : 1rem;
+        -webkit-border-radius   : 1rem;
+        border-radius           : 1rem;
+    }
+    div[data-compressor-progress-move] {
+        width                   : 2rem;
+        height                  : 2rem;
+        top                     :50%;
+        left                    :50%;
+        margin                  :-1rem 0 0 -1rem;
+    }
+}
+

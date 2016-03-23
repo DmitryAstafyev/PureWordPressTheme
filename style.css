@@ -1,0 +1,18 @@
+/*   
+Theme Name:     Pure
+Theme URI:      http://puretheme.net
+Description:    The Pure theme is an ideal theme for active community, multi-blog or entertainment site. Powerful AJAX core and included webSocketServer give many unique features: a chat in real-time, life-notifications, instant messages and many other. Most part of BuddyPress’s functionality works without reload of page. Messenger allows attach files with mails, like real mail-box. Flexible KARMA core allows manage user’s capabilities and rights automatically. With KARMA core users can rate any element in site: activity, post, event, comment and etc. Users can customize personal pages: change background, add and manage own quotes.
+Author:         Dmitry Astafyev S.P.
+Author URI:     http://puretheme.net
+Version:        1.11.86
+License:        GNU General Public License
+License URI:    license.txt
+Tags:           websocket, chat, messenger, mails, attachments, karma, rates, report, events, city, community, report, social, network, friends
+Text Domain:    pure
+*/
+/*
+=== Update list ===
+1. Add post type: report
+2. Add post type: question
+3. Refactor controller of front-page editor
+*/

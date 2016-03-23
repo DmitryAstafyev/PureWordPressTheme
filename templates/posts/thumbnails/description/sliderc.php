@@ -1,0 +1,1 @@
+<p style="padding-left: 2em; font-size: 0.8em;color: rgb(200,0,0);">It's very simple template, which shows only quote of post and miniature. And it can be used only with slider "C".</p>

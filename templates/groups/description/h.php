@@ -1,0 +1,1 @@
+<p>This template is used for template H Authors (BuddyPress template). <span style="color: red;"> With other templates it can work not well. </span> This is transparent template of thumbnail. Recommended use it on light background.</p>

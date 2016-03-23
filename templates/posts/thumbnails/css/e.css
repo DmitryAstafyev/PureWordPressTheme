@@ -1,0 +1,40 @@
+﻿div[data-type-element="Post.Thumbnail.E.Container"]{
+	position	    :relative;
+    padding         : 0.5em 0 0.5em 0;
+    border-top      : 1px dashed rgba(50,50,50,0.4);
+    border-bottom   : 1px dashed rgba(50,50,50,0.4);
+}
+div[data-type-element="Post.Thumbnail.E.Container"] + div[data-type-element="Post.Thumbnail.E.Container"]{
+    border-top      : none;
+}
+a[data-type-element="Post.Thumbnail.E.Title"]{
+    font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size           :0.9rem;
+    padding             :0.5rem;
+    margin              :0;
+    color               :rgb(50,50,50);
+    line-height         :1em;
+    cursor              :pointer;
+    text-decoration     :none;
+}
+    a[data-type-element="Post.Thumbnail.E.Title"]:hover{
+        text-decoration     :underline;
+    }
+    p[data-type-element="Post.Thumbnail.E.Date"]{
+        font-family         :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size           :0.6rem;
+        padding             :0.5rem;
+        margin              :0;
+        color               :rgb(140,140,140);
+        line-height         :1em;
+        cursor              :default;
+    }
+        p[data-type-element="Post.Thumbnail.E.Date"] a{
+            color               :rgb(140,140,140);
+            cursor              :pointer;
+            text-decoration     :underline;
+            opacity             :0.7;
+        }
+        p[data-type-element="Post.Thumbnail.E.Date"] a:hover{
+            opacity             :1;
+        }

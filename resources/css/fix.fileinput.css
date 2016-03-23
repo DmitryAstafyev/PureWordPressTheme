@@ -1,0 +1,16 @@
+div[data-element-type="Pure.Common.FileInput.Wrapper"]{
+    position    : absolute;
+    display     : block;
+    width       : 1px;
+    height      : 1px;
+    opacity     : 0.001;
+    overflow    : hidden;
+}
+input[data-element-type="Pure.Common.FileInput"]{
+    position    : absolute;
+    display     : block;
+    width       : 1px;
+    height      : 1px;
+    opacity     : 0.001;
+}
+/*==============================================================================*/

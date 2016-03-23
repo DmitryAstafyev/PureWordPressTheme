@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+    top                 :0!important;
+    left                :0!important;
+    margin              :0!important;
+    padding             :0!important;
+}
+body{
+	width               :100%!important;
+	height              :auto!important;
+    top                 :0!important;
+    left                :0!important;
+    margin              :0!important;
+    padding             :0!important;
+    overflow-x          : hidden!important;
+    overflow-y          : auto!important;
+    -moz-transition     : opacity ease-in-out 300ms;
+    -o-transition       : opacity ease-in-out 300ms;
+    -webkit-transition  : opacity ease-in-out 300ms;
+    transition          : opacity ease-in-out 300ms;
+}
+
+div[data-element-type="Global.Content.Wrapper"]{
+    position            : relative;
+    width               : 100%;
+    height              : auto;
+    overflow            : hidden;
+    z-index             : 1;
+    /*-webkit-transform   : translate3d(0,0,0);*/
+}
+div[data-element-type="Pure.GlobalLayout.Container"]{
+}

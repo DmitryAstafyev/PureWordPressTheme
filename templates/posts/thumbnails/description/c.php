@@ -1,0 +1,1 @@
+<p style="padding-left: 2em; font-size: 0.8em;color: rgb(200,0,0);">Pay your attention, this template doesn't support slider presentation.</p>

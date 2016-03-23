@@ -1,0 +1,291 @@
+﻿/*================================================================================================*/
+div[data-element-type="Pure.PresentationsTabs.B.Container"]{
+    position:relative;
+    width   :100%;
+    margin  : 1em 0;
+}
+/*================================================================================================*/
+ul[data-element-type="Pure.PresentationsTabs.B.Buttons"]{
+    position    :relative;
+    display     :block;
+    list-style  :none;
+    width       :100%;
+    text-align  :center;
+    margin      :0;
+    padding     :0;
+}
+    li[data-element-type="Pure.PresentationsTabs.B.Button"]{
+        position    :relative;
+        display     :inline-block;
+        list-style  :none;
+        margin      :0.2em 0;
+        padding     : 0.7em 1em;
+        border      :thin dotted rgba(0,0,0,0.2);
+        box-sizing  :border-box;
+    }
+        li[data-element-type="Pure.PresentationsTabs.B.Button"]:not(:first-child){
+            border-left:none;
+        }
+        li[data-element-type="Pure.PresentationsTabs.B.Button"]:hover{
+            background:rgba(0,0,0,0.2);
+        }
+    img[data-element-type="Pure.PresentationsTabs.B.Button.Icon"]{
+        position    :absolute;
+        display     :block;
+        width       :1em;
+        height      :1em;
+        padding     :0;
+        margin      :0em;
+        top         :0.7em;
+    }
+    p[data-element-type="Pure.PresentationsTabs.B.Button.Title"]{
+        position        :relative;
+        display         :block;
+        white-space     :nowrap;
+        margin          : 0 0 0 2em;
+        padding         :0;
+        font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size       :1em;
+        text-transform  :uppercase;
+        cursor          : pointer;
+        color           :rgb(50,50,50);
+    }
+    li[data-element-type="Pure.PresentationsTabs.B.Button"][data-button-type="noicon"] p[data-element-type="Pure.PresentationsTabs.B.Button.Title"]{
+        margin:0;
+    }
+/*================================================================================================*/
+ul[data-element-type="Pure.PresentationsTabs.B.Tabs"]{
+    position    :relative;
+    width       :100%;
+    list-style  :none;
+    margin      :0;
+    padding     :0;
+}
+    li[data-element-type="Pure.PresentationsTabs.B.Tab"]{
+        position    :relative;
+        display     :block;
+        width       :100%;
+        list-style  :none;
+    }
+/*================================================================================================*/
+div[data-element-type="Pure.PresentationsTabs.B.Tab.Padding"]{
+    position:relative;
+    display :none;
+    width   :auto;
+    padding :1rem;
+    overflow:hidden;
+}
+    div[data-element-type="Pure.PresentationsTabs.B.Tab"]{
+        position:relative;
+        width   :auto;
+        padding :0rem;
+        overflow:hidden;
+    }
+        div[data-element-type="Pure.PresentationsTabs.B.Tab"]:after{
+            position        :absolute;
+            content         :'';
+            top             :0;
+            left            :50%;
+            width           :50%;
+            height          :100%;
+            background      :rgba(255,255,255,0.7);
+            z-index         : 1;
+        }
+/*================================================================================================*/
+div[data-element-type="Pure.PresentationsTabs.B.Tab.Blur"]{
+    position                :absolute;
+    display                 :block;
+    top                     :0rem;
+    bottom                  :0rem;
+    left                    :50%;
+    width                   :50%;
+    overflow                :hidden;
+    animation			    : PureTabsBTextBlockTitle 350ms ease-in-out 0ms 1 normal forwards;
+    -webkit-animation	    : PureTabsBTextBlockTitle 350ms ease-in-out 0ms 1 normal forwards;
+    -moz-animation		    : PureTabsBTextBlockTitle 350ms ease-in-out 0ms 1 normal forwards;
+    -o-animation		    : PureTabsBTextBlockTitle 350ms ease-in-out 0ms 1 normal forwards;
+    opacity                 :0;
+    box-sizing              : border-box;
+    border-left             : thin solid rgb(200,200,200);
+}
+    img[data-element-type="Pure.PresentationsTabs.B.Button.Blur"]{
+        position        :absolute;
+        display         :block;
+        width           :200%;
+        height          :100%;
+        left            :-100%;
+        filter          : blur(5px); /* Someday, sigh ... */ 
+	    -webkit-filter  : blur(5px); /* Prefixed CSS3 blur filters */
+	    -moz-filter     : blur(5px); 
+	    -o-filter       : blur(5px); 
+	    -ms-filter      : blur(5px); 
+	    filter          : url(#blur); /* Firefox needs SVG */
+        filter          :progid:DXImageTransform.Microsoft.Blur(PixelRadius='5');
+    }
+/*================================================================================================*/
+img[data-element-type="Pure.PresentationsTabs.B.Button.Image"]{
+    position                :relative;
+    display                 :block;
+    width                   :100%;
+    height                  :auto;
+    opacity                 :0;
+    padding                 :0;
+    margin                  :0;
+    animation			    : PureTabsBTextBlockTitle 350ms ease-in-out 0ms 1 normal forwards;
+    -webkit-animation	    : PureTabsBTextBlockTitle 350ms ease-in-out 0ms 1 normal forwards;
+    -moz-animation		    : PureTabsBTextBlockTitle 350ms ease-in-out 0ms 1 normal forwards;
+    -o-animation		    : PureTabsBTextBlockTitle 350ms ease-in-out 0ms 1 normal forwards;
+    opacity                 :0;
+}
+/*================================================================================================*/
+div[data-element-type="Pure.PresentationsTabs.B.Tab.Text.Container"]{
+    position        :absolute;
+    display         :block;
+    top             :0rem;
+    bottom          :0rem;
+    left            :50%;
+    width           :50%;
+    overflow        :hidden;
+}
+    div[data-element-type="Pure.PresentationsTabs.B.Tab.Text.Sub"]{
+        position        :relative;
+        display         :table;
+        width           :100%;
+        height          :100%;
+        border          :none;
+        border-collapse :collapse;
+        vertical-align  :middle;
+    }
+        div[data-element-type="Pure.PresentationsTabs.B.Tab.Text"]{
+            position        :relative;
+            display         :table-cell;
+            width           :100%;
+            border          :none;
+            border-collapse :collapse;
+            vertical-align  :middle;
+            z-index         : 2;
+        }
+/*================================================================================================*/
+p[data-element-type="Pure.PresentationsTabs.B.TextBlock.Title"]{
+        margin                  :2rem 0;
+        padding                 :0 1rem;
+        font-family             :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size               :1em;
+        color                   :rgb(20,20,20);
+        text-align              :center;
+        animation			    : PureTabsBTextBlockTitle 350ms ease-in-out 350ms 1 normal forwards;
+        -webkit-animation	    : PureTabsBTextBlockTitle 350ms ease-in-out 350ms 1 normal forwards;
+        -moz-animation		    : PureTabsBTextBlockTitle 350ms ease-in-out 350ms 1 normal forwards;
+        -o-animation		    : PureTabsBTextBlockTitle 350ms ease-in-out 350ms 1 normal forwards;
+        opacity                 :0;
+    }
+        @keyframes PureTabsBTextBlockTitle {
+            0% { opacity:0;}100% { opacity:1;}
+        }
+        @-moz-keyframes PureTabsBTextBlockTitle {
+            0% { opacity:0;}100% { opacity:1;}
+        }
+        @-webkit-keyframes PureTabsBTextBlockTitle {
+            0% { opacity:0;}100% { opacity:1;}
+        }
+    p[data-element-type="Pure.PresentationsTabs.B.TextBlock.Description"]{
+        margin                  :0 0 2rem 0;
+        padding                 :0 4rem;
+        font-family             :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size               :0.9em;
+        color                   :rgb(60,60,60);
+        text-align              :justify;
+        animation			    : PureTabsBTextBlockTitle 350ms ease-in-out 700ms 1 normal forwards;
+        -webkit-animation	    : PureTabsBTextBlockTitle 350ms ease-in-out 700ms 1 normal forwards;
+        -moz-animation		    : PureTabsBTextBlockTitle 350ms ease-in-out 700ms 1 normal forwards;
+        -o-animation		    : PureTabsBTextBlockTitle 350ms ease-in-out 700ms 1 normal forwards;
+        opacity                 :0;
+    }
+        p[data-element-type="Pure.PresentationsTabs.B.TextBlock.Description"]:before{
+            position    :absolute;
+            content     :'';
+            width       :50%;
+            height      :1px;
+            border-top  :thin dashed rgba(0,0,0,0.1);
+            left        :25%;
+            margin-top  :-1rem;
+        }
+        p[data-element-type="Pure.PresentationsTabs.B.TextBlock.Description"]:after{
+            position        :absolute;
+            content         :'';
+            width           :50%;
+            height          :1px;
+            border-top      :thin dashed rgba(0,0,0,0.1);
+            left            :25%;
+            margin-top      :2rem;
+        }
+    p[data-element-type="Pure.PresentationsTabs.B.TextBlock.Link"]{
+        margin                  :2.5rem 0 2rem 0;
+        padding                 :0 1rem;
+        font-family             :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size               :0.9em;
+        color                   :rgb(100,100,100);
+        text-align              :center;
+        animation			    : PureTabsBTextBlockTitle 350ms ease-in-out 1050ms 1 normal forwards;
+        -webkit-animation	    : PureTabsBTextBlockTitle 350ms ease-in-out 1050ms 1 normal forwards;
+        -moz-animation		    : PureTabsBTextBlockTitle 350ms ease-in-out 1050ms 1 normal forwards;
+        -o-animation		    : PureTabsBTextBlockTitle 350ms ease-in-out 1050ms 1 normal forwards;
+        opacity                 :0;
+    }
+    a[data-element-type="Pure.PresentationsTabs.B.TextBlock.Link"]{
+        padding         :0.5rem 1rem;
+        font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size       :0.9em;
+        color           :rgb(100,100,100);
+        text-align      :center;
+        border          :thin dashed rgb(200,200,200);
+        text-decoration :none;
+        border-radius   :0.3rem;
+        cursor          :default;
+        box-sizing      :border-box;
+    }
+        a[data-element-type="Pure.PresentationsTabs.B.TextBlock.Link"]:hover{
+            background:rgba(0,0,0,0.2);
+        }
+/*================================================================================================*/
+input[data-element-type="Pure.PresentationsTabs.B.Tab.Switcher"]{
+    display:none;
+}
+input[data-element-type="Pure.PresentationsTabs.B.Tab.Switcher"]:checked ~div[data-element-type="Pure.PresentationsTabs.B.Tab.Padding"]{
+    display:block;
+}
+/*================================================================================================*/
+@media screen and (max-width: 1200px){
+    p[data-element-type="Pure.PresentationsTabs.B.TextBlock.Description"]{
+        padding                 :0 3rem;
+    }
+}
+@media screen and (max-width: 1000px){
+    p[data-element-type="Pure.PresentationsTabs.B.TextBlock.Description"]{
+        padding                 :0 2rem;
+    }
+}
+@media screen and (max-width: 800px){
+    div[data-element-type="Pure.PresentationsTabs.B.Tab.Text.Container"]{
+        position        :relative;
+        display         :block;
+        width           :auto;
+        overflow        :hidden;
+        left            :0;
+    }
+    div[data-element-type="Pure.PresentationsTabs.B.Tab.Text.Sub"]{
+        display         :block;
+        width           :auto;
+    }
+    div[data-element-type="Pure.PresentationsTabs.B.Tab.Text"]{
+        display         :block;
+        width           :auto;
+    }
+    div[data-element-type="Pure.PresentationsTabs.B.Tab.Blur"]{
+        display         :none;
+    }
+    p[data-element-type="Pure.PresentationsTabs.B.TextBlock.Description"]{
+        padding                 :0 1rem;
+    }
+}
+/*================================================================================================*/

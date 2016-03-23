@@ -1,0 +1,9 @@
+﻿div[data-element-type="Pure.GlobalLayout.SideBar.Position"]{
+    background          : rgba(255,255,255,0.4);
+    box-shadow          : -2px 0px 2px rgba(0,0,0,0.2);
+    -webkit-transform   : translate3d(0,0,0);
+}
+div[data-element-type="Pure.GlobalLayout.SideBar"]{
+    padding-top         : 11rem;
+    padding-left        : 1rem;
+}

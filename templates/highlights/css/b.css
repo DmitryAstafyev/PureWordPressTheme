@@ -1,0 +1,129 @@
+﻿div[data-element-type="Pure.HighLights.B.ResizeContainer"]{
+    position    :relative;
+    width       :100%;
+}
+/*============================================================================*/
+ul[data-element-type="Pure.HighLights.B"]{
+    position    :relative;
+    width       :100%;
+    list-style  :none;
+    margin      : 0.5rem 0;
+    padding     : 0;
+    white-space :nowrap;
+    overflow    : hidden;
+    text-align  : center;
+}
+    li[data-element-type="Pure.HighLights.B"]{
+        position        :relative;
+        display         :inline-block;
+        list-style      :none;
+        margin          :0;
+        padding         :0;
+        white-space     :normal!important;
+        vertical-align  :top;
+        overflow        :hidden;
+        width           :33%;
+        text-align      : left;
+    }
+/*============================================================================*/
+div[data-element-type="Pure.HighLights.B.Item.Container"]{
+    position    :relative;
+    width       :100%;
+    padding     :0;
+    margin      :0;
+}
+li[data-element-type="Pure.HighLights.B"][data-hightlight-type="notext"] div[data-element-type="Pure.HighLights.B.Item.Container"]{
+    text-align  :center!important;
+}
+    div[data-element-type="Pure.HighLights.B.Item.Icon"]{
+        position            :relative;
+        width               :4em;
+        height              :4em;
+        margin              : 0 0 0 -2em;
+        left                :50%;
+        background-size     :contain;
+        background-repeat   :no-repeat;
+    }
+/*============================================================================*/
+div[data-element-type="Pure.HighLights.B.Item.Content"]{
+    position    :relative;
+    width       :auto;
+    padding     :0;
+    margin      :0;
+}
+li[data-element-type="Pure.HighLights.B"][data-hightlight-type="noicon"] div[data-element-type="Pure.HighLights.B.Item.Content"]{
+    padding     :0;
+    margin      :0;
+}
+/*============================================================================*/
+p[data-element-type="Pure.HighLights.B.Item.Title"]{
+    padding     :0.5rem 0.5rem 0 0.5rem;
+    margin      :0;
+    font-family :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size   :1.5em;
+    color       :rgb(30,30,30);
+    text-align  :center;
+}
+p[data-element-type="Pure.HighLights.B.Item.Description"]{
+    padding     :0.5rem;
+    margin      :0;
+    font-family :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size   :0.9em;
+    color       :rgb(70,70,70);
+    line-height :1.5em;
+    text-align  :center;
+}
+/*============================================================================*/
+p[data-element-type="Pure.HighLights.B.Item.Buttons"]{
+    margin      :0;
+    padding     :0;
+    text-align  :center;
+}
+    a[data-element-type="Pure.HighLights.B.Item.More"]{
+        position                :relative;
+        display                 :inline-block;
+        padding                 :0.5em 1em 0.5em 1em;
+        margin                  :0.5em;
+        font-family             :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size               :0.8em;
+        color                   :rgb(87, 128, 16);
+        text-decoration         :none;
+        cursor                  :pointer;
+        border-radius           : 0.3em;
+        border                  :thin dotted rgba(0,0,0,0.4);
+        box-sizing              : border-box;
+        text-transform          : uppercase;
+    }
+        a[data-element-type="Pure.HighLights.B.Item.More"]:hover{
+            background: rgba(0,0,0,0.2);
+        }
+/*============================================================================*/
+img[data-element-type="Pure.HighLights.B.Item.Icon"]{
+    position    :relative;
+    display     :inline-block;
+    max-width   :100%;
+}
+a[data-element-type="Pure.HighLights.B.Item.Icon.Container"]{
+    margin  :0;
+    padding :0;
+}
+/*============================================================================*/
+@media only screen and (min-width : 1224px) {
+    li[data-element-type="Pure.HighLights.B"].PureEffectAppear{
+        animation			    : PureHighLightsBAppear 500ms ease-in-out 0ms 1 normal forwards;
+        -webkit-animation	    : PureHighLightsBAppear 500ms ease-in-out 0ms 1 normal forwards;
+        -moz-animation		    : PureHighLightsBAppear 500ms ease-in-out 0ms 1 normal forwards;
+        -o-animation		    : PureHighLightsBAppear 500ms ease-in-out 0ms 1 normal forwards;
+    }
+    @keyframes PureHighLightsBAppear {
+        0% { opacity:0;margin-top:2em;}100% { opacity:1;margin-top:0em;}
+    }
+    @-moz-keyframes PureHighLightsBAppear {
+        0% { opacity:0;margin-top:2em;}100% { opacity:1;margin-top:0em;}
+    }
+    @-webkit-keyframes PureHighLightsBAppear {
+        0% { opacity:0;margin-top:2em;}100% { opacity:1;margin-top:0em;}
+    }
+}
+
+/*============================================================================*/

@@ -1,0 +1,120 @@
+﻿div[data-element-type="Pure.HighLights.A.ResizeContainer"]{
+    position    :relative;
+    width       :100%;
+}
+/*============================================================================*/
+ul[data-element-type="Pure.HighLights.A"]{
+    position    :relative;
+    width       :100%;
+    list-style  :none;
+    margin      : 0;
+    padding     : 0;
+    white-space :nowrap;
+    text-align  : center;
+    overflow    : hidden;
+}
+    li[data-element-type="Pure.HighLights.A"]{
+        position        :relative;
+        display         :inline-block;
+        list-style      :none;
+        margin          :0.5rem 0;
+        padding         :0;
+        white-space     :normal!important;
+        vertical-align  :top;
+        overflow        :hidden;
+        width           :33%;
+        text-align      : left;
+    }
+/*============================================================================*/
+div[data-element-type="Pure.HighLights.A.Item.Container"]{
+    position    :relative;
+    width       :100%;
+    padding     :0;
+    margin      :0;
+}
+li[data-element-type="Pure.HighLights.A"][data-hightlight-type="notext"] div[data-element-type="Pure.HighLights.A.Item.Container"]{
+    text-align  :center!important;
+}
+    div[data-element-type="Pure.HighLights.A.Item.Icon"]{
+        position            :relative;
+        width               :4em;
+        height              :4em;
+        margin              : 0 0.5em 0.5em 0.5em;
+        background-size     :contain;
+        background-repeat   :no-repeat;
+    }
+/*============================================================================*/
+div[data-element-type="Pure.HighLights.A.Item.Content"]{
+    position    :relative;
+    width       :auto;
+    padding     :0 0 0 5em;
+    margin      : -5em 0 0 0;
+}
+li[data-element-type="Pure.HighLights.A"][data-hightlight-type="noicon"] div[data-element-type="Pure.HighLights.A.Item.Content"]{
+    padding     :0;
+    margin      :0;
+}
+/*============================================================================*/
+p[data-element-type="Pure.HighLights.A.Item.Title"]{
+    padding     :0.5rem 0.5rem 0 0.5rem;
+    margin      :0;
+    font-family :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size   :1.5em;
+    color       :rgb(30,30,30);
+}
+p[data-element-type="Pure.HighLights.A.Item.Description"]{
+    padding     :0.5rem;
+    margin      :0;
+    font-family :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size   :0.9em;
+    color       :rgb(70,70,70);
+    line-height :1.5em;
+}
+/*============================================================================*/
+p[data-element-type="Pure.HighLights.A.Item.Buttons"]{
+    margin      :0;
+    padding     :0;
+    text-align  :left;
+}
+    a[data-element-type="Pure.HighLights.A.Item.More"]{
+        position                :relative;
+        display                 :inline-block;
+        padding                 :0 1em 1em 0;
+        margin                  :0.5em;
+        font-family             :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+        font-size               :0.8em;
+        color                   :rgb(87, 128, 16);
+        text-decoration         :none;
+        cursor                  :pointer;
+    }
+        a[data-element-type="Pure.HighLights.A.Item.More"]:hover{
+            text-decoration:underline;
+        }
+/*============================================================================*/
+a[data-element-type="Pure.HighLights.A.Item.Icon.Container"]{
+    margin  :0;
+    padding :0;
+}
+img[data-element-type="Pure.HighLights.A.Item.Icon"]{
+    position    :relative;
+    display     :inline-block;
+    max-width   :100%;
+}
+/*============================================================================*/
+@media only screen and (min-width : 1224px) {
+    li[data-element-type="Pure.HighLights.A"].PureEffectAppear{
+        animation			    : PureHighLightsAAppear 500ms ease-in-out 0ms 1 normal forwards;
+        -webkit-animation	    : PureHighLightsAAppear 500ms ease-in-out 0ms 1 normal forwards;
+        -moz-animation		    : PureHighLightsAAppear 500ms ease-in-out 0ms 1 normal forwards;
+        -o-animation		    : PureHighLightsAAppear 500ms ease-in-out 0ms 1 normal forwards;
+    }
+    @keyframes PureHighLightsAAppear {
+        0% { opacity:0;margin-top:2em;}100% { opacity:1;margin-top:0em;}
+    }
+    @-moz-keyframes PureHighLightsAAppear {
+        0% { opacity:0;margin-top:2em;}100% { opacity:1;margin-top:0em;}
+    }
+    @-webkit-keyframes PureHighLightsAAppear {
+        0% { opacity:0;margin-top:2em;}100% { opacity:1;margin-top:0em;}
+    }
+}

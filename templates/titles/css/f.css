@@ -1,0 +1,12 @@
+﻿p[data-element-type="Pure.Title.F"]{
+    position        : relative;
+    display         : block;
+    font-family     : 'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       : 1em;
+    color           : rgb(91, 105, 145);
+    text-align      : left;
+    margin          : 0.6em 0 0.6em 0;
+    padding         : 0.6em 5em 0.84em 0.5em;
+    border-top      : 1px solid rgba(140, 148, 170, 0.2);
+    border-bottom   : 1px solid rgba(140, 148, 170, 0.2);
+}

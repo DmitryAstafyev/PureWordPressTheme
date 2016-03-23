@@ -1,0 +1,99 @@
+﻿/*====================================================================================================*/
+div[data-element-type="Pure.Social.Home.A.TabsContent.Container"]{
+    position:relative;
+    width   :100%;
+}
+    div[data-element-type="Pure.Social.Home.A.TabContent"]{
+        position:relative;
+        width   :100%;
+        display : none;
+    }
+/*====================================================================================================*/
+div[data-element-type="Pure.Social.Home.A.TabContent.Tab"]{
+    position            :relative;
+    width               :100%;
+    /*height              :100%;*/
+    max-width           : 100%;
+    animation			: Pure_Social_Home_A_TabContent_Tab_Show 350ms cubic-bezier(.44,1.38,.71,1.24) 0ms 1 normal;
+    -webkit-animation	: Pure_Social_Home_A_TabContent_Tab_Show 350ms cubic-bezier(.44,1.38,.71,1.24) 0ms 1 normal;
+    -moz-animation		: Pure_Social_Home_A_TabContent_Tab_Show 350ms cubic-bezier(.44,1.38,.71,1.24) 0ms 1 normal;
+    -o-animation		: Pure_Social_Home_A_TabContent_Tab_Show 350ms cubic-bezier(.44,1.38,.71,1.24) 0ms 1 normal;
+}
+    @keyframes Pure_Social_Home_A_TabContent_Tab_Show {
+        0% { top:2em;}100% { top:0em;}
+    }
+    @-moz-keyframes Pure_Social_Home_A_TabContent_Tab_Show {
+        0% { top:2em;}100% { top:0em;}
+    }
+    @-webkit-keyframes Pure_Social_Home_A_TabContent_Tab_Show {
+        0% { top:2em;}100% { top:0em;}
+    }
+    div[data-element-type="Pure.Social.Home.A.TabContent.Tab.Wrapper"]{
+        position    :relative;
+        display     :table;
+        width       : 100%;
+    }
+        div[data-element-type="Pure.Social.Home.A.TabContent.Tab.Center"]{
+            position    :relative;
+            display     :table-cell;
+            width       :100%;
+            max-width   : 100%;
+            text-align  :center;
+        }
+/*====================================================================================================*/
+input[data-element-type="Pure.Social.Home.A.Tabs.Switchers.Inputs"]{
+    display:none;
+}
+input[data-element-type="Pure.Social.Home.A.Tabs.Switchers.Inputs"]:checked +div[data-element-type="Pure.Social.Home.A.TabContent"]{
+    display:block;
+}
+/*====================================================================================================*/
+p[data-element-type="Pure.Social.Home.A.Message"]{
+    position        :relative;
+    font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       :0.9em;
+    text-align      :center;
+    color           : rgb(91, 105, 145);
+}
+p[data-element-type="Pure.Social.Home.A.Message.Normal"]{
+    position        :relative;
+    font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       :0.9em;
+    text-align      :left;
+    color           : rgb(91, 105, 145);
+    margin          : 0;
+    padding         : 0.5em 0.5em 0.5em 2em;
+}
+/*====================================================================================================*/
+p[data-element-type="Pure.Social.Home.A.Title"]{
+    position        :relative;
+    font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       :0.95em;
+    text-align      :left;
+    color           : rgb(255, 255, 255);
+    margin          : 0 0 0.5em 0;
+    padding         : 0.5em 0.5em 0.5em 1em;
+    font-weight     : bold;
+    text-shadow     : 1px 1px 2px rgba(0,0,0,0.4);
+    background      : rgb(140, 148, 170);
+}
+/*====================================================================================================*/
+div[data-element-type="Pure.Social.Home.A.GroupWrapper"]{
+    position    : relative;
+    padding     : 0 0 0 5em;
+}
+/*====================================================================================================*/
+p[data-element-type="Pure.Social.Friends.A.Message"]{
+    position        :relative;
+    font-family     :'Roboto Condensed', Verdana, Arial, Helvetica, sans-serif;
+    font-size       :0.9em;
+    text-align      :center;
+    color           : rgb(91, 105, 145);
+}
+/*====================================================================================================*/
+/*====================================================================================================*/
+/*====================================================================================================*/
+/*====================================================================================================*/
+/*====================================================================================================*/
+/*====================================================================================================*/
+/*====================================================================================================*/
