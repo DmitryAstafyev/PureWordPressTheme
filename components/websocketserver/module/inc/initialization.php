@@ -21,7 +21,7 @@ namespace Pure\Components\webSocketServer\Module{
             $settings   = \Pure\Components\WordPress\Settings\Instance::instance()->less($settings);
             if ($settings->start_mode !== 'off'){
                 \Pure\Components\Attacher\Module\Attacher::instance()->addJS(
-                    \Pure\Components\webSocketServer\Module\Initialization::instance()->configuration->urls->bin.'/client/js/webSocketServer.js',
+                    \Pure\Components\webSocketServer\Module\Initialization::instance()->configuration->urls->bin.'/client/js/websocketserver.js',
                     false,
                     true
                 );
