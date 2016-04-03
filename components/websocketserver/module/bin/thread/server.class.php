@@ -21,7 +21,7 @@ namespace Pure\Components\webSocketServer\Module{
             $this->uniqid = ($uniqid !== '' ? $uniqid : uniqid());
         }
         private function initResources(){
-            require_once(\Pure\Configuration::instance()->dir(substr(__DIR__, 0, (stripos(__DIR__, 'websocketserver') - 1)).'/websocketserver/module/bin/thread/resources.php'));
+            require_once(\Pure\Components\webSocketServer\Paths::instance()->dir(substr(__DIR__, 0, (stripos(__DIR__, 'websocketserver') - 1)).'/websocketserver/module/bin/thread/resources.php'));
             $Resources = new \Pure\Components\webSocketServer\Module\Resources((object)array(
                 'uniqid'    =>$this->uniqid,
                 'caller'    =>'SERVER',
@@ -190,15 +190,18 @@ namespace Pure\Components\webSocketServer\Module{
                                                 $socket_data    = "";
                                                 $buffer         = "";
                                                 $package        = 0;
+                                                $this->log("[".$this->uniqid."][SERVER]:: [Start]:: reading data...");
                                                 while(true){
                                                     $bytes_count = @socket_recv($this->connections->getSocket($connection), $buffer, 1024, 0);
                                                     if (is_int($bytes_count) === true){
                                                         if(is_null($buffer) === false){
                                                             $socket_data .= $buffer;
                                                         }else{ break; }
+                                                        if ($bytes_count <= 1024) { break; }
                                                     }else{ break; }
                                                     $package ++;
                                                 }
+                                                $this->log("[".$this->uniqid."][SERVER]:: [Finish]:: reading data...");
                                                 $buffer = NULL;
                                                 if (mb_strlen($socket_data) > 0){
                                                     $this->log("[".$this->uniqid."][SERVER]:: Received ".mb_strlen($socket_data)." bytes in ".$package." package(s).", "OK");

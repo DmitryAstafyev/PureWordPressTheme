@@ -57,7 +57,7 @@ namespace Pure\Components\webSocketServer\Module\Jobs\Auth{
                     $this->log(
                         $this->instance->getConnectionID(),
                         $this->instance->getSettings(),
-                        '[AUTHORIZATION] User ID'.(int)$this->parameters->user_id.' was not accepted',
+                        '[AUTHORIZATION] User ID'.(int)$this->parameters->user_id.' was NOT accepted',
                         'DENY'
                     );
                 }

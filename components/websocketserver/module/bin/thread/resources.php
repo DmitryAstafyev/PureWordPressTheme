@@ -35,21 +35,21 @@ namespace Pure\Components\webSocketServer\Module {
         function __construct($parameters = NULL){
             $this->parameters   = $this->validate($parameters);
             $this->paths        = (object)array(
-                'basic'         =>\Pure\Configuration::instance()->dir(substr(__DIR__, 0, (stripos(__DIR__, 'wp-content') - 1))),
+                'basic'         =>\Pure\Components\webSocketServer\Paths::instance()->dir(substr(__DIR__, 0, (stripos(__DIR__, 'wp-content') - 1))),
                 'module'        =>__DIR__,
-                'common'        =>\Pure\Configuration::instance()->dir(substr(__DIR__, 0, (stripos(__DIR__, 'websocketserver') - 1)).'/websocketserver/module/bin/common'   ),
-                'bin'           =>\Pure\Configuration::instance()->dir(substr(__DIR__, 0, (stripos(__DIR__, 'websocketserver') - 1)).'/websocketserver/module/bin'          ),
-                'components'    =>\Pure\Configuration::instance()->dir(substr(__DIR__, 0, (stripos(__DIR__, 'wp-content') - 1)).'/wp-content/themes/pure/components'        ),
+                'common'        =>\Pure\Components\webSocketServer\Paths::instance()->dir(substr(__DIR__, 0, (stripos(__DIR__, 'websocketserver') - 1)).'/websocketserver/module/bin/common'   ),
+                'bin'           =>\Pure\Components\webSocketServer\Paths::instance()->dir(substr(__DIR__, 0, (stripos(__DIR__, 'websocketserver') - 1)).'/websocketserver/module/bin'          ),
+                'components'    =>\Pure\Components\webSocketServer\Paths::instance()->dir(substr(__DIR__, 0, (stripos(__DIR__, 'wp-content') - 1)).'/wp-content/themes/pure/components'        ),
             );
-            $this->classes['HeartbeatWorker'    ]['file'] = \Pure\Configuration::instance()->dir($this->classes['HeartbeatWorker'   ]['file']);
-            $this->classes['HeartbeatStack'     ]['file'] = \Pure\Configuration::instance()->dir($this->classes['HeartbeatStack'    ]['file']);
-            $this->classes['Heartbeat'          ]['file'] = \Pure\Configuration::instance()->dir($this->classes['Heartbeat'         ]['file']);
-            $this->classes['ConnectionWorker'   ]['file'] = \Pure\Configuration::instance()->dir($this->classes['ConnectionWorker'  ]['file']);
-            $this->classes['Connections'        ]['file'] = \Pure\Configuration::instance()->dir($this->classes['Connections'       ]['file']);
-            $this->classes['Server'             ]['file'] = \Pure\Configuration::instance()->dir($this->classes['Server'            ]['file']);
-            $this->classes['GetRequire'         ]['file'] = \Pure\Configuration::instance()->dir($this->classes['GetRequire'        ]['file']);
-            $this->classes['SendRequire'        ]['file'] = \Pure\Configuration::instance()->dir($this->classes['SendRequire'       ]['file']);
-            $this->classes['Token'              ]['file'] = \Pure\Configuration::instance()->dir($this->classes['Token'             ]['file']);
+            $this->classes['HeartbeatWorker'    ]['file'] = \Pure\Components\webSocketServer\Paths::instance()->dir($this->classes['HeartbeatWorker'   ]['file']);
+            $this->classes['HeartbeatStack'     ]['file'] = \Pure\Components\webSocketServer\Paths::instance()->dir($this->classes['HeartbeatStack'    ]['file']);
+            $this->classes['Heartbeat'          ]['file'] = \Pure\Components\webSocketServer\Paths::instance()->dir($this->classes['Heartbeat'         ]['file']);
+            $this->classes['ConnectionWorker'   ]['file'] = \Pure\Components\webSocketServer\Paths::instance()->dir($this->classes['ConnectionWorker'  ]['file']);
+            $this->classes['Connections'        ]['file'] = \Pure\Components\webSocketServer\Paths::instance()->dir($this->classes['Connections'       ]['file']);
+            $this->classes['Server'             ]['file'] = \Pure\Components\webSocketServer\Paths::instance()->dir($this->classes['Server'            ]['file']);
+            $this->classes['GetRequire'         ]['file'] = \Pure\Components\webSocketServer\Paths::instance()->dir($this->classes['GetRequire'        ]['file']);
+            $this->classes['SendRequire'        ]['file'] = \Pure\Components\webSocketServer\Paths::instance()->dir($this->classes['SendRequire'       ]['file']);
+            $this->classes['Token'              ]['file'] = \Pure\Components\webSocketServer\Paths::instance()->dir($this->classes['Token'             ]['file']);
         }
         public function attach(){
             foreach($this->classes as $class_name=>$class_source){
@@ -58,7 +58,7 @@ namespace Pure\Components\webSocketServer\Module {
                         if ($this->parameters->classes[$class_name] !== false){
                             if ($class_source !== false){
                                 if (class_exists(__NAMESPACE__.'\\'.$class_name) === false){
-                                    require_once(\Pure\Configuration::instance()->dir($this->paths->$class_source['type'].'/'.$class_source['file']));
+                                    require_once(\Pure\Components\webSocketServer\Paths::instance()->dir($this->paths->$class_source['type'].'/'.$class_source['file']));
                                     $this->log('['.$this->parameters->uniqid.']'.$this->parameters->caller.'[RESOURCES]:: Attached ...\\'.$class_source['file']);
                                     //echo "\r\n"."\r\n".$this->paths->$class_source['type'].'\\'.$class_source['file']."\r\n"."\r\n";
                                 }
@@ -81,8 +81,8 @@ namespace Pure\Components\webSocketServer\Module {
             /* For WordPress 3.9 or less can be necessary include also [wp-config.php]
              * require_once($this->paths->basic.'\wp-config.php');
              */
-            require_once(\Pure\Configuration::instance()->dir($this->paths->basic.'/wp-load.php')             );
-            require_once(\Pure\Configuration::instance()->dir($this->paths->basic.'/wp-includes/wp-db.php')   );
+            require_once(\Pure\Components\webSocketServer\Paths::instance()->dir($this->paths->basic.'/wp-load.php')             );
+            require_once(\Pure\Components\webSocketServer\Paths::instance()->dir($this->paths->basic.'/wp-includes/wp-db.php')   );
         }
         private function log($message, $status = ""){
             if (class_exists('\Pure\Components\webSocketServer\Common\Logs'         ) !== false &&

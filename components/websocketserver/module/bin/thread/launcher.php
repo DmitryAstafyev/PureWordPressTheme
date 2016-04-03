@@ -1,4 +1,26 @@
 <?php
+namespace Pure\Components\webSocketServer {
+    class Paths {
+        public $LPS     = '/'; //Local Path Separator. Mostly works well with unix standard [/]. But if you have a problems on win - change it on [\]
+        public $root    = NULL;
+        static private $self;
+        static function instance() {
+            if (!self::$self) {
+                self::$self = new self();
+            }
+            return self::$self;
+        }
+        public function dir($path) {
+            return preg_replace('/\\\{1,}|\/{1,}/', $this->LPS, $this->root . strtolower(str_replace($this->root, '', $path)));
+        }
+        public function url($url) {
+            return strtolower($url);
+        }
+        function __construct() {
+            $this->root = substr(__DIR__, 0, (stripos(__DIR__, 'wp-content') - 1));
+        }
+    }
+}
 namespace Pure\Components\webSocketServer\Module{
     class Launcher{
         private $uniqid;

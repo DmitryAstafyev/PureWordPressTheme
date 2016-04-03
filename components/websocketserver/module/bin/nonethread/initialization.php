@@ -1,5 +1,25 @@
 <?php
 namespace Pure\Components\webSocketServer{
+    class Paths {
+        public $LPS     = '/'; //Local Path Separator. Mostly works well with unix standard [/]. But if you have a problems on win - change it on [\]
+        public $root    = NULL;
+        static private $self;
+        static function instance(){
+            if (!self::$self){
+                self::$self = new self();
+            }
+            return self::$self;
+        }
+        public function dir($path){
+            return preg_replace('/\\\{1,}|\/{1,}/', $this->LPS, $this->root.strtolower(str_replace($this->root, '', $path)));
+        }
+        public function url($url){
+            return strtolower($url);
+        }
+        function __construct(){
+            $this->root = substr(__DIR__, 0, (stripos(__DIR__, 'wp-content') - 1));
+        }
+    }
     class Initialization{
         private $parameters;
         private function validate(&$parameters = NULL) {
@@ -15,7 +35,7 @@ namespace Pure\Components\webSocketServer{
             }
         }
         private function resources(){
-            require_once(\Pure\Configuration::instance()->dir(substr(__DIR__, 0, (stripos(__DIR__, 'websocketserver') - 1)).'/websocketserver/module/bin/nonethread/resources.php'));
+            require_once(\Pure\Components\webSocketServer\Paths::instance()->dir(substr(__DIR__, 0, (stripos(__DIR__, 'websocketserver') - 1)).'/websocketserver/module/bin/nonethread/resources.php'));
             $Resources = new \Pure\Components\webSocketServer\Module\Resources((object)array(
                 'uniqid'    =>$this->parameters->uniqid,
                 'caller'    =>'INITIALIZATION',
@@ -41,4 +61,5 @@ namespace Pure\Components\webSocketServer{
     $Initialization->proceed();
     $Initialization = NULL;
 }
+
 ?>

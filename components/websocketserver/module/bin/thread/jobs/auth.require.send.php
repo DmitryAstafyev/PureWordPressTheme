@@ -6,7 +6,7 @@ namespace Pure\Components\webSocketServer\Module\Jobs\Auth {
             $this->stack_uniqid = $stack_uniqid;
         }
         public function initResources($connection_id, $settings){
-            require_once(\Pure\Configuration::instance()->dir(substr(__DIR__, 0, (stripos(__DIR__, 'websocketserver') - 1)).'/websocketserver/module/bin/thread/resources.php'));
+            require_once(\Pure\Components\webSocketServer\Paths::instance()->dir(substr(__DIR__, 0, (stripos(__DIR__, 'websocketserver') - 1)).'/websocketserver/module/bin/thread/resources.php'));
             $Resources = new \Pure\Components\webSocketServer\Module\Resources((object)array(
                 'uniqid'    =>$connection_id,
                 'caller'    =>'CONNECTION-JOB',

@@ -9,7 +9,7 @@ namespace Pure\Components\webSocketServer\Module {
             $this->resources();
         }
         private function resources(){
-            require_once(\Pure\Configuration::instance()->dir(substr(__DIR__, 0, (stripos(__DIR__, 'websocketserver') - 1)).'/websocketserver/module/bin/thread/resources.php'));
+            require_once(\Pure\Components\webSocketServer\Paths::instance()->dir(substr(__DIR__, 0, (stripos(__DIR__, 'websocketserver') - 1)).'/websocketserver/module/bin/thread/resources.php'));
             $Resources = new \Pure\Components\webSocketServer\Module\Resources((object)array(
                 'uniqid'    =>$this->uniqid,
                 'caller'    =>'HEARTBEAT',
